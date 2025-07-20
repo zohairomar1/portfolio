@@ -1,0 +1,182 @@
+\documentclass[a4paper,40pt]{article} % Reduced font size
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\geometry{margin=0.6in}
+\setlength{\parindent}{0pt} % No indentation
+\setlength{\parskip}{0em} % Minimal paragraph spacing
+
+% Custom list spacing
+\setlist[itemize]{itemsep=-0.3em, topsep=0.1em, leftmargin=1.5em} % Compact list spacing
+\renewcommand{\baselinestretch}{0.89}
+\pagenumbering{gobble}
+
+% Custom section title with underline
+\newcommand{\sectiontitle}[1]{%
+    \vspace{1em} % Ensure consistent space above the title
+    \textbf{\LARGE #1} % Bold section title
+    \vspace{0.29em} % Space between title and line
+    \hrule height 0.5pt % Horizontal line
+    \vspace{0.41em} % Uniform space after the line before content
+}
+
+\begin{document}
+
+% HEADER
+\begin{center}
+    {\LARGE \textbf{Zohair Omar}} \\
+    \small \href{mailto:zohairomar@gmail.com}{zohairomar@gmail.com} | +1-604-8628753 |
+    \href{https://linkedin.com/in/zohairomar}{linkedin.com/in/zohairomar} |
+    \href{https://github.com/zohairomar1}{github.com/zohairomar1}
+
+    \vspace{0.3em}
+
+
+\end{center}
+
+\vspace{-1.3em} % Reduced space after header
+
+% TECHNICAL SKILLS
+\sectiontitle{Technical Skills}
+\textbf{Programming Languages:} Python, SQL, Java, JavaScript, C \\
+\textbf{Web Development \& APIs:} React, Tailwind CSS, Flask, REST APIs, Postman, Docker, HTML/CSS \\
+\textbf{Testing \& DevOps:} Unit Testing (JUnit5), CI/CD (GitHub Actions), Version Control (Git) \\
+\textbf{Data Analysis \& Visualization:} Excel (Pivot Tables, VLOOKUP, Charts), Power BI, Pandas, Matplotlib \\
+\textbf{Developer \& Office Tools:} VS Code, IntelliJ, PyCharm, Codenvy, Microsoft Word, PowerPoint
+
+\vspace {-0.7em}
+
+% EDUCATION
+\sectiontitle{Education}
+\textbf{Bachelor of Science, Computer Science \&\ Mathematics (Minor in Economics)} \hfill {Expected December 2026} \\
+{University of Calgary, Alberta} \\
+
+% \vspace{-0.7em}
+% \textit{Transferred from University of British Columbia in Fall 2024} \\
+
+% \vspace{0.2em}
+
+
+\textbf{Bachelor of Science, Computer Science} \hfill {Sep 2022 - Sep 2024} \\
+{University of British Columbia, Vancouver} \\
+
+\vspace{-0.86em}
+
+\textit{\textbf{Key Courses:}} Object-Oriented Programming, Data Structures \& Algorithms, Functional Programming, Applied Machine Learning (Python), Introduction to Data Science (R)
+
+\vspace {-0.35em}
+
+% EXPERIENCE
+\sectiontitle{Experience}
+
+\textbf{Enactus UCalgary - WealthPath} \hfill {Jul 2025 – Present} \\
+Front-End Development Lead; React, TypeScript, Tailwind CSS \hfill \textit{Calgary, AB}
+\begin{itemize}
+    \item Lead a 4-person front-end team to develop a financial literacy platform for young adults; facilitate 2–3 Scrum meetings per week to align priorities and track deliverables.
+    \item Built a reusable \textbf{React/TypeScript} component library adopted across 5+ core pages, reducing duplicate code by approximately 20\%.
+    \item Coordinated with the back-end team to define API contracts and resolve integration issues, accelerating feature delivery by 1–2 sprints compared to earlier timelines.
+    \item Implemented a \textbf{CI/CD pipeline} with GitHub Actions that now runs automated linting and tests on every pull request; supported over 30 successful merges without regression.
+    \item Built and deployed the platform pilot through partnerships with 2–3 schools, impacting 100+ students in the first semester.
+\end{itemize}
+
+
+\textbf{\href{https://v0-tech-websitemain1-vu.vercel.app/}{TechNova}} \hfill {February 2025 – Present} \\
+Co-Founder \& VP Technical; React, JavaScript, HTML/CSS, Python, SQL, Git \hfill \textit{Calgary, AB}
+\begin{itemize}
+    \item Built full-stack websites for clubs using React, Python \&\ SQL, focusing on modular design and maintainability.
+    \item Led a team of 4 developers through Agile sprints, leveraging Git and code reviews for clean, testable code.
+    \item Implemented user login, responsive UIs, and dashboards to improve functionality \&\ user experience for 100+ users.
+    \item Created documentation and onboarding guides to support faster ramp-up and long-term technical system upkeep.
+\end{itemize}
+
+
+
+\vspace{0.2em} % Adjusted spacing between jobs
+
+\textbf{Agrius IT} \hfill {May 2024 - July 2024} \\
+Software Developer Intern; Python, SQL, HTML/CSS, JavaScript \hfill \textit {Abu Dhabi, UAE}
+\begin{itemize}
+    \item Fortified web application security by integrating enterprise-grade security protocols, including CORS, proxy settings, and error handling protocols; directly mitigated risk of cyberattacks while ensuring uninterrupted service for 1,000+ daily users accessing the platform.
+    \item Documented workflows and contributed to internal SOPs for issue resolution and system operations using Word.
+    \item Facilitated cross-functional collaboration to troubleshoot and deliver feature updates, resolving three critical system bottlenecks and meeting all deadlines ahead of schedule.
+    \item Developed and debugged secure backend solutions involving user authentication and role-based access control using SQL, improving database query performance and security.
+\end{itemize}
+
+\textbf{UBC Design League} \hfill {Dec 2022 -- Sept 2024} \\
+Software Developer; Python, C, SolidWorks, Arduino IDE, Git \hfill \textit{Vancouver, BC}
+
+\begin{itemize}
+    \item Directed software design and system integration for a competition-ready autonomous robot with object detection, applying advanced Programming Language Theory for seamless integration.
+    \item Programmed in Arduino IDE using C to develop algorithms for object detection, path planning, and robot control, achieving a 95\% success rate in tests.
+    \item Mastered SolidWorks for advanced 3D modeling and prototyping, enhancing design visualization and prototype development for an autonomous robot project.
+    \item Integrated and programmed servo motors and ultrasonic sensors for obstacle detection and avoidance, increasing real-time perception efficiency by 25\%.
+\end{itemize}
+
+
+
+\vspace {-0.78em}
+
+% PROJECTS
+\sectiontitle{Projects}
+\textbf{UBC Thrifty Grocers}; Go, Postman, React, JavaScript, Tailwind CSS
+\begin{itemize}
+    \item Engineered high-performance back-end services for a grocery delivery platform using Go, leading to a 40\%\ increase in server response speed, while quickly  learning the language to contribute effectively to project success.
+    \item Conducted extensive API testing using Postman and Bash Scripts, achieving a 100\% success rate in test cases, ensuring flawless functionality and reliability of the web application.
+    \item Applied security measures (CORS \&\ proxies) and implemented access control logic in backend services to ensure users accessed only authorized resources, resulting in a 99\%\ error-free deployment rate.
+    \item Utilized React to create responsive webpages using Tailwind CSS for 50+ users to easily deliver groceries.
+\end{itemize}
+
+\href{https://github.com/zohairomar1/oil-and-gas-dashboard}{\textbf{Oil \& Gas Asset Integrity Dashboard}}; Power BI, SQL Server, SharePoint
+\begin{itemize}
+  \item Built a production-like \textbf{Power BI} solution to monitor integrity KPIs for natural-gas assets: corrosion rate (mmpy), oil content (ppm), SRB levels, overdue inspections, anomaly tracking, certification compliance.
+  \item Modeled \textbf{24 months} of data with Power Query + DAX; implemented role-based views for engineers vs. managers, slicers by department/month/year, and refresh simulation.
+  \item Enabled proactive planning with backlog alerts and compliance trend summaries for stakeholder reports.
+\end{itemize}
+
+\vspace{0.15em} % Adjusted spacing between projects
+
+\href{https://github.com/zohairomar1/ComfortCorner}{\textbf{nwHacks 2024: Comfort Corner}}; JavaScript, HTML/CSS
+\begin{itemize}
+    \item Led the development of a mental health support website at Western Canada's largest hackathon nwHacks 2024, achieving a top 10 placement with 653 participants.
+    \item Successfully integrated OpenAI API to power a specialized chatbot created for mental health assistance, leveraging advanced natural language processing techniques to provide empathetic and accurate support.
+    \item Designed and implemented a user-friendly interface featuring quotes and resources, enhancing visitor engagement.
+\end{itemize}
+
+\vspace{0.1em} % Adjusted spacing between projects
+
+
+\href{https://github.com/zohairomar1/BusinessTrackingApp}{\textbf{Business Tracking Application}}; Java, JUnit, JSON, UML
+\begin{itemize}
+    \item Developed a Java-based application using OOP principles and software development practices to help businesses track purchases and analyze revenue data.
+    \item Built an interactive GUI with Java Swing for adding, filtering, and visualizing purchases; implemented unit tests with JUnit to ensure system reliability.
+\end{itemize}
+
+\href{https://github.com/zohairomar1/HeartDiseasePredictionModel}{\textbf{Heart Disease Prediction Model}}; R, tidyverse, Jupyter
+\begin{itemize}
+    \item Built predictive ML model to classify heart disease likelihood based on 300+ patient records.
+    \item Applied KNN algorithm after performing data cleaning, feature scaling, and statistical analysis.
+    \item Achieved 83\% model accuracy and visualized feature impact; emphasized predictive modeling and business insight.
+\end{itemize}
+
+\href{https://wilf-life-climate-change-crisis.vercel.app/}
+{\textbf{CalgaryHacks 2025: WildBC}}; TypeScript, Next.js, React
+\begin{itemize}
+    \item Co-developed a web application in a 24-hour hackathon to raise awareness of wildlife conservation in British Columbia in the context of climate change.
+    \item Built an interactive map visualizing endangered species and wildfire locations with clickable insights to support public education and engagement.
+    \item Implemented a timeline feature to track wildfire events over time, including incidents through 2025.
+    \item Created an educational hub with videos, articles, quizzes, and leaderboards to encourage learning through interactive content.
+    \item Designed a discussion board to support expert Q\&A and community conversations, and integrated event listings for conservation workshops and outreach.
+\end{itemize}
+
+\href{https://github.com/zohairomar1/volve-production-forecast}{\textbf{Production Analytics \& Forecasting Dashboard}}; Python, Streamlit, statsmodels, Plotly, Power Automate
+\begin{itemize}
+    \item Built an interactive analytics dashboard to explore and validate time-series operational data (2008--2016), improving stakeholder visibility into trends and exceptions.
+    \item Developed rolling-origin backtesting to benchmark ETS forecasts vs.\ a seasonal naive baseline, achieving 45\% lower MAE and 46\% lower RMSE on the default evaluation view.
+    \item Supported testing and defect-style validation by implementing a metrics pipeline (MAE, RMSE, MAPE, WAPE) with near-zero handling for stability and clearer interpretation.
+    \item Implemented a \textbf{Power Automate} workflow that ingests exported forecast/anomaly CSVs, generates a summary email from templates, and distributes results via \textbf{Outlook} on a scheduled or event-based trigger.
+\end{itemize}
+
+
+\end{document}
