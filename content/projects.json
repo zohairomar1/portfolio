@@ -1,0 +1,115 @@
+[
+  {
+    "name": "UBC Thrifty Grocers",
+    "stack": "Go, Postman, React, JavaScript, Tailwind CSS",
+    "bullets": [
+      "Engineered high-performance back-end services for a grocery delivery platform using Go, leading to a 40%\\ increase in server response speed, while quickly learning the language to contribute effectively to project success.",
+      "Conducted extensive API testing using Postman and Bash Scripts, achieving a 100% success rate in test cases, ensuring flawless functionality and reliability of the web application.",
+      "Applied security measures (CORS &\\ proxies) and implemented access control logic in backend services to ensure users accessed only authorized resources, resulting in a 99%\\ error-free deployment rate.",
+      "Utilized React to create responsive webpages using Tailwind CSS for 50+ users to easily deliver groceries."
+    ],
+    "slug": "ubc-thrifty-grocers",
+    "category": "fullstack",
+    "pitch": "A grocery delivery platform built for UBC students. Fast backend, secure access control, and a clean React frontend.",
+    "keyChallenge": "Learned Go from scratch while shipping production features. Focused heavily on API security and proper access control patterns."
+  },
+  {
+    "name": "Oil & Gas Asset Integrity Dashboard",
+    "url": "https://github.com/zohairomar1/oil-and-gas-dashboard",
+    "stack": "Power BI, SQL Server, SharePoint",
+    "bullets": [
+      "Built a production-like Power BI solution to monitor integrity KPIs for natural-gas assets: corrosion rate (mmpy), oil content (ppm), SRB levels, overdue inspections, anomaly tracking, certification compliance.",
+      "Modeled 24 months of data with Power Query + DAX; implemented role-based views for engineers vs. managers, slicers by department/month/year, and refresh simulation.",
+      "Enabled proactive planning with backlog alerts and compliance trend summaries for stakeholder reports."
+    ],
+    "slug": "oil-gas-asset-integrity-dashboard",
+    "category": "data",
+    "pitch": "Interactive Power BI dashboard for monitoring asset health and maintenance schedules in oil & gas operations.",
+    "keyChallenge": "Designed data models to handle complex hierarchical asset relationships while keeping queries performant."
+  },
+  {
+    "name": "nwHacks 2024: Comfort Corner",
+    "url": "https://github.com/zohairomar1/ComfortCorner",
+    "stack": "JavaScript, HTML/CSS",
+    "bullets": [
+      "Led the development of a mental health support website at Western Canada's largest hackathon nwHacks 2024, achieving a top 10 placement with 653 participants.",
+      "Successfully integrated OpenAI API to power a specialized chatbot created for mental health assistance, leveraging advanced natural language processing techniques to provide empathetic and accurate support.",
+      "Designed and implemented a user-friendly interface featuring quotes and resources, enhancing visitor engagement."
+    ],
+    "slug": "nwhacks-2024-comfort-corner",
+    "category": "hackathon",
+    "pitch": "A mental health support platform with an AI-powered chatbot, built in 24 hours at Western Canada's largest hackathon.",
+    "keyChallenge": "Integrated OpenAI's API to create empathetic, context-aware responses. Placed top 10 out of 653 participants."
+  },
+  {
+    "name": "Business Tracking Application",
+    "url": "https://github.com/zohairomar1/BusinessTrackingApp",
+    "stack": "Java, JUnit, JSON, UML",
+    "bullets": [
+      "Developed a Java-based application using OOP principles and software development practices to help businesses track purchases and analyze revenue data.",
+      "Built an interactive GUI with Java Swing for adding, filtering, and visualizing purchases; implemented unit tests with JUnit to ensure system reliability."
+    ],
+    "slug": "business-tracking-application",
+    "category": "fullstack",
+    "pitch": "Desktop app for small businesses to track purchases and visualize revenue trends with an interactive GUI.",
+    "keyChallenge": "Applied OOP design patterns and built comprehensive unit tests. First experience with full software development lifecycle."
+  },
+  {
+    "name": "Heart Disease Prediction Model",
+    "url": "https://github.com/zohairomar1/HeartDiseasePredictionModel",
+    "stack": "R, tidyverse, Jupyter",
+    "bullets": [
+      "Built predictive ML model to classify heart disease likelihood based on 300+ patient records.",
+      "Applied KNN algorithm after performing data cleaning, feature scaling, and statistical analysis.",
+      "Achieved 83% model accuracy and visualized feature impact; emphasized predictive modeling and business insight."
+    ],
+    "slug": "heart-disease-prediction-model",
+    "category": "data",
+    "pitch": "ML model that predicts heart disease likelihood from patient records using K-Nearest Neighbors classification.",
+    "keyChallenge": "Learned the importance of feature scaling and data cleaning. Achieved 83% accuracy through careful hyperparameter tuning."
+  },
+  {
+    "name": "CalgaryHacks 2025: WildBC",
+    "stack": "TypeScript, Next.js, React",
+    "bullets": [
+      "Co-developed a web application in a 24-hour hackathon to raise awareness of wildlife conservation in British Columbia in the context of climate change.",
+      "Built an interactive map visualizing endangered species and wildfire locations with clickable insights to support public education and engagement.",
+      "Implemented a timeline feature to track wildfire events over time, including incidents through 2025.",
+      "Created an educational hub with videos, articles, quizzes, and leaderboards to encourage learning through interactive content.",
+      "Designed a discussion board to support expert Q&A and community conversations, and integrated event listings for conservation workshops and outreach."
+    ],
+    "slug": "calgaryhacks-2025-wildbc",
+    "category": "hackathon",
+    "pitch": "Web app raising awareness about BC wildlife conservation through interactive maps, timelines, and community features.",
+    "keyChallenge": "Built in 24 hours with a team. Handled the full-stack integration of maps, timelines, and a discussion board."
+  },
+  {
+    "name": "Production Analytics & Forecasting Dashboard",
+    "url": "https://github.com/zohairomar1/volve-production-forecast",
+    "stack": "Python, Streamlit, statsmodels, Plotly, Power Automate",
+    "bullets": [
+      "Built an interactive analytics dashboard to explore and validate time-series operational data (2008\u20132016), improving stakeholder visibility into trends and exceptions.",
+      "Developed rolling-origin backtesting to benchmark ETS forecasts vs.\\ a seasonal naive baseline, achieving 45% lower MAE and 46% lower RMSE on the default evaluation view.",
+      "Supported testing and defect-style validation by implementing a metrics pipeline (MAE, RMSE, MAPE, WAPE) with near-zero handling for stability and clearer interpretation.",
+      "Implemented a Power Automate workflow that ingests exported forecast/anomaly CSVs, generates a summary email from templates, and distributes results via Outlook on a scheduled or event-based trigger."
+    ],
+    "slug": "production-analytics-forecasting-dashboard",
+    "category": "data",
+    "pitch": "Time-series analytics dashboard for exploring operational data with built-in forecasting and backtesting tools.",
+    "keyChallenge": "Implemented rolling-origin backtesting to validate forecasts. Achieved 45% lower error than baseline models."
+  },
+  {
+    "name": "VHS Portfolio",
+    "url": "https://github.com/zohairomar1/portfolio-vhs",
+    "stack": "Next.js, TypeScript, Tailwind CSS, Radix UI",
+    "bullets": [
+      "Built a retro VHS-themed portfolio website with custom animations and effects.",
+      "Implemented a boot screen with CRT power-on effects, theme selection, and tape reel animations.",
+      "Created a custom TypeWriter component and scanline effects for authentic 80s aesthetics."
+    ],
+    "slug": "vhs-portfolio",
+    "category": "fullstack",
+    "pitch": "The site you're looking at right now. A retro VHS-themed portfolio with boot sequences, CRT effects, and tape reel animations.",
+    "keyChallenge": "Designed every interaction to feel like inserting a VHS tape. Built with Next.js, TypeScript, and way too much CSS."
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "ubc-thrifty-grocers": {
+    "pitch": "A grocery delivery platform built for UBC students. Fast backend, secure access control, and a clean React frontend.",
+    "keyChallenge": "Learned Go from scratch while shipping production features. Focused heavily on API security and proper access control patterns."
+  },
+  "oil-gas-asset-integrity-dashboard": {
+    "pitch": "Interactive Power BI dashboard for monitoring asset health and maintenance schedules in oil & gas operations.",
+    "keyChallenge": "Designed data models to handle complex hierarchical asset relationships while keeping queries performant."
+  },
+  "nwhacks-2024-comfort-corner": {
+    "pitch": "A mental health support platform with an AI-powered chatbot, built in 24 hours at Western Canada's largest hackathon.",
+    "keyChallenge": "Integrated OpenAI's API to create empathetic, context-aware responses. Placed top 10 out of 653 participants."
+  },
+  "business-tracking-application": {
+    "pitch": "Desktop app for small businesses to track purchases and visualize revenue trends with an interactive GUI.",
+    "keyChallenge": "Applied OOP design patterns and built comprehensive unit tests. First experience with full software development lifecycle."
+  },
+  "heart-disease-prediction-model": {
+    "pitch": "ML model that predicts heart disease likelihood from patient records using K-Nearest Neighbors classification.",
+    "keyChallenge": "Learned the importance of feature scaling and data cleaning. Achieved 83% accuracy through careful hyperparameter tuning."
+  },
+  "calgaryhacks-2025-wildbc": {
+    "pitch": "Web app raising awareness about BC wildlife conservation through interactive maps, timelines, and community features.",
+    "keyChallenge": "Built in 24 hours with a team. Handled the full-stack integration of maps, timelines, and a discussion board."
+  },
+  "production-analytics-forecasting-dashboard": {
+    "pitch": "Time-series analytics dashboard for exploring operational data with built-in forecasting and backtesting tools.",
+    "keyChallenge": "Implemented rolling-origin backtesting to validate forecasts. Achieved 45% lower error than baseline models."
+  },
+  "vhs-portfolio": {
+    "pitch": "The site you're looking at right now. A retro VHS-themed portfolio with boot sequences, CRT effects, and tape reel animations.",
+    "keyChallenge": "Designed every interaction to feel like inserting a VHS tape. Built with Next.js, TypeScript, and way too much CSS."
+  }
+}
