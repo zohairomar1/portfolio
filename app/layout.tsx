@@ -3,7 +3,9 @@ import { VT323, Inter, JetBrains_Mono } from "next/font/google";
 import { SettingsProvider } from "@/hooks/useSettings";
 import { CRTWrapper } from "@/components/vhs/CRTWrapper";
 import { StaticTransition } from "@/components/vhs/StaticTransition";
+import { QuickNav } from "@/components/menu/QuickNav";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { AppWrapper } from "@/components/AppWrapper";
 import "./globals.css";
 
 const displayFont = VT323({
@@ -23,8 +25,25 @@ const monoFont = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Zohair Omar | Portfolio",
-  description: "Portfolio of Zohair Omar - Full-Stack Developer and Data/BI specialist.",
+  title: "Zohair Omar | Full-Stack Developer & Data/BI",
+  description:
+    "Portfolio of Zohair Omar - Full-Stack Developer and Data/BI specialist building products backed by metrics.",
+  keywords: [
+    "Zohair Omar",
+    "Full-Stack Developer",
+    "Data Analytics",
+    "Power BI",
+    "React",
+    "Next.js",
+    "Portfolio",
+  ],
+  authors: [{ name: "Zohair Omar" }],
+  openGraph: {
+    title: "Zohair Omar | Full-Stack Developer & Data/BI",
+    description:
+      "Portfolio of Zohair Omar - Full-Stack Developer and Data/BI specialist building products backed by metrics.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -40,10 +59,13 @@ export default function RootLayout({
       <body className="antialiased">
         <SettingsProvider>
           <TooltipProvider>
-            <CRTWrapper>
-              <StaticTransition />
-              {children}
-            </CRTWrapper>
+            <AppWrapper>
+              <CRTWrapper>
+                <StaticTransition />
+                <QuickNav />
+                {children}
+              </CRTWrapper>
+            </AppWrapper>
           </TooltipProvider>
         </SettingsProvider>
       </body>
