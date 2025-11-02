@@ -16,22 +16,22 @@ const FALLBACK_FILE = path.join(CONTENT_DIR, "resume.manual.json");
 // Helper to clean LaTeX formatting
 function cleanLatex(text: string): string {
   return text
-    .replace(/\\textbf\{([^}]*)\}/g, "$1")
-    .replace(/\\textit\{([^}]*)\}/g, "$1")
-    .replace(/\\href\{[^}]*\}\{([^}]*)\}/g, "$1")
-    .replace(/\\\\/g, "")
-    .replace(/\\&/g, "&")
-    .replace(/\\\$/g, "$")
-    .replace(/\\%/g, "%")
-    .replace(/\\_/g, "_")
-    .replace(/\\#/g, "#")
-    .replace(/~+/g, " ")
-    .replace(/``/g, '"')
-    .replace(/''/g, '"')
-    .replace(/`/g, "'")
-    .replace(/'/g, "'")
-    .replace(/--/g, "–")
-    .replace(/\s+/g, " ")
+    .replace(/\\textbf\{([^}]*)\}/g, "$1") // Remove \textbf{}
+    .replace(/\\textit\{([^}]*)\}/g, "$1") // Remove \textit{}
+    .replace(/\\href\{[^}]*\}\{([^}]*)\}/g, "$1") // Extract text from \href
+    .replace(/\\\\/g, "") // Remove \\
+    .replace(/\\&/g, "&") // Replace \& with &
+    .replace(/\\\$/g, "$") // Replace \$ with $
+    .replace(/\\%/g, "%") // Replace \% with %
+    .replace(/\\_/g, "_") // Replace \_ with _
+    .replace(/\\#/g, "#") // Replace \# with #
+    .replace(/~+/g, " ") // Replace ~ with space
+    .replace(/``/g, '"') // Replace `` with "
+    .replace(/''/g, '"') // Replace '' with "
+    .replace(/`/g, "'") // Replace ` with '
+    .replace(/'/g, "'") // Replace ' with '
+    .replace(/--/g, "–") // Replace -- with en-dash
+    .replace(/\s+/g, " ") // Normalize whitespace
     .trim();
 }
 
@@ -69,17 +69,21 @@ function parseHeader(content: string): ResumeData["header"] {
   );
   const headerText = headerMatch ? headerMatch[1] : "";
 
+  // Extract name
   const nameMatch = headerText.match(/\\textbf\{([^}]+)\}/);
   const name = nameMatch ? cleanLatex(nameMatch[1]) : "Zohair Omar";
 
+  // Extract email
   const emailMatch = headerText.match(
     /\\href\{mailto:([^}]+)\}\{[^}]+\}/
   );
   const email = emailMatch ? emailMatch[1] : "zohairomar@gmail.com";
 
+  // Extract phone
   const phoneMatch = headerText.match(/\+[\d-]+/);
   const phone = phoneMatch ? phoneMatch[0] : "+1-604-8628753";
 
+  // Extract LinkedIn
   const linkedinMatch = headerText.match(
     /\\href\{https?:\/\/linkedin\.com\/in\/([^}]+)\}/
   );
@@ -87,6 +91,7 @@ function parseHeader(content: string): ResumeData["header"] {
     ? `linkedin.com/in/${linkedinMatch[1]}`
     : "linkedin.com/in/zohairomar";
 
+  // Extract GitHub
   const githubMatch = headerText.match(
     /\\href\{https?:\/\/github\.com\/([^}]+)\}/
   );
@@ -106,6 +111,7 @@ function parseSkills(content: string): SkillCategory[] {
     const match = line.match(/\\textbf\{([^}]+):\}\s*(.+)/);
     if (match) {
       const category = cleanLatex(match[1]);
+      // Split by comma, but not commas inside parentheses
       const items: string[] = [];
       let current = "";
       let parenDepth = 0;
@@ -143,6 +149,7 @@ function parseEducation(content: string): EducationItem[] {
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i].trim();
 
+    // Check for degree line with date
     const degreeMatch = line.match(
       /\\textbf\{([^}]+)\}\s*\\hfill\s*\{([^}]+)\}/
     );
@@ -157,6 +164,7 @@ function parseEducation(content: string): EducationItem[] {
       continue;
     }
 
+    // Check for school line
     if (currentEntry && !currentEntry.school) {
       const schoolMatch = line.match(/^\{?([^}\\]+)/);
       if (schoolMatch && !line.includes("\\textbf") && !line.includes("\\textit{\\textbf")) {
@@ -168,6 +176,7 @@ function parseEducation(content: string): EducationItem[] {
       }
     }
 
+    // Check for Key Courses
     const coursesMatch = line.match(
       /\\textit\{\\textbf\{Key Courses:\}\}\s*(.+)/
     );
@@ -191,26 +200,23 @@ function parseEducation(content: string): EducationItem[] {
   return education;
 }
 
-// Parse experience section — splits on \textbf{ (buggy for multi-line bullets)
+// Parse experience section
 function parseExperience(content: string): ExperienceItem[] {
   const experiences: ExperienceItem[] = [];
 
-  // Split entries by \textbf{ pattern — this incorrectly splits mid-bullet
-  const entryRegex = /\\textbf\{((?:\\href\{[^}]+\}\{)?[^}]+\}?)\}\s*\\hfill/g;
-  const splitPositions: number[] = [];
-  let m;
-  while ((m = entryRegex.exec(content)) !== null) {
-    splitPositions.push(m.index);
-  }
-
+  // Split entries by \end{itemize} blocks - each experience ends with one
   const entries: string[] = [];
-  for (let i = 0; i < splitPositions.length; i++) {
-    const start = splitPositions[i];
-    const end = i + 1 < splitPositions.length ? splitPositions[i + 1] : content.length;
-    entries.push(content.slice(start, end));
+  const parts = content.split(/\\end\{itemize\}/);
+  for (const part of parts) {
+    const trimmed = part.trim();
+    if (trimmed && trimmed.includes('\\hfill')) {
+      entries.push(trimmed + '\\end{itemize}');
+    }
   }
 
   for (const entryContent of entries) {
+
+    // Parse company name and URL
     const nameLineMatch = entryContent.match(
       /\\textbf\{((?:\\href\{([^}]+)\}\{)?([^}]+)\}?)\}\s*\\hfill\s*\{([^}]+)\}/
     );
@@ -219,9 +225,9 @@ function parseExperience(content: string): ExperienceItem[] {
     const hrefInfo = extractHref(nameLineMatch[1]);
     const dates = cleanLatex(nameLineMatch[4]);
 
-    // Title line — uses [^\\]+? which fails on \& characters
+    // Parse title line - allow \& and other escaped chars in title/stack
     const titleMatch = entryContent.match(
-      /\\hfill\s*\{[^}]+\}\s*\\\\?\s*\n?\s*([^\\]+?)\\hfill\s*\\textit\s*\{([^}]+)\}/
+      /\\hfill\s*\{[^}]+\}\s*\\\\?\s*\n?\s*(.+?)\\hfill\s*\\textit\s*\{([^}]+)\}/
     );
 
     let title = "";
@@ -235,13 +241,17 @@ function parseExperience(content: string): ExperienceItem[] {
       location = cleanLatex(titleMatch[2]);
     }
 
-    // Parse bullets — single-line only regex
+    // Parse bullets - handle multi-line bullets
     const bullets: string[] = [];
-    const bulletRegex = /\\item\s+([^\n]+)/g;
-    let bm;
-    while ((bm = bulletRegex.exec(entryContent)) !== null) {
-      const cleaned = cleanLatex(bm[1]);
-      if (cleaned) bullets.push(cleaned);
+    const itemizeMatch = entryContent.match(/\\begin\{itemize\}([\s\S]*?)\\end\{itemize\}/);
+    if (itemizeMatch) {
+      const itemsContent = itemizeMatch[1];
+      // Split by \item and filter empty entries
+      const items = itemsContent.split(/\\item\s+/).filter(s => s.trim());
+      for (const item of items) {
+        const cleaned = cleanLatex(item.replace(/\n/g, ' ').trim());
+        if (cleaned) bullets.push(cleaned);
+      }
     }
 
     experiences.push({
@@ -258,25 +268,23 @@ function parseExperience(content: string): ExperienceItem[] {
   return experiences;
 }
 
-// Parse projects section — same buggy approach
+// Parse projects section
 function parseProjects(content: string): ProjectItem[] {
   const projects: ProjectItem[] = [];
 
-  const entryRegex = /\\textbf\{[^}]+\}\s*;/g;
-  const splitPositions: number[] = [];
-  let m;
-  while ((m = entryRegex.exec(content)) !== null) {
-    splitPositions.push(m.index);
-  }
-
+  // Split entries by \end{itemize} blocks - each project ends with one
   const entries: string[] = [];
-  for (let i = 0; i < splitPositions.length; i++) {
-    const start = splitPositions[i];
-    const end = i + 1 < splitPositions.length ? splitPositions[i + 1] : content.length;
-    entries.push(content.slice(start, end));
+  const parts = content.split(/\\end\{itemize\}/);
+  for (const part of parts) {
+    const trimmed = part.trim();
+    if (trimmed && trimmed.includes('\\textbf{')) {
+      entries.push(trimmed + '\\end{itemize}');
+    }
   }
 
   for (const entryContent of entries) {
+
+    // Parse name, url, and stack
     const headerMatch = entryContent.match(
       /(?:\\href\{([^}]+)\}\{)?\\textbf\{([^}]+)\}\}?\s*;\s*([^\n\\]+)/
     );
@@ -286,20 +294,26 @@ function parseProjects(content: string): ProjectItem[] {
     const name = cleanLatex(headerMatch[2]);
     const stack = cleanLatex(headerMatch[3]);
 
-    // Parse bullets — single-line only
+    // Parse bullets - handle multi-line bullets
     const bullets: string[] = [];
-    const bulletRegex = /\\item\s+([^\n]+)/g;
-    let bm;
-    while ((bm = bulletRegex.exec(entryContent)) !== null) {
-      const cleaned = cleanLatex(bm[1]);
-      if (cleaned) bullets.push(cleaned);
+    const itemizeMatch = entryContent.match(/\\begin\{itemize\}([\s\S]*?)\\end\{itemize\}/);
+    if (itemizeMatch) {
+      const itemsContent = itemizeMatch[1];
+      // Split by \item and filter empty entries
+      const items = itemsContent.split(/\\item\s+/).filter(s => s.trim());
+      for (const item of items) {
+        const cleaned = cleanLatex(item.replace(/\n/g, ' ').trim());
+        if (cleaned) bullets.push(cleaned);
+      }
     }
 
+    // Generate slug
     const slug = name
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-|-$/g, "");
 
+    // Auto-categorize
     const stackLower = stack.toLowerCase();
     let category: ProjectItem["category"] = "fullstack";
 
@@ -386,6 +400,7 @@ function main() {
   // Also generate projects.json with category overrides support
   const projectsFile = path.join(CONTENT_DIR, "projects.json");
 
+  // Add portfolio project (not in resume.tex)
   const portfolioProject: ProjectItem = {
     name: "VHS Portfolio",
     url: "https://github.com/zohairomar1/portfolio-vhs",
@@ -401,6 +416,7 @@ function main() {
 
   let projectsWithOverrides = [...resumeData!.projects, portfolioProject];
 
+  // Check for manual overrides
   const projectsOverrideFile = path.join(
     CONTENT_DIR,
     "projects.overrides.json"
