@@ -227,7 +227,7 @@ function parseExperience(content: string): ExperienceItem[] {
 
     // Parse title line - allow \& and other escaped chars in title/stack
     const titleMatch = entryContent.match(
-      /\\hfill\s*\{[^}]+\}\s*\\\\?\s*\n?\s*(.+?)\\hfill\s*\\textit\s*\{([^}]+)\}/
+      /\\hfill\s*\{[^}]+\}\s*\\\\?\s*\n?\s*([^\\]+?)\\hfill\s*\\textit\s*\{([^}]+)\}/
     );
 
     let title = "";
