@@ -1,13 +1,28 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { DVDMenu } from "@/components/menu/DVDMenu";
 import { TimeIndicator } from "@/components/vhs/TimeIndicator";
 import { RecordingIndicator } from "@/components/vhs/RecordingIndicator";
 import { TypeWriter } from "@/components/vhs/TypeWriter";
+import { CompanyBanner } from "@/components/vhs/CompanyBanner";
 import { useSettings } from "@/hooks/useSettings";
+import type { CompanyConfig } from "@/lib/companies";
 
 export default function HomePage() {
   const { settings } = useSettings();
+  const [company, setCompany] = useState<CompanyConfig | null>(null);
+
+  useEffect(() => {
+    const companyData = sessionStorage.getItem("vhs-company");
+    if (companyData) {
+      try {
+        setCompany(JSON.parse(companyData));
+      } catch {
+        // Ignore malformed data
+      }
+    }
+  }, []);
 
   return (
     <main className="min-h-screen flex flex-col items-center justify-center p-4 relative">
@@ -19,6 +34,9 @@ export default function HomePage() {
 
       {/* Main content */}
       <div className="max-w-2xl w-full text-center mb-8 animate-fadeIn">
+        {/* Company Banner - 8-bit stickman with banner */}
+        {company && <CompanyBanner company={company} />}
+
         {/* Title */}
         <h1 className="font-display text-5xl sm:text-6xl md:text-7xl text-primary vhs-text mb-4">
           <TypeWriter text="ZOHAIR OMAR" speed={120} delay={300} />
@@ -32,6 +50,7 @@ export default function HomePage() {
           Building products backed by metrics
         </p>
 
+        {/* Subtitle hint */}
         {settings.subtitlesEnabled && (
           <p className="text-xs text-muted-foreground mb-4 animate-pulse">
             Navigate with keyboard or mouse
