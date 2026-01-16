@@ -31,6 +31,7 @@ export interface ProjectItem {
   // Website-specific fields (not from resume)
   pitch?: string; // 1-2 sentence elevator pitch
   keyChallenge?: string; // What I learned / key challenge
+  featured?: boolean; // Highlighted with special creative component
 }
 
 export interface ResumeData {
