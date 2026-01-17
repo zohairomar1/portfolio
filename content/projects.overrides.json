@@ -27,6 +27,10 @@
     "pitch": "Time-series analytics dashboard for exploring operational data with built-in forecasting and backtesting tools.",
     "keyChallenge": "Implemented rolling-origin backtesting to validate forecasts. Achieved 45% lower error than baseline models."
   },
+  "everyday-cleaning-company": {
+    "pitch": "Started my own cleaning company and built the entire tech stack from scratch. Full-stack website with automated quote system, email notifications, and SEO — plus running the actual business.",
+    "keyChallenge": "Wore every hat: founder, developer, marketer, and cleaner. Built the site, configured transactional emails with Resend, handled client bookings, and grew the business from zero."
+  },
   "vhs-portfolio": {
     "pitch": "The site you're looking at right now. A retro VHS-themed portfolio with boot sequences, CRT effects, and tape reel animations.",
     "keyChallenge": "Designed every interaction to feel like inserting a VHS tape. Built with Next.js, TypeScript, and way too much CSS."

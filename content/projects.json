@@ -88,7 +88,7 @@
     "url": "https://github.com/zohairomar1/volve-production-forecast",
     "stack": "Python, Streamlit, statsmodels, Plotly, Power Automate",
     "bullets": [
-      "Built an interactive analytics dashboard to explore and validate time-series operational data (2008\u20132016), improving stakeholder visibility into trends and exceptions.",
+      "Built an interactive analytics dashboard to explore and validate time-series operational data (2008–2016), improving stakeholder visibility into trends and exceptions.",
       "Developed rolling-origin backtesting to benchmark ETS forecasts vs.\\ a seasonal naive baseline, achieving 45% lower MAE and 46% lower RMSE on the default evaluation view.",
       "Supported testing and defect-style validation by implementing a metrics pipeline (MAE, RMSE, MAPE, WAPE) with near-zero handling for stability and clearer interpretation.",
       "Implemented a Power Automate workflow that ingests exported forecast/anomaly CSVs, generates a summary email from templates, and distributes results via Outlook on a scheduled or event-based trigger."
@@ -97,6 +97,22 @@
     "category": "data",
     "pitch": "Time-series analytics dashboard for exploring operational data with built-in forecasting and backtesting tools.",
     "keyChallenge": "Implemented rolling-origin backtesting to validate forecasts. Achieved 45% lower error than baseline models."
+  },
+  {
+    "name": "The Everyday Cleaning Company",
+    "url": "https://everydaycleaning.ca",
+    "stack": "Next.js, TypeScript, Tailwind CSS, Resend, Vercel",
+    "bullets": [
+      "Founded and built the full digital presence for a Calgary-based cleaning company, handling everything from branding to deployment.",
+      "Developed a production Next.js website with a quote request system powered by Resend for transactional emails, honeypot spam protection, and IP-based rate limiting.",
+      "Implemented SEO optimization with JSON-LD structured data, dynamic sitemap generation, and meta tag management for local search visibility.",
+      "Managed end-to-end business operations including client acquisition, scheduling, service delivery, and financial tracking."
+    ],
+    "slug": "everyday-cleaning-company",
+    "category": "fullstack",
+    "featured": true,
+    "pitch": "Started my own cleaning company and built the entire tech stack from scratch. Full-stack website with automated quote system, email notifications, and SEO — plus running the actual business.",
+    "keyChallenge": "Wore every hat: founder, developer, marketer, and cleaner. Built the site, configured transactional emails with Resend, handled client bookings, and grew the business from zero."
   },
   {
     "name": "VHS Portfolio",
