@@ -43,3 +43,4 @@ next-env.d.ts
 # Generated content (optional - remove if you want to commit generated JSON)
 # content/resume.json
 # content/projects.json
+.claude/
