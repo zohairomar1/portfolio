@@ -103,16 +103,16 @@
     "url": "https://everydaycleaning.ca",
     "stack": "Next.js, TypeScript, Tailwind CSS, Resend, Vercel",
     "bullets": [
-      "Founded and built the full digital presence for a Calgary-based cleaning company, handling everything from branding to deployment.",
-      "Developed a production Next.js website with a quote request system powered by Resend for transactional emails, honeypot spam protection, and IP-based rate limiting.",
-      "Implemented SEO optimization with JSON-LD structured data, dynamic sitemap generation, and meta tag management for local search visibility.",
-      "Managed end-to-end business operations including client acquisition, scheduling, service delivery, and financial tracking."
+      "Founded and operate a residential cleaning company in Calgary, handling all business operations from client acquisition to service delivery.",
+      "Built a full-stack website with an automated quote system, instant email confirmations via Resend, and SEO optimization.",
+      "Implemented a dynamic pricing engine based on home size, service type, and add-ons with real-time quote generation.",
+      "Manage all marketing, client relations, scheduling, and quality assurance as sole operator."
     ],
     "slug": "everyday-cleaning-company",
     "category": "fullstack",
-    "featured": true,
     "pitch": "Started my own cleaning company and built the entire tech stack from scratch. Full-stack website with automated quote system, email notifications, and SEO — plus running the actual business.",
-    "keyChallenge": "Wore every hat: founder, developer, marketer, and cleaner. Built the site, configured transactional emails with Resend, handled client bookings, and grew the business from zero."
+    "keyChallenge": "Wore every hat: founder, developer and marketer. Built the site, configured transactional emails with Resend, handled client bookings, and grew the business from zero.",
+    "featured": true
   },
   {
     "name": "VHS Portfolio",
