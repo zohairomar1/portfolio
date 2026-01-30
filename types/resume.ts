@@ -49,7 +49,7 @@ export interface ResumeData {
 }
 
 // Settings types
-export type ThemePreset = "crt-blue" | "vhs-purple" | "test-card";
+export type ThemePreset = "crt-blue" | "vhs-purple" | "test-card" | "company";
 export type FlickerIntensity = "low" | "med" | "high";
 
 export interface Settings {
