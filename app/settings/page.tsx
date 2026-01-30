@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { VHSHeader } from "@/components/menu/VHSHeader";
 import { useSettings } from "@/hooks/useSettings";
 import { Switch } from "@/components/ui/switch";
@@ -7,8 +8,9 @@ import { Slider } from "@/components/ui/slider";
 import { Button } from "@/components/ui/button";
 import { ThemePreset, FlickerIntensity } from "@/types/resume";
 import { RotateCcw, Monitor, Volume2, Eye, Type } from "lucide-react";
+import type { CompanyConfig } from "@/lib/companies";
 
-const THEME_OPTIONS: { value: ThemePreset; label: string; color: string }[] = [
+const BASE_THEME_OPTIONS: { value: ThemePreset; label: string; color: string }[] = [
   { value: "crt-blue", label: "CRT Blue", color: "bg-vhs-blue" },
   { value: "vhs-purple", label: "VHS Purple", color: "bg-vhs-purple" },
   { value: "test-card", label: "Test Card White", color: "bg-white" },
@@ -22,6 +24,23 @@ const FLICKER_OPTIONS: { value: FlickerIntensity; label: string }[] = [
 
 export default function SettingsPage() {
   const { settings, updateSettings, resetSettings } = useSettings();
+  const [company, setCompany] = useState<CompanyConfig | null>(null);
+
+  useEffect(() => {
+    try {
+      const data = sessionStorage.getItem("vhs-company");
+      if (data) setCompany(JSON.parse(data));
+    } catch {
+      // ignore
+    }
+  }, []);
+
+  const THEME_OPTIONS = [
+    ...BASE_THEME_OPTIONS,
+    ...(company?.brandColor
+      ? [{ value: "company" as ThemePreset, label: company.displayName, color: "" }]
+      : []),
+  ];
 
   const flickerIndex = FLICKER_OPTIONS.findIndex(
     (f) => f.value === settings.flickerIntensity
@@ -160,7 +179,7 @@ export default function SettingsPage() {
                 </h2>
               </div>
 
-              <div className="grid grid-cols-3 gap-3">
+              <div className={`grid gap-3 ${THEME_OPTIONS.length > 3 ? "grid-cols-2 sm:grid-cols-4" : "grid-cols-3"}`}>
                 {THEME_OPTIONS.map((theme) => (
                   <button
                     key={theme.value}
@@ -174,6 +193,11 @@ export default function SettingsPage() {
                   >
                     <div
                       className={`w-8 h-8 rounded-full mx-auto mb-2 ${theme.color}`}
+                      style={
+                        theme.value === "company" && company?.brandColor
+                          ? { backgroundColor: company.brandColor }
+                          : undefined
+                      }
                     />
                     <span className="text-xs font-mono">{theme.label}</span>
                   </button>
