@@ -48,6 +48,13 @@
     --accent: 48 96% 53%;
     --ring: 0 0% 95%;
   }
+
+  /* Company Brand Theme (fallback values — overridden at runtime by JS) */
+  [data-theme="company"] {
+    --primary: 356 73% 47%;
+    --accent: 0 100% 70%;
+    --ring: 356 73% 47%;
+  }
 }
 
 @layer base {
