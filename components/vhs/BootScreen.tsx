@@ -11,7 +11,7 @@ interface BootScreenProps {
 }
 
 // Theme color mappings for live preview
-const themeColors: Record<ThemePreset, { primary: string; accent: string }> = {
+const baseThemeColors: Record<string, { primary: string; accent: string }> = {
   "crt-blue": { primary: "#00d4ff", accent: "#67e8f9" },
   "vhs-purple": { primary: "#a855f7", accent: "#ec4899" },
   "test-card": { primary: "#ffffff", accent: "#facc15" },
@@ -36,7 +36,9 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
   const [trackingOffset, setTrackingOffset] = useState(0);
   const [loadingProgress, setLoadingProgress] = useState(0);
   const [showConfig, setShowConfig] = useState(false);
-  const [selectedTheme, setSelectedTheme] = useState<ThemePreset>(settings.theme);
+  const [selectedTheme, setSelectedTheme] = useState<ThemePreset>(
+    company?.brandColor ? "company" : settings.theme
+  );
   const [soundEnabled, setSoundEnabled] = useState(settings.soundEnabled);
   const [glitchText, setGlitchText] = useState(false);
   const [scanlinePos, setScanlinePos] = useState(0);
@@ -44,8 +46,21 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
   const [currentMessage, setCurrentMessage] = useState(0);
   const [showPortfolio, setShowPortfolio] = useState(false);
 
+  // Build theme colors map — add company entry if present
+  const themeColors: Record<string, { primary: string; accent: string }> = {
+    ...baseThemeColors,
+    ...(company?.brandColor
+      ? { company: { primary: company.brandColor, accent: company.brandAccent } }
+      : {}),
+  };
+
+  const hasCompanyTheme = Boolean(company?.brandColor);
+  const themes: ThemePreset[] = hasCompanyTheme
+    ? ["crt-blue", "vhs-purple", "test-card", "company"]
+    : ["crt-blue", "vhs-purple", "test-card"];
+
   // Get current theme colors for live preview
-  const currentColors = themeColors[selectedTheme];
+  const currentColors = themeColors[selectedTheme] || baseThemeColors["crt-blue"];
 
   // Phase transitions
   useEffect(() => {
@@ -106,12 +121,18 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
     return () => clearInterval(interval);
   }, [phase]);
 
-  // Scanline sweep effect
+  // Scanline sweep effect — smooth and slow like a real TV
   useEffect(() => {
-    const interval = setInterval(() => {
-      setScanlinePos((prev) => (prev + 2) % 120);
-    }, 30);
-    return () => clearInterval(interval);
+    let raf: number;
+    let pos = 0;
+    const speed = 0.08; // very slow drift
+    const step = () => {
+      pos = (pos + speed) % 120;
+      setScanlinePos(pos);
+      raf = requestAnimationFrame(step);
+    };
+    raf = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(raf);
   }, []);
 
   // Glitch effect
@@ -196,12 +217,16 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
         </div>
       )}
 
-      {/* Scanline sweep */}
+      {/* Scanline sweep — smooth drift, pixelated look */}
       <div
-        className="absolute left-0 right-0 h-32 pointer-events-none opacity-20"
+        className="absolute left-0 right-0 pointer-events-none"
         style={{
           top: `${scanlinePos - 10}%`,
-          background: `linear-gradient(to bottom, transparent, var(--boot-primary), transparent)`,
+          height: "6px",
+          background: `var(--boot-primary)`,
+          opacity: 0.12,
+          boxShadow: `0 0 30px 12px var(--boot-primary)`,
+          imageRendering: "pixelated",
         }}
       />
 
@@ -481,47 +506,107 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
                 >
                   Color Theme
                 </label>
-                <div className="flex gap-2">
-                  {(["crt-blue", "vhs-purple", "test-card"] as ThemePreset[]).map(
-                    (theme) => (
+                <div className={`grid gap-2 ${hasCompanyTheme ? "grid-cols-2 sm:grid-cols-4" : "grid-cols-3"}`}>
+                  {themes.map((theme) => {
+                    const colors = themeColors[theme];
+                    const isCompany = theme === "company";
+                    const isSelected = selectedTheme === theme;
+                    const label =
+                      theme === "crt-blue"
+                        ? "CRT Blue"
+                        : theme === "vhs-purple"
+                        ? "VHS Purple"
+                        : theme === "test-card"
+                        ? "Test Card"
+                        : company?.displayName || "Custom";
+
+                    if (isCompany) {
+                      return (
+                        <div key={theme} className="relative col-span-2 sm:col-span-1 pt-3">
+                          {/* DIRECTOR'S PICK tape label — outside button so it's not clipped */}
+                          <span
+                            className="absolute -top-0.5 left-1/2 -translate-x-1/2 px-2 py-0.5 font-mono text-[9px] tracking-wider whitespace-nowrap z-10"
+                            style={{
+                              background: colors.primary,
+                              color: "#000",
+                              boxShadow: `0 0 8px ${colors.primary}80`,
+                            }}
+                          >
+                            ◀◀ DIRECTOR&apos;S PICK
+                          </span>
+
+                          <button
+                            onClick={() => setSelectedTheme(theme)}
+                            className="relative w-full h-full py-3 px-3 border transition-all font-mono text-xs overflow-hidden"
+                            style={{
+                              borderColor: isSelected
+                                ? colors.primary
+                                : `${colors.primary}80`,
+                              background: isSelected
+                                ? `color-mix(in srgb, ${colors.primary} 20%, transparent)`
+                                : "transparent",
+                              color: colors.primary,
+                            }}
+                          >
+                            {/* Scanline overlay */}
+                            <div
+                              className="absolute inset-0 pointer-events-none opacity-15"
+                              style={{
+                                background: `repeating-linear-gradient(0deg, transparent, transparent 2px, ${colors.primary} 2px, ${colors.primary} 3px)`,
+                              }}
+                            />
+
+                            <div
+                              className="w-5 h-5 rounded-full mx-auto mb-2 transition-transform relative"
+                              style={{
+                                background: colors.primary,
+                                transform: isSelected ? "scale(1.2)" : "scale(1)",
+                                boxShadow: `0 0 15px ${colors.primary}`,
+                              }}
+                            >
+                              <div
+                                className="absolute inset-0 rounded-full"
+                                style={{
+                                  border: `2px solid ${colors.primary}`,
+                                  animation: "company-dot-pulse 1.5s ease-in-out infinite",
+                                }}
+                              />
+                            </div>
+                            <span className="font-bold">{label}</span>
+                          </button>
+                        </div>
+                      );
+                    }
+
+                    return (
                       <button
                         key={theme}
                         onClick={() => setSelectedTheme(theme)}
-                        className="flex-1 py-3 px-3 border transition-all font-mono text-xs relative overflow-hidden"
+                        className="relative flex-1 py-3 px-3 border transition-all font-mono text-xs overflow-hidden"
                         style={{
-                          borderColor:
-                            selectedTheme === theme
-                              ? themeColors[theme].primary
-                              : "#333",
-                          background:
-                            selectedTheme === theme
-                              ? `color-mix(in srgb, ${themeColors[theme].primary} 20%, transparent)`
-                              : "transparent",
-                          color:
-                            selectedTheme === theme
-                              ? themeColors[theme].primary
-                              : "#888",
+                          borderColor: isSelected
+                            ? colors.primary
+                            : "#333",
+                          background: isSelected
+                            ? `color-mix(in srgb, ${colors.primary} 20%, transparent)`
+                            : "transparent",
+                          color: isSelected ? colors.primary : "#888",
                         }}
                       >
                         <div
                           className="w-5 h-5 rounded-full mx-auto mb-2 transition-transform"
                           style={{
-                            background: themeColors[theme].primary,
-                            transform: selectedTheme === theme ? "scale(1.2)" : "scale(1)",
-                            boxShadow:
-                              selectedTheme === theme
-                                ? `0 0 15px ${themeColors[theme].primary}`
-                                : "none",
+                            background: colors.primary,
+                            transform: isSelected ? "scale(1.2)" : "scale(1)",
+                            boxShadow: isSelected
+                              ? `0 0 15px ${colors.primary}`
+                              : "none",
                           }}
                         />
-                        {theme === "crt-blue"
-                          ? "CRT Blue"
-                          : theme === "vhs-purple"
-                          ? "VHS Purple"
-                          : "Test Card"}
+                        {label}
                       </button>
-                    )
-                  )}
+                    );
+                  })}
                 </div>
               </div>
 
@@ -624,6 +709,10 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
         @keyframes shimmer {
           0% { transform: translateX(-100%); }
           100% { transform: translateX(100%); }
+        }
+        @keyframes company-dot-pulse {
+          0%, 100% { transform: scale(1); opacity: 1; }
+          50% { transform: scale(1.8); opacity: 0; }
         }
       `}</style>
     </div>
