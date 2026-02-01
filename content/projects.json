@@ -99,22 +99,6 @@
     "keyChallenge": "Implemented rolling-origin backtesting to validate forecasts. Achieved 45% lower error than baseline models."
   },
   {
-    "name": "The Everyday Cleaning Company",
-    "url": "https://everydaycleaning.ca",
-    "stack": "Next.js, TypeScript, Tailwind CSS, Resend, Vercel",
-    "bullets": [
-      "Founded and operate a residential cleaning company in Calgary, handling all business operations from client acquisition to service delivery.",
-      "Built a full-stack website with an automated quote system, instant email confirmations via Resend, and SEO optimization.",
-      "Implemented a dynamic pricing engine based on home size, service type, and add-ons with real-time quote generation.",
-      "Manage all marketing, client relations, scheduling, and quality assurance as sole operator."
-    ],
-    "slug": "everyday-cleaning-company",
-    "category": "fullstack",
-    "pitch": "Started my own cleaning company and built the entire tech stack from scratch. Full-stack website with automated quote system, email notifications, and SEO — plus running the actual business.",
-    "keyChallenge": "Wore every hat: founder, developer and marketer. Built the site, configured transactional emails with Resend, handled client bookings, and grew the business from zero.",
-    "featured": true
-  },
-  {
     "name": "VHS Portfolio",
     "url": "https://github.com/zohairomar1/portfolio-vhs",
     "stack": "Next.js, TypeScript, Tailwind CSS, Radix UI",
