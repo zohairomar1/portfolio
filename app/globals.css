@@ -49,11 +49,9 @@
     --ring: 0 0% 95%;
   }
 
-  /* Company Brand Theme (fallback values — overridden at runtime by JS) */
+  /* Company Brand Theme — CSS vars injected at runtime by useSettings */
   [data-theme="company"] {
-    --primary: 356 73% 47%;
-    --accent: 0 100% 70%;
-    --ring: 356 73% 47%;
+    /* Values set dynamically via <style> tag from sessionStorage */
   }
 }
 

@@ -87,25 +87,32 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
     );
 
     // Apply or remove company brand color CSS overrides
-    const el = document.documentElement;
+    // Use a <style> tag to inject the correct brand colors so they
+    // properly override the [data-theme="company"] CSS rule in @layer base
+    const STYLE_ID = "company-theme-overrides";
     if (settings.theme === "company") {
       try {
         const companyData = sessionStorage.getItem("vhs-company");
         if (companyData) {
           const company = JSON.parse(companyData);
           if (company.brandColor && company.brandAccent) {
-            el.style.setProperty("--primary", hexToHsl(company.brandColor));
-            el.style.setProperty("--accent", hexToHsl(company.brandAccent));
-            el.style.setProperty("--ring", hexToHsl(company.brandColor));
+            const primary = hexToHsl(company.brandColor);
+            const accent = hexToHsl(company.brandAccent);
+            let styleEl = document.getElementById(STYLE_ID) as HTMLStyleElement | null;
+            if (!styleEl) {
+              styleEl = document.createElement("style");
+              styleEl.id = STYLE_ID;
+              document.head.appendChild(styleEl);
+            }
+            styleEl.textContent = `[data-theme="company"] { --primary: ${primary}; --accent: ${accent}; --ring: ${primary}; }`;
           }
         }
       } catch {
         // Ignore malformed data
       }
     } else {
-      el.style.removeProperty("--primary");
-      el.style.removeProperty("--accent");
-      el.style.removeProperty("--ring");
+      const styleEl = document.getElementById(STYLE_ID);
+      if (styleEl) styleEl.remove();
     }
   }, [settings, mounted]);
 
