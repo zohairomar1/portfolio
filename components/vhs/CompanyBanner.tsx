@@ -63,7 +63,7 @@ export function CompanyBanner({ company }: CompanyBannerProps) {
             }}
           />
           <span
-            className="relative font-display text-base sm:text-lg tracking-[0.25em] whitespace-nowrap"
+            className="relative font-display text-base sm:text-lg tracking-[0.25em] whitespace-nowrap flex items-center gap-3"
             style={{
               color: brandColor,
               textShadow: glow
@@ -71,45 +71,34 @@ export function CompanyBanner({ company }: CompanyBannerProps) {
                 : `0 0 5px ${brandColor}4d`,
             }}
           >
-            {company.subtitle || "PREPARED FOR"}{" "}
-            <span className="font-bold" style={{ color: brandAccent }}>
-              {company.displayName}
+            {company.logo && (
+              <span className="relative inline-block shrink-0">
+                <Image
+                  src={company.logo}
+                  alt=""
+                  height={28}
+                  width={72}
+                  className="h-7 w-auto object-contain"
+                  style={{
+                    imageRendering: "pixelated",
+                    filter: "contrast(1.1) brightness(0.9)",
+                    opacity: glow ? 0.9 : 0.7,
+                  }}
+                />
+              </span>
+            )}
+            <span>
+              {company.subtitle || "PREPARED FOR"}{" "}
+              <span className="font-bold" style={{ color: brandAccent }}>
+                {company.displayName}
+              </span>
             </span>
           </span>
         </div>
       </div>
 
-      {company.logo ? (
-        /* Pixelated company logo with VHS treatment */
-        <div
-          className="relative mt-2 transition-opacity duration-700"
-          style={{
-            opacity: glow ? 0.9 : 0.75,
-            filter: `drop-shadow(0 0 ${glow ? "12px" : "6px"} ${brandColor}66)`,
-          }}
-        >
-          <Image
-            src={company.logo}
-            alt={company.displayName}
-            height={48}
-            width={120}
-            className="h-12 w-auto object-contain"
-            style={{
-              imageRendering: "pixelated",
-              filter: "contrast(1.1) brightness(0.95)",
-            }}
-          />
-          {/* Scanline overlay */}
-          <div
-            className="absolute inset-0 pointer-events-none opacity-25"
-            style={{
-              background: `repeating-linear-gradient(0deg, transparent, transparent 2px, ${brandColor}4d 2px, ${brandColor}4d 3px)`,
-            }}
-          />
-        </div>
-      ) : (
-        /* Fallback: Stickman with arms as SVG */
-        <svg
+      {/* Stickman with arms as SVG */}
+      <svg
           width="60"
           height="52"
           viewBox="0 0 60 52"
@@ -172,7 +161,6 @@ export function CompanyBanner({ company }: CompanyBannerProps) {
             />
           </g>
         </svg>
-      )}
     </div>
   );
 }
