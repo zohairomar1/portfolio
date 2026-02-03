@@ -1,61 +1,65 @@
 {
-  "custom": false,
-  "targetCompany": null,
-  "roles": [],
-  "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. From Go backends to Power BI dashboards, from leading dev teams to shipping under 24-hour hackathon deadlines — I bring technical depth, fast learning, and a bias toward shipping.",
+  "custom": true,
+  "targetCompany": "BMO Financial Group",
+  "roles": [
+    {
+      "title": "Business Systems Analyst",
+      "topSkills": ["Data Analysis", "Business Requirements", "Agile Delivery", "Process Improvement", "Stakeholder Management"],
+      "pitch": "I like working at the intersection of technical systems and business needs. I've built Power BI dashboards with role-based views, led Agile teams through sprint planning and CI/CD setup, and automated reporting workflows with Power Automate. I'm looking to bring that same mix of analytical thinking and cross-functional collaboration to BMO as a Business Systems Analyst."
+    }
+  ],
+  "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
   "highlights": [
     {
-      "label": "Full-Stack Development",
-      "problem": "UBC students needed a reliable grocery delivery platform with secure access control",
-      "built": "High-performance backend services with auth + responsive React frontend",
-      "tech": "Go, React, Tailwind CSS, Postman",
-      "impact": "40% faster server response, 100% API test pass rate, 50+ active users",
-      "link": "/scenes#ubc-thrifty-grocers"
+      "label": "Data Analysis & KPI Reporting",
+      "problem": "Operations teams had no centralized view of asset integrity KPIs, so prioritizing inspections and catching compliance gaps was mostly guesswork",
+      "built": "Power BI dashboard with DAX measures, role-based views for engineers vs. managers, slicers by department/month/year, and compliance trend summaries for stakeholder reporting",
+      "tech": "Power BI, DAX, Power Query, SQL Server, SharePoint",
+      "impact": "24 months of data modeled, backlog alerts enabled proactive planning, role-based access tailored insights per audience",
+      "link": "/scenes#oil-gas-asset-integrity-dashboard"
     },
     {
-      "label": "Data Analytics & Forecasting",
-      "problem": "Operational teams lacked visibility into time-series production trends and exceptions",
-      "built": "Interactive analytics dashboard with ETS forecasting and rolling-origin backtesting",
+      "label": "Business Requirements & Stakeholder Coordination",
+      "problem": "A financial literacy platform needed someone to own front-end architecture and sort out API contracts between the front-end and back-end teams",
+      "built": "Led requirements gathering through 2-3 Scrum meetings per week, defined API contracts with the back-end team, and built a shared React component library adopted across 5+ core pages",
+      "tech": "React, TypeScript, Tailwind CSS, GitHub Actions",
+      "impact": "Accelerated feature delivery by 1-2 sprints, 30+ successful PR merges, piloted with 100+ students across 2-3 schools",
+      "link": null
+    },
+    {
+      "label": "Process Improvement & Automation",
+      "problem": "Operational teams were manually reviewing time-series data with no automated way to flag anomalies or share forecasts",
+      "built": "Analytics dashboard with ETS forecasting and rolling-origin backtesting, plus a Power Automate workflow that auto-generates and emails summary reports on a schedule",
       "tech": "Python, Streamlit, statsmodels, Plotly, Power Automate",
-      "impact": "45% lower MAE vs baseline, automated email reporting via Power Automate",
+      "impact": "45% lower MAE vs baseline, automated email distribution replaced manual reporting, metrics pipeline with near-zero handling for stability",
       "link": "/scenes#production-analytics-forecasting-dashboard"
     },
     {
-      "label": "Team Leadership & CI/CD",
-      "problem": "A financial literacy platform needed a front-end team and development pipeline from scratch",
-      "built": "Led 4-person team, built shared component library, set up CI/CD with GitHub Actions",
-      "tech": "React, TypeScript, Tailwind CSS, GitHub Actions",
-      "impact": "20% less duplicate code, 30+ successful PR merges, piloted with 100+ students",
+      "label": "Agile Delivery & Team Leadership",
+      "problem": "Co-founded a dev studio and needed to set up structured delivery practices to ship reliable products for university clubs",
+      "built": "Led 4 developers through Agile sprints with Git-based code reviews, shipped login systems, dashboards, and responsive UIs, and wrote onboarding docs for new contributors",
+      "tech": "React, JavaScript, Python, SQL, Git",
+      "impact": "100+ active users served, clean deployment pipeline, documentation enabled faster onboarding for new contributors",
       "link": null
     },
     {
-      "label": "Enterprise Security",
-      "problem": "Web applications serving 1,000+ daily users needed hardened security protocols",
-      "built": "CORS policies, proxy configurations, role-based access control, SQL auth",
+      "label": "Systems Thinking & Enterprise Security",
+      "problem": "Web apps serving 1,000+ daily users needed tighter security without breaking anything for active users",
+      "built": "Set up CORS policies, proxy configs, role-based access control, and SQL auth. Also documented workflows and SOPs for the team",
       "tech": "Python, SQL, JavaScript, HTML/CSS",
-      "impact": "Zero security incidents during tenure, all deadlines met ahead of schedule",
+      "impact": "Zero security incidents during tenure, resolved 3 critical system bottlenecks, all deadlines met ahead of schedule",
       "link": null
-    },
-    {
-      "label": "Rapid Prototyping & Hackathons",
-      "problem": "24-hour hackathon — original idea fell apart 4 hours in, needed a fast pivot",
-      "built": "Mental health support platform with AI chatbot using OpenAI API",
-      "tech": "JavaScript, HTML/CSS, OpenAI API",
-      "impact": "Top 10 out of 653 participants at nwHacks 2024",
-      "link": "/scenes#nwhacks-2024-comfort-corner"
     }
   ],
   "relevantProjects": [
-    "ubc-thrifty-grocers",
-    "production-analytics-forecasting-dashboard",
     "oil-gas-asset-integrity-dashboard",
-    "calgaryhacks-2025-wildbc",
-    "nwhacks-2024-comfort-corner"
+    "production-analytics-forecasting-dashboard",
+    "business-tracking-application",
+    "ubc-thrifty-grocers"
   ],
   "relevantExperience": [
     "Enactus UCalgary - WealthPath",
     "TechNova",
-    "Agrius IT",
-    "UBC Design League"
+    "Agrius IT"
   ]
 }
