@@ -12,20 +12,12 @@ interface MenuItem {
 }
 
 const MENU_ITEMS: MenuItem[] = [
-  { label: "Watch Trailer", href: "/trailer", description: "About Me" },
-  { label: "Scene Selection", href: "/scenes", description: "Projects" },
-  {
-    label: "Behind the Scenes",
-    href: "/behind",
-    description: "Experience & Education",
-  },
-  {
-    label: "Bonus Features",
-    href: "/bonus",
-    description: "Lessons & Bloopers",
-  },
-  { label: "Subscribe / Fan Mail", href: "/subscribe", description: "Contact" },
-  { label: "Settings", href: "/settings", description: "Adjust Display" },
+  { label: "About Me", href: "/trailer" },
+  { label: "Projects", href: "/scenes" },
+  { label: "Experience & Education", href: "/behind" },
+  { label: "Bonus Features", href: "/bonus" },
+  { label: "Contact", href: "/subscribe" },
+  { label: "Settings", href: "/settings" },
 ];
 
 interface DVDMenuProps {
@@ -58,18 +50,35 @@ export function DVDMenu({ className }: DVDMenuProps) {
 
   return (
     <nav
-      className={cn("flex flex-col", className)}
+      className={cn(
+        "flex flex-col border border-primary/20 bg-card/60 backdrop-blur-sm overflow-hidden",
+        className
+      )}
       role="menu"
       aria-label="Main navigation"
       data-menu="dvd-menu"
+      style={{
+        boxShadow:
+          "0 0 15px hsl(var(--primary) / 0.1), inset 0 0 30px hsl(var(--primary) / 0.03)",
+      }}
     >
+      {/* Menu header */}
+      <div className="px-4 py-2 border-b border-primary/15 flex items-center justify-between">
+        <span className="font-mono text-[10px] text-primary/50 tracking-[0.3em] uppercase">
+          Main Menu
+        </span>
+        <span className="font-mono text-[10px] text-muted-foreground/40">
+          ▸ SELECT
+        </span>
+      </div>
+
       {MENU_ITEMS.map((item, index) => (
         <button
           key={item.href}
           role="menuitem"
           tabIndex={selectedIndex === index ? 0 : -1}
           className={cn(
-            "dvd-menu-item group text-left",
+            "dvd-menu-item group",
             selectedIndex === index && "active"
           )}
           onMouseEnter={() => handleMouseEnter(index)}
@@ -77,33 +86,27 @@ export function DVDMenu({ className }: DVDMenuProps) {
           onFocus={() => setSelectedIndex(index)}
         >
           <span
-            className="cursor w-4 text-primary font-bold"
+            className="cursor w-4 text-primary font-bold text-center"
             aria-hidden="true"
           >
             ▸
           </span>
-          <span className="flex-1">
-            <span className="font-display text-lg vhs-text">{item.label}</span>
-            {item.description && (
-              <span className="ml-3 text-sm text-muted-foreground font-body">
-                ({item.description})
-              </span>
-            )}
+          <span className="flex-1 text-center">
+            <span className="font-display text-base sm:text-lg">{item.label}</span>
           </span>
-          <span className="text-xs font-mono text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity">
+          <span className="w-4 text-xs font-mono text-muted-foreground/40 opacity-0 group-hover:opacity-100 transition-opacity text-center">
             {index + 1}
           </span>
         </button>
       ))}
 
-      <div className="mt-6 px-4 text-xs text-muted-foreground font-mono">
-        <p>
-          Use <kbd className="px-1 bg-muted rounded">↑</kbd>{" "}
-          <kbd className="px-1 bg-muted rounded">↓</kbd> to navigate
-        </p>
-        <p>
-          Press <kbd className="px-1 bg-muted rounded">Enter</kbd> or{" "}
-          <kbd className="px-1 bg-muted rounded">1-6</kbd> to select
+      {/* Footer hint */}
+      <div className="px-4 py-2.5 border-t border-primary/15 text-center">
+        <p className="text-[10px] text-muted-foreground/50 font-mono tracking-wider">
+          <kbd className="px-1 py-0.5 bg-muted/50 rounded text-[9px]">↑↓</kbd>{" "}
+          navigate{" · "}
+          <kbd className="px-1 py-0.5 bg-muted/50 rounded text-[9px]">Enter</kbd>{" "}
+          select
         </p>
       </div>
     </nav>
