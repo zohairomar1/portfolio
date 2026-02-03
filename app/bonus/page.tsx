@@ -11,6 +11,7 @@ import {
 import { Lightbulb, BookOpen, Sparkles, Coffee, MapPin } from "lucide-react";
 import { PageNav, getPageNav } from "@/components/menu/PageNav";
 import { ScrollReveal, VHSSectionDivider } from "@/components/vhs/ScrollReveal";
+import { LessonCardSkeleton, BlooperCardSkeleton } from "@/components/vhs/Skeleton";
 
 const LESSONS = [
   {
@@ -112,6 +113,7 @@ export default function BonusPage() {
                   key={lesson.id}
                   delay={index * 80}
                   variant={index % 2 === 0 ? "tape" : "scanline"}
+                  skeleton={<LessonCardSkeleton />}
                 >
                   <AccordionItem
                     value={lesson.id}
@@ -151,6 +153,7 @@ export default function BonusPage() {
                   key={blooper.title}
                   delay={index * 100}
                   variant="flicker"
+                  skeleton={<BlooperCardSkeleton />}
                 >
                   <div className="vhs-card p-4 h-full">
                     <div className="flex items-start gap-3">
