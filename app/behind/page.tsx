@@ -7,6 +7,7 @@ import { ExternalLink, MapPin, Calendar, GraduationCap, Briefcase, Clapperboard,
 import resumeData from "@/content/resume.json";
 import { PageNav, getPageNav } from "@/components/menu/PageNav";
 import { ScrollReveal, VHSSectionDivider } from "@/components/vhs/ScrollReveal";
+import { TimelineCardSkeleton } from "@/components/vhs/Skeleton";
 
 // Director's Notes for each experience - gamified, VHS-themed commentary
 const DIRECTORS_NOTES: Record<string, string> = {
@@ -78,6 +79,7 @@ export default function BehindPage() {
                       key={exp.name}
                       delay={index * 100}
                       variant={variant}
+                      skeleton={<TimelineCardSkeleton />}
                     >
                       <div className="relative">
                         {/* Timeline dot */}
