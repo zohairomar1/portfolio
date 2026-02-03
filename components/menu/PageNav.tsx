@@ -41,7 +41,7 @@ export function PageNav({ nextPage, prevPage }: PageNavProps) {
         {prevPage ? (
           <Link
             href={prevPage.href}
-            className="vhs-card p-4 sm:p-5 flex items-center gap-3 group hover:border-primary/50 transition-all"
+            className="vhs-card p-4 sm:p-5 flex items-center gap-3 group transition-all"
           >
             <span className="text-primary text-lg group-hover:translate-x-[-4px] transition-transform">◂</span>
             <div>
@@ -56,7 +56,7 @@ export function PageNav({ nextPage, prevPage }: PageNavProps) {
         {nextPage ? (
           <Link
             href={nextPage.href}
-            className="vhs-card p-4 sm:p-5 flex items-center justify-end gap-3 group hover:border-primary/50 transition-all text-right"
+            className="vhs-card p-4 sm:p-5 flex items-center justify-end gap-3 group transition-all text-right"
           >
             <div>
               <span className="font-mono text-[10px] text-muted-foreground/60 uppercase tracking-wider block">Next</span>

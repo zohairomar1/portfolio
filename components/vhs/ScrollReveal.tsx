@@ -83,7 +83,7 @@ export function VHSSectionDivider({ label }: { label?: string }) {
     <div className="relative py-8 my-8">
       {/* Tape lines */}
       <div className="absolute inset-0 flex items-center">
-        <div className="w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent" />
       </div>
 
       {/* Tracking distortion effect */}

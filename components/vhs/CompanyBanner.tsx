@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import type { CompanyConfig } from "@/lib/companies";
 
 interface CompanyBannerProps {
@@ -63,7 +62,7 @@ export function CompanyBanner({ company }: CompanyBannerProps) {
             }}
           />
           <span
-            className="relative font-display text-base sm:text-lg tracking-[0.25em] whitespace-nowrap flex items-center gap-3"
+            className="relative font-display text-base sm:text-lg tracking-[0.25em] whitespace-nowrap"
             style={{
               color: brandColor,
               textShadow: glow
@@ -71,27 +70,9 @@ export function CompanyBanner({ company }: CompanyBannerProps) {
                 : `0 0 5px ${brandColor}4d`,
             }}
           >
-            {company.logo && (
-              <span className="relative inline-block shrink-0">
-                <Image
-                  src={company.logo}
-                  alt=""
-                  height={28}
-                  width={72}
-                  className="h-7 w-auto object-contain"
-                  style={{
-                    imageRendering: "pixelated",
-                    filter: "contrast(1.1) brightness(0.9)",
-                    opacity: glow ? 0.9 : 0.7,
-                  }}
-                />
-              </span>
-            )}
-            <span>
-              {company.subtitle || "PREPARED FOR"}{" "}
-              <span className="font-bold" style={{ color: brandAccent }}>
-                {company.displayName}
-              </span>
+            {company.subtitle || "PREPARED FOR"}{" "}
+            <span className="font-bold" style={{ color: brandAccent }}>
+              {company.displayName}
             </span>
           </span>
         </div>

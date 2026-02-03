@@ -59,7 +59,7 @@ export function DVDMenu({ className }: DVDMenuProps) {
       data-menu="dvd-menu"
       style={{
         boxShadow:
-          "0 0 15px hsl(var(--primary) / 0.1), inset 0 0 30px hsl(var(--primary) / 0.03)",
+          "0 0 15px hsl(var(--accent) / 0.1), inset 0 0 30px hsl(var(--primary) / 0.03)",
       }}
     >
       {/* Menu header */}
