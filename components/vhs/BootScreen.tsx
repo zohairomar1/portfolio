@@ -522,10 +522,10 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
 
                     if (isCompany) {
                       return (
-                        <div key={theme} className="relative col-span-2 sm:col-span-1 pt-3">
-                          {/* DIRECTOR'S PICK tape label */}
+                        <div key={theme} className="relative col-span-2 sm:col-span-1">
+                          {/* DIRECTOR'S PICK tape label - overlays the top border */}
                           <span
-                            className="absolute -top-0.5 left-1/2 -translate-x-1/2 px-2 py-0.5 font-mono text-[9px] tracking-wider whitespace-nowrap z-10"
+                            className="absolute -top-2 left-1/2 -translate-x-1/2 px-2 py-0.5 font-mono text-[9px] tracking-wider whitespace-nowrap z-10"
                             style={{
                               background: colors.primary,
                               color: "#000",
@@ -537,7 +537,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
 
                           <button
                             onClick={() => setSelectedTheme(theme)}
-                            className="relative w-full h-full py-3 px-3 border-2 transition-all font-mono text-xs overflow-hidden"
+                            className="relative w-full h-full py-3 px-3 border-2 transition-all font-mono text-xs overflow-visible"
                             style={{
                               borderColor: colors.primary,
                               background: isSelected
