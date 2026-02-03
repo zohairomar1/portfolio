@@ -7,6 +7,7 @@ interface ScrollRevealProps {
   className?: string;
   delay?: number;
   variant?: "glitch" | "scanline" | "tape" | "flicker" | "chromatic";
+  skeleton?: React.ReactNode;
 }
 
 export function ScrollReveal({
@@ -14,6 +15,7 @@ export function ScrollReveal({
   className = "",
   delay = 0,
   variant = "scanline",
+  skeleton,
 }: ScrollRevealProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -44,6 +46,8 @@ export function ScrollReveal({
 
   const getVariantClasses = () => {
     if (!isVisible) {
+      // When skeleton is provided, keep container visible to show it
+      if (skeleton) return "";
       return "opacity-0 translate-y-4";
     }
 
@@ -68,7 +72,7 @@ export function ScrollReveal({
       ref={ref}
       className={`transition-all duration-700 ${getVariantClasses()} ${className}`}
     >
-      {children}
+      {!isVisible && skeleton ? skeleton : children}
     </div>
   );
 }

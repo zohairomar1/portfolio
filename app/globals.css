@@ -207,12 +207,19 @@
 
   /* DVD Menu Item */
   .dvd-menu-item {
-    @apply relative flex items-center gap-4 py-3 px-4 text-lg font-display transition-all duration-200;
-    @apply hover:bg-primary/10 focus:bg-primary/10;
+    @apply relative flex items-center gap-3 py-2.5 px-4 font-display transition-all duration-200;
+    @apply hover:bg-primary/10 focus:bg-primary/10 text-foreground/70;
   }
 
   .dvd-menu-item.active {
-    @apply bg-primary/20 text-primary;
+    @apply bg-primary/15 text-primary;
+    text-shadow:
+      0 0 8px hsl(var(--primary) / 0.4),
+      0 0 16px hsl(var(--primary) / 0.15);
+  }
+
+  .dvd-menu-item:hover {
+    @apply text-foreground;
   }
 
   .dvd-menu-item .cursor {
@@ -559,6 +566,28 @@
 
 .animate-chromatic-reveal {
   animation: chromatic-reveal 0.6s ease-out forwards;
+}
+
+/* VHS Skeleton Shimmer */
+@keyframes vhs-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.vhs-skeleton {
+  background: linear-gradient(
+    90deg,
+    hsl(var(--primary) / 0.06) 0%,
+    hsl(var(--primary) / 0.15) 40%,
+    hsl(var(--primary) / 0.06) 80%
+  );
+  background-size: 200% 100%;
+  animation: vhs-shimmer 1.8s ease-in-out infinite;
+  border-radius: 2px;
 }
 
 /* Print styles for /resume */
