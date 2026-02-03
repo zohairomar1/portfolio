@@ -393,6 +393,22 @@ function main() {
     }
   }
 
+  // Apply experience overrides (pitch, etc.)
+  const experienceOverrideFile = path.join(CONTENT_DIR, "experience.overrides.json");
+  if (fs.existsSync(experienceOverrideFile)) {
+    try {
+      const overrides = JSON.parse(
+        fs.readFileSync(experienceOverrideFile, "utf-8")
+      ) as Record<string, Partial<ExperienceItem>>;
+      resumeData!.experience = resumeData!.experience.map((exp) => ({
+        ...exp,
+        ...(overrides[exp.name] || {}),
+      }));
+    } catch (e) {
+      console.warn("Could not parse experience.overrides.json:", e);
+    }
+  }
+
   // Write output
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(resumeData, null, 2));
   console.log(`Successfully wrote ${OUTPUT_FILE}`);
@@ -414,7 +430,22 @@ function main() {
     category: "fullstack",
   };
 
-  let projectsWithOverrides = [...resumeData!.projects, portfolioProject];
+  // Add Everyday Cleaning Company (not in resume.tex)
+  const cleaningProject: ProjectItem = {
+    name: "The Everyday Cleaning Company",
+    url: "https://everydaycleaning.ca",
+    stack: "Next.js, TypeScript, Tailwind CSS, Resend, Vercel",
+    bullets: [
+      "Founded and operate a residential cleaning company in Calgary, handling all business operations from client acquisition to service delivery.",
+      "Built a full-stack website with an automated quote system, instant email confirmations via Resend, and SEO optimization.",
+      "Implemented a dynamic pricing engine based on home size, service type, and add-ons with real-time quote generation.",
+      "Manage all marketing, client relations, scheduling, and quality assurance as sole operator."
+    ],
+    slug: "everyday-cleaning-company",
+    category: "fullstack",
+  };
+
+  let projectsWithOverrides = [...resumeData!.projects, cleaningProject, portfolioProject];
 
   // Check for manual overrides
   const projectsOverrideFile = path.join(

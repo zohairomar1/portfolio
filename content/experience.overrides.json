@@ -1,0 +1,14 @@
+{
+  "Enactus UCalgary - WealthPath": {
+    "pitch": "Led a 4-person front-end team building a financial literacy platform for young adults. Set up CI/CD, built a shared component library, and helped pilot the product with 100+ students across 2–3 partner schools."
+  },
+  "TechNova": {
+    "pitch": "Co-founded a dev studio that builds full-stack websites for university clubs. Led a team of 4 through Agile sprints, shipping login systems, dashboards, and responsive UIs serving 100+ users."
+  },
+  "Agrius IT": {
+    "pitch": "Internship focused on web application security and backend development. Hardened enterprise apps serving 1,000+ daily users by implementing CORS policies, proxy configs, and role-based access control."
+  },
+  "UBC Design League": {
+    "pitch": "Built the software stack for a competition-ready autonomous robot — object detection, path planning, and sensor integration. Achieved 95% obstacle-avoidance success rate in testing."
+  }
+}
