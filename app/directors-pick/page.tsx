@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { VHSHeader } from "@/components/menu/VHSHeader";
 import { PageNav, getPageNav } from "@/components/menu/PageNav";
 import { ScrollReveal } from "@/components/vhs/ScrollReveal";
@@ -11,7 +12,6 @@ import directorsPickData from "@/content/directors-pick.json";
 import projectsData from "@/content/projects.json";
 import resumeData from "@/content/resume.json";
 
-// Type the JSON data
 interface Highlight {
   label: string;
   problem: string;
@@ -37,9 +37,37 @@ const data = directorsPickData as {
   relevantExperience: string[];
 };
 
+/**
+ * Checks sessionStorage for company data set by /for/[company].
+ * Only shows tailored content when the user arrived via a company link.
+ */
+function useIsCustomMode(): boolean {
+  const [isCustom, setIsCustom] = useState(false);
+
+  useEffect(() => {
+    if (!data.custom || !data.targetCompany) {
+      setIsCustom(false);
+      return;
+    }
+    const stored = sessionStorage.getItem("vhs-company");
+    if (stored) {
+      try {
+        const parsed = JSON.parse(stored);
+        if (parsed && parsed.displayName) {
+          setIsCustom(true);
+        }
+      } catch {
+        // ignore
+      }
+    }
+  }, []);
+
+  return isCustom;
+}
+
 export default function DirectorsPickPage() {
   const { settings } = useSettings();
-  const isCustom = data.custom && data.targetCompany;
+  const isCustom = useIsCustomMode();
 
   const relevantProjects = projectsData.filter((p) =>
     data.relevantProjects.includes(p.slug)
@@ -58,7 +86,7 @@ export default function DirectorsPickPage() {
       <VHSHeader />
       <main className="min-h-screen pt-20 pb-12 px-4">
         <div className="container mx-auto max-w-4xl">
-          {/* NOW SHOWING header — matching FeaturedProject pattern */}
+          {/* NOW SHOWING header */}
           <div className="flex items-center gap-3 mb-3">
             <div className="flex items-center gap-2">
               <span className="inline-block w-2 h-2 rounded-full bg-red-500 animate-pulse" />
@@ -148,7 +176,7 @@ export default function DirectorsPickPage() {
             </div>
           </ScrollReveal>
 
-          {/* Key Qualifications — Problem → Built → Tech → Impact → Link */}
+          {/* Key Qualifications */}
           <section className="mb-12">
             <ScrollReveal variant="scanline" delay={0}>
               <h2 className="font-display text-2xl text-primary vhs-text mb-6 flex items-center gap-2">
@@ -318,7 +346,7 @@ export default function DirectorsPickPage() {
                       <ul className="space-y-1.5">
                         {exp.bullets.slice(0, 3).map((bullet, i) => (
                           <li key={i} className="flex gap-2 text-sm">
-                            <span className="text-primary shrink-0">▸</span>
+                            <span className="text-primary shrink-0">&#9656;</span>
                             <span className="text-muted-foreground">
                               {bullet}
                             </span>
@@ -332,7 +360,7 @@ export default function DirectorsPickPage() {
             </section>
           )}
 
-          {/* Disclaimer footer — only on custom/company-specific pages */}
+          {/* Disclaimer footer - only when viewing in custom/company mode */}
           {isCustom && (
             <div className="mt-8 mb-4 text-center">
               <p className="font-mono text-[10px] text-muted-foreground/40 tracking-wider">

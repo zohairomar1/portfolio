@@ -8,7 +8,6 @@ import { TypeWriter } from "@/components/vhs/TypeWriter";
 import { CompanyBanner } from "@/components/vhs/CompanyBanner";
 import { useSettings } from "@/hooks/useSettings";
 import type { CompanyConfig } from "@/lib/companies";
-import directorsPickData from "@/content/directors-pick.json";
 
 export default function HomePage() {
   const { settings } = useSettings();
@@ -64,11 +63,11 @@ export default function HomePage() {
         <DVDMenu />
       </div>
 
-      {/* Disclaimer for custom/tailored mode */}
-      {directorsPickData.custom && directorsPickData.targetCompany && (
+      {/* Disclaimer for custom/tailored mode - only when user arrived via /for/[company] */}
+      {company && (
         <div className="absolute bottom-14 sm:bottom-16 left-0 right-0 text-center">
           <p className="font-mono text-[10px] text-muted-foreground/40 tracking-wider">
-            Independent portfolio page. Not affiliated with {directorsPickData.targetCompany}.
+            Independent portfolio page. Not affiliated with {company.displayName}.
           </p>
         </div>
       )}
