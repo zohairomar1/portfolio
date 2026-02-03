@@ -327,6 +327,26 @@
   }
 }
 
+@keyframes company-dot-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+@keyframes company-theme-glow {
+  0%, 100% {
+    box-shadow: 0 0 12px rgba(255,255,255,0.1), inset 0 0 12px rgba(255,255,255,0.05);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255,255,255,0.2), inset 0 0 20px rgba(255,255,255,0.08);
+  }
+}
+
 @layer utilities {
   /* Reduced motion */
   @media (prefers-reduced-motion: reduce) {

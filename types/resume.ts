@@ -66,7 +66,7 @@ export const DEFAULT_SETTINGS: Settings = {
   effectsEnabled: true,
   flickerIntensity: "med",
   grainEnabled: true,
-  soundEnabled: false,
+  soundEnabled: true,
   theme: "crt-blue",
   subtitlesEnabled: false,
 };

@@ -523,7 +523,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
                     if (isCompany) {
                       return (
                         <div key={theme} className="relative col-span-2 sm:col-span-1 pt-3">
-                          {/* DIRECTOR'S PICK tape label — outside button so it's not clipped */}
+                          {/* DIRECTOR'S PICK tape label */}
                           <span
                             className="absolute -top-0.5 left-1/2 -translate-x-1/2 px-2 py-0.5 font-mono text-[9px] tracking-wider whitespace-nowrap z-10"
                             style={{
@@ -537,15 +537,15 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
 
                           <button
                             onClick={() => setSelectedTheme(theme)}
-                            className="relative w-full h-full py-3 px-3 border transition-all font-mono text-xs overflow-hidden"
+                            className="relative w-full h-full py-3 px-3 border-2 transition-all font-mono text-xs overflow-hidden"
                             style={{
-                              borderColor: isSelected
-                                ? colors.primary
-                                : `${colors.primary}80`,
+                              borderColor: colors.primary,
                               background: isSelected
                                 ? `color-mix(in srgb, ${colors.primary} 20%, transparent)`
-                                : "transparent",
+                                : `color-mix(in srgb, ${colors.primary} 8%, transparent)`,
                               color: colors.primary,
+                              boxShadow: `0 0 12px ${colors.primary}40, inset 0 0 12px ${colors.primary}15`,
+                              animation: !isSelected ? "company-theme-glow 2s ease-in-out infinite" : "none",
                             }}
                           >
                             {/* Scanline overlay */}
@@ -573,6 +573,14 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
                               />
                             </div>
                             <span className="font-bold">{label}</span>
+                            {!isSelected && (
+                              <span
+                                className="block mt-1 text-[8px] tracking-wider opacity-80"
+                                style={{ color: colors.accent }}
+                              >
+                                CURATED FOR YOU
+                              </span>
+                            )}
                           </button>
                         </div>
                       );
