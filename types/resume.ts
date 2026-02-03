@@ -18,6 +18,7 @@ export interface ExperienceItem {
   stack?: string;
   location: string;
   dates: string;
+  pitch?: string;
   bullets: string[];
 }
 

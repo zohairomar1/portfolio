@@ -228,18 +228,6 @@ export default function ScenesPage() {
                   </div>
                 )}
 
-                {/* Fallback to bullets if no pitch/keyChallenge */}
-                {!selectedProject.pitch && !selectedProject.keyChallenge && (
-                  <ul className="space-y-3">
-                    {selectedProject.bullets.map((bullet, i) => (
-                      <li key={i} className="flex gap-2 text-sm">
-                        <span className="text-primary shrink-0">▸</span>
-                        <span>{bullet}</span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-
                 {/* Links */}
                 {selectedProject.url && (
                   <div className="pt-4 border-t border-border flex gap-3">

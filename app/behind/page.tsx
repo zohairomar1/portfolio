@@ -5,6 +5,7 @@ import { VHSHeader } from "@/components/menu/VHSHeader";
 import { useSettings } from "@/hooks/useSettings";
 import { ExternalLink, MapPin, Calendar, GraduationCap, Briefcase, Clapperboard, ArrowUp } from "lucide-react";
 import resumeData from "@/content/resume.json";
+import type { ExperienceItem } from "@/types/resume";
 import { PageNav, getPageNav } from "@/components/menu/PageNav";
 import { ScrollReveal, VHSSectionDivider } from "@/components/vhs/ScrollReveal";
 import { TimelineCardSkeleton } from "@/components/vhs/Skeleton";
@@ -23,7 +24,8 @@ const DIRECTORS_NOTES: Record<string, string> = {
 
 export default function BehindPage() {
   const { settings } = useSettings();
-  const { experience, education } = resumeData;
+  const experience = resumeData.experience as ExperienceItem[];
+  const { education } = resumeData;
   const [openNotes, setOpenNotes] = useState<Record<string, boolean>>({});
 
   const toggleNote = (name: string) => {
@@ -125,15 +127,12 @@ export default function BehindPage() {
                             </p>
                           )}
 
-                          {/* Bullets */}
-                          <ul className="space-y-2">
-                            {exp.bullets.map((bullet, i) => (
-                              <li key={i} className="flex gap-2 text-sm">
-                                <span className="text-primary shrink-0">▸</span>
-                                <span>{bullet}</span>
-                              </li>
-                            ))}
-                          </ul>
+                          {/* Pitch */}
+                          {exp.pitch && (
+                            <p className="text-sm text-foreground/80 leading-relaxed">
+                              {exp.pitch}
+                            </p>
+                          )}
 
                           {/* Director's Note */}
                           {note && (
