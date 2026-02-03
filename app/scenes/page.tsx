@@ -19,6 +19,7 @@ import type { ProjectItem } from "@/types/resume";
 import { PageNav, getPageNav } from "@/components/menu/PageNav";
 import { ScrollReveal, VHSSectionDivider } from "@/components/vhs/ScrollReveal";
 import { FeaturedProject } from "@/components/vhs/FeaturedProject";
+import { ProjectCardSkeleton } from "@/components/vhs/Skeleton";
 
 type FilterType = "all" | "fullstack" | "data" | "hackathon";
 
@@ -113,9 +114,10 @@ export default function ScenesPage() {
 
               return (
                 <ScrollReveal
-                  key={project.slug || project.name}
+                  key={`${filter}-${project.slug || project.name}`}
                   delay={index * 80}
                   variant={variant}
+                  skeleton={<ProjectCardSkeleton />}
                 >
                   <button
                     className="vhs-card p-4 text-left group cursor-pointer hover:scale-[1.02] transition-transform w-full h-full"
