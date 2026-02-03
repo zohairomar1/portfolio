@@ -86,12 +86,12 @@
   {
     "name": "Production Analytics & Forecasting Dashboard",
     "url": "https://github.com/zohairomar1/volve-production-forecast",
-    "stack": "Python, Streamlit, statsmodels, Plotly, Power Automate",
+    "stack": "Python, Streamlit, statsmodels, Plotly, Azure AD, Microsoft Graph API",
     "bullets": [
-      "Built an interactive analytics dashboard to explore and validate time-series operational data (2008–2016), improving stakeholder visibility into trends and exceptions.",
-      "Developed rolling-origin backtesting to benchmark ETS forecasts vs.\\ a seasonal naive baseline, achieving 45% lower MAE and 46% lower RMSE on the default evaluation view.",
-      "Supported testing and defect-style validation by implementing a metrics pipeline (MAE, RMSE, MAPE, WAPE) with near-zero handling for stability and clearer interpretation.",
-      "Implemented a Power Automate workflow that ingests exported forecast/anomaly CSVs, generates a summary email from templates, and distributes results via Outlook on a scheduled or event-based trigger."
+      "Built an interactive analytics dashboard processing real North Sea production data (7 wells, 2008-2016), featuring ETS forecasting with 95% confidence intervals, rolling z-score anomaly detection, and KPI tracking with MoM/YoY comparisons",
+      "Developed rolling-origin backtesting with MAE, RMSE, MAPE, and WAPE metrics; implemented seasonal naive baseline to benchmark model performance against production variability",
+      "Integrated Azure AD (OAuth2 client credentials) and Microsoft Graph API for SharePoint file I/O with automatic token refresh, dual-mode architecture falling back to local filesystem when credentials are unavailable",
+      "Designed a Power Automate workflow for weekly report distribution via Outlook, with scope-based error handling and admin notification on failure"
     ],
     "slug": "production-analytics-forecasting-dashboard",
     "category": "data",
@@ -110,7 +110,7 @@
     ],
     "slug": "everyday-cleaning-company",
     "category": "fullstack",
-    "pitch": "Started my own cleaning company and built the entire tech stack from scratch. Full-stack website with automated quote system, email notifications, and SEO — plus running the actual business.",
+    "pitch": "Started my own cleaning company and built the entire tech stack from scratch. Full-stack website with automated quote system, email notifications, and SEO, plus running the actual business.",
     "keyChallenge": "Wore every hat: founder, developer, marketer, and cleaner. Built the site, configured transactional emails with Resend, handled client bookings, and grew the business from zero.",
     "featured": true
   },

@@ -88,15 +88,15 @@
       "title": "Front-End Development Lead",
       "stack": "React, TypeScript, Tailwind CSS",
       "location": "Calgary, AB",
-      "dates": "Jul 2025 – Present",
+      "dates": "Jul 2025 - Present",
       "bullets": [
-        "Lead a 4-person front-end team to develop a financial literacy platform for young adults; facilitate 2–3 Scrum meetings per week to align priorities and track deliverables.",
+        "Lead a 4-person front-end team to develop a financial literacy platform for young adults; facilitate 2-3 Scrum meetings per week to align priorities and track deliverables.",
         "Built a reusable React/TypeScript component library adopted across 5+ core pages, reducing duplicate code by approximately 20%.",
-        "Coordinated with the back-end team to define API contracts and resolve integration issues, accelerating feature delivery by 1–2 sprints compared to earlier timelines.",
+        "Coordinated with the back-end team to define API contracts and resolve integration issues, accelerating feature delivery by 1-2 sprints compared to earlier timelines.",
         "Implemented a CI/CD pipeline with GitHub Actions that now runs automated linting and tests on every pull request; supported over 30 successful merges without regression.",
-        "Built and deployed the platform pilot through partnerships with 2–3 schools, impacting 100+ students in the first semester."
+        "Built and deployed the platform pilot through partnerships with 2-3 schools, impacting 100+ students in the first semester."
       ],
-      "pitch": "Led a 4-person front-end team building a financial literacy platform for young adults. Set up CI/CD, built a shared component library, and helped pilot the product with 100+ students across 2–3 partner schools."
+      "pitch": "Led a 4-person front-end team building a financial literacy platform for young adults. Set up CI/CD, built a shared component library, and helped pilot the product with 100+ students across 2-3 partner schools."
     },
     {
       "name": "TechNova",
@@ -104,7 +104,7 @@
       "title": "Co-Founder & VP Technical",
       "stack": "React, JavaScript, HTML/CSS, Python, SQL, Git",
       "location": "Calgary, AB",
-      "dates": "February 2025 – Present",
+      "dates": "February 2025 - Present",
       "bullets": [
         "Built full-stack websites for clubs using React, Python &\\ SQL, focusing on modular design and maintainability.",
         "Led a team of 4 developers through Agile sprints, leveraging Git and code reviews for clean, testable code.",
@@ -132,14 +132,14 @@
       "title": "Software Developer",
       "stack": "Python, C, SolidWorks, Arduino IDE, Git",
       "location": "Vancouver, BC",
-      "dates": "Dec 2022 – Sept 2024",
+      "dates": "Dec 2022 - Sept 2024",
       "bullets": [
         "Directed software design and system integration for a competition-ready autonomous robot with object detection, applying advanced Programming Language Theory for seamless integration.",
         "Programmed in Arduino IDE using C to develop algorithms for object detection, path planning, and robot control, achieving a 95% success rate in tests.",
         "Mastered SolidWorks for advanced 3D modeling and prototyping, enhancing design visualization and prototype development for an autonomous robot project.",
         "Integrated and programmed servo motors and ultrasonic sensors for obstacle detection and avoidance, increasing real-time perception efficiency by 25%."
       ],
-      "pitch": "Built the software stack for a competition-ready autonomous robot — object detection, path planning, and sensor integration. Achieved 95% obstacle-avoidance success rate in testing."
+      "pitch": "Built the software stack for a competition-ready autonomous robot: object detection, path planning, and sensor integration. Achieved 95% obstacle-avoidance success rate in testing."
     }
   ],
   "projects": [
@@ -218,12 +218,12 @@
     {
       "name": "Production Analytics & Forecasting Dashboard",
       "url": "https://github.com/zohairomar1/volve-production-forecast",
-      "stack": "Python, Streamlit, statsmodels, Plotly, Power Automate",
+      "stack": "Python, Streamlit, statsmodels, Plotly, Azure AD, Microsoft Graph API",
       "bullets": [
-        "Built an interactive analytics dashboard to explore and validate time-series operational data (2008–2016), improving stakeholder visibility into trends and exceptions.",
-        "Developed rolling-origin backtesting to benchmark ETS forecasts vs.\\ a seasonal naive baseline, achieving 45% lower MAE and 46% lower RMSE on the default evaluation view.",
-        "Supported testing and defect-style validation by implementing a metrics pipeline (MAE, RMSE, MAPE, WAPE) with near-zero handling for stability and clearer interpretation.",
-        "Implemented a Power Automate workflow that ingests exported forecast/anomaly CSVs, generates a summary email from templates, and distributes results via Outlook on a scheduled or event-based trigger."
+        "Built an interactive analytics dashboard processing real North Sea production data (7 wells, 2008-2016), featuring ETS forecasting with 95% confidence intervals, rolling z-score anomaly detection, and KPI tracking with MoM/YoY comparisons",
+        "Developed rolling-origin backtesting with MAE, RMSE, MAPE, and WAPE metrics; implemented seasonal naive baseline to benchmark model performance against production variability",
+        "Integrated Azure AD (OAuth2 client credentials) and Microsoft Graph API for SharePoint file I/O with automatic token refresh, dual-mode architecture falling back to local filesystem when credentials are unavailable",
+        "Designed a Power Automate workflow for weekly report distribution via Outlook, with scope-based error handling and admin notification on failure"
       ],
       "slug": "production-analytics-forecasting-dashboard",
       "category": "data"

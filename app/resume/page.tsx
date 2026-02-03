@@ -39,7 +39,6 @@ export default function ResumePage() {
             </h1>
             <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm text-muted-foreground print:text-gray-600">
               <a href={`mailto:${header.email}`}>{header.email}</a>
-              <span>{header.phone}</span>
               <a
                 href={`https://${header.linkedin}`}
                 target="_blank"

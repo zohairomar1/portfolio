@@ -30,7 +30,7 @@ function cleanLatex(text: string): string {
     .replace(/''/g, '"') // Replace '' with "
     .replace(/`/g, "'") // Replace ` with '
     .replace(/'/g, "'") // Replace ' with '
-    .replace(/--/g, "–") // Replace -- with en-dash
+    .replace(/--/g, "-") // Replace -- with hyphen
     .replace(/\s+/g, " ") // Normalize whitespace
     .trim();
 }

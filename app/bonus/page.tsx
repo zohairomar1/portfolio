@@ -18,7 +18,7 @@ const LESSONS = [
     id: "lesson-1",
     title: "The Art of Learning on the Job",
     icon: BookOpen,
-    content: `My first week at Agrius IT, I was assigned to debug a CORS issue blocking 1,000+ daily users. I'd never configured enterprise security protocols before. I spent day one reading Mozilla docs and tracing network requests in the browser. By week two, I was writing the proxy configurations myself. The lesson: you don't need to know everything going in — you need to know how to learn fast and ask the right questions.`,
+    content: `My first week at Agrius IT, I was assigned to debug a CORS issue blocking 1,000+ daily users. I'd never configured enterprise security protocols before. I spent day one reading Mozilla docs and tracing network requests in the browser. By week two, I was writing the proxy configurations myself. The lesson: you don't need to know everything going in, you just need to know how to learn fast and ask the right questions.`,
   },
   {
     id: "lesson-2",
@@ -30,19 +30,19 @@ const LESSONS = [
     id: "lesson-3",
     title: "Data Without Context Is Just Numbers",
     icon: Sparkles,
-    content: `When I built the Oil & Gas Asset Integrity Dashboard, I initially showed every KPI on one screen — corrosion rates, SRB levels, overdue inspections, the works. The first feedback from a test user was "I don't know where to look." That's when I implemented role-based views: engineers see the technical metrics, managers see compliance summaries. Same data, different stories. That reframe changed how I think about building for users.`,
+    content: `When I built the Oil & Gas Asset Integrity Dashboard, I initially showed every KPI on one screen: corrosion rates, SRB levels, overdue inspections, the works. The first feedback from a test user was "I don't know where to look." That's when I implemented role-based views: engineers see the technical metrics, managers see compliance summaries. Same data, different stories. That reframe changed how I think about building for users.`,
   },
   {
     id: "lesson-4",
     title: "24 Hours to Ship or Sink",
     icon: Lightbulb,
-    content: `At nwHacks 2024, our original idea fell apart 4 hours in when we realized the API we needed didn't exist. We pivoted to Comfort Corner — a mental health support tool. We integrated OpenAI's API for a chatbot, designed the UI, and deployed. We placed top 10 out of 653 participants. The pivot taught me that the best hackathon projects aren't the most ambitious — they're the ones that ship something real under pressure.`,
+    content: `At nwHacks 2024, our original idea fell apart 4 hours in when we realized the API we needed didn't exist. We pivoted to Comfort Corner, a mental health support tool. We integrated OpenAI's API for a chatbot, designed the UI, and deployed. We placed top 10 out of 653 participants. The pivot taught me that the best hackathon projects aren't the most ambitious. They're the ones that ship something real under pressure.`,
   },
   {
     id: "lesson-5",
     title: "Moving 900km for a Fresh Start",
     icon: MapPin,
-    content: `Transferring from UBC to UCalgary in Fall 2024 was the hardest decision I'd made. I was leaving a city I loved, friends I'd built two years of memories with, and a campus where I felt comfortable. But I wanted to challenge myself — new environment, new opportunities, closer to the tech community I wanted to grow in. Within months, I co-founded TechNova and joined Enactus. Sometimes the uncomfortable choice is the right one.`,
+    content: `Transferring from UBC to UCalgary in Fall 2024 was the hardest decision I'd made. I was leaving a city I loved, friends I'd built two years of memories with, and a campus where I felt comfortable. But I wanted to challenge myself. New environment, new opportunities, closer to the tech community I wanted to grow in. Within months, I co-founded TechNova and joined Enactus. Sometimes the uncomfortable choice is the right one.`,
   },
 ];
 
@@ -94,7 +94,7 @@ export default function BonusPage() {
             )}
             <p className="text-muted-foreground mt-4 max-w-2xl">
               Every project comes with outtakes. Here are real lessons and
-              real mistakes from my journey — because growth happens when
+              real mistakes from my journey, because growth happens when
               things don&apos;t go according to plan.
             </p>
           </div>

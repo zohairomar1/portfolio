@@ -28,7 +28,7 @@
     "keyChallenge": "Implemented rolling-origin backtesting to validate forecasts. Achieved 45% lower error than baseline models."
   },
   "everyday-cleaning-company": {
-    "pitch": "Started my own cleaning company and built the entire tech stack from scratch. Full-stack website with automated quote system, email notifications, and SEO — plus running the actual business.",
+    "pitch": "Started my own cleaning company and built the entire tech stack from scratch. Full-stack website with automated quote system, email notifications, and SEO, plus running the actual business.",
     "keyChallenge": "Wore every hat: founder, developer, marketer, and cleaner. Built the site, configured transactional emails with Resend, handled client bookings, and grew the business from zero.",
     "featured": true
   },

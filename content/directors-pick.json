@@ -29,9 +29,9 @@
     {
       "label": "Process Improvement & Automation",
       "problem": "Operational teams were manually reviewing time-series data with no automated way to flag anomalies or share forecasts",
-      "built": "Analytics dashboard with ETS forecasting and rolling-origin backtesting, plus a Power Automate workflow that auto-generates and emails summary reports on a schedule",
-      "tech": "Python, Streamlit, statsmodels, Plotly, Power Automate",
-      "impact": "45% lower MAE vs baseline, automated email distribution replaced manual reporting, metrics pipeline with near-zero handling for stability",
+      "built": "Analytics dashboard processing real North Sea data (7 wells) with ETS forecasting, 95% confidence intervals, and rolling z-score anomaly detection. Integrated Azure AD and Microsoft Graph API for SharePoint file I/O, plus a Power Automate workflow for weekly report distribution",
+      "tech": "Python, Streamlit, statsmodels, Plotly, Azure AD, Microsoft Graph API, Power Automate",
+      "impact": "45% lower MAE vs baseline, automated weekly email reporting replaced manual process, dual-mode architecture (cloud/local) for flexible deployment",
       "link": "/scenes#production-analytics-forecasting-dashboard"
     },
     {

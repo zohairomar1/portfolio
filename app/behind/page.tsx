@@ -13,11 +13,11 @@ import { TimelineCardSkeleton } from "@/components/vhs/Skeleton";
 // Director's Notes for each experience - gamified, VHS-themed commentary
 const DIRECTORS_NOTES: Record<string, string> = {
   "Enactus UCalgary - WealthPath":
-    "DIRECTOR'S CUT: This role unlocked the \"Team Lead\" achievement. Managing 4 devs taught me that shipping a feature is 30% code, 70% communication. The CI/CD pipeline was my proudest build — watching 30+ PRs merge clean felt like a speedrun with zero deaths.",
+    "DIRECTOR'S CUT: This role unlocked the \"Team Lead\" achievement. Managing 4 devs taught me that shipping a feature is 30% code, 70% communication. The CI/CD pipeline was my proudest build. Watching 30+ PRs merge clean felt like a speedrun with zero deaths.",
   "TechNova":
     "BEHIND THE SCENES: Co-founding TechNova was like starting a new game with no tutorial. We went from zero to serving real clubs in weeks. The secret weapon? Agile sprints kept us from feature-creeping into oblivion. Every code review was a co-op mission.",
   "Agrius IT":
-    "DELETED SCENE: My first day, I stared at CORS errors for hours thinking the API was broken. Turns out, it was working exactly as designed — I just didn't understand enterprise security yet. By week 3, I was the one configuring proxy settings. Level up.",
+    "DELETED SCENE: My first day, I stared at CORS errors for hours thinking the API was broken. Turns out, it was working exactly as designed. I just didn't understand enterprise security yet. By week 3, I was the one configuring proxy settings. Level up.",
   "UBC Design League":
     "EASTER EGG: Programming a robot to navigate obstacles sounds futuristic until you're debugging ultrasonic sensors at 2 AM wondering why it keeps turning left. The 95% success rate hides a lot of duct tape and creative problem-solving. Worth every late night.",
 };
