@@ -8,6 +8,7 @@ import { TypeWriter } from "@/components/vhs/TypeWriter";
 import { CompanyBanner } from "@/components/vhs/CompanyBanner";
 import { useSettings } from "@/hooks/useSettings";
 import type { CompanyConfig } from "@/lib/companies";
+import directorsPickData from "@/content/directors-pick.json";
 
 export default function HomePage() {
   const { settings } = useSettings();
@@ -62,6 +63,15 @@ export default function HomePage() {
       <div className="w-full max-w-md animate-slideUp">
         <DVDMenu />
       </div>
+
+      {/* Disclaimer for custom/tailored mode */}
+      {directorsPickData.custom && directorsPickData.targetCompany && (
+        <div className="absolute bottom-14 sm:bottom-16 left-0 right-0 text-center">
+          <p className="font-mono text-[10px] text-muted-foreground/40 tracking-wider">
+            Independent portfolio page. Not affiliated with {directorsPickData.targetCompany}.
+          </p>
+        </div>
+      )}
 
       {/* Bottom tape info */}
       <div className="absolute bottom-4 left-4 right-4 sm:bottom-8 sm:left-8 sm:right-8 flex justify-between items-end text-xs sm:text-base font-mono text-muted-foreground/60">
