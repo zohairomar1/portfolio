@@ -10,6 +10,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   imperial: { displayName: "IMPERIAL OIL", brandColor: "#0072CE", brandAccent: "#5AB0F2" },
   wealthsimple: { displayName: "WEALTHSIMPLE", brandColor: "#333333", brandAccent: "#888888" },
   deloitte: { displayName: "DELOITTE", brandColor: "#86BC25", brandAccent: "#B8E06A" },
+  bmo: { displayName: "BMO", brandColor: "#0079C1", brandAccent: "#4DA8E0" },
 };
 
 export function getCompanyConfig(slug: string): CompanyConfig | null {
