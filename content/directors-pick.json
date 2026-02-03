@@ -1,0 +1,61 @@
+{
+  "custom": false,
+  "targetCompany": null,
+  "roles": [],
+  "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. From Go backends to Power BI dashboards, from leading dev teams to shipping under 24-hour hackathon deadlines — I bring technical depth, fast learning, and a bias toward shipping.",
+  "highlights": [
+    {
+      "label": "Full-Stack Development",
+      "problem": "UBC students needed a reliable grocery delivery platform with secure access control",
+      "built": "High-performance backend services with auth + responsive React frontend",
+      "tech": "Go, React, Tailwind CSS, Postman",
+      "impact": "40% faster server response, 100% API test pass rate, 50+ active users",
+      "link": "/scenes#ubc-thrifty-grocers"
+    },
+    {
+      "label": "Data Analytics & Forecasting",
+      "problem": "Operational teams lacked visibility into time-series production trends and exceptions",
+      "built": "Interactive analytics dashboard with ETS forecasting and rolling-origin backtesting",
+      "tech": "Python, Streamlit, statsmodels, Plotly, Power Automate",
+      "impact": "45% lower MAE vs baseline, automated email reporting via Power Automate",
+      "link": "/scenes#production-analytics-forecasting-dashboard"
+    },
+    {
+      "label": "Team Leadership & CI/CD",
+      "problem": "A financial literacy platform needed a front-end team and development pipeline from scratch",
+      "built": "Led 4-person team, built shared component library, set up CI/CD with GitHub Actions",
+      "tech": "React, TypeScript, Tailwind CSS, GitHub Actions",
+      "impact": "20% less duplicate code, 30+ successful PR merges, piloted with 100+ students",
+      "link": null
+    },
+    {
+      "label": "Enterprise Security",
+      "problem": "Web applications serving 1,000+ daily users needed hardened security protocols",
+      "built": "CORS policies, proxy configurations, role-based access control, SQL auth",
+      "tech": "Python, SQL, JavaScript, HTML/CSS",
+      "impact": "Zero security incidents during tenure, all deadlines met ahead of schedule",
+      "link": null
+    },
+    {
+      "label": "Rapid Prototyping & Hackathons",
+      "problem": "24-hour hackathon — original idea fell apart 4 hours in, needed a fast pivot",
+      "built": "Mental health support platform with AI chatbot using OpenAI API",
+      "tech": "JavaScript, HTML/CSS, OpenAI API",
+      "impact": "Top 10 out of 653 participants at nwHacks 2024",
+      "link": "/scenes#nwhacks-2024-comfort-corner"
+    }
+  ],
+  "relevantProjects": [
+    "ubc-thrifty-grocers",
+    "production-analytics-forecasting-dashboard",
+    "oil-gas-asset-integrity-dashboard",
+    "calgaryhacks-2025-wildbc",
+    "nwhacks-2024-comfort-corner"
+  ],
+  "relevantExperience": [
+    "Enactus UCalgary - WealthPath",
+    "TechNova",
+    "Agrius IT",
+    "UBC Design League"
+  ]
+}

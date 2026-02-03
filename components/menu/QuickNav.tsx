@@ -12,6 +12,7 @@ interface QuickNavProps {
 
 const NAV_ITEMS = [
   { label: "Main Menu", href: "/" },
+  { label: "★ Director's Pick (Why Me)", href: "/directors-pick" },
   { label: "Trailer", href: "/trailer" },
   { label: "Scenes", href: "/scenes" },
   { label: "Behind the Scenes", href: "/behind" },
@@ -41,6 +42,16 @@ export function QuickNav({ className }: QuickNavProps) {
     },
     [router, playSound, close]
   );
+
+  // Allow external open via custom event (for hamburger menu button)
+  useEffect(() => {
+    const handleOpen = () => {
+      setIsOpen(true);
+      playSound("navigate");
+    };
+    window.addEventListener("open-quicknav", handleOpen);
+    return () => window.removeEventListener("open-quicknav", handleOpen);
+  }, [playSound]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -101,7 +112,7 @@ export function QuickNav({ className }: QuickNavProps) {
       aria-label="Quick navigation"
     >
       <div
-        className="relative bg-card border border-border rounded-lg p-6 min-w-[300px] max-w-md"
+        className="relative bg-card border border-border rounded-lg p-4 sm:p-6 min-w-[260px] sm:min-w-[300px] max-w-md mx-4"
         onClick={(e) => e.stopPropagation()}
       >
         <button

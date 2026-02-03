@@ -16,6 +16,7 @@ interface PageNavProps {
 
 // Define the page order for navigation
 export const PAGE_ORDER = [
+  { href: "/directors-pick", label: "Director's Pick", description: "Why Me" },
   { href: "/trailer", label: "About Me", description: "About Me" },
   { href: "/scenes", label: "Projects", description: "Projects" },
   { href: "/behind", label: "Experience & Education", description: "Experience" },

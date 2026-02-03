@@ -17,8 +17,8 @@ export default function ResumePage() {
       <VHSHeader />
 
       {/* Print controls - hidden on print */}
-      <div className="no-print fixed bottom-4 right-4 z-50 flex gap-2">
-        <Button variant="vhs" onClick={handlePrint}>
+      <div className="no-print fixed bottom-4 right-4 z-50 flex gap-2 max-sm:bottom-2 max-sm:right-2 max-sm:scale-90 max-sm:origin-bottom-right">
+        <Button variant="vhs" onClick={handlePrint} className="hidden sm:flex">
           <Printer className="w-4 h-4 mr-2" />
           Print
         </Button>

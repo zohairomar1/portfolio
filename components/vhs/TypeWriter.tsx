@@ -12,7 +12,7 @@ interface TypeWriterProps {
 
 export function TypeWriter({
   text,
-  speed = 100,
+  speed = 70,
   delay = 0,
   className = "",
   onComplete,
@@ -30,7 +30,7 @@ export function TypeWriter({
         if (charIndex < text.length) {
           setDisplayText(text.slice(0, charIndex + 1));
           charIndex++;
-          timeout = setTimeout(typeNext, speed + Math.random() * 50);
+          timeout = setTimeout(typeNext, speed + Math.random() * 30);
         } else {
           setIsComplete(true);
           onComplete?.();

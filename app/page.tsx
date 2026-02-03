@@ -27,7 +27,7 @@ export default function HomePage() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center p-4 relative">
       {/* VHS tape label effect at top */}
-      <div className="absolute top-6 left-6 right-6 sm:top-8 sm:left-8 sm:right-8 flex justify-between items-start">
+      <div className="absolute top-4 left-4 right-4 sm:top-8 sm:left-8 sm:right-8 flex justify-between items-start">
         <RecordingIndicator />
         <TimeIndicator mode="countdown" />
       </div>
@@ -38,8 +38,8 @@ export default function HomePage() {
         {company && <CompanyBanner company={company} />}
 
         {/* Title */}
-        <h1 className="font-display text-5xl sm:text-6xl md:text-7xl text-primary vhs-text mb-4">
-          <TypeWriter text="ZOHAIR OMAR" speed={120} delay={300} />
+        <h1 className="font-display text-4xl sm:text-5xl md:text-7xl text-primary vhs-text mb-4">
+          <TypeWriter text="ZOHAIR OMAR" speed={80} delay={200} />
         </h1>
 
         {/* Tagline */}
@@ -64,7 +64,7 @@ export default function HomePage() {
       </div>
 
       {/* Bottom tape info */}
-      <div className="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 flex justify-between items-end text-sm sm:text-base font-mono text-muted-foreground/60">
+      <div className="absolute bottom-4 left-4 right-4 sm:bottom-8 sm:left-8 sm:right-8 flex justify-between items-end text-xs sm:text-base font-mono text-muted-foreground/60">
         <div className="space-y-1">
           <p className="tracking-wider">PORTFOLIO</p>
           <p className="text-primary/50 font-bold">VHS-001</p>

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { VT323, Inter, JetBrains_Mono } from "next/font/google";
 import { SettingsProvider } from "@/hooks/useSettings";
 import { CRTWrapper } from "@/components/vhs/CRTWrapper";
@@ -23,6 +23,12 @@ const monoFont = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
 
 export const metadata: Metadata = {
   title: "Zohair Omar | Full-Stack Developer & Data/BI",

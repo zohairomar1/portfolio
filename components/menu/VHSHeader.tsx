@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { RecordingIndicator } from "@/components/vhs/RecordingIndicator";
 import { TimeIndicator } from "@/components/vhs/TimeIndicator";
 import { useSettings } from "@/hooks/useSettings";
-import { Settings, Home } from "lucide-react";
+import { Settings, Home, Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface VHSHeaderProps {
@@ -50,8 +50,8 @@ export function VHSHeader({ className }: VHSHeaderProps) {
           <RecordingIndicator />
         </div>
 
-        {/* Right: Time indicator + Settings */}
-        <div className="flex items-center gap-4">
+        {/* Right: Time indicator + Settings + Mobile menu */}
+        <div className="flex items-center gap-2 sm:gap-4">
           <TimeIndicator />
           <Link
             href="/settings"
@@ -65,12 +65,21 @@ export function VHSHeader({ className }: VHSHeaderProps) {
           >
             <Settings className="w-4 h-4" />
           </Link>
+          {!isHomePage && (
+            <button
+              className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors sm:hidden"
+              onClick={() => window.dispatchEvent(new Event("open-quicknav"))}
+              aria-label="Open navigation menu"
+            >
+              <Menu className="w-4 h-4" />
+            </button>
+          )}
         </div>
       </div>
 
-      {/* Subtitle hint */}
+      {/* Subtitle hint - hidden on mobile where Esc key isn't available */}
       {settings.subtitlesEnabled && pathname !== "/" && (
-        <div className="bg-black/50 text-center py-1 text-sm text-muted-foreground">
+        <div className="hidden md:block bg-black/50 text-center py-1 text-sm text-muted-foreground">
           Press <kbd className="px-1 bg-muted rounded text-xs">Esc</kbd> for
           quick navigation
         </div>

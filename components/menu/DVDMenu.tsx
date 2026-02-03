@@ -9,9 +9,11 @@ interface MenuItem {
   label: string;
   href: string;
   description?: string;
+  isDirectorsPick?: boolean;
 }
 
 const MENU_ITEMS: MenuItem[] = [
+  { label: "Director's Pick (Why Me)", href: "/directors-pick", isDirectorsPick: true },
   { label: "About Me", href: "/trailer" },
   { label: "Projects", href: "/scenes" },
   { label: "Experience & Education", href: "/behind" },
@@ -92,7 +94,12 @@ export function DVDMenu({ className }: DVDMenuProps) {
             ▸
           </span>
           <span className="flex-1 text-center">
-            <span className="font-display text-base sm:text-lg">{item.label}</span>
+            <span className="font-display text-base sm:text-lg">
+              {item.isDirectorsPick && (
+                <span className="text-[10px] font-mono tracking-wider mr-1.5 align-middle" style={{ color: "hsl(var(--accent))" }}>★</span>
+              )}
+              {item.label}
+            </span>
           </span>
           <span className="w-4 text-xs font-mono text-muted-foreground/40 opacity-0 group-hover:opacity-100 transition-opacity text-center">
             {index + 1}

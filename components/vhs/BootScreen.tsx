@@ -67,13 +67,13 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
     const timers: NodeJS.Timeout[] = [];
 
     // Power on (CRT warm up)
-    timers.push(setTimeout(() => setPhase("static"), 600));
+    timers.push(setTimeout(() => setPhase("static"), 400));
 
     // Static phase
-    timers.push(setTimeout(() => setPhase("tracking"), 1400));
+    timers.push(setTimeout(() => setPhase("tracking"), 900));
 
-    // Tracking phase - longer for cool effect
-    timers.push(setTimeout(() => setPhase("loading"), 3000));
+    // Tracking phase
+    timers.push(setTimeout(() => setPhase("loading"), 1700));
 
     // Show config after loading completes (handled by loading progress)
 
@@ -98,7 +98,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
 
     const interval = setInterval(() => {
       setLoadingProgress((prev) => {
-        const newProgress = prev + (Math.random() * 2 + 0.5);
+        const newProgress = prev + (Math.random() * 4 + 1);
 
         // Update message based on progress
         const messageIndex = Math.min(
@@ -116,7 +116,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
         }
         return newProgress;
       });
-    }, 60);
+    }, 40);
 
     return () => clearInterval(interval);
   }, [phase]);
@@ -211,7 +211,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
             style={{
               width: "100%",
               height: "2px",
-              animation: "crt-on 0.6s ease-out forwards",
+              animation: "crt-on 0.4s ease-out forwards",
             }}
           />
         </div>
@@ -279,7 +279,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
               style={{
                 top: `${((trackingOffset * 1.5 + i * 14) % 140) - 20}%`,
                 background: `linear-gradient(to bottom, transparent, var(--boot-primary)15, var(--boot-primary)30, var(--boot-primary)15, transparent)`,
-                transform: `translateX(${Math.sin((trackingOffset + i) * 0.12) * 30}px) skewX(${Math.sin((trackingOffset + i) * 0.08) * 3}deg)`,
+                transform: `translateX(${Math.sin((trackingOffset + i) * 0.12) * 15}px) skewX(${Math.sin((trackingOffset + i) * 0.08) * 3}deg)`,
                 opacity: 0.6,
               }}
             />
@@ -290,7 +290,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
             <div className="text-center relative">
               {/* Main title */}
               <h1
-                className="font-display text-5xl sm:text-7xl mb-6 transition-all duration-200"
+                className="font-display text-3xl sm:text-5xl lg:text-7xl mb-6 transition-all duration-200"
                 style={{
                   color: "var(--boot-primary)",
                   textShadow: `0 0 20px var(--boot-primary), 0 0 40px var(--boot-primary)`,
@@ -303,7 +303,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
 
               {/* Sci-fi loading box */}
               <div
-                className="border px-8 py-4 relative"
+                className="border px-4 sm:px-8 py-4 relative"
                 style={{ borderColor: `var(--boot-primary)40` }}
               >
                 {/* Corner decorations */}
@@ -348,13 +348,13 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
               </div>
 
               {/* Hexagon decorations */}
-              <div className="absolute -left-16 top-1/2 -translate-y-1/2 opacity-30">
+              <div className="absolute -left-16 top-1/2 -translate-y-1/2 opacity-30 hidden sm:block">
                 <div
                   className="w-8 h-8 rotate-45 border-2"
                   style={{ borderColor: "var(--boot-primary)", animation: "spin 4s linear infinite" }}
                 />
               </div>
-              <div className="absolute -right-16 top-1/2 -translate-y-1/2 opacity-30">
+              <div className="absolute -right-16 top-1/2 -translate-y-1/2 opacity-30 hidden sm:block">
                 <div
                   className="w-8 h-8 rotate-45 border-2"
                   style={{ borderColor: "var(--boot-primary)", animation: "spin 4s linear infinite reverse" }}
@@ -409,7 +409,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
 
       {/* Main content area - Loading & Config */}
       {(phase === "loading" || phase === "ready") && (
-        <div className="relative w-full max-w-2xl px-8">
+        <div className="relative w-full max-w-2xl px-4 sm:px-8">
           {/* VHS Label */}
           <div
             className={`text-center mb-8 transition-all duration-200 ${
@@ -420,7 +420,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
             }}
           >
             <h1
-              className="font-display text-5xl sm:text-7xl mb-3 transition-colors duration-300"
+              className="font-display text-3xl sm:text-5xl lg:text-7xl mb-3 transition-colors duration-300"
               style={{
                 color: "var(--boot-primary)",
                 textShadow: `0 0 10px var(--boot-primary), 0 0 20px var(--boot-primary), 0 0 40px var(--boot-accent)`,
