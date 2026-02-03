@@ -95,7 +95,8 @@
         "Coordinated with the back-end team to define API contracts and resolve integration issues, accelerating feature delivery by 1–2 sprints compared to earlier timelines.",
         "Implemented a CI/CD pipeline with GitHub Actions that now runs automated linting and tests on every pull request; supported over 30 successful merges without regression.",
         "Built and deployed the platform pilot through partnerships with 2–3 schools, impacting 100+ students in the first semester."
-      ]
+      ],
+      "pitch": "Led a 4-person front-end team building a financial literacy platform for young adults. Set up CI/CD, built a shared component library, and helped pilot the product with 100+ students across 2–3 partner schools."
     },
     {
       "name": "TechNova",
@@ -109,7 +110,8 @@
         "Led a team of 4 developers through Agile sprints, leveraging Git and code reviews for clean, testable code.",
         "Implemented user login, responsive UIs, and dashboards to improve functionality &\\ user experience for 100+ users.",
         "Created documentation and onboarding guides to support faster ramp-up and long-term technical system upkeep."
-      ]
+      ],
+      "pitch": "Co-founded a dev studio that builds full-stack websites for university clubs. Led a team of 4 through Agile sprints, shipping login systems, dashboards, and responsive UIs serving 100+ users."
     },
     {
       "name": "Agrius IT",
@@ -122,7 +124,8 @@
         "Documented workflows and contributed to internal SOPs for issue resolution and system operations using Word.",
         "Facilitated cross-functional collaboration to troubleshoot and deliver feature updates, resolving three critical system bottlenecks and meeting all deadlines ahead of schedule.",
         "Developed and debugged secure backend solutions involving user authentication and role-based access control using SQL, improving database query performance and security."
-      ]
+      ],
+      "pitch": "Internship focused on web application security and backend development. Hardened enterprise apps serving 1,000+ daily users by implementing CORS policies, proxy configs, and role-based access control."
     },
     {
       "name": "UBC Design League",
@@ -135,7 +138,8 @@
         "Programmed in Arduino IDE using C to develop algorithms for object detection, path planning, and robot control, achieving a 95% success rate in tests.",
         "Mastered SolidWorks for advanced 3D modeling and prototyping, enhancing design visualization and prototype development for an autonomous robot project.",
         "Integrated and programmed servo motors and ultrasonic sensors for obstacle detection and avoidance, increasing real-time perception efficiency by 25%."
-      ]
+      ],
+      "pitch": "Built the software stack for a competition-ready autonomous robot — object detection, path planning, and sensor integration. Achieved 95% obstacle-avoidance success rate in testing."
     }
   ],
   "projects": [

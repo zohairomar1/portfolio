@@ -32,7 +32,7 @@
     {
       "degree": "Bachelor of Science, Computer Science & Mathematics (Minor in Economics)",
       "school": "University of Calgary, Alberta",
-      "dates": "Expected December 2026",
+      "dates": "Expected April 2027",
       "keyCourses": [
         "Object-Oriented Programming",
         "Data Structures & Algorithms",
@@ -54,6 +54,7 @@
       "stack": "React, TypeScript, Tailwind CSS",
       "location": "Calgary, AB",
       "dates": "Jul 2025 – Present",
+      "pitch": "Led a 4-person front-end team building a financial literacy platform for young adults. Set up CI/CD, built a shared component library, and helped pilot the product with 100+ students across 2–3 partner schools.",
       "bullets": [
         "Lead a 4-person front-end team to develop a financial literacy platform for young adults; facilitate 2–3 Scrum meetings per week to align priorities and track deliverables.",
         "Built a reusable React/TypeScript component library adopted across 5+ core pages, reducing duplicate code by approximately 20%.",
@@ -69,6 +70,7 @@
       "stack": "React, Javascript, HTML/CSS, Python, SQL, Git",
       "location": "Calgary, AB",
       "dates": "February 2025 – Present",
+      "pitch": "Co-founded a dev studio that builds full-stack websites for university clubs. Led a team of 4 through Agile sprints, shipping login systems, dashboards, and responsive UIs serving 100+ users.",
       "bullets": [
         "Built full-stack websites for clubs using React, Python & SQL, focusing on modular design and maintainability.",
         "Led a team of 4 developers through Agile sprints, leveraging Git and code reviews for clean, testable code.",
@@ -82,6 +84,7 @@
       "stack": "Python, SQL, HTML/CSS, JavaScript",
       "location": "Abu Dhabi, UAE",
       "dates": "May 2024 - July 2024",
+      "pitch": "Internship focused on web application security and backend development. Hardened enterprise apps serving 1,000+ daily users by implementing CORS policies, proxy configs, and role-based access control.",
       "bullets": [
         "Fortified web application security by integrating enterprise-grade security protocols, including CORS, proxy settings, and error handling protocols; directly mitigated risk of cyberattacks while ensuring uninterrupted service for 1,000+ daily users accessing the platform.",
         "Documented workflows and contributed to internal SOPs for issue resolution and system operations using Word.",
@@ -95,6 +98,7 @@
       "stack": "Python, C, SolidWorks, Arduino IDE, Git",
       "location": "Vancouver, BC",
       "dates": "Dec 2022 – Sept 2024",
+      "pitch": "Built the software stack for a competition-ready autonomous robot — object detection, path planning, and sensor integration. Achieved 95% obstacle-avoidance success rate in testing.",
       "bullets": [
         "Directed software design and system integration for a competition-ready autonomous robot with object detection, applying advanced Programming Language Theory for seamless integration.",
         "Programmed in Arduino IDE using C to develop algorithms for object detection, path planning, and robot control, achieving a 95% success rate in tests.",
