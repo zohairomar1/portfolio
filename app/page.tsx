@@ -65,7 +65,7 @@ export default function HomePage() {
 
       {/* Disclaimer for custom/tailored mode - only when user arrived via /for/[company] */}
       {company && (
-        <div className="absolute bottom-14 sm:bottom-16 left-0 right-0 text-center">
+        <div className="mt-6 text-center">
           <p className="font-mono text-[10px] text-muted-foreground/40 tracking-wider">
             Independent portfolio page. Not affiliated with {company.displayName}.
           </p>
