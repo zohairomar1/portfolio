@@ -28,6 +28,7 @@ interface Role {
   topSkills: string[];
   pitch: string;
   resumePath?: string;
+  relevantHighlights?: string[];
 }
 
 const data = directorsPickData as {
@@ -84,6 +85,11 @@ export default function DirectorsPickPage() {
   const pitch = isCustom
     ? custom.roles[0]?.pitch || data.genericPitch || ""
     : data.genericPitch || "";
+
+  // Filter highlights based on role's relevantHighlights (if in custom mode)
+  const roleHighlights = isCustom && custom.roles[0]?.relevantHighlights
+    ? data.highlights.filter((h) => custom.roles[0].relevantHighlights?.includes(h.label))
+    : data.highlights;
 
   return (
     <>
@@ -190,7 +196,7 @@ export default function DirectorsPickPage() {
             </ScrollReveal>
 
             <div className="space-y-4">
-              {data.highlights.map((highlight, index) => (
+              {roleHighlights.map((highlight, index) => (
                 <ScrollReveal
                   key={highlight.label}
                   delay={index * 80}
