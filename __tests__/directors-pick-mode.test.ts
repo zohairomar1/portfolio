@@ -29,11 +29,25 @@ describe("Director's Pick mode detection", () => {
     expect(bmoRoles[0].company).toBe("BMO Financial Group");
   });
 
-  it("has a City of Calgary role", () => {
-    const cocRoles = directorsPickData.roles.filter((r) => r.companySlug === "city-of-calgary");
-    expect(cocRoles.length).toBeGreaterThan(0);
-    expect(cocRoles[0].company).toBe("City of Calgary");
-    expect(cocRoles[0].title).toBe("IT Developer Summer Student");
+  it("has City of Calgary IT Dev role", () => {
+    const itDevRoles = directorsPickData.roles.filter((r) => r.companySlug === "city-of-calgary/it-dev-student");
+    expect(itDevRoles.length).toBeGreaterThan(0);
+    expect(itDevRoles[0].company).toBe("City of Calgary");
+    expect(itDevRoles[0].title).toBe("IT Developer Summer Student");
+  });
+
+  it("has City of Calgary Business Analyst role", () => {
+    const baRoles = directorsPickData.roles.filter((r) => r.companySlug === "city-of-calgary/business-analyst-student");
+    expect(baRoles.length).toBeGreaterThan(0);
+    expect(baRoles[0].company).toBe("City of Calgary");
+    expect(baRoles[0].title).toBe("Business Analyst Student");
+  });
+
+  it("has City of Calgary Cybersecurity role", () => {
+    const cyberRoles = directorsPickData.roles.filter((r) => r.companySlug === "city-of-calgary/cybersecurity-student");
+    expect(cyberRoles.length).toBeGreaterThan(0);
+    expect(cyberRoles[0].company).toBe("City of Calgary");
+    expect(cyberRoles[0].title).toBe("Cybersecurity Student");
   });
 
   it("base website visitor (no sessionStorage) should NOT see custom mode", () => {
@@ -56,10 +70,11 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].company).toBe("BMO Financial Group");
   });
 
-  it("visitor via /for/city-of-calgary should match City of Calgary roles", () => {
+  it("visitor via /for/city-of-calgary/it-dev-student should match IT Dev role", () => {
     const companyConfig = {
-      slug: "city-of-calgary",
+      slug: "city-of-calgary/it-dev-student",
       displayName: "CITY OF CALGARY",
+      subtitle: "IT Developer Summer Student",
       brandColor: "#D0202E",
       brandAccent: "#FF6B6B",
     };
@@ -69,6 +84,38 @@ describe("Director's Pick mode detection", () => {
     const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
     expect(matched.length).toBeGreaterThan(0);
     expect(matched[0].title).toBe("IT Developer Summer Student");
+  });
+
+  it("visitor via /for/city-of-calgary/business-analyst-student should match BA role", () => {
+    const companyConfig = {
+      slug: "city-of-calgary/business-analyst-student",
+      displayName: "CITY OF CALGARY",
+      subtitle: "Business Analyst Student",
+      brandColor: "#D0202E",
+      brandAccent: "#FF6B6B",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Business Analyst Student");
+  });
+
+  it("visitor via /for/city-of-calgary/cybersecurity-student should match Cybersecurity role", () => {
+    const companyConfig = {
+      slug: "city-of-calgary/cybersecurity-student",
+      displayName: "CITY OF CALGARY",
+      subtitle: "Cybersecurity Student",
+      brandColor: "#D0202E",
+      brandAccent: "#FF6B6B",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Cybersecurity Student");
   });
 
   it("visitor for unknown company should NOT match any roles", () => {

@@ -10,10 +10,27 @@
     },
     {
       "company": "City of Calgary",
-      "companySlug": "city-of-calgary",
+      "companySlug": "city-of-calgary/it-dev-student",
       "title": "IT Developer Summer Student",
       "topSkills": ["Power Automate & SharePoint", "CI/CD & DevOps", "Secure Backend Dev", "React & APIs", "Documentation & Pilots"],
-      "pitch": "I've built Power Automate workflows, integrated Azure AD with Microsoft Graph API for SharePoint file I/O, and set up CI/CD pipelines with GitHub Actions across multiple projects. I also have experience hardening web apps for 1,000+ users and writing technical documentation (SOPs, onboarding guides) to support handoffs and long-term system upkeep. I'd love to bring that to the City of Calgary's IT team this summer."
+      "pitch": "I've built Power Automate workflows, integrated Azure AD with Microsoft Graph API for SharePoint file I/O, and set up CI/CD pipelines with GitHub Actions across multiple projects. I also have experience hardening web apps for 1,000+ users and writing technical documentation (SOPs, onboarding guides) to support handoffs and long-term system upkeep. I'd love to bring that to the City of Calgary's IT team this summer.",
+      "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_ITDev_0304.pdf"
+    },
+    {
+      "company": "City of Calgary",
+      "companySlug": "city-of-calgary/business-analyst-student",
+      "title": "Business Analyst Student",
+      "topSkills": ["Excel & Power BI Analytics", "Documentation & SOPs", "Office 365", "Agile/Scrum", "Stakeholder Presentations"],
+      "pitch": "I've built Power BI dashboards with DAX measures and role-based views, written SOPs and onboarding documentation, and collaborated across Agile teams to deliver features on schedule. Whether it's analyzing data in Excel, creating process documentation in Word, or presenting insights to stakeholders, I focus on clear communication and actionable results. I'm excited to bring that analytical mindset and documentation experience to the City of Calgary.",
+      "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_BA_0304.pdf"
+    },
+    {
+      "company": "City of Calgary",
+      "companySlug": "city-of-calgary/cybersecurity-student",
+      "title": "Cybersecurity Student",
+      "topSkills": ["Security & Access Control", "SOPs & UAT Testing", "Azure AD & Graph API", "Power Automate", "CI/CD & DevOps"],
+      "pitch": "I've implemented security-focused backend features including RBAC, CORS policies, and OAuth2 authentication for apps serving 1,000+ daily users. I've also written SOPs, contributed to documentation workflows, and integrated Azure AD with Microsoft Graph API for secure file I/O. I'm excited to bring that hands-on security and documentation experience to the City of Calgary's cybersecurity team.",
+      "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_Cybersec_0305.pdf"
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
