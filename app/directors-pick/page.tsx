@@ -21,6 +21,14 @@ interface Highlight {
   link: string | null;
 }
 
+interface TailoredExperience {
+  name: string;
+  title: string;
+  dates: string;
+  stack?: string;
+  bullets: string[];
+}
+
 interface Role {
   company: string;
   companySlug: string;
@@ -29,6 +37,7 @@ interface Role {
   pitch: string;
   resumePath?: string;
   relevantHighlights?: string[];
+  tailoredExperience?: TailoredExperience[];
 }
 
 const data = directorsPickData as {
@@ -90,6 +99,11 @@ export default function DirectorsPickPage() {
   const roleHighlights = isCustom && custom.roles[0]?.relevantHighlights
     ? data.highlights.filter((h) => custom.roles[0].relevantHighlights?.includes(h.label))
     : data.highlights;
+
+  // Use tailored experience when available, otherwise fall back to generic
+  const experienceToShow = isCustom && custom.roles[0]?.tailoredExperience
+    ? custom.roles[0].tailoredExperience
+    : relevantExperience;
 
   return (
     <>
@@ -312,7 +326,7 @@ export default function DirectorsPickPage() {
           )}
 
           {/* Relevant Experience */}
-          {relevantExperience.length > 0 && (
+          {experienceToShow.length > 0 && (
             <section className="mb-12">
               <ScrollReveal variant="tape" delay={0}>
                 <h2 className="font-display text-2xl text-primary vhs-text mb-6 flex items-center gap-2">
@@ -322,7 +336,7 @@ export default function DirectorsPickPage() {
               </ScrollReveal>
 
               <div className="space-y-4">
-                {relevantExperience.map((exp, index) => (
+                {experienceToShow.map((exp, index) => (
                   <ScrollReveal
                     key={exp.name}
                     delay={index * 100}
@@ -348,13 +362,13 @@ export default function DirectorsPickPage() {
                           {exp.dates}
                         </span>
                       </div>
-                      {exp.pitch && (
+                      {"pitch" in exp && (exp as { pitch?: string }).pitch && (
                         <p className="text-sm text-foreground/80 leading-relaxed mb-3">
-                          {exp.pitch}
+                          {(exp as { pitch: string }).pitch}
                         </p>
                       )}
                       <ul className="space-y-1.5">
-                        {exp.bullets.slice(0, 3).map((bullet, i) => (
+                        {exp.bullets.map((bullet, i) => (
                           <li key={i} className="flex gap-2 text-sm">
                             <span className="text-primary shrink-0">&#9656;</span>
                             <span className="text-muted-foreground">

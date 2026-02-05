@@ -16,7 +16,42 @@
       "topSkills": ["Power Automate & SharePoint", "CI/CD & DevOps", "Secure Backend Dev", "React & APIs", "Documentation & Pilots"],
       "pitch": "I've built Power Automate workflows, integrated Azure AD with Microsoft Graph API for SharePoint file I/O, and set up CI/CD pipelines with GitHub Actions across multiple projects. I also have experience hardening web apps for 1,000+ users and writing technical documentation (SOPs, onboarding guides) to support handoffs and long-term system upkeep. I'd love to bring that to the City of Calgary's IT team this summer.",
       "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_ITDev_0304.pdf",
-      "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery", "Secure Backend Development", "React, APIs & Full-Stack Development"]
+      "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery", "Secure Backend Development", "React, APIs & Full-Stack Development"],
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, CI/CD",
+          "bullets": [
+            "Implemented a CI/CD pipeline with GitHub Actions for automated testing and quality checks; supported 30+ successful merges without regression",
+            "Built a reusable React/TypeScript component library adopted across 5+ core pages, reducing duplicate code by approximately 20%",
+            "Coordinated with the back-end team to define API contracts and resolve integration issues, accelerating feature delivery by 1-2 sprints"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "React, JavaScript, Python, SQL, Git",
+          "bullets": [
+            "Built full-stack websites for clubs using React, Python & SQL, focusing on modular design and maintainability",
+            "Implemented user login, responsive UIs, and dashboards to improve functionality & user experience for 100+ users",
+            "Led a team of 4 developers through Agile sprints, leveraging Git and code reviews for clean, testable code"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, JavaScript, HTML/CSS",
+          "bullets": [
+            "Fortified web application security by integrating CORS, proxy settings, and robust error handling while maintaining access for 1,000+ daily users",
+            "Developed secure backend functionality including user authentication and role-based access control (RBAC)",
+            "Documented workflows and contributed to internal SOPs for issue resolution and system operations"
+          ]
+        }
+      ]
     },
     {
       "company": "City of Calgary",
@@ -25,7 +60,40 @@
       "topSkills": ["Excel & Power BI Analytics", "Documentation & SOPs", "Office 365", "Agile/Scrum", "Stakeholder Presentations"],
       "pitch": "I've built Power BI dashboards with DAX measures and role-based views, written SOPs and onboarding documentation, and collaborated across Agile teams to deliver features on schedule. Whether it's analyzing data in Excel, creating process documentation in Word, or presenting insights to stakeholders, I focus on clear communication and actionable results. I'm excited to bring that analytical mindset and documentation experience to the City of Calgary.",
       "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_BA_0304.pdf",
-      "relevantHighlights": ["Data Analysis & KPI Reporting", "CI/CD Pipelines & Agile Delivery", "Power Automate, Azure AD & SharePoint Integration"]
+      "relevantHighlights": ["Data Analysis & KPI Reporting", "CI/CD Pipelines & Agile Delivery", "Power Automate, Azure AD & SharePoint Integration"],
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, Tailwind CSS",
+          "bullets": [
+            "Created meeting materials and stakeholder-ready summaries using Outlook, Word, and PowerPoint, translating progress and impact metrics into concise updates for partners",
+            "Coordinated with the back-end team on API contracts and integration planning; produced maintainability documentation and clear status updates for both technical and non-technical stakeholders",
+            "Led a 4-person team and facilitated 2-3 weekly Scrum meetings; tracked action items and deliverables with strong personal accountability"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "React, JavaScript, Python, SQL",
+          "bullets": [
+            "Supported documentation management and meeting preparation by creating structured notes, action-item tracking, and stakeholder-facing materials using Excel/PowerPoint",
+            "Led a 4-person team through Agile sprints using Git and code reviews; upheld strong attention to detail and persistence to deliver independently-owned workstreams on time"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, JavaScript",
+          "bullets": [
+            "Documented workflows and contributed to internal SOPs for issue resolution and system operations using Word & Excel; ensured accuracy and repeatability of procedures",
+            "Facilitated cross-functional collaboration to troubleshoot and deliver updates, resolving three critical system bottlenecks ahead of schedule"
+          ]
+        }
+      ]
     },
     {
       "company": "City of Calgary",
@@ -34,7 +102,41 @@
       "topSkills": ["Security & Access Control", "SOPs & UAT Testing", "Azure AD & Graph API", "Power Automate", "CI/CD & DevOps"],
       "pitch": "I've implemented security-focused backend features including RBAC, CORS policies, and OAuth2 authentication for apps serving 1,000+ daily users. I've also written SOPs, contributed to documentation workflows, and integrated Azure AD with Microsoft Graph API for secure file I/O. I'm excited to bring that hands-on security and documentation experience to the City of Calgary's cybersecurity team.",
       "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_Cybersec_0305.pdf",
-      "relevantHighlights": ["Secure Backend Development", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"]
+      "relevantHighlights": ["Secure Backend Development", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions",
+          "bullets": [
+            "Implemented a CI/CD pipeline with GitHub Actions for automated testing and quality checks; supported 30+ successful merges without regression",
+            "Coordinated with the back-end team on API contracts and integration planning; produced maintainability documentation and clear status updates for stakeholders",
+            "Created meeting materials and stakeholder-ready summaries using Outlook, Word, and PowerPoint"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "React, Python, SQL, Git",
+          "bullets": [
+            "Implemented user login and authentication systems supporting 100+ users, emphasizing secure access and reliable user experience",
+            "Supported documentation management and meeting preparation by creating structured notes and stakeholder-facing materials using Excel/PowerPoint"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, JavaScript",
+          "bullets": [
+            "Fortified web application security by integrating CORS, proxy settings, and robust error handling while maintaining uninterrupted access for 1,000+ daily users",
+            "Developed secure backend functionality including user authentication and role-based access control (RBAC) using SQL to enforce least-privilege access",
+            "Documented workflows and contributed to internal SOPs for issue resolution and system operations using Word & Excel"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
