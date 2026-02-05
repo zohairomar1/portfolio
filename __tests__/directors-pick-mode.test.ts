@@ -3,52 +3,86 @@ import directorsPickData from "@/content/directors-pick.json";
 
 /**
  * Tests that the Director's Pick page correctly determines custom vs generic mode.
- * The JSON may have custom: true with tailored content, but the page should only
- * show tailored content when sessionStorage has company data (set by /for/[company]).
+ * Roles are now per-company with companySlug. The page matches roles against
+ * the slug stored in sessionStorage by /for/[company].
  */
 describe("Director's Pick mode detection", () => {
   beforeEach(() => {
     sessionStorage.clear();
   });
 
-  it("JSON has custom content available", () => {
-    // The JSON file has custom: true and a targetCompany
+  it("JSON has custom content with multiple company roles", () => {
     expect(directorsPickData.custom).toBe(true);
-    expect(directorsPickData.targetCompany).toBeTruthy();
-    expect(directorsPickData.roles.length).toBeGreaterThan(0);
+    expect(directorsPickData.roles.length).toBeGreaterThanOrEqual(2);
+    // Each role must have company and companySlug
+    for (const role of directorsPickData.roles) {
+      expect(role.company).toBeTruthy();
+      expect(role.companySlug).toBeTruthy();
+      expect(role.title).toBeTruthy();
+      expect(role.pitch).toBeTruthy();
+    }
+  });
+
+  it("has a BMO role", () => {
+    const bmoRoles = directorsPickData.roles.filter((r) => r.companySlug === "bmo");
+    expect(bmoRoles.length).toBeGreaterThan(0);
+    expect(bmoRoles[0].company).toBe("BMO Financial Group");
+  });
+
+  it("has a City of Calgary role", () => {
+    const cocRoles = directorsPickData.roles.filter((r) => r.companySlug === "city-of-calgary");
+    expect(cocRoles.length).toBeGreaterThan(0);
+    expect(cocRoles[0].company).toBe("City of Calgary");
+    expect(cocRoles[0].title).toBe("IT Developer Summer Student");
   });
 
   it("base website visitor (no sessionStorage) should NOT see custom mode", () => {
-    // Simulate a visitor to zohairomar.netlify.app - no /for/[company] visited
     const stored = sessionStorage.getItem("vhs-company");
     expect(stored).toBeNull();
-
-    // The logic in useIsCustomMode: if no sessionStorage, isCustom = false
-    const hasCompanyInSession = stored !== null;
-    expect(hasCompanyInSession).toBe(false);
   });
 
-  it("visitor via /for/bmo should see custom mode", () => {
-    // Simulate what /for/[company] page does
+  it("visitor via /for/bmo should match BMO roles", () => {
     const companyConfig = {
+      slug: "bmo",
       displayName: "BMO",
       brandColor: "#0079C1",
       brandAccent: "#ED1C24",
     };
     sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
 
-    const stored = sessionStorage.getItem("vhs-company");
-    expect(stored).not.toBeNull();
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].company).toBe("BMO Financial Group");
+  });
 
-    const parsed = JSON.parse(stored!);
-    expect(parsed.displayName).toBeTruthy();
+  it("visitor via /for/city-of-calgary should match City of Calgary roles", () => {
+    const companyConfig = {
+      slug: "city-of-calgary",
+      displayName: "CITY OF CALGARY",
+      brandColor: "#D0202E",
+      brandAccent: "#FF6B6B",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
 
-    // The logic in useIsCustomMode: if sessionStorage has company with displayName, isCustom = true
-    const isCustom =
-      directorsPickData.custom &&
-      !!directorsPickData.targetCompany &&
-      !!parsed.displayName;
-    expect(isCustom).toBe(true);
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("IT Developer Summer Student");
+  });
+
+  it("visitor for unknown company should NOT match any roles", () => {
+    const companyConfig = {
+      slug: "unknown-company",
+      displayName: "UNKNOWN",
+      brandColor: "#000",
+      brandAccent: "#000",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBe(0);
   });
 
   it("genericPitch is always available for base website visitors", () => {
@@ -67,20 +101,6 @@ describe("Director's Pick mode detection", () => {
       expect(h.impact).toBeTruthy();
     }
   });
-
-  it("disclaimer should only show when company is in sessionStorage", () => {
-    // No company in session = no disclaimer
-    expect(sessionStorage.getItem("vhs-company")).toBeNull();
-
-    // Set company in session = disclaimer should show
-    sessionStorage.setItem(
-      "vhs-company",
-      JSON.stringify({ displayName: "BMO" })
-    );
-    const stored = sessionStorage.getItem("vhs-company");
-    const parsed = JSON.parse(stored!);
-    expect(parsed.displayName).toBe("BMO");
-  });
 });
 
 describe("Main page disclaimer", () => {
@@ -90,14 +110,13 @@ describe("Main page disclaimer", () => {
 
   it("should NOT show disclaimer on base website (no sessionStorage)", () => {
     const company = sessionStorage.getItem("vhs-company");
-    // company is null, so disclaimer condition (company && ...) is false
     expect(company).toBeNull();
   });
 
   it("should show disclaimer when company is in sessionStorage", () => {
     sessionStorage.setItem(
       "vhs-company",
-      JSON.stringify({ displayName: "BMO" })
+      JSON.stringify({ slug: "bmo", displayName: "BMO" })
     );
     const company = JSON.parse(sessionStorage.getItem("vhs-company")!);
     expect(company.displayName).toBe("BMO");

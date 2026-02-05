@@ -1,15 +1,55 @@
 {
   "custom": true,
-  "targetCompany": "BMO Financial Group",
   "roles": [
     {
+      "company": "BMO Financial Group",
+      "companySlug": "bmo",
       "title": "Business Systems Analyst Intern",
       "topSkills": ["Data Analysis", "Business Requirements", "Agile Delivery", "Process Improvement", "Stakeholder Management"],
       "pitch": "I like working at the intersection of technical systems and business needs. I've built Power BI dashboards with role-based views, led Agile teams through sprint planning and CI/CD setup, and automated reporting workflows with Power Automate. I'm looking to bring that same mix of analytical thinking and cross-functional collaboration to BMO as a Business Systems Analyst."
+    },
+    {
+      "company": "City of Calgary",
+      "companySlug": "city-of-calgary",
+      "title": "IT Developer Summer Student",
+      "topSkills": ["Power Automate & SharePoint", "CI/CD & DevOps", "Secure Backend Dev", "React & APIs", "Documentation & Pilots"],
+      "pitch": "I've built Power Automate workflows, integrated Azure AD with Microsoft Graph API for SharePoint file I/O, and set up CI/CD pipelines with GitHub Actions across multiple projects. I also have experience hardening web apps for 1,000+ users and writing technical documentation (SOPs, onboarding guides) to support handoffs and long-term system upkeep. I'd love to bring that to the City of Calgary's IT team this summer."
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
   "highlights": [
+    {
+      "label": "Power Automate, Azure AD & SharePoint Integration",
+      "problem": "Operational teams were manually reviewing time-series data with no automated way to flag anomalies or share forecasts",
+      "built": "Analytics dashboard processing real North Sea data (7 wells) with ETS forecasting, 95% confidence intervals, and rolling z-score anomaly detection. Integrated Azure AD (OAuth2) and Microsoft Graph API for SharePoint file I/O with automatic token refresh, plus a Power Automate workflow for weekly report distribution via Outlook",
+      "tech": "Python, Streamlit, Azure AD, Microsoft Graph API, Power Automate, SharePoint",
+      "impact": "45% lower MAE vs baseline, automated weekly email reporting replaced manual process, dual-mode architecture (cloud/local) for flexible deployment",
+      "link": "/scenes#production-analytics-forecasting-dashboard"
+    },
+    {
+      "label": "CI/CD Pipelines & Agile Delivery",
+      "problem": "A financial literacy platform needed someone to own front-end architecture and sort out API contracts between the front-end and back-end teams",
+      "built": "Led requirements gathering through 2-3 Scrum meetings per week, defined API contracts with the back-end team, built a shared React component library across 5+ pages, and implemented a CI/CD pipeline with GitHub Actions running linting and tests on every PR",
+      "tech": "React, TypeScript, Tailwind CSS, GitHub Actions, CI/CD",
+      "impact": "Accelerated feature delivery by 1-2 sprints, 30+ successful PR merges without regression, piloted with 100+ students across 2-3 schools",
+      "link": null
+    },
+    {
+      "label": "Secure Backend Development",
+      "problem": "Web apps serving 1,000+ daily users needed tighter security without breaking anything for active users",
+      "built": "Set up CORS policies, proxy configs, role-based access control, and SQL-based authentication. Also documented system workflows and contributed to internal SOPs for issue resolution and operations",
+      "tech": "Python, SQL, JavaScript, HTML/CSS",
+      "impact": "Zero security incidents during tenure, resolved 3 critical system bottlenecks, all deadlines met ahead of schedule",
+      "link": null
+    },
+    {
+      "label": "React, APIs & Full-Stack Development",
+      "problem": "Co-founded a dev studio and needed to set up structured delivery practices to ship reliable products for university clubs",
+      "built": "Led 4 developers through Agile sprints with Git-based code reviews, shipped login systems, dashboards, and responsive UIs, and wrote documentation and onboarding guides for new contributors",
+      "tech": "React, JavaScript, Python, SQL, Git, REST APIs",
+      "impact": "100+ active users served, clean deployment pipeline, documentation enabled faster onboarding for new contributors",
+      "link": null
+    },
     {
       "label": "Data Analysis & KPI Reporting",
       "problem": "Operations teams had no centralized view of asset integrity KPIs, so prioritizing inspections and catching compliance gaps was mostly guesswork",
@@ -17,45 +57,13 @@
       "tech": "Power BI, DAX, Power Query, SQL Server, SharePoint",
       "impact": "24 months of data modeled, backlog alerts enabled proactive planning, role-based access tailored insights per audience",
       "link": "/scenes#oil-gas-asset-integrity-dashboard"
-    },
-    {
-      "label": "Business Requirements & Stakeholder Coordination",
-      "problem": "A financial literacy platform needed someone to own front-end architecture and sort out API contracts between the front-end and back-end teams",
-      "built": "Led requirements gathering through 2-3 Scrum meetings per week, defined API contracts with the back-end team, and built a shared React component library adopted across 5+ core pages",
-      "tech": "React, TypeScript, Tailwind CSS, GitHub Actions",
-      "impact": "Accelerated feature delivery by 1-2 sprints, 30+ successful PR merges, piloted with 100+ students across 2-3 schools",
-      "link": null
-    },
-    {
-      "label": "Process Improvement & Automation",
-      "problem": "Operational teams were manually reviewing time-series data with no automated way to flag anomalies or share forecasts",
-      "built": "Analytics dashboard processing real North Sea data (7 wells) with ETS forecasting, 95% confidence intervals, and rolling z-score anomaly detection. Integrated Azure AD and Microsoft Graph API for SharePoint file I/O, plus a Power Automate workflow for weekly report distribution",
-      "tech": "Python, Streamlit, statsmodels, Plotly, Azure AD, Microsoft Graph API, Power Automate",
-      "impact": "45% lower MAE vs baseline, automated weekly email reporting replaced manual process, dual-mode architecture (cloud/local) for flexible deployment",
-      "link": "/scenes#production-analytics-forecasting-dashboard"
-    },
-    {
-      "label": "Agile Delivery & Team Leadership",
-      "problem": "Co-founded a dev studio and needed to set up structured delivery practices to ship reliable products for university clubs",
-      "built": "Led 4 developers through Agile sprints with Git-based code reviews, shipped login systems, dashboards, and responsive UIs, and wrote onboarding docs for new contributors",
-      "tech": "React, JavaScript, Python, SQL, Git",
-      "impact": "100+ active users served, clean deployment pipeline, documentation enabled faster onboarding for new contributors",
-      "link": null
-    },
-    {
-      "label": "Systems Thinking & Enterprise Security",
-      "problem": "Web apps serving 1,000+ daily users needed tighter security without breaking anything for active users",
-      "built": "Set up CORS policies, proxy configs, role-based access control, and SQL auth. Also documented workflows and SOPs for the team",
-      "tech": "Python, SQL, JavaScript, HTML/CSS",
-      "impact": "Zero security incidents during tenure, resolved 3 critical system bottlenecks, all deadlines met ahead of schedule",
-      "link": null
     }
   ],
   "relevantProjects": [
-    "oil-gas-asset-integrity-dashboard",
     "production-analytics-forecasting-dashboard",
-    "business-tracking-application",
-    "ubc-thrifty-grocers"
+    "oil-gas-asset-integrity-dashboard",
+    "ubc-thrifty-grocers",
+    "business-tracking-application"
   ],
   "relevantExperience": [
     "Enactus UCalgary - WealthPath",

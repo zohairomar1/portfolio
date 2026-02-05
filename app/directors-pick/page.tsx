@@ -22,6 +22,8 @@ interface Highlight {
 }
 
 interface Role {
+  company: string;
+  companySlug: string;
   title: string;
   topSkills: string[];
   pitch: string;
@@ -29,7 +31,6 @@ interface Role {
 
 const data = directorsPickData as {
   custom: boolean;
-  targetCompany: string | null;
   roles: Role[];
   genericPitch?: string;
   highlights: Highlight[];
@@ -38,36 +39,38 @@ const data = directorsPickData as {
 };
 
 /**
- * Checks sessionStorage for company data set by /for/[company].
- * Only shows tailored content when the user arrived via a company link.
+ * Reads sessionStorage for company data set by /for/[company].
+ * Matches roles by companySlug. Returns matched roles + company name, or null for generic mode.
  */
-function useIsCustomMode(): boolean {
-  const [isCustom, setIsCustom] = useState(false);
+function useCustomMode(): { companyName: string; roles: Role[] } | null {
+  const [result, setResult] = useState<{ companyName: string; roles: Role[] } | null>(null);
 
   useEffect(() => {
-    if (!data.custom || !data.targetCompany) {
-      setIsCustom(false);
-      return;
-    }
+    if (!data.custom || data.roles.length === 0) return;
+
     const stored = sessionStorage.getItem("vhs-company");
-    if (stored) {
-      try {
-        const parsed = JSON.parse(stored);
-        if (parsed && parsed.displayName) {
-          setIsCustom(true);
-        }
-      } catch {
-        // ignore
+    if (!stored) return;
+
+    try {
+      const parsed = JSON.parse(stored);
+      if (!parsed?.slug) return;
+
+      const matched = data.roles.filter((r) => r.companySlug === parsed.slug);
+      if (matched.length > 0) {
+        setResult({ companyName: matched[0].company, roles: matched });
       }
+    } catch {
+      // ignore
     }
   }, []);
 
-  return isCustom;
+  return result;
 }
 
 export default function DirectorsPickPage() {
   const { settings } = useSettings();
-  const isCustom = useIsCustomMode();
+  const custom = useCustomMode();
+  const isCustom = custom !== null;
 
   const relevantProjects = projectsData.filter((p) =>
     data.relevantProjects.includes(p.slug)
@@ -78,7 +81,7 @@ export default function DirectorsPickPage() {
   );
 
   const pitch = isCustom
-    ? data.roles?.[0]?.pitch || data.genericPitch || ""
+    ? custom.roles[0]?.pitch || data.genericPitch || ""
     : data.genericPitch || "";
 
   return (
@@ -115,16 +118,16 @@ export default function DirectorsPickPage() {
                 Why Me
               </h1>
 
-              {/* Custom mode: show target role & company */}
+              {/* Custom mode: show target role(s) & company */}
               {isCustom && (
                 <div className="mt-4 mb-4 vhs-card p-4 sm:p-6">
                   <div className="flex items-start gap-3 mb-3">
                     <Briefcase className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                     <div>
                       <p className="font-mono text-xs text-muted-foreground/60 uppercase tracking-wider">
-                        {data.roles.length > 1 ? "Target Roles" : "Target Role"}
+                        {custom.roles.length > 1 ? "Target Roles" : "Target Role"}
                       </p>
-                      {data.roles.map((role, i) => (
+                      {custom.roles.map((role, i) => (
                         <div key={i} className={i > 0 ? "mt-2 pt-2 border-t border-primary/10" : ""}>
                           <p className="font-display text-lg text-primary">
                             {role.title}
@@ -149,7 +152,7 @@ export default function DirectorsPickPage() {
                         </div>
                       ))}
                       <p className="font-mono text-sm text-muted-foreground mt-2">
-                        {data.targetCompany}
+                        {custom.companyName}
                       </p>
                     </div>
                   </div>
@@ -170,7 +173,7 @@ export default function DirectorsPickPage() {
 
               {settings.subtitlesEnabled && isCustom && (
                 <p className="text-sm text-muted-foreground mt-2">
-                  Tailored for {data.targetCompany}
+                  Tailored for {custom.companyName}
                 </p>
               )}
             </div>
@@ -364,7 +367,7 @@ export default function DirectorsPickPage() {
           {isCustom && (
             <div className="mt-8 mb-4 text-center">
               <p className="font-mono text-[10px] text-muted-foreground/40 tracking-wider">
-                Independent portfolio page. Not affiliated with {data.targetCompany}.
+                Independent portfolio page. Not affiliated with {custom.companyName}.
               </p>
             </div>
           )}
