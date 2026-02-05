@@ -435,14 +435,18 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
               style={{ opacity: showPortfolio ? 1 : 0, transform: showPortfolio ? "translateY(0)" : "translateY(-10px)" }}
             >
               {company ? (
-                <p className="font-mono text-sm text-gray-400 tracking-[0.3em]">
-                  {company.subtitle || "PREPARED FOR"}{" "}
+                <p className="font-mono text-[10px] sm:text-xs text-gray-400 tracking-wide whitespace-nowrap text-center">
+                  Personalized portfolio for{" "}
+                  <span style={{ color: "var(--boot-primary)" }}>
+                    {company.subtitle || "you"}
+                  </span>
+                  {" "}@{" "}
                   <span style={{ color: "var(--boot-primary)" }}>
                     {company.displayName}
                   </span>
                 </p>
               ) : (
-                <p className="font-mono text-sm text-gray-400 tracking-[0.3em]">
+                <p className="font-mono text-sm text-gray-400 tracking-[0.3em] text-center">
                   PORTFOLIO
                 </p>
               )}

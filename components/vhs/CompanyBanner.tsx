@@ -62,7 +62,7 @@ export function CompanyBanner({ company }: CompanyBannerProps) {
             }}
           />
           <span
-            className="relative font-display text-base sm:text-lg tracking-[0.25em] whitespace-nowrap"
+            className="relative font-mono text-[10px] sm:text-xs tracking-wide whitespace-nowrap"
             style={{
               color: brandColor,
               textShadow: glow
@@ -70,10 +70,18 @@ export function CompanyBanner({ company }: CompanyBannerProps) {
                 : `0 0 5px ${brandColor}4d`,
             }}
           >
-            {company.subtitle || "PREPARED FOR"}{" "}
+            Applying for{" "}
             <span className="font-bold" style={{ color: brandAccent }}>
               {company.displayName}
             </span>
+            {company.subtitle && (
+              <>
+                {" - "}
+                <span style={{ color: brandAccent }}>
+                  {company.subtitle}
+                </span>
+              </>
+            )}
           </span>
         </div>
       </div>
