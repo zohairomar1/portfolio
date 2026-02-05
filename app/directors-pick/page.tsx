@@ -6,7 +6,7 @@ import { PageNav, getPageNav } from "@/components/menu/PageNav";
 import { ScrollReveal } from "@/components/vhs/ScrollReveal";
 import { DirectorsPickBadge } from "@/components/vhs/DirectorsPickBadge";
 import { useSettings } from "@/hooks/useSettings";
-import { Star, Briefcase, Code, ChevronRight, ExternalLink } from "lucide-react";
+import { Star, Briefcase, Code, ChevronRight, ExternalLink, Download, FileText } from "lucide-react";
 import Link from "next/link";
 import directorsPickData from "@/content/directors-pick.json";
 import projectsData from "@/content/projects.json";
@@ -27,6 +27,7 @@ interface Role {
   title: string;
   topSkills: string[];
   pitch: string;
+  resumePath?: string;
 }
 
 const data = directorsPickData as {
@@ -360,6 +361,55 @@ export default function DirectorsPickPage() {
                   </ScrollReveal>
                 ))}
               </div>
+            </section>
+          )}
+
+          {/* Resume Download - only when in custom mode with a resume */}
+          {isCustom && custom.roles[0]?.resumePath && (
+            <section className="mb-8">
+              <ScrollReveal variant="chromatic" delay={0}>
+                <div className="vhs-card p-4 sm:p-6 relative overflow-hidden">
+                  {/* VHS tape reel decoration */}
+                  <div className="absolute -right-8 -top-8 w-24 h-24 border-4 border-primary/10 rounded-full opacity-30" />
+                  <div className="absolute -right-4 -top-4 w-16 h-16 border-4 border-primary/20 rounded-full opacity-30" />
+
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                    <div className="flex items-center gap-3 flex-1">
+                      <div className="w-12 h-12 rounded border border-primary/30 bg-primary/5 flex items-center justify-center shrink-0">
+                        <FileText className="w-6 h-6 text-primary" />
+                      </div>
+                      <div>
+                        <p className="font-mono text-[10px] text-muted-foreground/60 uppercase tracking-wider">
+                          Tailored Resume
+                        </p>
+                        <p className="font-display text-base sm:text-lg text-primary">
+                          {custom.roles[0].title}
+                        </p>
+                        <p className="font-mono text-xs text-muted-foreground">
+                          {custom.companyName}
+                        </p>
+                      </div>
+                    </div>
+
+                    <a
+                      href={custom.roles[0].resumePath}
+                      download
+                      className="group flex items-center gap-2 px-4 py-2.5 sm:px-5 sm:py-3 bg-primary text-primary-foreground font-mono text-sm tracking-wider hover:bg-primary/90 transition-all hover:scale-[1.02] active:scale-[0.98] w-full sm:w-auto justify-center"
+                    >
+                      <Download className="w-4 h-4 group-hover:animate-bounce" />
+                      <span>DOWNLOAD PDF</span>
+                    </a>
+                  </div>
+
+                  {/* Scanline effect */}
+                  <div
+                    className="absolute inset-0 pointer-events-none opacity-5"
+                    style={{
+                      background: "repeating-linear-gradient(0deg, transparent, transparent 2px, hsl(var(--primary)) 2px, hsl(var(--primary)) 3px)",
+                    }}
+                  />
+                </div>
+              </ScrollReveal>
             </section>
           )}
 
