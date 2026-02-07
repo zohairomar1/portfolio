@@ -39,6 +39,13 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       brandColor: "#D0202E",
       brandAccent: "#FF6B6B",
     },
+    "automation-student": {
+      slug: "city-of-calgary/automation-student",
+      displayName: "CITY OF CALGARY",
+      subtitle: "Automation Developer Student",
+      brandColor: "#D0202E",
+      brandAccent: "#FF6B6B",
+    },
   },
 };
 

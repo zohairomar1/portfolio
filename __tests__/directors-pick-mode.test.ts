@@ -50,6 +50,13 @@ describe("Director's Pick mode detection", () => {
     expect(cyberRoles[0].title).toBe("Cybersecurity Student");
   });
 
+  it("has City of Calgary Automation Developer role", () => {
+    const autoRoles = directorsPickData.roles.filter((r) => r.companySlug === "city-of-calgary/automation-student");
+    expect(autoRoles.length).toBeGreaterThan(0);
+    expect(autoRoles[0].company).toBe("City of Calgary");
+    expect(autoRoles[0].title).toBe("Automation Developer Student");
+  });
+
   it("base website visitor (no sessionStorage) should NOT see custom mode", () => {
     const stored = sessionStorage.getItem("vhs-company");
     expect(stored).toBeNull();
@@ -116,6 +123,22 @@ describe("Director's Pick mode detection", () => {
     const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
     expect(matched.length).toBeGreaterThan(0);
     expect(matched[0].title).toBe("Cybersecurity Student");
+  });
+
+  it("visitor via /for/city-of-calgary/automation-student should match Automation role", () => {
+    const companyConfig = {
+      slug: "city-of-calgary/automation-student",
+      displayName: "CITY OF CALGARY",
+      subtitle: "Automation Developer Student",
+      brandColor: "#D0202E",
+      brandAccent: "#FF6B6B",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Automation Developer Student");
   });
 
   it("visitor for unknown company should NOT match any roles", () => {

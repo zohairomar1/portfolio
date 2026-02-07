@@ -137,6 +137,49 @@
           ]
         }
       ]
+    },
+    {
+      "company": "City of Calgary",
+      "companySlug": "city-of-calgary/automation-student",
+      "title": "Automation Developer Student",
+      "topSkills": ["RPA & Power Automate", "UAT & Test Documentation", "Documentation Repositories", "Office 365", "Agile/Scrum"],
+      "pitch": "I've designed and tested automation workflows in Power Automate with scope-based error handling, integrated Azure AD and Microsoft Graph API for SharePoint file I/O, and maintained documentation repositories with SOPs, meeting notes, and status logs. I'm collaborative and feedback-driven, and I'm excited to learn and grow with the City of Calgary's automation team while contributing reliable, well-documented work from day one.",
+      "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_AutomationDev_0207.pdf",
+      "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "Data Analysis & KPI Reporting", "CI/CD Pipelines & Agile Delivery"],
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "Word, PowerPoint, React, TypeScript",
+          "bullets": [
+            "Led a 4-person team and facilitated 2-3 Scrum meetings per week; tracked action items, priorities, and deadlines with strong personal accountability",
+            "Produced stakeholder-ready updates using Outlook, Word, and PowerPoint, communicating progress and impact metrics clearly to non-technical partners",
+            "Supported UAT-style acceptance checks for releases and maintained documentation repositories (meeting notes, decisions, and status logs)"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "React, Python, SQL, Excel, PowerPoint",
+          "bullets": [
+            "Helped student clubs move from manual tracking to web-based tools; built dashboards and structured workflows for 100+ users",
+            "Created structured notes, action-item trackers, and recommendation documents in Excel/PowerPoint to support decisions as priorities changed"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, Word, Excel",
+          "bullets": [
+            "Developed and debugged backend features using Python and SQL, improving reliability and supporting secure system operations",
+            "Documented workflows and contributed to internal SOPs for issue resolution and system operations using Office 365 (Word, Excel)",
+            "Facilitated cross-functional troubleshooting and delivered feature updates, resolving three critical system bottlenecks ahead of schedule"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
