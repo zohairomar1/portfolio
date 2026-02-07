@@ -50,6 +50,13 @@ describe("Director's Pick mode detection", () => {
     expect(cyberRoles[0].title).toBe("Cybersecurity Student");
   });
 
+  it("has City of Calgary PMIS role", () => {
+    const pmisRoles = directorsPickData.roles.filter((r) => r.companySlug === "city-of-calgary/pmis-student");
+    expect(pmisRoles.length).toBeGreaterThan(0);
+    expect(pmisRoles[0].company).toBe("City of Calgary");
+    expect(pmisRoles[0].title).toBe("Project Management Information Systems Summer Student");
+  });
+
   it("has City of Calgary Automation Developer role", () => {
     const autoRoles = directorsPickData.roles.filter((r) => r.companySlug === "city-of-calgary/automation-student");
     expect(autoRoles.length).toBeGreaterThan(0);
@@ -123,6 +130,22 @@ describe("Director's Pick mode detection", () => {
     const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
     expect(matched.length).toBeGreaterThan(0);
     expect(matched[0].title).toBe("Cybersecurity Student");
+  });
+
+  it("visitor via /for/city-of-calgary/pmis-student should match PMIS role", () => {
+    const companyConfig = {
+      slug: "city-of-calgary/pmis-student",
+      displayName: "CITY OF CALGARY",
+      subtitle: "Project Management Information Systems Summer Student",
+      brandColor: "#D0202E",
+      brandAccent: "#FF6B6B",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Project Management Information Systems Summer Student");
   });
 
   it("visitor via /for/city-of-calgary/automation-student should match Automation role", () => {

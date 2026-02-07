@@ -180,6 +180,52 @@
           ]
         }
       ]
+    },
+    {
+      "company": "City of Calgary",
+      "companySlug": "city-of-calgary/pmis-student",
+      "title": "Project Management Information Systems Summer Student",
+      "topSkills": ["Microsoft Project Server Professional", "Training & Learning Solutions", "Project Documentation", "Change & Transition Management", "Office 365"],
+      "pitch": "I've led multi-stakeholder IT projects through Scrum-style delivery, built training materials and onboarding guides for 100+ users, and maintained documentation repositories with SOPs, meeting notes, and status logs. I also have hands-on experience with Microsoft Project Server Professional, Power BI dashboards, and feasibility-style assessments. I'm excited to bring that project coordination, documentation, and change management experience to the City of Calgary's PMIS team.",
+      "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_PMIS_0207.pdf",
+      "relevantHighlights": ["Data Analysis & KPI Reporting", "CI/CD Pipelines & Agile Delivery", "Power Automate, Azure AD & SharePoint Integration"],
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "Outlook, Word, PowerPoint, React, TypeScript, GitHub Actions",
+          "bullets": [
+            "Led a 4-person team and facilitated 2-3 Scrum meetings weekly; translated project deliverables into clear action items, timelines, and stakeholder-ready updates",
+            "Facilitated partner discussions to confirm scope and objectives, track issues, and drive resolution through clear owners and timelines",
+            "Prepared and delivered progress updates and recommendations using Word/PowerPoint, communicating metrics and changes clearly to non-technical stakeholders",
+            "Maintained documentation repositories (decisions, meeting notes, status logs) to support transition, onboarding, and consistent execution"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Power BI, Excel, PowerPoint, React, Python, SQL, Git",
+          "bullets": [
+            "Identified client needs by gathering requirements and clarifying workflows with stakeholders; documented scope and expectations into actionable deliverables",
+            "Built Power BI dashboards and structured reports to track KPIs and communicate outcomes to non-technical audiences; improved access to information for 100+ users",
+            "Led development of business-specific learning materials (how-to guides, onboarding docs, walkthroughs) and supported rollout/change adoption across 100+ users by standardizing workflows",
+            "Conducted feasibility-style assessments (effort, impact, risks, and adoption considerations) and documented recommendations to support implementation decisions"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Microsoft Project Server Professional, Outlook, Word, Excel, Python, SQL",
+          "bullets": [
+            "Supported project planning and execution using Microsoft Project Server Professional, tracking tasks, dependencies, and status to keep delivery on schedule",
+            "Prepared project and technology documentation (SOPs, workflow notes, status summaries) and maintained version-controlled records for audit-ready reporting",
+            "Facilitated cross-functional issue resolution and communicated progress through structured updates; resolved three critical system bottlenecks ahead of schedule"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

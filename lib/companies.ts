@@ -46,6 +46,13 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       brandColor: "#D0202E",
       brandAccent: "#FF6B6B",
     },
+    "pmis-student": {
+      slug: "city-of-calgary/pmis-student",
+      displayName: "CITY OF CALGARY",
+      subtitle: "Project Management Information Systems Summer Student",
+      brandColor: "#D0202E",
+      brandAccent: "#FF6B6B",
+    },
   },
 };
 
