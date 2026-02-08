@@ -101,7 +101,7 @@ export default function HomePage() {
             : "opacity-0 translate-y-6"
         }`}
       >
-        <DVDMenu />
+        <DVDMenu isCompanyMode={!!company} />
       </div>
 
       {/* Disclaimer for custom/tailored mode - only when user arrived via /for/[company] */}
