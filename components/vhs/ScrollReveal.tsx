@@ -6,7 +6,7 @@ interface ScrollRevealProps {
   children: React.ReactNode;
   className?: string;
   delay?: number;
-  variant?: "glitch" | "scanline" | "tape" | "flicker" | "chromatic";
+  variant?: "glitch" | "scanline" | "tape" | "flicker" | "chromatic" | "phosphor";
   skeleton?: React.ReactNode;
 }
 
@@ -62,6 +62,8 @@ export function ScrollReveal({
         return "animate-flicker-reveal";
       case "chromatic":
         return "animate-chromatic-reveal";
+      case "phosphor":
+        return "animate-phosphor-reveal";
       default:
         return "opacity-100 translate-y-0";
     }

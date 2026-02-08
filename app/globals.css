@@ -600,6 +600,35 @@
   animation: chromatic-reveal 0.6s ease-out forwards;
 }
 
+/* Neon sign turn-on effect */
+.animate-neon-on {
+  animation: neon-on 0.8s ease-out forwards;
+}
+
+/* Menu item glitch-on-hover */
+@keyframes menu-glitch {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  50% { transform: translateX(2px); }
+  75% { transform: translateX(-1px); }
+  100% { transform: translateX(0); }
+}
+
+[data-effects="true"] .dvd-menu-item:hover {
+  animation: menu-glitch 0.15s ease-out;
+}
+
+/* CRT phosphor fade-in effect */
+@keyframes phosphor-in {
+  0% { opacity: 0; filter: brightness(0.5); }
+  30% { opacity: 1; filter: brightness(1.8); }
+  100% { opacity: 1; filter: brightness(1); }
+}
+
+.animate-phosphor-reveal {
+  animation: phosphor-in 0.5s ease-out forwards;
+}
+
 /* VHS Skeleton Shimmer */
 @keyframes vhs-shimmer {
   0% {

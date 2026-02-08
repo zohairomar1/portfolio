@@ -105,6 +105,19 @@ const config: Config = {
           from: { opacity: "1" },
           to: { opacity: "0" },
         },
+        "play-pulse": {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.6" },
+        },
+        "neon-on": {
+          "0%": { opacity: "0.4" },
+          "10%": { opacity: "1" },
+          "15%": { opacity: "0.2" },
+          "25%": { opacity: "1" },
+          "30%": { opacity: "0.6" },
+          "40%": { opacity: "1" },
+          "100%": { opacity: "1" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -118,6 +131,8 @@ const config: Config = {
         fadeIn: "fadeIn 0.3s ease-out",
         slideUp: "slideUp 0.4s ease-out",
         fadeOut: "fadeOut 0.5s ease-out forwards",
+        "play-pulse": "play-pulse 2s ease-in-out infinite",
+        "neon-on": "neon-on 0.8s ease-out forwards",
       },
     },
   },

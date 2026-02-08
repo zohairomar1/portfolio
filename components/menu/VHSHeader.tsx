@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { RecordingIndicator } from "@/components/vhs/RecordingIndicator";
+import { PlayIndicator } from "@/components/vhs/PlayIndicator";
 import { TimeIndicator } from "@/components/vhs/TimeIndicator";
 import { useSettings } from "@/hooks/useSettings";
 import { Settings, Home, Menu } from "lucide-react";
@@ -47,7 +47,7 @@ export function VHSHeader({ className }: VHSHeaderProps) {
 
         {/* Center: Recording indicator */}
         <div className="absolute left-1/2 -translate-x-1/2">
-          <RecordingIndicator />
+          <PlayIndicator />
         </div>
 
         {/* Right: Time indicator + Settings + Mobile menu */}
