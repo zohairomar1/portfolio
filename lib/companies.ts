@@ -60,6 +60,20 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       brandColor: "#D0202E",
       brandAccent: "#E8636B",
     },
+    "information-management-student": {
+      slug: "city-of-calgary/information-management-student",
+      displayName: "CITY OF CALGARY",
+      subtitle: "Information Management Student",
+      brandColor: "#D0202E",
+      brandAccent: "#E8636B",
+    },
+    "it-ops-euc-student": {
+      slug: "city-of-calgary/it-ops-euc-student",
+      displayName: "CITY OF CALGARY",
+      subtitle: "IT Operations End User Computing Summer Student",
+      brandColor: "#D0202E",
+      brandAccent: "#E8636B",
+    },
   },
 };
 

@@ -14,12 +14,18 @@ export default function HomePage() {
   const { settings } = useSettings();
   const [company, setCompany] = useState<CompanyConfig | null>(null);
 
+  // Check if this is a revisit (skip slow intro)
+  const [isRevisit] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return sessionStorage.getItem("vhs-intro-seen") === "1";
+  });
+
   // Staggered load-in sequence
-  const [showTopBar, setShowTopBar] = useState(false);
-  const [showTagline, setShowTagline] = useState(false);
-  const [showMenu, setShowMenu] = useState(false);
-  const [showBottom, setShowBottom] = useState(false);
-  const [titleNeon, setTitleNeon] = useState(false);
+  const [showTopBar, setShowTopBar] = useState(isRevisit);
+  const [showTagline, setShowTagline] = useState(isRevisit);
+  const [showMenu, setShowMenu] = useState(isRevisit);
+  const [showBottom, setShowBottom] = useState(isRevisit);
+  const [titleNeon, setTitleNeon] = useState(isRevisit);
 
   useEffect(() => {
     const companyData = sessionStorage.getItem("vhs-company");
@@ -31,13 +37,16 @@ export default function HomePage() {
       }
     }
 
-    // Orchestrate cinematic load-in
-    setTimeout(() => setShowTopBar(true), 100);
-  }, []);
+    if (!isRevisit) {
+      // Orchestrate cinematic load-in (first visit)
+      setTimeout(() => setShowTopBar(true), 100);
+    }
+  }, [isRevisit]);
 
   const handleTypewriterComplete = useCallback(() => {
     // After title finishes typing, trigger neon flicker then reveal rest
     setTitleNeon(true);
+    sessionStorage.setItem("vhs-intro-seen", "1");
     setTimeout(() => setShowTagline(true), 200);
     setTimeout(() => setShowMenu(true), 500);
     setTimeout(() => setShowBottom(true), 800);
@@ -66,7 +75,7 @@ export default function HomePage() {
             titleNeon ? "vhs-text animate-neon-on" : ""
           }`}
         >
-          <TypeWriter text="ZOHAIR OMAR" speed={80} delay={300} onComplete={handleTypewriterComplete} />
+          <TypeWriter text="ZOHAIR OMAR" speed={isRevisit ? 0 : 80} delay={isRevisit ? 0 : 300} onComplete={handleTypewriterComplete} />
         </h1>
 
         {/* Tagline - slides up with chromatic reveal after title */}

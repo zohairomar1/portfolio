@@ -38,6 +38,7 @@ interface Role {
   pitch: string;
   resumePath?: string;
   relevantHighlights?: string[];
+  relevantProjects?: string[];
   tailoredExperience?: TailoredExperience[];
 }
 
@@ -84,9 +85,13 @@ export default function DirectorsPickPage() {
   const custom = useCustomMode();
   const isCustom = custom !== null;
 
-  const relevantProjects = projectsData.filter((p) =>
-    data.relevantProjects.includes(p.slug)
-  );
+  const projectSlugs = isCustom && custom.roles[0]?.relevantProjects
+    ? custom.roles[0].relevantProjects
+    : data.relevantProjects;
+
+  const relevantProjects = projectSlugs
+    .map((slug) => projectsData.find((p) => p.slug === slug))
+    .filter((p): p is (typeof projectsData)[number] => p !== undefined);
 
   const relevantExperience = resumeData.experience.filter((e) =>
     data.relevantExperience.includes(e.name)
@@ -307,21 +312,29 @@ export default function DirectorsPickPage() {
               </ScrollReveal>
 
               <div className="grid gap-4 sm:grid-cols-2">
-                {relevantProjects.map((project, index) => (
+                {relevantProjects.map((project, index) => {
+                  const hasExternalUrl = isCustom && project.url;
+                  const href = hasExternalUrl ? project.url! : `/scenes#${project.slug}`;
+
+                  return (
                   <ScrollReveal
                     key={project.slug}
                     delay={index * 100}
                     variant="flicker"
                   >
                     <Link
-                      href={`/scenes#${project.slug}`}
+                      href={href}
+                      {...(hasExternalUrl ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                       className="vhs-card p-4 block group hover:border-primary/40 transition-colors h-full"
                     >
                       <div className="flex items-start justify-between gap-2 mb-2">
                         <h3 className="font-display text-base text-primary group-hover:text-accent transition-colors">
                           {project.name}
                         </h3>
-                        <ChevronRight className="w-4 h-4 text-muted-foreground/40 group-hover:text-primary transition-colors shrink-0 mt-0.5" />
+                        {hasExternalUrl
+                          ? <ExternalLink className="w-4 h-4 text-muted-foreground/40 group-hover:text-primary transition-colors shrink-0 mt-0.5" />
+                          : <ChevronRight className="w-4 h-4 text-muted-foreground/40 group-hover:text-primary transition-colors shrink-0 mt-0.5" />
+                        }
                       </div>
                       <p className="font-mono text-[10px] text-muted-foreground/60 mb-2">
                         {project.stack}
@@ -333,7 +346,8 @@ export default function DirectorsPickPage() {
                       )}
                     </Link>
                   </ScrollReveal>
-                ))}
+                  );
+                })}
               </div>
             </section>
           )}

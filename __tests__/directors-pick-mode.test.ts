@@ -187,6 +187,52 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Software Developer Summer Student");
   });
 
+  it("has City of Calgary Information Management Student role", () => {
+    const imsRoles = directorsPickData.roles.filter((r) => r.companySlug === "city-of-calgary/information-management-student");
+    expect(imsRoles.length).toBeGreaterThan(0);
+    expect(imsRoles[0].company).toBe("City of Calgary");
+    expect(imsRoles[0].title).toBe("Information Management Student");
+  });
+
+  it("visitor via /for/city-of-calgary/information-management-student should match IMS role", () => {
+    const companyConfig = {
+      slug: "city-of-calgary/information-management-student",
+      displayName: "CITY OF CALGARY",
+      subtitle: "Information Management Student",
+      brandColor: "#D0202E",
+      brandAccent: "#FF6B6B",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Information Management Student");
+  });
+
+  it("has City of Calgary IT Operations EUC role", () => {
+    const eucRoles = directorsPickData.roles.filter((r) => r.companySlug === "city-of-calgary/it-ops-euc-student");
+    expect(eucRoles.length).toBeGreaterThan(0);
+    expect(eucRoles[0].company).toBe("City of Calgary");
+    expect(eucRoles[0].title).toBe("IT Operations End User Computing Summer Student");
+  });
+
+  it("visitor via /for/city-of-calgary/it-ops-euc-student should match EUC role", () => {
+    const companyConfig = {
+      slug: "city-of-calgary/it-ops-euc-student",
+      displayName: "CITY OF CALGARY",
+      subtitle: "IT Operations End User Computing Summer Student",
+      brandColor: "#D0202E",
+      brandAccent: "#FF6B6B",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("IT Operations End User Computing Summer Student");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

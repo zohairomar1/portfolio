@@ -7,7 +7,8 @@
       "title": "Business Systems Analyst Intern",
       "topSkills": ["Data Analysis", "Business Requirements", "Agile Delivery", "Process Improvement", "Stakeholder Management"],
       "pitch": "I like working at the intersection of technical systems and business needs. I've built Power BI dashboards with role-based views, led Agile teams through sprint planning and CI/CD setup, and automated reporting workflows with Power Automate. I'm looking to bring that same mix of analytical thinking and cross-functional collaboration to BMO as a Business Systems Analyst.",
-      "relevantHighlights": ["Data Analysis & KPI Reporting", "CI/CD Pipelines & Agile Delivery", "Power Automate, Azure AD & SharePoint Integration"]
+      "relevantHighlights": ["Data Analysis & KPI Reporting", "CI/CD Pipelines & Agile Delivery", "Power Automate, Azure AD & SharePoint Integration"],
+      "relevantProjects": ["oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard", "business-tracking-application"]
     },
     {
       "company": "City of Calgary",
@@ -18,6 +19,7 @@
       "pitch": "I've built Power Automate workflows, integrated Azure AD with Microsoft Graph API for SharePoint file I/O, and set up CI/CD pipelines with GitHub Actions across multiple projects. I also have experience hardening web apps for 1,000+ users and writing technical documentation (SOPs, onboarding guides) to support handoffs and long-term system upkeep. I'd love to bring that to the City of Calgary's IT team this summer.",
       "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_ITDev_0304.pdf",
       "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "React, APIs & Full-Stack Development", "CI/CD Pipelines & Agile Delivery", "Secure Backend Development"],
+      "relevantProjects": ["production-analytics-forecasting-dashboard", "ubc-thrifty-grocers", "oil-gas-asset-integrity-dashboard"],
       "tailoredExperience": [
         {
           "name": "Enactus UCalgary - WealthPath",
@@ -63,6 +65,7 @@
       "pitch": "I've built Power BI dashboards with DAX measures and role-based views, written SOPs and onboarding documentation, and collaborated across Agile teams to deliver features on schedule. Whether it's analyzing data in Excel, creating process documentation in Word, or presenting insights to stakeholders, I focus on clear communication and actionable results. I'm excited to bring that analytical mindset and documentation experience to the City of Calgary.",
       "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_BA_0304.pdf",
       "relevantHighlights": ["Data Analysis & KPI Reporting", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
+      "relevantProjects": ["oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard", "business-tracking-application"],
       "tailoredExperience": [
         {
           "name": "Enactus UCalgary - WealthPath",
@@ -106,6 +109,7 @@
       "pitch": "I've implemented security-focused backend features including RBAC, CORS policies, and OAuth2 authentication for apps serving 1,000+ daily users. I've also written SOPs, contributed to documentation workflows, and integrated Azure AD with Microsoft Graph API for secure file I/O. I'm excited to bring that hands-on security and documentation experience to the City of Calgary's cybersecurity team.",
       "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_Cybersec_0305.pdf",
       "relevantHighlights": ["Secure Backend Development", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
+      "relevantProjects": ["ubc-thrifty-grocers", "production-analytics-forecasting-dashboard", "oil-gas-asset-integrity-dashboard"],
       "tailoredExperience": [
         {
           "name": "Enactus UCalgary - WealthPath",
@@ -150,6 +154,7 @@
       "pitch": "I've designed and tested automation workflows in Power Automate with scope-based error handling, integrated Azure AD and Microsoft Graph API for SharePoint file I/O, and maintained documentation repositories with SOPs, meeting notes, and status logs. I'm collaborative and feedback-driven, and I'm excited to learn and grow with the City of Calgary's automation team while contributing reliable, well-documented work from day one.",
       "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_AutomationDev_0207.pdf",
       "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "Data Analysis & KPI Reporting", "CI/CD Pipelines & Agile Delivery"],
+      "relevantProjects": ["production-analytics-forecasting-dashboard", "oil-gas-asset-integrity-dashboard", "business-tracking-application"],
       "tailoredExperience": [
         {
           "name": "Enactus UCalgary - WealthPath",
@@ -194,6 +199,7 @@
       "pitch": "I've led multi-stakeholder IT projects through Scrum-style delivery, built training materials and onboarding guides for 100+ users, and maintained documentation repositories with SOPs, meeting notes, and status logs. I also have hands-on experience with Microsoft Project Server Professional, Power BI dashboards, and feasibility-style assessments. I'm excited to bring that project coordination, documentation, and change management experience to the City of Calgary's PMIS team.",
       "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_PMIS_0207.pdf",
       "relevantHighlights": ["CI/CD Pipelines & Agile Delivery", "Power Automate, Azure AD & SharePoint Integration", "Data Analysis & KPI Reporting"],
+      "relevantProjects": ["production-analytics-forecasting-dashboard", "oil-gas-asset-integrity-dashboard", "business-tracking-application"],
       "tailoredExperience": [
         {
           "name": "Enactus UCalgary - WealthPath",
@@ -241,6 +247,7 @@
       "pitch": "I've built full-stack applications using JavaScript, React, Python, and SQL, and maintained code quality by testing for efficiency and functionality in CI pipelines with GitHub Actions and Jenkins across 30+ merges without regression. I've also written SQL queries to power dashboards and features, and developed secure backend functionality with authentication and RBAC. I'm excited to bring that hands-on coding, testing discipline, and SQL experience to the City of Calgary's software development team.",
       "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_SWE_0208.pdf",
       "relevantHighlights": ["React, APIs & Full-Stack Development", "CI/CD Pipelines & Agile Delivery", "Secure Backend Development"],
+      "relevantProjects": ["ubc-thrifty-grocers", "production-analytics-forecasting-dashboard", "business-tracking-application"],
       "tailoredExperience": [
         {
           "name": "Enactus UCalgary - WealthPath",
@@ -274,6 +281,101 @@
             "Fortified application security using CORS, proxy settings, and robust error handling while maintaining access for 1,000+ daily users with high attention to detail",
             "Developed and debugged secure backend functionality including authentication and role-based access control using SQL; applied critical thinking to resolve issues quickly",
             "Tested code for efficiency and functionality within CI workflows (Jenkins) and supported feature releases; resolved 3 critical bottlenecks ahead of schedule through strong communication"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "City of Calgary",
+      "companySlug": "city-of-calgary/information-management-student",
+      "title": "Information Management Student",
+      "topSkills": ["SharePoint & Repository Management", "Microsoft Office (Word & Excel)", "Process Documentation & SOPs", "Power Automate & Azure AD", "Organization & Time Management"],
+      "summary": "4th year Computer Science & Mathematics student with experience supporting information workflows through repository usage (SharePoint), process documentation (SOPs, workflows), and structured delivery in cross-functional teams. Proficient in Microsoft Office (Word, Excel, PowerPoint), SharePoint, Power Automate, SQL, and Azure AD (OAuth2) / Microsoft Graph API for secure file access and operational reporting. Known for strong organization, attention to detail, analytical problem solving, and reliable execution independently and in teams.",
+      "pitch": "I've maintained documentation repositories with SOPs, meeting notes, and status logs, integrated SharePoint file I/O via Azure AD and Microsoft Graph API, and built Power Automate workflows for automated reporting. I care about keeping information organized, accurate, and easy for teams to find and trust. I'm excited to bring that repository experience and documentation discipline to the City of Calgary's Water Services information management team.",
+      "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_IMS_0209.pdf",
+      "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "Data Analysis & KPI Reporting", "CI/CD Pipelines & Agile Delivery"],
+      "relevantProjects": ["production-analytics-forecasting-dashboard", "oil-gas-asset-integrity-dashboard", "business-tracking-application"],
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "Word, PowerPoint, React, TypeScript, GitHub Actions",
+          "bullets": [
+            "Led a 4-person team and facilitated 2-3 Scrum meetings weekly; tracked deliverables, owners, and timelines with strong organization and attention to detail",
+            "Produced clear updates and documentation for technical and non-technical stakeholders using Word/PowerPoint",
+            "Coordinated with back-end developers to define API contracts and resolve issues, accelerating delivery by 1-2 sprints"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "React, Python, SQL, Git",
+          "bullets": [
+            "Gathered requirements from student club stakeholders and translated needs into trackable deliverables; maintained documentation and onboarding guides for long-term upkeep",
+            "Built full-stack sites and dashboards that improved information access and usability for 100+ users; ensured changes were documented and repeatable",
+            "Led a 4-person team through Agile sprints and reviews, balancing priorities and delivering reliable workstreams on schedule"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, Word, Excel",
+          "bullets": [
+            "Documented workflows and contributed to internal SOPs for issue resolution and system operations using Word/Excel",
+            "Supported reliable operations by troubleshooting and delivering updates; resolved 3 critical system bottlenecks ahead of schedule",
+            "Developed backend functionality using Python and SQL, strengthening data integrity and secure access patterns"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "City of Calgary",
+      "companySlug": "city-of-calgary/it-ops-euc-student",
+      "title": "IT Operations End User Computing Summer Student",
+      "topSkills": ["Azure Automation & PowerShell", "CI/CD & GitHub", "KQL Reporting & Analysis", "Endpoint Security & Compliance", "Documentation & Procedures"],
+      "summary": "4th year Computer Science & Mathematics student with experience building secure, workflow-driven solutions and automation for operational reporting, access control, and service reliability. Proficient in Microsoft Azure AD (OAuth2), Microsoft Graph API, SharePoint, Power Automate, PowerShell, KQL, and GitHub/CI/CD (GitHub Actions). Strong documentation and procedure-writing habits using Outlook, Word, Excel, and PowerPoint. Known for attention to detail, excellent communication, critical thinking, and learning fast while delivering independently and in teams.",
+      "pitch": "I've built CI/CD pipelines with GitHub Actions, developed PowerShell scripts for automated deployments, integrated Azure AD and Microsoft Graph API with SharePoint, and written KQL queries for reporting and troubleshooting. I also have hands-on experience hardening web apps with CORS, RBAC, and proxy configurations for 1,000+ users. I'm excited to bring that Azure automation, endpoint security, and documentation experience to the City of Calgary's IT Operations EUC team.",
+      "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_IT_OPS_EUC_0209.pdf",
+      "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery", "Secure Backend Development"],
+      "relevantProjects": ["production-analytics-forecasting-dashboard", "ubc-thrifty-grocers", "oil-gas-asset-integrity-dashboard"],
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, CI/CD",
+          "bullets": [
+            "Led a 4-person team and facilitated 2-3 Scrum meetings weekly; maintained high attention to detail while tracking deliverables, owners, and timelines",
+            "Implemented CI/CD with GitHub Actions to test code for functionality and prevent regressions; supported 30+ merges without regression",
+            "Coordinated with back-end developers on API contracts and integration troubleshooting, applying critical thinking to accelerate delivery by 1-2 sprints",
+            "Produced clear stakeholder documentation and procedure-style updates using Word/PowerPoint/Outlook, communicating changes and next steps effectively"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "PowerShell, React, Python, SQL, Git, CI/CD",
+          "bullets": [
+            "Built full-stack websites and dashboards for clubs using React, Python, and SQL, improving usability and information access for 100+ users",
+            "Developed PowerShell scripts to automate repeatable setup/maintenance tasks, improving consistency and reducing manual steps during deployments and troubleshooting",
+            "Led a 4-person team using Git branching and code reviews; tested features for functionality and maintained code quality across releases",
+            "Created documentation and onboarding guides to standardize workflows and improve long-term maintainability and service delivery"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "KQL, Python, SQL, CI/CD, Web Security",
+          "bullets": [
+            "Fortified application security using CORS, proxy settings, and robust error handling while maintaining access for 1,000+ daily users",
+            "Developed secure backend functionality including authentication and role-based access control (RBAC) using SQL to enforce least-privilege access",
+            "Wrote basic KQL queries to support reporting and troubleshooting by investigating patterns during operational follow-ups and validating observed issues",
+            "Documented workflows and contributed to internal SOPs for issue resolution and operations using Word; resolved 3 critical bottlenecks ahead of schedule"
           ]
         }
       ]

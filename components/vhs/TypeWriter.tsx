@@ -22,6 +22,14 @@ export function TypeWriter({
   const [isComplete, setIsComplete] = useState(false);
 
   useEffect(() => {
+    // Instant mode: skip animation entirely
+    if (speed === 0) {
+      setDisplayText(text);
+      setIsComplete(true);
+      onComplete?.();
+      return;
+    }
+
     let timeout: NodeJS.Timeout;
     let charIndex = 0;
 
