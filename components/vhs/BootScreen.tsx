@@ -31,7 +31,7 @@ const LOADING_MESSAGES = [
 export function BootScreen({ onComplete, company }: BootScreenProps) {
   const { settings, updateSettings } = useSettings();
   const [phase, setPhase] = useState<
-    "power-on" | "static" | "tracking" | "loading" | "ready" | "done"
+    "power-on" | "static" | "tracking" | "unlock" | "loading" | "ready" | "done"
   >("power-on");
   const [trackingOffset, setTrackingOffset] = useState(0);
   const [loadingProgress, setLoadingProgress] = useState(0);
@@ -45,6 +45,8 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
   const [showRewind, setShowRewind] = useState(false);
   const [currentMessage, setCurrentMessage] = useState(0);
   const [showPortfolio, setShowPortfolio] = useState(false);
+  const [showCompanyThemeBtn, setShowCompanyThemeBtn] = useState(false);
+  const [unlockFadingOut, setUnlockFadingOut] = useState(false);
 
   // Build theme colors map — add company entry if present
   const themeColors: Record<string, { primary: string; accent: string }> = {
@@ -72,12 +74,18 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
     // Static phase
     timers.push(setTimeout(() => setPhase("tracking"), 900));
 
-    // Tracking phase
-    timers.push(setTimeout(() => setPhase("loading"), 1700));
-
-    // Show config after loading completes (handled by loading progress)
+    // Tracking phase → unlock (recruiter) or loading (normal)
+    if (company) {
+      timers.push(setTimeout(() => setPhase("unlock"), 1700));
+      // Let text stay visible for ~1s after last text appears, then fade out
+      timers.push(setTimeout(() => setUnlockFadingOut(true), 5200));
+      timers.push(setTimeout(() => setPhase("loading"), 5900));
+    } else {
+      timers.push(setTimeout(() => setPhase("loading"), 1700));
+    }
 
     return () => timers.forEach(clearTimeout);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Tracking effect
@@ -112,6 +120,8 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
           setShowConfig(true);
           // Show PORTFOLIO text with delay after loading complete
           setTimeout(() => setShowPortfolio(true), 300);
+          // Pop in company theme button with delay
+          if (company) setTimeout(() => setShowCompanyThemeBtn(true), 600);
           return 100;
         }
         return newProgress;
@@ -293,7 +303,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
                 className="font-display text-3xl sm:text-5xl lg:text-7xl mb-6 transition-all duration-200"
                 style={{
                   color: "var(--boot-primary)",
-                  textShadow: `0 0 20px var(--boot-primary), 0 0 40px var(--boot-primary)`,
+                  textShadow: `0 0 10px color-mix(in srgb, var(--boot-primary) 60%, transparent), 0 0 25px color-mix(in srgb, var(--boot-primary) 25%, transparent)`,
                   opacity: glitchText ? 0.5 : 1,
                   transform: glitchText ? "translateX(3px)" : "none",
                 }}
@@ -365,6 +375,110 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
         </div>
       )}
 
+      {/* Recruiter unlock phase */}
+      {phase === "unlock" && company && (
+        <div
+          className="absolute inset-0 flex items-center justify-center animate-fadeIn transition-all duration-500"
+          style={{
+            opacity: unlockFadingOut ? 0 : 1,
+            transform: unlockFadingOut ? 'scale(0.95) translateY(-20px)' : 'scale(1) translateY(0)',
+            filter: unlockFadingOut ? 'blur(4px)' : 'blur(0)',
+          }}
+        >
+          <div className="text-center">
+            {/* Lock icon */}
+            <div className="relative mx-auto w-20 h-24 mb-6">
+              {/* Expanding ring pulse — fires after shackle opens */}
+              <div
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 rounded-full"
+                style={{
+                  border: `2px solid var(--boot-primary)`,
+                  opacity: 0,
+                  animation: 'unlock-ring 1s ease-out 1.8s forwards',
+                }}
+              />
+              {/* Lock body */}
+              <div
+                className="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-12 rounded-sm"
+                style={{
+                  border: `2px solid var(--boot-primary)`,
+                  background: `color-mix(in srgb, var(--boot-primary) 10%, transparent)`,
+                  boxShadow: `0 0 15px var(--boot-primary), inset 0 0 8px var(--boot-primary)`,
+                }}
+              />
+              {/* Lock shackle — opens outward to the right */}
+              <div
+                className="absolute top-0 w-10 h-12 rounded-t-full"
+                style={{
+                  left: 'calc(50% - 20px)',
+                  border: `2px solid var(--boot-primary)`,
+                  borderBottom: 'none',
+                  transformOrigin: 'right bottom',
+                  animation: 'lock-open 1.8s cubic-bezier(0.22, 0.61, 0.36, 1) 0.6s forwards',
+                }}
+              />
+            </div>
+
+            {/* ACCESS GRANTED */}
+            <div
+              className="font-mono text-base sm:text-lg tracking-[0.4em] mb-2 font-bold"
+              style={{
+                color: 'var(--boot-primary)',
+                textShadow: '0 0 20px var(--boot-primary)',
+                animation: 'access-text-in 0.7s ease-out 2.0s both',
+              }}
+            >
+              ACCESS GRANTED
+            </div>
+
+            {/* Positive reinforcement */}
+            <div
+              className="font-mono text-[10px] sm:text-xs tracking-wider text-gray-400 mb-1"
+              style={{
+                animation: 'access-text-in 0.6s ease-out 2.4s both',
+              }}
+            >
+              PERSONALIZED CONTENT UNLOCKED
+            </div>
+            <div
+              className="font-mono text-[10px] sm:text-xs tracking-wide"
+              style={{
+                color: 'var(--boot-accent)',
+                animation: 'access-text-in 0.6s ease-out 2.8s both',
+              }}
+            >
+              This page was built just for you.
+            </div>
+
+            {/* Decorative lines */}
+            <div className="flex items-center justify-center gap-3 mt-5">
+              <div
+                style={{
+                  height: '1px',
+                  background: 'var(--boot-primary)',
+                  animation: 'line-expand 1s ease-out 1.8s both',
+                }}
+              />
+              <div
+                className="w-2 h-2 rotate-45"
+                style={{
+                  border: `1px solid var(--boot-primary)`,
+                  boxShadow: `0 0 6px var(--boot-primary)`,
+                  animation: 'access-text-in 0.4s ease-out 2.0s both',
+                }}
+              />
+              <div
+                style={{
+                  height: '1px',
+                  background: 'var(--boot-primary)',
+                  animation: 'line-expand 1s ease-out 1.8s both',
+                }}
+              />
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* PLAY indicator */}
       {(phase === "loading" || phase === "ready") && (
         <div className="absolute top-8 left-8 flex items-center gap-3 animate-fadeIn">
@@ -409,7 +523,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
 
       {/* Main content area - Loading & Config */}
       {(phase === "loading" || phase === "ready") && (
-        <div className="relative w-full max-w-2xl px-4 sm:px-8">
+        <div className="relative w-full max-w-2xl px-4 sm:px-8 animate-fadeIn">
           {/* VHS Label */}
           <div
             className={`text-center mb-8 transition-all duration-200 ${
@@ -423,7 +537,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
               className="font-display text-3xl sm:text-5xl lg:text-7xl mb-3 transition-colors duration-300"
               style={{
                 color: "var(--boot-primary)",
-                textShadow: `0 0 10px var(--boot-primary), 0 0 20px var(--boot-primary), 0 0 40px var(--boot-accent)`,
+                textShadow: `0 0 8px color-mix(in srgb, var(--boot-primary) 60%, transparent), 0 0 20px color-mix(in srgb, var(--boot-primary) 30%, transparent)`,
               }}
             >
               {glitchText ? "Z0H41R 0M4R" : "ZOHAIR OMAR"}
@@ -505,8 +619,8 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
               {/* Theme selector */}
               <div className="space-y-3">
                 <label
-                  className="font-mono text-xs uppercase tracking-wider"
-                  style={{ color: "var(--boot-primary)" }}
+                  className="font-mono text-xs uppercase tracking-wider pl-2.5"
+                  style={{ color: "#EDEDED", borderLeft: "2px solid var(--boot-primary)" }}
                 >
                   Color Theme
                 </label>
@@ -526,7 +640,14 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
 
                     if (isCompany) {
                       return (
-                        <div key={theme} className="relative col-span-2 sm:col-span-1">
+                        <div
+                          key={theme}
+                          className={`relative col-span-2 sm:col-span-1 ${
+                            showCompanyThemeBtn
+                              ? "animate-theme-pop-in"
+                              : "opacity-0 scale-75 pointer-events-none"
+                          }`}
+                        >
                           {/* DIRECTOR'S PICK tape label - overlays the top border */}
                           <span
                             className="absolute -top-2 left-1/2 -translate-x-1/2 px-2 py-0.5 font-mono text-[9px] tracking-wider whitespace-nowrap z-10"
@@ -541,7 +662,9 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
 
                           <button
                             onClick={() => setSelectedTheme(theme)}
-                            className="relative w-full h-full py-3 px-3 border-2 transition-all font-mono text-xs overflow-visible"
+                            className={`relative w-full h-full py-3 px-3 border-2 transition-all font-mono text-xs overflow-visible ${
+                              showCompanyThemeBtn && !isSelected ? "animate-theme-attention" : ""
+                            }`}
                             style={{
                               borderColor: colors.primary,
                               background: isSelected
@@ -549,7 +672,6 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
                                 : `color-mix(in srgb, ${colors.primary} 8%, transparent)`,
                               color: colors.primary,
                               boxShadow: `0 0 12px ${colors.primary}40, inset 0 0 12px ${colors.primary}15`,
-                              animation: !isSelected ? "company-theme-glow 2s ease-in-out infinite" : "none",
                             }}
                           >
                             {/* Scanline overlay */}
@@ -625,8 +747,8 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
               {/* Sound toggle */}
               <div className="flex items-center justify-between py-2">
                 <label
-                  className="font-mono text-xs uppercase tracking-wider"
-                  style={{ color: "var(--boot-primary)" }}
+                  className="font-mono text-xs uppercase tracking-wider pl-2.5"
+                  style={{ color: "#EDEDED", borderLeft: "2px solid var(--boot-primary)" }}
                 >
                   Sound Effects
                 </label>
@@ -725,6 +847,27 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
         @keyframes company-dot-pulse {
           0%, 100% { transform: scale(1); opacity: 1; }
           50% { transform: scale(1.8); opacity: 0; }
+        }
+        @keyframes lock-open {
+          0% { transform: rotate(0deg); }
+          30% { transform: rotate(15deg); }
+          55% { transform: rotate(48deg); }
+          70% { transform: rotate(38deg); }
+          82% { transform: rotate(44deg); }
+          92% { transform: rotate(40deg); }
+          100% { transform: rotate(42deg); }
+        }
+@keyframes unlock-ring {
+          0% { transform: translate(-50%, -50%) scale(0.5); opacity: 0.8; }
+          100% { transform: translate(-50%, -50%) scale(2.5); opacity: 0; }
+        }
+        @keyframes access-text-in {
+          0% { opacity: 0; transform: translateY(8px); filter: blur(4px); }
+          100% { opacity: 1; transform: translateY(0); filter: blur(0); }
+        }
+        @keyframes line-expand {
+          0% { width: 0; }
+          100% { width: 60px; }
         }
       `}</style>
     </div>

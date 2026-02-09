@@ -25,6 +25,7 @@ const FLICKER_OPTIONS: { value: FlickerIntensity; label: string }[] = [
 export default function SettingsPage() {
   const { settings, updateSettings, resetSettings } = useSettings();
   const [company, setCompany] = useState<CompanyConfig | null>(null);
+  const [showCompanyTheme, setShowCompanyTheme] = useState(false);
 
   useEffect(() => {
     try {
@@ -35,12 +36,12 @@ export default function SettingsPage() {
     }
   }, []);
 
-  const THEME_OPTIONS = [
-    ...BASE_THEME_OPTIONS,
-    ...(company?.brandColor
-      ? [{ value: "company" as ThemePreset, label: company.displayName, color: "" }]
-      : []),
-  ];
+  useEffect(() => {
+    if (company?.brandColor) {
+      const timer = setTimeout(() => setShowCompanyTheme(true), 600);
+      return () => clearTimeout(timer);
+    }
+  }, [company]);
 
   const flickerIndex = FLICKER_OPTIONS.findIndex(
     (f) => f.value === settings.flickerIntensity
@@ -179,8 +180,8 @@ export default function SettingsPage() {
                 </h2>
               </div>
 
-              <div className={`grid gap-3 ${THEME_OPTIONS.length > 3 ? "grid-cols-2 sm:grid-cols-4" : "grid-cols-3"}`}>
-                {THEME_OPTIONS.map((theme) => (
+              <div className={`grid gap-3 ${company?.brandColor ? "grid-cols-2 sm:grid-cols-4" : "grid-cols-3"}`}>
+                {BASE_THEME_OPTIONS.map((theme) => (
                   <button
                     key={theme.value}
                     onClick={() => updateSettings({ theme: theme.value })}
@@ -193,15 +194,43 @@ export default function SettingsPage() {
                   >
                     <div
                       className={`w-8 h-8 rounded-full mx-auto mb-2 ${theme.color}`}
-                      style={
-                        theme.value === "company" && company?.brandColor
-                          ? { backgroundColor: company.brandColor }
-                          : undefined
-                      }
                     />
                     <span className="text-xs font-mono">{theme.label}</span>
                   </button>
                 ))}
+
+                {/* Company theme — pops in with animation */}
+                {company?.brandColor && (
+                  <button
+                    onClick={() => updateSettings({ theme: "company" })}
+                    className={`p-4 rounded border-2 transition-all relative overflow-visible ${
+                      settings.theme === "company"
+                        ? "border-primary bg-primary/10"
+                        : "border-border hover:border-primary/50"
+                    } ${showCompanyTheme
+                      ? `animate-theme-pop-in ${settings.theme !== "company" ? "animate-theme-attention" : ""}`
+                      : "opacity-0 scale-75 pointer-events-none"
+                    }`}
+                    aria-pressed={settings.theme === "company"}
+                  >
+                    {/* DIRECTOR'S PICK label */}
+                    <span
+                      className="absolute -top-2 left-1/2 -translate-x-1/2 px-1.5 py-0.5 text-[8px] font-mono tracking-wider whitespace-nowrap z-10"
+                      style={{
+                        background: company.brandColor,
+                        color: '#000',
+                        boxShadow: `0 0 8px ${company.brandColor}80`,
+                      }}
+                    >
+                      DIRECTOR&apos;S PICK
+                    </span>
+                    <div
+                      className="w-8 h-8 rounded-full mx-auto mb-2"
+                      style={{ backgroundColor: company.brandColor }}
+                    />
+                    <span className="text-xs font-mono">{company.displayName}</span>
+                  </button>
+                )}
               </div>
             </section>
 

@@ -86,15 +86,22 @@ export function DVDMenu({ className, isCompanyMode = false }: DVDMenuProps) {
             className={cn(
               "dvd-menu-item group",
               selectedIndex === index && "active",
-              isEnhancedPick && "border-l-2 border-l-accent bg-accent/[0.08] py-3.5"
+              isEnhancedPick && "border-l-2 border-l-accent bg-accent/[0.08] py-3.5 relative overflow-hidden animate-directors-glow"
             )}
-            style={isEnhancedPick ? {
-              boxShadow: "inset 0 0 20px hsl(var(--accent) / 0.06)",
-            } : undefined}
             onMouseEnter={() => handleMouseEnter(index)}
             onClick={() => handleClick(item.href)}
             onFocus={() => setSelectedIndex(index)}
           >
+            {/* Shimmer sweep for Director's Pick */}
+            {isEnhancedPick && (
+              <div
+                className="absolute inset-0 pointer-events-none animate-menu-shimmer"
+                style={{
+                  background: 'linear-gradient(90deg, transparent, hsl(var(--accent) / 0.08), transparent)',
+                }}
+              />
+            )}
+
             <span
               className="cursor w-4 text-primary font-bold text-center"
               aria-hidden="true"
@@ -107,16 +114,24 @@ export function DVDMenu({ className, isCompanyMode = false }: DVDMenuProps) {
                 isEnhancedPick ? "text-lg sm:text-xl" : "text-base sm:text-lg"
               )}>
                 {item.isDirectorsPick && (
-                  <span className="text-[10px] font-mono tracking-wider mr-1.5 align-middle" style={{ color: "hsl(var(--accent))" }}>★</span>
+                  <span
+                    className={cn(
+                      "text-[10px] font-mono tracking-wider mr-1.5 align-middle inline-block",
+                      isEnhancedPick && "animate-star-pulse"
+                    )}
+                    style={{ color: "hsl(var(--accent))" }}
+                  >
+                    ★
+                  </span>
                 )}
                 {item.label}
               </span>
               {isEnhancedPick && (
                 <span
-                  className="block font-mono text-[9px] tracking-widest mt-0.5"
+                  className="block font-mono text-[9px] mt-0.5 animate-subtitle-reveal"
                   style={{ color: "hsl(var(--accent) / 0.7)" }}
                 >
-                  ▶ RECOMMENDED FOR YOU
+                  ▶ CURATED JUST FOR YOU
                 </span>
               )}
             </span>
