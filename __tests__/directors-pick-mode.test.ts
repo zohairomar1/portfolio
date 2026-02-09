@@ -233,6 +233,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("IT Operations End User Computing Summer Student");
   });
 
+  it("has City of Calgary IT Operations Asset Management role", () => {
+    const amRoles = directorsPickData.roles.filter((r) => r.companySlug === "city-of-calgary/it-ops-am-student");
+    expect(amRoles.length).toBeGreaterThan(0);
+    expect(amRoles[0].company).toBe("City of Calgary");
+    expect(amRoles[0].title).toBe("IT Operations Asset Management Summer Student");
+  });
+
+  it("visitor via /for/city-of-calgary/it-ops-am-student should match AM role", () => {
+    const companyConfig = {
+      slug: "city-of-calgary/it-ops-am-student",
+      displayName: "CITY OF CALGARY",
+      subtitle: "IT Operations Asset Management Summer Student",
+      brandColor: "#D0202E",
+      brandAccent: "#FF6B6B",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("IT Operations Asset Management Summer Student");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

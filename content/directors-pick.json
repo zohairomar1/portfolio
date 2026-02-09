@@ -379,6 +379,54 @@
           ]
         }
       ]
+    },
+    {
+      "company": "City of Calgary",
+      "companySlug": "city-of-calgary/it-ops-am-student",
+      "title": "IT Operations Asset Management Summer Student",
+      "topSkills": ["Power BI & Asset Reporting", "PowerShell & Azure Automation", "KQL & Operational Analysis", "SharePoint & Documentation", "Endpoint & Device Management"],
+      "summary": "4th year Computer Science & Mathematics student with hands-on experience building secure, workflow-driven solutions and reporting for operational reliability. Proficient in Power BI (Power Query/DAX), Excel, SQL, SharePoint, Azure AD (OAuth2), Microsoft Graph API, Power Automate, PowerShell, and KQL. Strong documentation habits (procedures, SOPs, status reporting) using Outlook, Word, Excel, PowerPoint. Known for attention to detail, strong organization, research/problem solving, and learning fast while working independently and in teams.",
+      "pitch": "I've built Power BI dashboards tracking operational integrity KPIs with DAX and role-based views, written KQL queries for reporting and anomaly validation, and integrated Azure AD with Microsoft Graph API for SharePoint file I/O. I also have experience automating tasks with PowerShell and documenting workflows with SOPs and procedures. I'm excited to bring that asset reporting, automation, and documentation experience to the City of Calgary's IT Operations Asset Management team.",
+      "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_IT_OPS_AM_0209.pdf",
+      "relevantHighlights": ["Data Analysis & KPI Reporting", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
+      "relevantProjects": ["oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard", "business-tracking-application"],
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, CI/CD",
+          "bullets": [
+            "Led a 4-person team and facilitated 2-3 Scrum meetings weekly; maintained detailed action tracking and clear communication across stakeholders",
+            "Implemented CI/CD with GitHub Actions to test changes for functionality and prevent regressions; supported 30+ merges without regression",
+            "Coordinated with back-end developers to resolve integration issues and improve delivery by 1-2 sprints through structured problem solving",
+            "Produced stakeholder-ready updates and documentation using Outlook/Word/PowerPoint, translating technical progress into concise status reporting"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "PowerShell, React, Python, SQL, Git",
+          "bullets": [
+            "Built full-stack websites and dashboards for clubs, improving information access and usability for 100+ users through organized delivery",
+            "Used PowerShell to automate repeatable setup/maintenance tasks, improving consistency and reducing manual steps during troubleshooting",
+            "Created onboarding guides and process documentation to standardize workflows and improve service quality over time"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "KQL, Python, SQL, Web Security",
+          "bullets": [
+            "Strengthened security and reliability using CORS, proxy settings, and robust error handling while maintaining access for 1,000+ daily users",
+            "Developed backend authentication and RBAC using SQL to enforce least-privilege access and improve compliance-minded operations",
+            "Wrote basic KQL queries to support analysis and reporting during operational follow-ups, validating patterns and anomalies",
+            "Documented workflows and contributed to internal SOPs for issue resolution; resolved 3 critical bottlenecks ahead of schedule"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
