@@ -164,6 +164,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Automation Developer Student");
   });
 
+  it("has City of Calgary Software Developer role", () => {
+    const sweRoles = directorsPickData.roles.filter((r) => r.companySlug === "city-of-calgary/swe-student");
+    expect(sweRoles.length).toBeGreaterThan(0);
+    expect(sweRoles[0].company).toBe("City of Calgary");
+    expect(sweRoles[0].title).toBe("Software Developer Summer Student");
+  });
+
+  it("visitor via /for/city-of-calgary/swe-student should match SWE role", () => {
+    const companyConfig = {
+      slug: "city-of-calgary/swe-student",
+      displayName: "CITY OF CALGARY",
+      subtitle: "Software Developer Summer Student",
+      brandColor: "#D0202E",
+      brandAccent: "#FF6B6B",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Software Developer Summer Student");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

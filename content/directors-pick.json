@@ -231,6 +231,52 @@
           ]
         }
       ]
+    },
+    {
+      "company": "City of Calgary",
+      "companySlug": "city-of-calgary/swe-student",
+      "title": "Software Developer Summer Student",
+      "topSkills": ["Java & JavaScript", "CI/CD & Testing (Jenkins)", "SQL & Databases", "Code Quality & Maintenance", "Microsoft Office"],
+      "summary": "4th year Computer Science & Mathematics student with hands-on experience creating new code to solve business problems, maintaining code quality, testing code for efficiency and functionality, and writing SQL queries to extract information from databases. Proficient in Java, JavaScript/TypeScript, SQL, GitHub, CI/CD (GitHub Actions, Jenkins), and Microsoft Office (Outlook, Word, Excel, PowerPoint). Recognized for attention to detail, excellent communication, critical thinking, and learning fast while delivering in Agile teams.",
+      "pitch": "I've built full-stack applications using JavaScript, React, Python, and SQL, and maintained code quality by testing for efficiency and functionality in CI pipelines with GitHub Actions and Jenkins across 30+ merges without regression. I've also written SQL queries to power dashboards and features, and developed secure backend functionality with authentication and RBAC. I'm excited to bring that hands-on coding, testing discipline, and SQL experience to the City of Calgary's software development team.",
+      "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_SWE_0208.pdf",
+      "relevantHighlights": ["React, APIs & Full-Stack Development", "CI/CD Pipelines & Agile Delivery", "Secure Backend Development"],
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "Git, Jenkins, TypeScript, CI/CD, React",
+          "bullets": [
+            "Led a 4-person team and facilitated 2-3 Scrum meetings per week; communicated clearly, learned fast, and tracked deliverables with high attention to detail",
+            "Built a reusable React/TypeScript component library used across 5+ core pages, reducing duplicate code by 20%",
+            "Maintained code quality by testing code for efficiency and functionality in CI pipelines (GitHub Actions, Jenkins); supported 30+ merges without regression",
+            "Coordinated with back-end developers to define API contracts and resolve integration issues, applying critical thinking to accelerate delivery by 1-2 sprints"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Jenkins, JavaScript, Git, React, Python, SQL",
+          "bullets": [
+            "Built full-stack websites and dashboards for student clubs using React, Python, and SQL, improving usability for 100+ users through clear communication and attention to detail",
+            "Maintained code quality by testing code for efficiency and functionality and using Git-based workflows with CI (GitHub, Jenkins) to improve release reliability",
+            "Produced documentation and onboarding guides that reduced ramp-up time and helped teams learn fast while keeping systems maintainable"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "JavaScript, Jenkins, Python, SQL, HTML/CSS",
+          "bullets": [
+            "Fortified application security using CORS, proxy settings, and robust error handling while maintaining access for 1,000+ daily users with high attention to detail",
+            "Developed and debugged secure backend functionality including authentication and role-based access control using SQL; applied critical thinking to resolve issues quickly",
+            "Tested code for efficiency and functionality within CI workflows (Jenkins) and supported feature releases; resolved 3 critical bottlenecks ahead of schedule through strong communication"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
