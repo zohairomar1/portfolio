@@ -96,9 +96,11 @@ export default function DirectorsPickPage() {
     ? custom.roles[0]?.pitch || data.genericPitch || ""
     : data.genericPitch || "";
 
-  // Filter highlights based on role's relevantHighlights (if in custom mode)
+  // Filter and order highlights based on role's relevantHighlights (if in custom mode)
   const roleHighlights = isCustom && custom.roles[0]?.relevantHighlights
-    ? data.highlights.filter((h) => custom.roles[0].relevantHighlights?.includes(h.label))
+    ? custom.roles[0].relevantHighlights
+        .map((label) => data.highlights.find((h) => h.label === label))
+        .filter((h): h is Highlight => h !== undefined)
     : data.highlights;
 
   // Use tailored experience when available, otherwise fall back to generic
