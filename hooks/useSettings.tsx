@@ -104,7 +104,27 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
               styleEl.id = STYLE_ID;
               document.head.appendChild(styleEl);
             }
-            styleEl.textContent = `[data-theme="company"] { --primary: ${primary}; --accent: ${accent}; --ring: ${primary}; }`;
+            styleEl.textContent = `[data-theme="company"] {
+  --background: 0 0% 7%;
+  --foreground: 0 0% 93%;
+  --card: 0 0% 10%;
+  --card-foreground: 0 0% 93%;
+  --popover: 0 0% 12%;
+  --popover-foreground: 0 0% 93%;
+  --primary: ${primary};
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 0% 15%;
+  --secondary-foreground: 0 0% 85%;
+  --muted: 0 0% 14%;
+  --muted-foreground: 0 0% 55%;
+  --accent: ${accent};
+  --accent-foreground: 0 0% 7%;
+  --border: 0 0% 18%;
+  --input: 0 0% 18%;
+  --ring: ${primary};
+  --destructive: 0 63% 31%;
+  --destructive-foreground: 0 0% 93%;
+}`;
           }
         }
       } catch {

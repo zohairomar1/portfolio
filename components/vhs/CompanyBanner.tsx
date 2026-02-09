@@ -50,13 +50,13 @@ export function CompanyBanner({ company }: CompanyBannerProps) {
             borderColor: brandColor,
             backgroundColor: `${brandColor}26`,
             boxShadow: glow
-              ? `0 0 20px ${brandColor}66, 0 0 40px ${brandColor}33, inset 0 0 15px ${brandColor}1a`
-              : `0 0 8px ${brandColor}33, inset 0 0 8px ${brandColor}0d`,
+              ? `0 0 15px ${brandColor}40, 0 0 30px ${brandColor}1a, inset 0 0 10px ${brandColor}0d`
+              : `0 0 6px ${brandColor}26, inset 0 0 6px ${brandColor}0a`,
           }}
         >
           {/* Scanline overlay on banner */}
           <div
-            className="absolute inset-0 pointer-events-none opacity-20"
+            className="absolute inset-0 pointer-events-none opacity-10"
             style={{
               background: `repeating-linear-gradient(0deg, transparent, transparent 2px, ${brandColor}4d 2px, ${brandColor}4d 3px)`,
             }}
@@ -66,8 +66,8 @@ export function CompanyBanner({ company }: CompanyBannerProps) {
             style={{
               color: brandColor,
               textShadow: glow
-                ? `0 0 10px ${brandColor}99, 0 0 20px ${brandColor}4d`
-                : `0 0 5px ${brandColor}4d`,
+                ? `0 0 6px ${brandColor}40`
+                : 'none',
             }}
           >
             Applying for{" "}
