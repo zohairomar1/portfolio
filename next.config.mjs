@@ -8,6 +8,11 @@ const nextConfig = {
         destination: "/for/city-of-calgary/cybersecurity-student",
         permanent: true,
       },
+      {
+        source: "/city-of-calgary/pmis-student",
+        destination: "/for/city-of-calgary/pmis-student",
+        permanent: true,
+      },
     ];
   },
 };
