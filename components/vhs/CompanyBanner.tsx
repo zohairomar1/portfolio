@@ -45,7 +45,7 @@ export function CompanyBanner({ company }: CompanyBannerProps) {
         className="flex flex-col items-center"
       >
         <div
-          className="relative px-6 py-2 border-2 rounded-sm transition-shadow duration-700"
+          className="relative px-4 sm:px-6 py-2 border-2 rounded-sm transition-shadow duration-700 max-w-[90vw]"
           style={{
             borderColor: brandColor,
             backgroundColor: `${brandColor}26`,
@@ -62,7 +62,7 @@ export function CompanyBanner({ company }: CompanyBannerProps) {
             }}
           />
           <span
-            className="relative font-mono text-[10px] sm:text-xs tracking-wide whitespace-nowrap"
+            className="relative font-mono text-[10px] sm:text-xs tracking-wide sm:whitespace-nowrap text-center block"
             style={{
               color: brandColor,
               textShadow: glow
