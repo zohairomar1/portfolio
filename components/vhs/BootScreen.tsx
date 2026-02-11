@@ -526,7 +526,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
         <div className="relative w-full max-w-2xl px-4 sm:px-8 animate-fadeIn">
           {/* VHS Label */}
           <div
-            className={`text-center mb-8 transition-all duration-200 ${
+            className={`text-center mb-4 sm:mb-8 transition-all duration-200 ${
               glitchText ? "translate-x-1" : ""
             }`}
             style={{
@@ -534,7 +534,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
             }}
           >
             <h1
-              className="font-display text-3xl sm:text-5xl lg:text-7xl mb-3 transition-colors duration-300"
+              className="font-display text-2xl sm:text-5xl lg:text-7xl mb-1 sm:mb-3 transition-colors duration-300"
               style={{
                 color: "var(--boot-primary)",
                 textShadow: `0 0 8px color-mix(in srgb, var(--boot-primary) 60%, transparent), 0 0 20px color-mix(in srgb, var(--boot-primary) 30%, transparent)`,
@@ -568,10 +568,10 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
           </div>
 
           {/* Main progress bar - gray filling with theme color */}
-          <div className="mb-8">
+          <div className="mb-4 sm:mb-8">
             <div className="relative">
               {/* Progress bar container */}
-              <div className="h-2 bg-gray-700 rounded-full overflow-hidden relative">
+              <div className="h-1.5 sm:h-2 bg-gray-700 rounded-full overflow-hidden relative">
                 {/* Animated fill */}
                 <div
                   className="h-full transition-all duration-100 rounded-full relative"
@@ -593,7 +593,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
               </div>
 
               {/* Progress percentage */}
-              <div className="flex justify-between mt-2 font-mono text-xs">
+              <div className="flex justify-between mt-1.5 sm:mt-2 font-mono text-[10px] sm:text-xs">
                 <span className="text-gray-500">{Math.floor(loadingProgress)}%</span>
                 <span style={{ color: "var(--boot-primary)" }}>
                   {LOADING_MESSAGES[currentMessage]}
@@ -606,7 +606,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
           {/* Config panel - only shows when ready */}
           {showConfig && (
             <div
-              className="animate-slideUp space-y-5 border p-6 backdrop-blur-sm"
+              className="animate-slideUp space-y-3 sm:space-y-5 border p-4 sm:p-6 backdrop-blur-sm"
               style={{
                 borderColor: `color-mix(in srgb, ${currentColors.primary} 30%, transparent)`,
                 background: "rgba(0,0,0,0.8)",
@@ -662,7 +662,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
 
                           <button
                             onClick={() => setSelectedTheme(theme)}
-                            className={`relative w-full h-full py-3 px-3 border-2 transition-all font-mono text-xs overflow-visible ${
+                            className={`relative w-full h-full py-2 sm:py-3 px-3 border-2 transition-all font-mono text-xs overflow-visible ${
                               showCompanyThemeBtn && !isSelected ? "animate-theme-attention" : ""
                             }`}
                             style={{
@@ -683,7 +683,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
                             />
 
                             <div
-                              className="w-5 h-5 rounded-full mx-auto mb-2 transition-transform relative"
+                              className="w-4 sm:w-5 h-4 sm:h-5 rounded-full mx-auto mb-1.5 sm:mb-2 transition-transform relative"
                               style={{
                                 background: colors.primary,
                                 transform: isSelected ? "scale(1.2)" : "scale(1)",
@@ -716,7 +716,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
                       <button
                         key={theme}
                         onClick={() => setSelectedTheme(theme)}
-                        className="relative flex-1 py-3 px-3 border transition-all font-mono text-xs overflow-hidden"
+                        className="relative flex-1 py-2 sm:py-3 px-3 border transition-all font-mono text-xs overflow-hidden"
                         style={{
                           borderColor: isSelected
                             ? colors.primary
@@ -728,7 +728,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
                         }}
                       >
                         <div
-                          className="w-5 h-5 rounded-full mx-auto mb-2 transition-transform"
+                          className="w-4 sm:w-5 h-4 sm:h-5 rounded-full mx-auto mb-1.5 sm:mb-2 transition-transform"
                           style={{
                             background: colors.primary,
                             transform: isSelected ? "scale(1.2)" : "scale(1)",
@@ -745,7 +745,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
               </div>
 
               {/* Sound toggle */}
-              <div className="flex items-center justify-between py-2">
+              <div className="flex items-center justify-between py-1 sm:py-2">
                 <label
                   className="font-mono text-xs uppercase tracking-wider pl-2.5"
                   style={{ color: "#EDEDED", borderLeft: "2px solid var(--boot-primary)" }}
@@ -770,7 +770,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
               {/* Start button - NO SKIP, only INSERT TAPE when ready */}
               <button
                 onClick={handleStart}
-                className="w-full py-4 font-display text-2xl tracking-wider transition-all hover:scale-[1.02] active:scale-[0.98] relative overflow-hidden group"
+                className="w-full py-3 sm:py-4 font-display text-xl sm:text-2xl tracking-wider transition-all hover:scale-[1.02] active:scale-[0.98] relative overflow-hidden group"
                 style={{
                   background: "var(--boot-primary)",
                   color: "#000",
@@ -787,7 +787,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
                 />
               </button>
 
-              <p className="text-center font-mono text-xs text-gray-500">
+              <p className="text-center font-mono text-[10px] sm:text-xs text-gray-500">
                 Press ENTER or SPACE to continue
               </p>
             </div>
