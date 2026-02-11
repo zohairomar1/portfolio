@@ -173,9 +173,9 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
     setTimeout(() => {
       onComplete();
       setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "instant" });
         const menu = document.querySelector('[data-menu="dvd-menu"]');
         if (menu) {
-          menu.scrollIntoView({ behavior: "smooth", block: "center" });
           menu.classList.add("menu-highlight");
           setTimeout(() => menu.classList.remove("menu-highlight"), 2000);
         }

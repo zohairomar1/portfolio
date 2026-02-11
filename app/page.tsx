@@ -65,7 +65,7 @@ export default function HomePage() {
       </div>
 
       {/* Main content */}
-      <div className="max-w-2xl w-full text-center mb-8">
+      <div className="max-w-2xl w-full text-center mb-8 mt-10 sm:mt-0">
         {/* Company Banner - 8-bit stickman with banner */}
         {company && <CompanyBanner company={company} />}
 
