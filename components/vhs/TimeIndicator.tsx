@@ -50,11 +50,11 @@ export function TimeIndicator({
   if (isHomePage) {
     return (
       <div
-        className={`font-mono text-sm sm:text-base text-muted-foreground ${className}`}
+        className={`font-mono text-[10px] sm:text-base text-muted-foreground ${className}`}
         aria-label="Time remaining on disc"
       >
-        <span className="text-primary/70 tracking-wider">TIME LEFT</span>{" "}
-        <span className="text-primary font-bold text-base sm:text-lg">{formatTimecode(time)}</span>
+        <span className="text-primary/70 tracking-wider hidden sm:inline">TIME LEFT</span>{" "}
+        <span className="text-primary font-bold text-xs sm:text-lg">{formatTimecode(time)}</span>
       </div>
     );
   }

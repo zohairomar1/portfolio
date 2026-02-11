@@ -11,11 +11,11 @@ export function PlayIndicator({ className = "" }: PlayIndicatorProps) {
 
   return (
     <div
-      className={`flex items-center gap-2 font-mono text-base sm:text-lg ${className}`}
+      className={`flex items-center gap-1.5 sm:gap-2 font-mono text-xs sm:text-lg ${className}`}
       aria-hidden="true"
     >
       <span
-        className={`text-primary text-lg sm:text-xl leading-none ${
+        className={`text-primary text-sm sm:text-xl leading-none ${
           settings.effectsEnabled ? "animate-play-pulse" : ""
         }`}
         style={{

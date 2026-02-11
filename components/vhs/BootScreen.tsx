@@ -481,13 +481,13 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
 
       {/* PLAY indicator */}
       {(phase === "loading" || phase === "ready") && (
-        <div className="absolute top-8 left-8 flex items-center gap-3 animate-fadeIn">
+        <div className="absolute top-4 left-4 sm:top-8 sm:left-8 flex items-center gap-2 sm:gap-3 animate-fadeIn">
           <div
-            className="w-0 h-0 border-t-[14px] border-t-transparent border-b-[14px] border-b-transparent"
-            style={{ borderLeftWidth: "22px", borderLeftColor: "var(--boot-primary)" }}
+            className="w-0 h-0 border-t-[8px] sm:border-t-[14px] border-t-transparent border-b-[8px] sm:border-b-[14px] border-b-transparent border-l-[13px] sm:border-l-[22px]"
+            style={{ borderLeftColor: "var(--boot-primary)" }}
           />
           <span
-            className="font-display text-2xl tracking-wider"
+            className="font-display text-base sm:text-2xl tracking-wider"
             style={{ color: "var(--boot-primary)" }}
           >
             PLAY
@@ -497,9 +497,9 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
 
       {/* Rewind flash on theme change */}
       {showRewind && phase === "ready" && (
-        <div className="absolute top-8 right-8 animate-pulse">
+        <div className="absolute top-4 right-4 sm:top-8 sm:right-8 animate-pulse">
           <span
-            className="font-mono text-sm tracking-wider"
+            className="font-mono text-xs sm:text-sm tracking-wider"
             style={{ color: "var(--boot-primary)" }}
           >
             ◀◀ REWIND
@@ -509,9 +509,9 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
 
       {/* Counter display */}
       {(phase === "loading" || phase === "ready") && !showRewind && (
-        <div className="absolute top-8 right-8 animate-fadeIn">
+        <div className="absolute top-4 right-4 sm:top-8 sm:right-8 animate-fadeIn">
           <span
-            className="font-mono text-lg tabular-nums"
+            className="font-mono text-xs sm:text-lg tabular-nums"
             style={{ color: "var(--boot-primary)" }}
           >
             {String(Math.floor(loadingProgress / 60)).padStart(2, "0")}:
@@ -549,7 +549,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
               style={{ opacity: showPortfolio ? 1 : 0, transform: showPortfolio ? "translateY(0)" : "translateY(-10px)" }}
             >
               {company ? (
-                <p className="font-mono text-[10px] sm:text-xs text-gray-400 tracking-wide whitespace-nowrap text-center">
+                <p className="font-mono text-[10px] sm:text-xs text-gray-400 tracking-wide text-center">
                   Personalized portfolio for{" "}
                   <span style={{ color: "var(--boot-primary)" }}>
                     {company.subtitle || "you"}
@@ -796,7 +796,7 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
       )}
 
       {/* Bottom VHS info */}
-      <div className="absolute bottom-6 left-6 right-6 flex justify-between font-mono text-xs text-gray-600">
+      <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 flex justify-between font-mono text-[10px] sm:text-xs text-gray-600">
         <span>VHS-001</span>
         <div className="flex items-center gap-2">
           <span

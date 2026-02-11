@@ -32,7 +32,7 @@ export function DateStamp() {
 
   return (
     <div
-      className="font-mono text-xs sm:text-sm text-right space-y-0.5"
+      className="font-mono text-[10px] sm:text-sm text-right space-y-0.5"
       style={{
         color: "#FFA500",
         textShadow: "0 0 6px rgba(255, 165, 0, 0.5)",

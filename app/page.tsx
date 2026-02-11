@@ -53,7 +53,7 @@ export default function HomePage() {
   }, []);
 
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center p-4 relative">
+    <main className="min-h-screen flex flex-col items-center justify-center p-4 pb-20 sm:pb-4 relative">
       {/* VHS tape label effect at top */}
       <div
         className={`absolute top-4 left-4 right-4 sm:top-8 sm:left-8 sm:right-8 flex justify-between items-start transition-opacity duration-500 ${
@@ -128,7 +128,7 @@ export default function HomePage() {
           showBottom ? "opacity-100" : "opacity-0"
         }`}
       >
-        <div className="space-y-1 text-xs sm:text-base font-mono text-muted-foreground/60">
+        <div className="space-y-0.5 sm:space-y-1 text-[10px] sm:text-base font-mono text-muted-foreground/60">
           <p className="tracking-wider">PORTFOLIO</p>
           <p className="text-primary/50 font-bold">VHS-001</p>
         </div>
