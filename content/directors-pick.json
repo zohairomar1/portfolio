@@ -437,7 +437,8 @@
       "pitch": "I've built AI-assisted workflows including a RAG-based ticket triage bot with multi-provider routing (OpenAI, Gemini), designed Power Automate workflows with scope-based error handling, and integrated Azure AD with Microsoft Graph API for SharePoint automation. I also have strong CI/CD and testing discipline with 34 automated tests and 30+ regression-free merges. I'm eager to apply that automation and AI experience to ATCO's digital transformation initiatives.",
       "resumePath": "/Zohair_Omar_Resume_ATCO_AIAutomation_0212.pdf",
       "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery", "React, APIs & Full-Stack Development"],
-      "relevantProjects": ["production-analytics-forecasting-dashboard", "ubc-thrifty-grocers", "oil-gas-asset-integrity-dashboard"],
+      "relevantProjects": ["ticket-triage-rag-bot", "production-analytics-forecasting-dashboard", "ubc-thrifty-grocers"],
+      "projectsAboveExperience": true,
       "tailoredExperience": [
         {
           "name": "Enactus UCalgary - WealthPath",
@@ -472,7 +473,7 @@
       "pitch": "I've supported production applications by troubleshooting incidents, strengthening authentication and RBAC flows with SQL, and creating SOP-style documentation for faster resolution handoffs. I've also built reporting dashboards in Power BI and automated distribution workflows with Power Automate. I'm excited to bring that service delivery, documentation, and reporting experience to ATCO's ERP/SCM support team and grow my skills in Oracle Fusion.",
       "resumePath": "/Zohair_Omar_Resume_ATCO_ERPSCM_0211.pdf",
       "relevantHighlights": ["Data Analysis & KPI Reporting", "Secure Backend Development", "Power Automate, Azure AD & SharePoint Integration"],
-      "relevantProjects": ["oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard", "business-tracking-application"],
+      "relevantProjects": ["ticket-triage-rag-bot", "oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard"],
       "tailoredExperience": [
         {
           "name": "Agrius IT",
@@ -517,7 +518,7 @@
       "pitch": "I've created and maintained architecture-style artifacts in Visio and PowerPoint (component diagrams, data flows, integration notes), built documentation systems with SharePoint folder conventions and templates that reduced repeat questions by 25%, and produced stakeholder-facing dashboards in Power BI. I care about documentation accuracy, standardized deliverables, and clear communication. I'm excited to support ATCO's solution architecture team with that structured, detail-oriented approach.",
       "resumePath": "/Zohair_Omar_Resume_ATCO_ITSolution_0212.pdf",
       "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "Data Analysis & KPI Reporting", "CI/CD Pipelines & Agile Delivery"],
-      "relevantProjects": ["oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard", "business-tracking-application"],
+      "relevantProjects": ["oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard"],
       "tailoredExperience": [
         {
           "name": "Enactus UCalgary - WealthPath",

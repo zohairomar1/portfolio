@@ -39,6 +39,7 @@ interface Role {
   resumePath?: string;
   relevantHighlights?: string[];
   relevantProjects?: string[];
+  projectsAboveExperience?: boolean;
   tailoredExperience?: TailoredExperience[];
 }
 
@@ -112,6 +113,8 @@ export default function DirectorsPickPage() {
   const experienceToShow = isCustom && custom.roles[0]?.tailoredExperience
     ? custom.roles[0].tailoredExperience
     : relevantExperience;
+
+  const projectsAboveExperience = isCustom && custom.roles[0]?.projectsAboveExperience;
 
   return (
     <>
@@ -301,115 +304,120 @@ export default function DirectorsPickPage() {
             </div>
           </section>
 
-          {/* Relevant Projects */}
-          {relevantProjects.length > 0 && (
-            <section className="mb-12">
-              <ScrollReveal variant="chromatic" delay={0}>
-                <h2 className="font-display text-2xl text-primary vhs-text mb-6 flex items-center gap-2">
-                  <Code className="w-5 h-5" />
-                  Relevant Projects
-                </h2>
-              </ScrollReveal>
+          {/* Projects and Experience - order depends on role config */}
+          {(() => {
+            const projectsSection = relevantProjects.length > 0 && (
+              <section key="projects" className="mb-12">
+                <ScrollReveal variant="chromatic" delay={0}>
+                  <h2 className="font-display text-2xl text-primary vhs-text mb-6 flex items-center gap-2">
+                    <Code className="w-5 h-5" />
+                    Relevant Projects
+                  </h2>
+                </ScrollReveal>
 
-              <div className="grid gap-4 sm:grid-cols-2">
-                {relevantProjects.map((project, index) => {
-                  const hasExternalUrl = isCustom && project.url;
-                  const href = hasExternalUrl ? project.url! : `/scenes#${project.slug}`;
+                <div className="grid gap-4 sm:grid-cols-2">
+                  {relevantProjects.map((project, index) => {
+                    const hasExternalUrl = isCustom && project.url;
+                    const href = hasExternalUrl ? project.url! : `/scenes#${project.slug}`;
 
-                  return (
-                  <ScrollReveal
-                    key={project.slug}
-                    delay={index * 100}
-                    variant="flicker"
-                  >
-                    <Link
-                      href={href}
-                      {...(hasExternalUrl ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                      className="vhs-card p-4 block group hover:border-primary/40 transition-colors h-full"
+                    return (
+                    <ScrollReveal
+                      key={project.slug}
+                      delay={index * 100}
+                      variant="flicker"
                     >
-                      <div className="flex items-start justify-between gap-2 mb-2">
-                        <h3 className="font-display text-base text-primary group-hover:text-accent transition-colors">
-                          {project.name}
-                        </h3>
-                        {hasExternalUrl
-                          ? <ExternalLink className="w-4 h-4 text-muted-foreground/40 group-hover:text-primary transition-colors shrink-0 mt-0.5" />
-                          : <ChevronRight className="w-4 h-4 text-muted-foreground/40 group-hover:text-primary transition-colors shrink-0 mt-0.5" />
-                        }
-                      </div>
-                      <p className="font-mono text-[10px] text-muted-foreground/60 mb-2">
-                        {project.stack}
-                      </p>
-                      {project.pitch && (
-                        <p className="text-sm text-muted-foreground leading-relaxed">
-                          {project.pitch}
-                        </p>
-                      )}
-                    </Link>
-                  </ScrollReveal>
-                  );
-                })}
-              </div>
-            </section>
-          )}
-
-          {/* Relevant Experience */}
-          {experienceToShow.length > 0 && (
-            <section className="mb-12">
-              <ScrollReveal variant="tape" delay={0}>
-                <h2 className="font-display text-2xl text-primary vhs-text mb-6 flex items-center gap-2">
-                  <Briefcase className="w-5 h-5" />
-                  Relevant Experience
-                </h2>
-              </ScrollReveal>
-
-              <div className="space-y-4">
-                {experienceToShow.map((exp, index) => (
-                  <ScrollReveal
-                    key={exp.name}
-                    delay={index * 100}
-                    variant="scanline"
-                  >
-                    <div className="vhs-card p-4 sm:p-5">
-                      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-3">
-                        <div>
-                          <h3 className="font-display text-base sm:text-lg text-primary">
-                            {exp.name}
+                      <Link
+                        href={href}
+                        {...(hasExternalUrl ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                        className="vhs-card p-4 block group hover:border-primary/40 transition-colors h-full"
+                      >
+                        <div className="flex items-start justify-between gap-2 mb-2">
+                          <h3 className="font-display text-base text-primary group-hover:text-accent transition-colors">
+                            {project.name}
                           </h3>
-                          <p className="font-mono text-xs text-muted-foreground">
-                            {exp.title}
-                            {exp.stack && (
-                              <span className="text-muted-foreground/50">
-                                {" "}
-                                &middot; {exp.stack}
-                              </span>
-                            )}
-                          </p>
+                          {hasExternalUrl
+                            ? <ExternalLink className="w-4 h-4 text-muted-foreground/40 group-hover:text-primary transition-colors shrink-0 mt-0.5" />
+                            : <ChevronRight className="w-4 h-4 text-muted-foreground/40 group-hover:text-primary transition-colors shrink-0 mt-0.5" />
+                          }
                         </div>
-                        <span className="font-mono text-[10px] text-muted-foreground/50 shrink-0">
-                          {exp.dates}
-                        </span>
-                      </div>
-                      {"pitch" in exp && (exp as { pitch?: string }).pitch && (
-                        <p className="text-sm text-foreground/80 leading-relaxed mb-3">
-                          {(exp as { pitch: string }).pitch}
+                        <p className="font-mono text-[10px] text-muted-foreground/60 mb-2">
+                          {project.stack}
                         </p>
-                      )}
-                      <ul className="space-y-1.5">
-                        {exp.bullets.map((bullet, i) => (
-                          <li key={i} className="flex gap-2 text-sm">
-                            <span className="text-primary shrink-0">&#9656;</span>
-                            <span className="text-muted-foreground">
-                              {bullet}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </ScrollReveal>
-                ))}
-              </div>
-            </section>
-          )}
+                        {project.pitch && (
+                          <p className="text-sm text-muted-foreground leading-relaxed">
+                            {project.pitch}
+                          </p>
+                        )}
+                      </Link>
+                    </ScrollReveal>
+                    );
+                  })}
+                </div>
+              </section>
+            );
+
+            const experienceSection = experienceToShow.length > 0 && (
+              <section key="experience" className="mb-12">
+                <ScrollReveal variant="tape" delay={0}>
+                  <h2 className="font-display text-2xl text-primary vhs-text mb-6 flex items-center gap-2">
+                    <Briefcase className="w-5 h-5" />
+                    Relevant Experience
+                  </h2>
+                </ScrollReveal>
+
+                <div className="space-y-4">
+                  {experienceToShow.map((exp, index) => (
+                    <ScrollReveal
+                      key={exp.name}
+                      delay={index * 100}
+                      variant="scanline"
+                    >
+                      <div className="vhs-card p-4 sm:p-5">
+                        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-3">
+                          <div>
+                            <h3 className="font-display text-base sm:text-lg text-primary">
+                              {exp.name}
+                            </h3>
+                            <p className="font-mono text-xs text-muted-foreground">
+                              {exp.title}
+                              {exp.stack && (
+                                <span className="text-muted-foreground/50">
+                                  {" "}
+                                  &middot; {exp.stack}
+                                </span>
+                              )}
+                            </p>
+                          </div>
+                          <span className="font-mono text-[10px] text-muted-foreground/50 shrink-0">
+                            {exp.dates}
+                          </span>
+                        </div>
+                        {"pitch" in exp && (exp as { pitch?: string }).pitch && (
+                          <p className="text-sm text-foreground/80 leading-relaxed mb-3">
+                            {(exp as { pitch: string }).pitch}
+                          </p>
+                        )}
+                        <ul className="space-y-1.5">
+                          {exp.bullets.map((bullet, i) => (
+                            <li key={i} className="flex gap-2 text-sm">
+                              <span className="text-primary shrink-0">&#9656;</span>
+                              <span className="text-muted-foreground">
+                                {bullet}
+                              </span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </ScrollReveal>
+                  ))}
+                </div>
+              </section>
+            );
+
+            return projectsAboveExperience
+              ? <>{projectsSection}{experienceSection}</>
+              : <>{experienceSection}{projectsSection}</>;
+          })()}
 
           {/* Resume Download - only when in custom mode with a resume */}
           {isCustom && custom.roles[0]?.resumePath && (

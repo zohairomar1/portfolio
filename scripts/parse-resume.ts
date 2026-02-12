@@ -445,7 +445,25 @@ function main() {
     category: "fullstack",
   };
 
-  let projectsWithOverrides = [...resumeData!.projects, cleaningProject, portfolioProject];
+  // Add Ticket Triage RAG Bot (not in generic resume.tex but used for ATCO roles)
+  const ticketTriageProject: ProjectItem = {
+    name: "Ticket Triage RAG Bot",
+    url: "https://ticket-triage-rag-bot.streamlit.app/",
+    stack: "Python, OpenAI, Gemini, Streamlit",
+    bullets: [
+      "Built an AI-powered support ticket system that automatically categorizes, prioritizes, and suggests resolutions for incoming tickets by finding patterns in 100+ historical issues - replacing what would be a manual triage process",
+      "Designed the system to never go down by implementing a 3-level fallback chain: if the AI model is unavailable, the system seamlessly switches to rule-based classification, ensuring 100% uptime without user-facing errors",
+      "Cut API costs by 5-10x by building a smart caching layer that remembers previously processed tickets and batches new requests together, avoiding redundant calls to paid AI services",
+      "Eliminated the need for expensive database infrastructure by engineering a custom semantic search engine using vector math, delivering results in under 5 milliseconds while saving on third-party tooling costs",
+      "Shipped a multi-provider architecture supporting both OpenAI and Google Gemini models, giving the team flexibility to switch AI providers instantly based on cost, performance, or availability - no code changes required",
+      "Delivered a production-ready interactive dashboard with 3 operational views (live triage, historical search, and similarity explorer with CSV export), deployed to the web and accessible to stakeholders immediately",
+      "Wrote 34 automated tests covering all core logic with zero dependency on live APIs, enabling fast, reliable CI/CD and confident deployments without risk of breaking changes"
+    ],
+    slug: "ticket-triage-rag-bot",
+    category: "data",
+  };
+
+  let projectsWithOverrides = [...resumeData!.projects, ticketTriageProject, cleaningProject, portfolioProject];
 
   // Check for manual overrides
   const projectsOverrideFile = path.join(

@@ -14,18 +14,15 @@ export default function HomePage() {
   const { settings } = useSettings();
   const [company, setCompany] = useState<CompanyConfig | null>(null);
 
-  // Check if this is a revisit (skip slow intro)
-  const [isRevisit] = useState(() => {
-    if (typeof window === "undefined") return false;
-    return sessionStorage.getItem("vhs-intro-seen") === "1";
-  });
+  // Revisit state — resolved in useEffect since SSR can't access sessionStorage
+  const [isRevisit, setIsRevisit] = useState(false);
 
   // Staggered load-in sequence
-  const [showTopBar, setShowTopBar] = useState(isRevisit);
-  const [showTagline, setShowTagline] = useState(isRevisit);
-  const [showMenu, setShowMenu] = useState(isRevisit);
-  const [showBottom, setShowBottom] = useState(isRevisit);
-  const [titleNeon, setTitleNeon] = useState(isRevisit);
+  const [showTopBar, setShowTopBar] = useState(false);
+  const [showTagline, setShowTagline] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+  const [showBottom, setShowBottom] = useState(false);
+  const [titleNeon, setTitleNeon] = useState(false);
 
   useEffect(() => {
     const companyData = sessionStorage.getItem("vhs-company");
@@ -37,11 +34,20 @@ export default function HomePage() {
       }
     }
 
-    if (!isRevisit) {
-      // Orchestrate cinematic load-in (first visit)
+    const seen = sessionStorage.getItem("vhs-intro-seen") === "1";
+    if (seen) {
+      // Revisit: show everything instantly
+      setIsRevisit(true);
+      setShowTopBar(true);
+      setShowTagline(true);
+      setShowMenu(true);
+      setShowBottom(true);
+      setTitleNeon(true);
+    } else {
+      // First visit: orchestrate cinematic load-in
       setTimeout(() => setShowTopBar(true), 100);
     }
-  }, [isRevisit]);
+  }, []);
 
   const handleTypewriterComplete = useCallback(() => {
     // After title finishes typing, trigger neon flicker then reveal rest
