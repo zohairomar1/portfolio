@@ -427,6 +427,134 @@
           ]
         }
       ]
+    },
+    {
+      "company": "ATCO",
+      "companySlug": "atco/ai-automation",
+      "title": "AI & Automation Co-op Student",
+      "topSkills": ["Power Automate & Workflow Automation", "Python & RAG Patterns", "Azure AD & API Integration", "CI/CD & Automated Testing", "Dashboard & Reporting Tools"],
+      "summary": "4th year Computer Science & Mathematics student with hands-on experience building automation and AI-style workflows using Power Automate, API integrations, and dashboard tooling. Built systems with RAG-style retrieval, multi-provider AI routing (OpenAI, Gemini), CI/CD pipelines, and 34 automated tests. Well-versed in fast learning, debugging, and documentation (SOPs, runbooks, onboarding guides) to support reliable delivery and team handoffs.",
+      "pitch": "I've built AI-assisted workflows including a RAG-based ticket triage bot with multi-provider routing (OpenAI, Gemini), designed Power Automate workflows with scope-based error handling, and integrated Azure AD with Microsoft Graph API for SharePoint automation. I also have strong CI/CD and testing discipline with 34 automated tests and 30+ regression-free merges. I'm eager to apply that automation and AI experience to ATCO's digital transformation initiatives.",
+      "resumePath": "/Zohair_Omar_Resume_ATCO_AIAutomation_0212.pdf",
+      "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery", "React, APIs & Full-Stack Development"],
+      "relevantProjects": ["production-analytics-forecasting-dashboard", "ubc-thrifty-grocers", "oil-gas-asset-integrity-dashboard"],
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, CI/CD",
+          "bullets": [
+            "Led a 4-person team and facilitated 2-3 Scrum meetings weekly; tracked action items and deliverables with high attention to detail and clear communication",
+            "Implemented CI/CD with GitHub Actions (linting and tests per PR), supporting 30+ successful merges without regression",
+            "Coordinated API contracts with back-end teammates, resolved integration issues, and maintained documentation to speed delivery by 1-2 sprints"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, Web Security",
+          "bullets": [
+            "Fortified web application security using CORS, proxy settings, and robust error handling, supporting uninterrupted access for 1,000+ daily users",
+            "Developed secure backend functionality including authentication and RBAC using SQL to enforce least-privilege access",
+            "Documented workflows and SOPs for issue resolution and system operations; collaborated cross-functionally to resolve three critical bottlenecks ahead of schedule"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "ATCO",
+      "companySlug": "atco/erp-scm-student",
+      "title": "ERP & SCM Support Analyst Co-op Student",
+      "topSkills": ["Incident Triage & Troubleshooting", "SQL & Data Reporting", "ITIL-Aligned Support", "Process Documentation (SOPs/KB)", "CI/CD & Release Discipline"],
+      "summary": "4th year Computer Science & Mathematics student with hands-on experience in IT service delivery: incident triage, troubleshooting production issues, role-based access controls, and clear stakeholder communication. Strong with SQL and reporting (Power BI, dashboards), process documentation (SOPs/knowledge articles), and testing/release discipline (CI/CD, regression-style checks). Interested in cloud ERP systems and eager to grow techno-functional skills in Oracle Fusion within an ITIL-aligned support model.",
+      "pitch": "I've supported production applications by troubleshooting incidents, strengthening authentication and RBAC flows with SQL, and creating SOP-style documentation for faster resolution handoffs. I've also built reporting dashboards in Power BI and automated distribution workflows with Power Automate. I'm excited to bring that service delivery, documentation, and reporting experience to ATCO's ERP/SCM support team and grow my skills in Oracle Fusion.",
+      "resumePath": "/Zohair_Omar_Resume_ATCO_ERPSCM_0211.pdf",
+      "relevantHighlights": ["Data Analysis & KPI Reporting", "Secure Backend Development", "Power Automate, Azure AD & SharePoint Integration"],
+      "relevantProjects": ["oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard", "business-tracking-application"],
+      "tailoredExperience": [
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern (Application Support & Reliability)",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL",
+          "bullets": [
+            "Supported day-to-day operations of a production web application by troubleshooting incidents and improving reliability via stronger error handling and CORS/proxy configuration, supporting 1,000+ daily users",
+            "Investigated access issues and strengthened authentication/RBAC flows using SQL-backed logic, improving correctness and reducing recurring support tickets",
+            "Created SOP-style documentation for common issues and resolution steps, enabling faster handoffs and more consistent incident resolution"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript",
+          "bullets": [
+            "Coordinated a 4-person team to deliver a platform for Alberta students by translating stakeholder needs into tracked work items, timelines, and deploy-ready deliverables",
+            "Reduced integration issues by defining API contracts and resolving cross-team defects early, improving turnaround time by 1-2 sprints",
+            "Improved release quality using CI checks on every pull request (GitHub Actions), supporting 30+ changes with consistent validation"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL",
+          "bullets": [
+            "Delivered internal web tools and dashboards that reduced manual tracking and improved visibility into operational workflows for 100+ users",
+            "Documented onboarding and support runbooks to improve continuity and reduce time-to-resolution for recurring issues"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "ATCO",
+      "companySlug": "atco/solution-architecture-student",
+      "title": "IT Solution Architecture Co-op Student",
+      "topSkills": ["Architecture Documentation (Visio/PPT)", "SharePoint & Repository Management", "Power BI & Stakeholder Reporting", "Process Improvement & Templates", "Cross-Functional Communication"],
+      "summary": "4th year Computer Science & Mathematics student supporting documentation-heavy, cross-functional technical projects through clear writing, structured artifacts, and process improvement. Experienced with SharePoint, Power BI, Microsoft Office (Outlook, Word, Excel, PowerPoint), and Visio to create and maintain solution diagrams, decision logs, templates, and repository organization. Strong attention to detail and analytical mindset for reviewing documentation accuracy, standardizing deliverables, and communicating with technical and non-technical stakeholders.",
+      "pitch": "I've created and maintained architecture-style artifacts in Visio and PowerPoint (component diagrams, data flows, integration notes), built documentation systems with SharePoint folder conventions and templates that reduced repeat questions by 25%, and produced stakeholder-facing dashboards in Power BI. I care about documentation accuracy, standardized deliverables, and clear communication. I'm excited to support ATCO's solution architecture team with that structured, detail-oriented approach.",
+      "resumePath": "/Zohair_Omar_Resume_ATCO_ITSolution_0212.pdf",
+      "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "Data Analysis & KPI Reporting", "CI/CD Pipelines & Agile Delivery"],
+      "relevantProjects": ["oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard", "business-tracking-application"],
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, Tailwind CSS, Visio, PowerPoint, Office Suite",
+          "bullets": [
+            "Led a 4-person team and facilitated 2-3 weekly Scrum meetings; maintained action-item tracking in Excel/Outlook and delivered weekly updates to partners, improving follow-through and reducing missed handoffs",
+            "Created and maintained architecture-style artifacts in Visio/PowerPoint (component diagrams, data flows, integration notes), aligning stakeholders and reducing rework during handoffs by 20%",
+            "Coordinated with back-end stakeholders to capture integration requirements and record decisions (assumptions, constraints, next steps) in structured Word decision logs, improving onboarding speed for new contributors",
+            "Implemented CI/CD with GitHub Actions to standardize quality checks and improve review consistency across 30+ merged changes"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "SharePoint, Power BI, PowerPoint, Excel, Git",
+          "bullets": [
+            "Gathered requirements from non-technical stakeholders and translated needs into deliverables; documented scope, risks, and dependencies in Word/Excel to keep delivery predictable",
+            "Built and maintained a lightweight documentation system (templates, checklists, and SharePoint folder conventions) to standardize handoffs and reduce repeat questions by 25%",
+            "Built stakeholder-facing dashboards and summaries using Power BI and PowerPoint, enabling faster status visibility and more consistent reporting across projects",
+            "Assessed solution options and documented recommendations by comparing effort, impact, and delivery tradeoffs to support implementation decisions"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Office 365 (Word, Excel, PowerPoint), SharePoint",
+          "bullets": [
+            "Reviewed existing technical documentation for accuracy and completeness; improved SOP clarity by adding step-by-step procedures and edge-case notes, reducing avoidable escalations by 15%",
+            "Supported repository organization and version control for operational documents (Word/Excel) and status materials (PowerPoint), ensuring teams could quickly locate current procedures and references",
+            "Collaborated across teams to troubleshoot incidents and document resolutions, improving repeatability and reducing turnaround time on recurring issues"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

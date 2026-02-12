@@ -12,6 +12,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   wealthsimple: { slug: "wealthsimple", displayName: "WEALTHSIMPLE", brandColor: "#333333", brandAccent: "#888888" },
   deloitte: { slug: "deloitte", displayName: "DELOITTE", brandColor: "#86BC25", brandAccent: "#B8E06A" },
   bmo: { slug: "bmo", displayName: "BMO", brandColor: "#0079C1", brandAccent: "#ED1C24" },
+  atco: { slug: "atco", displayName: "ATCO", brandColor: "#2E299D", brandAccent: "#E9BF48" },
 };
 
 // Role-specific configurations for /for/[company]/[role] routes
@@ -80,6 +81,29 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       subtitle: "IT Operations Asset Management Summer Student",
       brandColor: "#D0202E",
       brandAccent: "#E8636B",
+    },
+  },
+  atco: {
+    "ai-automation": {
+      slug: "atco/ai-automation",
+      displayName: "ATCO",
+      subtitle: "AI & Automation Co-op Student",
+      brandColor: "#2E299D",
+      brandAccent: "#E9BF48",
+    },
+    "erp-scm-student": {
+      slug: "atco/erp-scm-student",
+      displayName: "ATCO",
+      subtitle: "ERP & SCM Support Analyst Co-op Student",
+      brandColor: "#2E299D",
+      brandAccent: "#E9BF48",
+    },
+    "solution-architecture-student": {
+      slug: "atco/solution-architecture-student",
+      displayName: "ATCO",
+      subtitle: "IT Solution Architecture Co-op Student",
+      brandColor: "#2E299D",
+      brandAccent: "#E9BF48",
     },
   },
 };

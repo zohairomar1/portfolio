@@ -256,6 +256,75 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("IT Operations Asset Management Summer Student");
   });
 
+  it("has ATCO AI & Automation role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "atco/ai-automation");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("ATCO");
+    expect(roles[0].title).toBe("AI & Automation Co-op Student");
+  });
+
+  it("visitor via /for/atco/ai-automation should match AI & Automation role", () => {
+    const companyConfig = {
+      slug: "atco/ai-automation",
+      displayName: "ATCO",
+      subtitle: "AI & Automation Co-op Student",
+      brandColor: "#2E299D",
+      brandAccent: "#E9BF48",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("AI & Automation Co-op Student");
+  });
+
+  it("has ATCO ERP & SCM Support Analyst role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "atco/erp-scm-student");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("ATCO");
+    expect(roles[0].title).toBe("ERP & SCM Support Analyst Co-op Student");
+  });
+
+  it("visitor via /for/atco/erp-scm-student should match ERP & SCM role", () => {
+    const companyConfig = {
+      slug: "atco/erp-scm-student",
+      displayName: "ATCO",
+      subtitle: "ERP & SCM Support Analyst Co-op Student",
+      brandColor: "#2E299D",
+      brandAccent: "#E9BF48",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("ERP & SCM Support Analyst Co-op Student");
+  });
+
+  it("has ATCO IT Solution Architecture role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "atco/solution-architecture-student");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("ATCO");
+    expect(roles[0].title).toBe("IT Solution Architecture Co-op Student");
+  });
+
+  it("visitor via /for/atco/solution-architecture-student should match Solution Architecture role", () => {
+    const companyConfig = {
+      slug: "atco/solution-architecture-student",
+      displayName: "ATCO",
+      subtitle: "IT Solution Architecture Co-op Student",
+      brandColor: "#2E299D",
+      brandAccent: "#E9BF48",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("IT Solution Architecture Co-op Student");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",
