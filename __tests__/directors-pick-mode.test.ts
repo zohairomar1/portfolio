@@ -325,6 +325,98 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("IT Solution Architecture Co-op Student");
   });
 
+  it("has Precision Drilling AI Innovation Analyst role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "precision-drilling/ai-innovation-analyst-intern");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("Precision Drilling");
+    expect(roles[0].title).toBe("AI Innovation Analyst Intern");
+  });
+
+  it("visitor via /for/precision-drilling/ai-innovation-analyst-intern should match AI Innovation role", () => {
+    const companyConfig = {
+      slug: "precision-drilling/ai-innovation-analyst-intern",
+      displayName: "PRECISION DRILLING",
+      subtitle: "AI Innovation Analyst Intern",
+      brandColor: "#CC0000",
+      brandAccent: "#FF4444",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("AI Innovation Analyst Intern");
+  });
+
+  it("has Precision Drilling Infrastructure Services role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "precision-drilling/infrastructure-services-intern");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("Precision Drilling");
+    expect(roles[0].title).toBe("Infrastructure Services, Systems & Storage Intern");
+  });
+
+  it("visitor via /for/precision-drilling/infrastructure-services-intern should match Infrastructure role", () => {
+    const companyConfig = {
+      slug: "precision-drilling/infrastructure-services-intern",
+      displayName: "PRECISION DRILLING",
+      subtitle: "Infrastructure Services, Systems & Storage Intern",
+      brandColor: "#CC0000",
+      brandAccent: "#FF4444",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Infrastructure Services, Systems & Storage Intern");
+  });
+
+  it("has Precision Drilling Data Analyst role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "precision-drilling/data-analyst-intern");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("Precision Drilling");
+    expect(roles[0].title).toBe("Data Analyst Intern");
+  });
+
+  it("visitor via /for/precision-drilling/data-analyst-intern should match Data Analyst role", () => {
+    const companyConfig = {
+      slug: "precision-drilling/data-analyst-intern",
+      displayName: "PRECISION DRILLING",
+      subtitle: "Data Analyst Intern",
+      brandColor: "#CC0000",
+      brandAccent: "#FF4444",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Data Analyst Intern");
+  });
+
+  it("has Precision Drilling SAP Development role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "precision-drilling/sap-development-intern");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("Precision Drilling");
+    expect(roles[0].title).toBe("SAP Development Intern");
+  });
+
+  it("visitor via /for/precision-drilling/sap-development-intern should match SAP Development role", () => {
+    const companyConfig = {
+      slug: "precision-drilling/sap-development-intern",
+      displayName: "PRECISION DRILLING",
+      subtitle: "SAP Development Intern",
+      brandColor: "#CC0000",
+      brandAccent: "#FF4444",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("SAP Development Intern");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

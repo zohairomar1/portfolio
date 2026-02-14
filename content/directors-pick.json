@@ -436,7 +436,7 @@
       "summary": "4th year Computer Science & Mathematics student with hands-on experience building automation and AI-style workflows using Power Automate, API integrations, and dashboard tooling. Built systems with RAG-style retrieval, multi-provider AI routing (OpenAI, Gemini), CI/CD pipelines, and 34 automated tests. Well-versed in fast learning, debugging, and documentation (SOPs, runbooks, onboarding guides) to support reliable delivery and team handoffs.",
       "pitch": "I've built AI-assisted workflows including a RAG-based ticket triage bot with multi-provider routing (OpenAI, Gemini), designed Power Automate workflows with scope-based error handling, and integrated Azure AD with Microsoft Graph API for SharePoint automation. I also have strong CI/CD and testing discipline with 34 automated tests and 30+ regression-free merges. I'm eager to apply that automation and AI experience to ATCO's digital transformation initiatives.",
       "resumePath": "/Zohair_Omar_Resume_ATCO_AIAutomation_0212.pdf",
-      "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery", "React, APIs & Full-Stack Development"],
+      "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "Data Analysis & KPI Reporting", "CI/CD Pipelines & Agile Delivery"],
       "relevantProjects": ["ticket-triage-rag-bot", "production-analytics-forecasting-dashboard", "ubc-thrifty-grocers"],
       "projectsAboveExperience": true,
       "tailoredExperience": [
@@ -553,6 +553,117 @@
             "Reviewed existing technical documentation for accuracy and completeness; improved SOP clarity by adding step-by-step procedures and edge-case notes, reducing avoidable escalations by 15%",
             "Supported repository organization and version control for operational documents (Word/Excel) and status materials (PowerPoint), ensuring teams could quickly locate current procedures and references",
             "Collaborated across teams to troubleshoot incidents and document resolutions, improving repeatability and reducing turnaround time on recurring issues"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Precision Drilling",
+      "companySlug": "precision-drilling/ai-innovation-analyst-intern",
+      "title": "AI Innovation Analyst Intern",
+      "topSkills": ["AI Research & Evaluation", "Python & Cloud AI Services", "Data Preparation & QA", "Documentation & AI Governance", "Chatbot & Agent Development"],
+      "summary": "4th year Computer Science & Mathematics student with hands-on experience building AI-assisted workflows, automation solutions, and documented delivery pipelines. Built a RAG-based ticket triage bot with multi-provider AI routing (OpenAI, Gemini), designed Power Automate workflows for automated reporting, and integrated Azure AD with Microsoft Graph API for secure data access. Focused on making outcomes usable with clear documentation, SOPs, and responsible guardrails.",
+      "pitch": "I've built AI-assisted workflows including a RAG-based ticket triage bot with multi-provider routing, designed Power Automate workflows with scope-based error handling, and documented everything with SOPs and runbooks for reliable handoffs. I focus on making outcomes usable, not just technically correct, which fits the role's emphasis on demos, adoption support, and training. I'm excited to support Precision's AI efforts by researching tools, building chatbots, and turning validated use cases into deployable workflows.",
+      "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "Data Analysis & KPI Reporting", "CI/CD Pipelines & Agile Delivery"],
+      "relevantProjects": ["ticket-triage-rag-bot", "production-analytics-forecasting-dashboard", "oil-gas-asset-integrity-dashboard"],
+      "projectsAboveExperience": true
+    },
+    {
+      "company": "Precision Drilling",
+      "companySlug": "precision-drilling/infrastructure-services-intern",
+      "title": "Infrastructure Services, Systems & Storage Intern",
+      "topSkills": ["Azure & Active Directory", "PowerShell & Scripting", "Endpoint Management", "Documentation & Change Control", "Core Networking (TCP/IP, DNS, DHCP)"],
+      "summary": "4th year Computer Science & Mathematics student interested in infrastructure reliability and change discipline. Comfortable writing clear procedures, runbooks, and troubleshooting notes. Built automation workflows and scripts using PowerShell and Python to reduce manual steps and improve consistency. Foundation in core networking protocols (TCP/IP, DNS, DHCP, NTP, SMTP) and endpoint concepts through coursework and hands-on projects.",
+      "pitch": "I've built CI/CD pipelines with GitHub Actions, developed PowerShell scripts for automated deployments, integrated Azure AD with Microsoft Graph API, and hardened web apps with CORS, RBAC, and proxy configurations for 1,000+ users. I also have strong documentation habits with SOPs, runbooks, and validation steps. I'm excited to support Precision's infrastructure services, contribute to endpoint sustainment work, and learn deeply from the senior analysts.",
+      "relevantHighlights": ["Secure Backend Development", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
+      "relevantProjects": ["production-analytics-forecasting-dashboard", "ubc-thrifty-grocers", "oil-gas-asset-integrity-dashboard"]
+    },
+    {
+      "company": "Precision Drilling",
+      "companySlug": "precision-drilling/data-analyst-intern",
+      "title": "Data Analyst Intern",
+      "topSkills": ["Python & SQL Analytics", "Power BI & Reporting Tables", "Data Validation & QA Checks", "Data Documentation & Mapping Logic", "Requirements Gathering & Collaboration"],
+      "summary": "4th year Computer Science & Mathematics student building analytics solutions with Python, SQL, and Power BI for operational datasets. Strong in data validation/cleaning, reporting table design, and documentation (data definitions, mapping logic) to deliver consistent, analysis-ready data. Interested in Precision's Alpha because it applies data, automation, and smart algorithms to reduce well cost and risk through reliable operational reporting.",
+      "pitch": "I've designed reporting tables and clean data models across 24 months of operational data in Power BI, implemented data validation checks (missing values, duplicates, range rules), and documented data definitions and mapping logic so metrics stay transparent as requirements evolve. I also built end-to-end Python workflows that clean, validate, and standardize multi-well production data into analysis-ready datasets. I'm excited to contribute to Alpha by improving accessibility and usability of operational information.",
+      "resumePath": "/Zohair_Omar_Resume_Precision_Data_0213.pdf",
+      "relevantHighlights": ["Data Analysis & KPI Reporting", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
+      "relevantProjects": ["oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard"],
+      "tailoredExperience": [
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Power BI, Git",
+          "bullets": [
+            "Gathered reporting requirements across stakeholders and translated needs into reporting tables, KPI definitions, and dashboard views to improve accessibility of operational information",
+            "Built data-backed functionality using Python and SQL; validated outputs with structured checks to ensure reliable, analysis-ready results",
+            "Documented metric logic and data assumptions (definitions, refresh notes, edge cases) to keep reporting transparent as requirements evolved in a fast-paced environment"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, HTML/CSS, JavaScript",
+          "bullets": [
+            "Wrote and refined SQL queries to retrieve, validate, and reconcile operational data during incident troubleshooting; summarized findings for engineers and support",
+            "Updated SOPs with clear steps and validation notes, improving repeatability and supporting faster resolution of recurring data/system issues"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "Git, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Coordinated cross-functionally to capture requirements and ship features under deadlines; maintained delivery tracking, action items, and follow-ups with strong accountability",
+            "Implemented CI checks with GitHub Actions to reduce regressions and keep releases stable while iterating quickly with stakeholder feedback"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Precision Drilling",
+      "companySlug": "precision-drilling/sap-development-intern",
+      "title": "SAP Development Intern",
+      "topSkills": ["Python, Java & SQL", "REST APIs & Web Services", "SDLC & Change Control", "Documentation (SOPs/Runbooks)", "CI/CD & Agile Delivery"],
+      "summary": "4th year Computer Science & Mathematics student focused on integration-heavy software work across the SDLC: requirements capture, implementation, testing, troubleshooting, and documentation. Strong foundations in Python, Java, SQL, and web services (REST) with hands-on experience supporting operational systems, writing reliable queries, and producing clear runbooks/SOPs. Gained basic exposure to SAP and integration software in an internship setting while collaborating cross-functionally under deadlines.",
+      "pitch": "I've supported operational systems by writing and refining SQL queries, debugging integrations, and maintaining clean handoffs through clear technical notes and reproducible steps. I also gained basic exposure to SAP and integration software through internal walkthroughs at Agrius IT. With strong foundations in Python, Java, REST APIs, and CI/CD, I'm excited to contribute to Precision's SAP team by learning integration technologies, following the SDLC, and delivering reliable solutions under guidance.",
+      "resumePath": "/Zohair_Omar_Resume_Precision_SAP_0213.pdf",
+      "relevantHighlights": ["React, APIs & Full-Stack Development", "CI/CD Pipelines & Agile Delivery", "Secure Backend Development"],
+      "relevantProjects": ["production-analytics-forecasting-dashboard", "oil-gas-asset-integrity-dashboard"],
+      "tailoredExperience": [
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, HTML/CSS, JavaScript",
+          "bullets": [
+            "Supported day-to-day troubleshooting by writing/refining SQL queries to validate operational data, isolate root causes, and summarize findings for faster issue resolution",
+            "Contributed to stability improvements by implementing backend changes and debugging integrations; maintained clean handoffs through clear technical notes and reproducible steps",
+            "Updated internal SOPs/runbooks with edge cases and validation checks, improving repeatability for recurring incidents and reducing back-and-forth during support",
+            "Gained basic exposure to SAP and integration software through internal walkthroughs and shadowing, building familiarity with how enterprise systems exchange data and how changes are controlled"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Git",
+          "bullets": [
+            "Gathered requirements and translated them into implementable deliverables; balanced scope, risks, and timelines to ship reliable features under deadlines",
+            "Built data-backed functionality using Python and SQL and validated outputs with structured checks to ensure consistent behavior as requirements evolved",
+            "Created onboarding and support documentation (how-to guides, troubleshooting notes, and change summaries) to improve maintainability and reduce repeat support requests"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Led a 4-person team through iterative delivery (2-3 Scrum meetings/week), incorporating feedback quickly and maintaining clear action tracking",
+            "Implemented CI/CD with GitHub Actions to standardize build/test checks, improving release stability while iterating rapidly with stakeholders"
           ]
         }
       ]
