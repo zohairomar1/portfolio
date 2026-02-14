@@ -15,7 +15,6 @@
       "companySlug": "city-of-calgary/it-dev-student",
       "title": "IT Developer Summer Student",
       "topSkills": ["Power Automate & SharePoint", "CI/CD & DevOps", "Secure Backend Dev", "React & APIs", "Documentation & Pilots"],
-      "summary": "4th year Computer Science & Mathematics student with experience building and deploying web solutions and automations using Power Automate, SharePoint, Azure AD (OAuth2), Microsoft Graph API, and React. Led Agile delivery (2-3 Scrum meetings/week), implemented CI/CD with GitHub Actions (30+ merges), and produced technical documentation (SOPs, onboarding guides) to support reliable system operations and handoffs.",
       "pitch": "I've built Power Automate workflows, integrated Azure AD with Microsoft Graph API for SharePoint file I/O, and set up CI/CD pipelines with GitHub Actions across multiple projects. I also have experience hardening web apps for 1,000+ users and writing technical documentation (SOPs, onboarding guides) to support handoffs and long-term system upkeep. I'd love to bring that to the City of Calgary's IT team this summer.",
       "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_ITDev_0304.pdf",
       "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "React, APIs & Full-Stack Development", "CI/CD Pipelines & Agile Delivery", "Secure Backend Development"],
@@ -61,7 +60,6 @@
       "companySlug": "city-of-calgary/business-analyst-student",
       "title": "Business Analyst Student",
       "topSkills": ["Excel & Power BI Analytics", "Documentation & SOPs", "Office 365", "Agile/Scrum", "Stakeholder Presentations"],
-      "summary": "Computer Science student with hands-on experience in data analysis, reporting, and process documentation across technical and stakeholder-facing projects. Proficient in Excel (advanced reporting/optimization), Power BI (Power Query/DAX), SQL, and Office 365 (Word, PowerPoint, Excel) with a track record of building dashboards, documenting SOPs, and presenting results clearly. Strong Agile/Scrum collaborator who coordinates cross-functionally, tracks deliverables, and translates technical findings into actionable insights.",
       "pitch": "I've built Power BI dashboards with DAX measures and role-based views, written SOPs and onboarding documentation, and collaborated across Agile teams to deliver features on schedule. Whether it's analyzing data in Excel, creating process documentation in Word, or presenting insights to stakeholders, I focus on clear communication and actionable results. I'm excited to bring that analytical mindset and documentation experience to the City of Calgary.",
       "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_BA_0304.pdf",
       "relevantHighlights": ["Data Analysis & KPI Reporting", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
@@ -105,7 +103,6 @@
       "companySlug": "city-of-calgary/cybersecurity-student",
       "title": "Cybersecurity Student",
       "topSkills": ["Security & Access Control", "SOPs & UAT Testing", "Azure AD & Graph API", "Power Automate", "CI/CD & DevOps"],
-      "summary": "4th-year Computer Science & Mathematics student with hands-on experience supporting secure software delivery and documentation-heavy workflows. Built security-focused backend features (RBAC, authentication, CORS/proxy hardening) and produced SOPs plus stakeholder-ready updates using Outlook, Word, Excel, and PowerPoint. Maintains a role-specific portfolio with tailored project writeups and artifacts to support transparent, audit-friendly communication.",
       "pitch": "I've implemented security-focused backend features including RBAC, CORS policies, and OAuth2 authentication for apps serving 1,000+ daily users. I've also written SOPs, contributed to documentation workflows, and integrated Azure AD with Microsoft Graph API for secure file I/O. I'm excited to bring that hands-on security and documentation experience to the City of Calgary's cybersecurity team.",
       "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_Cybersec_0305.pdf",
       "relevantHighlights": ["Secure Backend Development", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
@@ -150,7 +147,6 @@
       "companySlug": "city-of-calgary/automation-student",
       "title": "Automation Developer Student",
       "topSkills": ["RPA & Power Automate", "UAT & Test Documentation", "Documentation Repositories", "Office 365", "Agile/Scrum"],
-      "summary": "Computer Science student with hands-on experience reviewing and documenting business processes targeted for automation, building and testing RPA/automation workflows, and communicating results to technical and non-technical stakeholders. Proficient in Power Automate, SharePoint, SQL, Excel, and Office 365 (Outlook, Word, PowerPoint) with strong documentation habits (SOPs, meeting notes, status reporting) and a track record of delivering reliable work under deadlines.",
       "pitch": "I've designed and tested automation workflows in Power Automate with scope-based error handling, integrated Azure AD and Microsoft Graph API for SharePoint file I/O, and maintained documentation repositories with SOPs, meeting notes, and status logs. I'm collaborative and feedback-driven, and I'm excited to learn and grow with the City of Calgary's automation team while contributing reliable, well-documented work from day one.",
       "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_AutomationDev_0207.pdf",
       "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "Data Analysis & KPI Reporting", "CI/CD Pipelines & Agile Delivery"],
@@ -195,7 +191,6 @@
       "companySlug": "city-of-calgary/pmis-student",
       "title": "Project Management Information Systems Summer Student",
       "topSkills": ["Microsoft Project Server Professional", "Training & Learning Solutions", "Project Documentation", "Change & Transition Management", "Office 365"],
-      "summary": "4th year Computer Science student experienced in supporting multi-stakeholder IT initiatives through requirements gathering, documentation, training materials, status reporting, and structured project delivery. Proficient in Microsoft Office (Outlook, Word, Excel, PowerPoint), Power BI, and Microsoft Project Server Professional. Known for translating technical deliverables into operational terms, supporting change/transition activities, and producing clear, audience-specific project documentation under tight timelines.",
       "pitch": "I've led multi-stakeholder IT projects through Scrum-style delivery, built training materials and onboarding guides for 100+ users, and maintained documentation repositories with SOPs, meeting notes, and status logs. I also have hands-on experience with Microsoft Project Server Professional, Power BI dashboards, and feasibility-style assessments. I'm excited to bring that project coordination, documentation, and change management experience to the City of Calgary's PMIS team.",
       "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_PMIS_0207.pdf",
       "relevantHighlights": ["CI/CD Pipelines & Agile Delivery", "Power Automate, Azure AD & SharePoint Integration", "Data Analysis & KPI Reporting"],
@@ -243,7 +238,6 @@
       "companySlug": "city-of-calgary/swe-student",
       "title": "Software Developer Summer Student",
       "topSkills": ["Java & JavaScript", "CI/CD & Testing (Jenkins)", "SQL & Databases", "Code Quality & Maintenance", "Microsoft Office"],
-      "summary": "4th year Computer Science & Mathematics student with hands-on experience creating new code to solve business problems, maintaining code quality, testing code for efficiency and functionality, and writing SQL queries to extract information from databases. Proficient in Java, JavaScript/TypeScript, SQL, GitHub, CI/CD (GitHub Actions, Jenkins), and Microsoft Office (Outlook, Word, Excel, PowerPoint). Recognized for attention to detail, excellent communication, critical thinking, and learning fast while delivering in Agile teams.",
       "pitch": "I've built full-stack applications using JavaScript, React, Python, and SQL, and maintained code quality by testing for efficiency and functionality in CI pipelines with GitHub Actions and Jenkins across 30+ merges without regression. I've also written SQL queries to power dashboards and features, and developed secure backend functionality with authentication and RBAC. I'm excited to bring that hands-on coding, testing discipline, and SQL experience to the City of Calgary's software development team.",
       "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_SWE_0208.pdf",
       "relevantHighlights": ["React, APIs & Full-Stack Development", "CI/CD Pipelines & Agile Delivery", "Secure Backend Development"],
@@ -290,7 +284,6 @@
       "companySlug": "city-of-calgary/information-management-student",
       "title": "Information Management Student",
       "topSkills": ["SharePoint & Repository Management", "Microsoft Office (Word & Excel)", "Process Documentation & SOPs", "Power Automate & Azure AD", "Organization & Time Management"],
-      "summary": "4th year Computer Science & Mathematics student with experience supporting information workflows through repository usage (SharePoint), process documentation (SOPs, workflows), and structured delivery in cross-functional teams. Proficient in Microsoft Office (Word, Excel, PowerPoint), SharePoint, Power Automate, SQL, and Azure AD (OAuth2) / Microsoft Graph API for secure file access and operational reporting. Known for strong organization, attention to detail, analytical problem solving, and reliable execution independently and in teams.",
       "pitch": "I've maintained documentation repositories with SOPs, meeting notes, and status logs, integrated SharePoint file I/O via Azure AD and Microsoft Graph API, and built Power Automate workflows for automated reporting. I care about keeping information organized, accurate, and easy for teams to find and trust. I'm excited to bring that repository experience and documentation discipline to the City of Calgary's Water Services information management team.",
       "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_IMS_0209.pdf",
       "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "Data Analysis & KPI Reporting", "CI/CD Pipelines & Agile Delivery"],
@@ -336,7 +329,6 @@
       "companySlug": "city-of-calgary/it-ops-euc-student",
       "title": "IT Operations End User Computing Summer Student",
       "topSkills": ["Azure Automation & PowerShell", "CI/CD & GitHub", "KQL Reporting & Analysis", "Endpoint Security & Compliance", "Documentation & Procedures"],
-      "summary": "4th year Computer Science & Mathematics student with experience building secure, workflow-driven solutions and automation for operational reporting, access control, and service reliability. Proficient in Microsoft Azure AD (OAuth2), Microsoft Graph API, SharePoint, Power Automate, PowerShell, KQL, and GitHub/CI/CD (GitHub Actions). Strong documentation and procedure-writing habits using Outlook, Word, Excel, and PowerPoint. Known for attention to detail, excellent communication, critical thinking, and learning fast while delivering independently and in teams.",
       "pitch": "I've built CI/CD pipelines with GitHub Actions, developed PowerShell scripts for automated deployments, integrated Azure AD and Microsoft Graph API with SharePoint, and written KQL queries for reporting and troubleshooting. I also have hands-on experience hardening web apps with CORS, RBAC, and proxy configurations for 1,000+ users. I'm excited to bring that Azure automation, endpoint security, and documentation experience to the City of Calgary's IT Operations EUC team.",
       "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_IT_OPS_EUC_0209.pdf",
       "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery", "Secure Backend Development"],
@@ -385,7 +377,6 @@
       "companySlug": "city-of-calgary/it-ops-am-student",
       "title": "IT Operations Asset Management Summer Student",
       "topSkills": ["Power BI & Asset Reporting", "PowerShell & Azure Automation", "KQL & Operational Analysis", "SharePoint & Documentation", "Endpoint & Device Management"],
-      "summary": "4th year Computer Science & Mathematics student with hands-on experience building secure, workflow-driven solutions and reporting for operational reliability. Proficient in Power BI (Power Query/DAX), Excel, SQL, SharePoint, Azure AD (OAuth2), Microsoft Graph API, Power Automate, PowerShell, and KQL. Strong documentation habits (procedures, SOPs, status reporting) using Outlook, Word, Excel, PowerPoint. Known for attention to detail, strong organization, research/problem solving, and learning fast while working independently and in teams.",
       "pitch": "I've built Power BI dashboards tracking operational integrity KPIs with DAX and role-based views, written KQL queries for reporting and anomaly validation, and integrated Azure AD with Microsoft Graph API for SharePoint file I/O. I also have experience automating tasks with PowerShell and documenting workflows with SOPs and procedures. I'm excited to bring that asset reporting, automation, and documentation experience to the City of Calgary's IT Operations Asset Management team.",
       "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_IT_OPS_AM_0209.pdf",
       "relevantHighlights": ["Data Analysis & KPI Reporting", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
@@ -433,7 +424,6 @@
       "companySlug": "atco/ai-automation",
       "title": "AI & Automation Co-op Student",
       "topSkills": ["Power Automate & Workflow Automation", "Python & RAG Patterns", "Azure AD & API Integration", "CI/CD & Automated Testing", "Dashboard & Reporting Tools"],
-      "summary": "4th year Computer Science & Mathematics student with hands-on experience building automation and AI-style workflows using Power Automate, API integrations, and dashboard tooling. Built systems with RAG-style retrieval, multi-provider AI routing (OpenAI, Gemini), CI/CD pipelines, and 34 automated tests. Well-versed in fast learning, debugging, and documentation (SOPs, runbooks, onboarding guides) to support reliable delivery and team handoffs.",
       "pitch": "I've built AI-assisted workflows including a RAG-based ticket triage bot with multi-provider routing (OpenAI, Gemini), designed Power Automate workflows with scope-based error handling, and integrated Azure AD with Microsoft Graph API for SharePoint automation. I also have strong CI/CD and testing discipline with 34 automated tests and 30+ regression-free merges. I'm eager to apply that automation and AI experience to ATCO's digital transformation initiatives.",
       "resumePath": "/Zohair_Omar_Resume_ATCO_AIAutomation_0212.pdf",
       "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "Data Analysis & KPI Reporting", "CI/CD Pipelines & Agile Delivery"],
@@ -469,7 +459,6 @@
       "companySlug": "atco/erp-scm-student",
       "title": "ERP & SCM Support Analyst Co-op Student",
       "topSkills": ["Incident Triage & Troubleshooting", "SQL & Data Reporting", "ITIL-Aligned Support", "Process Documentation (SOPs/KB)", "CI/CD & Release Discipline"],
-      "summary": "4th year Computer Science & Mathematics student with hands-on experience in IT service delivery: incident triage, troubleshooting production issues, role-based access controls, and clear stakeholder communication. Strong with SQL and reporting (Power BI, dashboards), process documentation (SOPs/knowledge articles), and testing/release discipline (CI/CD, regression-style checks). Interested in cloud ERP systems and eager to grow techno-functional skills in Oracle Fusion within an ITIL-aligned support model.",
       "pitch": "I've supported production applications by troubleshooting incidents, strengthening authentication and RBAC flows with SQL, and creating SOP-style documentation for faster resolution handoffs. I've also built reporting dashboards in Power BI and automated distribution workflows with Power Automate. I'm excited to bring that service delivery, documentation, and reporting experience to ATCO's ERP/SCM support team and grow my skills in Oracle Fusion.",
       "resumePath": "/Zohair_Omar_Resume_ATCO_ERPSCM_0211.pdf",
       "relevantHighlights": ["Data Analysis & KPI Reporting", "Secure Backend Development", "Power Automate, Azure AD & SharePoint Integration"],
@@ -514,7 +503,6 @@
       "companySlug": "atco/solution-architecture-student",
       "title": "IT Solution Architecture Co-op Student",
       "topSkills": ["Architecture Documentation (Visio/PPT)", "SharePoint & Repository Management", "Power BI & Stakeholder Reporting", "Process Improvement & Templates", "Cross-Functional Communication"],
-      "summary": "4th year Computer Science & Mathematics student supporting documentation-heavy, cross-functional technical projects through clear writing, structured artifacts, and process improvement. Experienced with SharePoint, Power BI, Microsoft Office (Outlook, Word, Excel, PowerPoint), and Visio to create and maintain solution diagrams, decision logs, templates, and repository organization. Strong attention to detail and analytical mindset for reviewing documentation accuracy, standardizing deliverables, and communicating with technical and non-technical stakeholders.",
       "pitch": "I've created and maintained architecture-style artifacts in Visio and PowerPoint (component diagrams, data flows, integration notes), built documentation systems with SharePoint folder conventions and templates that reduced repeat questions by 25%, and produced stakeholder-facing dashboards in Power BI. I care about documentation accuracy, standardized deliverables, and clear communication. I'm excited to support ATCO's solution architecture team with that structured, detail-oriented approach.",
       "resumePath": "/Zohair_Omar_Resume_ATCO_ITSolution_0212.pdf",
       "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "Data Analysis & KPI Reporting", "CI/CD Pipelines & Agile Delivery"],
@@ -562,28 +550,92 @@
       "companySlug": "precision-drilling/ai-innovation-analyst-intern",
       "title": "AI Innovation Analyst Intern",
       "topSkills": ["AI Research & Evaluation", "Python & Cloud AI Services", "Data Preparation & QA", "Documentation & AI Governance", "Chatbot & Agent Development"],
-      "summary": "4th year Computer Science & Mathematics student with hands-on experience building AI-assisted workflows, automation solutions, and documented delivery pipelines. Built a RAG-based ticket triage bot with multi-provider AI routing (OpenAI, Gemini), designed Power Automate workflows for automated reporting, and integrated Azure AD with Microsoft Graph API for secure data access. Focused on making outcomes usable with clear documentation, SOPs, and responsible guardrails.",
       "pitch": "I've built AI-assisted workflows including a RAG-based ticket triage bot with multi-provider routing, designed Power Automate workflows with scope-based error handling, and documented everything with SOPs and runbooks for reliable handoffs. I focus on making outcomes usable, not just technically correct, which fits the role's emphasis on demos, adoption support, and training. I'm excited to support Precision's AI efforts by researching tools, building chatbots, and turning validated use cases into deployable workflows.",
+      "resumePath": "/Zohair_Omar_Resume_Precision_AIInnovation_0213.pdf",
       "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "Data Analysis & KPI Reporting", "CI/CD Pipelines & Agile Delivery"],
       "relevantProjects": ["ticket-triage-rag-bot", "production-analytics-forecasting-dashboard", "oil-gas-asset-integrity-dashboard"],
-      "projectsAboveExperience": true
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, JavaScript, Git",
+          "bullets": [
+            "Gathered requirements from non-technical stakeholders and translated needs into shipped tools/features, iterating quickly based on feedback",
+            "Delivered internal-facing solutions with clear documentation and walkthroughs to support adoption and reduce repeat support questions"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL",
+          "bullets": [
+            "Supported troubleshooting and analysis by writing/refining SQL queries to retrieve and validate operational data; summarized findings for faster issue resolution",
+            "Improved SOP clarity and repeatability by documenting resolutions and edge cases for recurring system and data issues"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "Agile/Scrum, stakeholder delivery",
+          "bullets": [
+            "Led a 4-person team through iterative delivery and cross-functional collaboration; maintained issue tracking and clear status updates under deadlines",
+            "Standardized review quality using CI checks (GitHub Actions), supporting stable releases while the product evolved with partner feedback"
+          ]
+        }
+      ]
     },
     {
       "company": "Precision Drilling",
       "companySlug": "precision-drilling/infrastructure-services-intern",
       "title": "Infrastructure Services, Systems & Storage Intern",
       "topSkills": ["Azure & Active Directory", "PowerShell & Scripting", "Endpoint Management", "Documentation & Change Control", "Core Networking (TCP/IP, DNS, DHCP)"],
-      "summary": "4th year Computer Science & Mathematics student interested in infrastructure reliability and change discipline. Comfortable writing clear procedures, runbooks, and troubleshooting notes. Built automation workflows and scripts using PowerShell and Python to reduce manual steps and improve consistency. Foundation in core networking protocols (TCP/IP, DNS, DHCP, NTP, SMTP) and endpoint concepts through coursework and hands-on projects.",
       "pitch": "I've built CI/CD pipelines with GitHub Actions, developed PowerShell scripts for automated deployments, integrated Azure AD with Microsoft Graph API, and hardened web apps with CORS, RBAC, and proxy configurations for 1,000+ users. I also have strong documentation habits with SOPs, runbooks, and validation steps. I'm excited to support Precision's infrastructure services, contribute to endpoint sustainment work, and learn deeply from the senior analysts.",
+      "resumePath": "/Zohair_Omar_Resume_Precision_InfraServices_0213.pdf",
       "relevantHighlights": ["Secure Backend Development", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
-      "relevantProjects": ["production-analytics-forecasting-dashboard", "ubc-thrifty-grocers", "oil-gas-asset-integrity-dashboard"]
+      "relevantProjects": ["production-analytics-forecasting-dashboard", "ubc-thrifty-grocers", "oil-gas-asset-integrity-dashboard"],
+      "tailoredExperience": [
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "PowerShell, Python, SQL, Git",
+          "bullets": [
+            "Automated repetitive operational tasks using PowerShell and lightweight scripts; improved consistency of setup/maintenance steps while reducing manual effort",
+            "Built data-backed functionality using Python and SQL; validated outputs with structured checks to ensure reliable behavior under changing requirements",
+            "Created runbooks and onboarding documentation to support stable handoffs and reduce repeat support requests across internal users"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, HTML/CSS, JavaScript",
+          "bullets": [
+            "Supported troubleshooting by writing/refining SQL queries to retrieve and validate operational data; summarized findings to accelerate incident resolution",
+            "Strengthened stability by improving error handling and documenting repeatable resolution steps (SOPs/runbooks) with attention to change discipline"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Led a 4-person team delivering iterative releases; tracked issues/action items and collaborated cross-functionally to meet deadlines",
+            "Implemented CI/CD checks with GitHub Actions to standardize build/test validation and reduce regressions, improving release reliability"
+          ]
+        }
+      ]
     },
     {
       "company": "Precision Drilling",
       "companySlug": "precision-drilling/data-analyst-intern",
       "title": "Data Analyst Intern",
       "topSkills": ["Python & SQL Analytics", "Power BI & Reporting Tables", "Data Validation & QA Checks", "Data Documentation & Mapping Logic", "Requirements Gathering & Collaboration"],
-      "summary": "4th year Computer Science & Mathematics student building analytics solutions with Python, SQL, and Power BI for operational datasets. Strong in data validation/cleaning, reporting table design, and documentation (data definitions, mapping logic) to deliver consistent, analysis-ready data. Interested in Precision's Alpha because it applies data, automation, and smart algorithms to reduce well cost and risk through reliable operational reporting.",
       "pitch": "I've designed reporting tables and clean data models across 24 months of operational data in Power BI, implemented data validation checks (missing values, duplicates, range rules), and documented data definitions and mapping logic so metrics stay transparent as requirements evolve. I also built end-to-end Python workflows that clean, validate, and standardize multi-well production data into analysis-ready datasets. I'm excited to contribute to Alpha by improving accessibility and usability of operational information.",
       "resumePath": "/Zohair_Omar_Resume_Precision_Data_0213.pdf",
       "relevantHighlights": ["Data Analysis & KPI Reporting", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
@@ -627,7 +679,6 @@
       "companySlug": "precision-drilling/sap-development-intern",
       "title": "SAP Development Intern",
       "topSkills": ["Python, Java & SQL", "REST APIs & Web Services", "SDLC & Change Control", "Documentation (SOPs/Runbooks)", "CI/CD & Agile Delivery"],
-      "summary": "4th year Computer Science & Mathematics student focused on integration-heavy software work across the SDLC: requirements capture, implementation, testing, troubleshooting, and documentation. Strong foundations in Python, Java, SQL, and web services (REST) with hands-on experience supporting operational systems, writing reliable queries, and producing clear runbooks/SOPs. Gained basic exposure to SAP and integration software in an internship setting while collaborating cross-functionally under deadlines.",
       "pitch": "I've supported operational systems by writing and refining SQL queries, debugging integrations, and maintaining clean handoffs through clear technical notes and reproducible steps. I also gained basic exposure to SAP and integration software through internal walkthroughs at Agrius IT. With strong foundations in Python, Java, REST APIs, and CI/CD, I'm excited to contribute to Precision's SAP team by learning integration technologies, following the SDLC, and delivering reliable solutions under guidance.",
       "resumePath": "/Zohair_Omar_Resume_Precision_SAP_0213.pdf",
       "relevantHighlights": ["React, APIs & Full-Stack Development", "CI/CD Pipelines & Agile Delivery", "Secure Backend Development"],

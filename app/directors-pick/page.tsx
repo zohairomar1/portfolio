@@ -188,16 +188,6 @@ export default function DirectorsPickPage() {
                       </p>
                     </div>
                   </div>
-                  {custom.roles[0]?.summary && (
-                    <div className="mt-4 pt-4 border-t border-primary/10">
-                      <p className="font-mono text-[10px] text-muted-foreground/50 uppercase tracking-wider mb-1.5">
-                        Summary
-                      </p>
-                      <p className="text-sm text-foreground/70 leading-relaxed italic">
-                        {custom.roles[0].summary}
-                      </p>
-                    </div>
-                  )}
                   {pitch && (
                     <p className="text-foreground/80 leading-relaxed mt-4">
                       {pitch}

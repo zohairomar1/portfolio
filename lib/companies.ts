@@ -13,7 +13,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   deloitte: { slug: "deloitte", displayName: "DELOITTE", brandColor: "#86BC25", brandAccent: "#B8E06A" },
   bmo: { slug: "bmo", displayName: "BMO", brandColor: "#0079C1", brandAccent: "#ED1C24" },
   atco: { slug: "atco", displayName: "ATCO", brandColor: "#2E299D", brandAccent: "#E9BF48" },
-  "precision-drilling": { slug: "precision-drilling", displayName: "PRECISION DRILLING", brandColor: "#CC0000", brandAccent: "#FF4444" },
+  "precision-drilling": { slug: "precision-drilling", displayName: "PRECISION DRILLING", brandColor: "#4a9841", brandAccent: "#ffffff" },
 };
 
 // Role-specific configurations for /for/[company]/[role] routes
@@ -112,29 +112,29 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       slug: "precision-drilling/ai-innovation-analyst-intern",
       displayName: "PRECISION DRILLING",
       subtitle: "AI Innovation Analyst Intern",
-      brandColor: "#CC0000",
-      brandAccent: "#FF4444",
+      brandColor: "#4a9841",
+      brandAccent: "#ffffff",
     },
     "infrastructure-services-intern": {
       slug: "precision-drilling/infrastructure-services-intern",
       displayName: "PRECISION DRILLING",
       subtitle: "Infrastructure Services, Systems & Storage Intern",
-      brandColor: "#CC0000",
-      brandAccent: "#FF4444",
+      brandColor: "#4a9841",
+      brandAccent: "#ffffff",
     },
     "data-analyst-intern": {
       slug: "precision-drilling/data-analyst-intern",
       displayName: "PRECISION DRILLING",
       subtitle: "Data Analyst Intern",
-      brandColor: "#CC0000",
-      brandAccent: "#FF4444",
+      brandColor: "#4a9841",
+      brandAccent: "#ffffff",
     },
     "sap-development-intern": {
       slug: "precision-drilling/sap-development-intern",
       displayName: "PRECISION DRILLING",
       subtitle: "SAP Development Intern",
-      brandColor: "#CC0000",
-      brandAccent: "#FF4444",
+      brandColor: "#4a9841",
+      brandAccent: "#ffffff",
     },
   },
 };
