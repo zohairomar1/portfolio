@@ -36,6 +36,10 @@
     "pitch": "AI-powered ticket triage system that categorizes, prioritizes, and suggests resolutions using RAG patterns and multi-provider AI routing (OpenAI, Gemini).",
     "keyChallenge": "Built a 3-level fallback chain and multi-provider architecture for 100% uptime. Cut API costs 5-10x with smart caching and request batching."
   },
+  "incident-command": {
+    "pitch": "Full-stack IT incident management platform with a Java Spring Boot API, React dashboard, and Android app, all backed by 99 tests, Jenkins CI/CD, and OOP design patterns.",
+    "keyChallenge": "Architected a 3-platform system (API + web + mobile) with Strategy pattern for escalation, JWT + RBAC for security, and caught real bugs through 99 automated tests."
+  },
   "vhs-portfolio": {
     "pitch": "The site you're looking at right now. A retro VHS-themed portfolio with boot sequences, CRT effects, and tape reel animations.",
     "keyChallenge": "Designed every interaction to feel like inserting a VHS tape. Built with Next.js, TypeScript, and way too much CSS."

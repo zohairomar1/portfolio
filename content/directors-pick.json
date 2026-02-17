@@ -18,7 +18,7 @@
       "pitch": "I've built Power Automate workflows, integrated Azure AD with Microsoft Graph API for SharePoint file I/O, and set up CI/CD pipelines with GitHub Actions across multiple projects. I also have experience hardening web apps for 1,000+ users and writing technical documentation (SOPs, onboarding guides) to support handoffs and long-term system upkeep. I'd love to bring that to the City of Calgary's IT team this summer.",
       "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_ITDev_0304.pdf",
       "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "React, APIs & Full-Stack Development", "CI/CD Pipelines & Agile Delivery", "Secure Backend Development"],
-      "relevantProjects": ["production-analytics-forecasting-dashboard", "ubc-thrifty-grocers", "oil-gas-asset-integrity-dashboard"],
+      "relevantProjects": ["incident-command", "production-analytics-forecasting-dashboard", "ubc-thrifty-grocers"],
       "tailoredExperience": [
         {
           "name": "Enactus UCalgary - WealthPath",
@@ -106,7 +106,7 @@
       "pitch": "I've implemented security-focused backend features including RBAC, CORS policies, and OAuth2 authentication for apps serving 1,000+ daily users. I've also written SOPs, contributed to documentation workflows, and integrated Azure AD with Microsoft Graph API for secure file I/O. I'm excited to bring that hands-on security and documentation experience to the City of Calgary's cybersecurity team.",
       "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_Cybersec_0305.pdf",
       "relevantHighlights": ["Secure Backend Development", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
-      "relevantProjects": ["ubc-thrifty-grocers", "production-analytics-forecasting-dashboard", "oil-gas-asset-integrity-dashboard"],
+      "relevantProjects": ["incident-command", "ubc-thrifty-grocers", "production-analytics-forecasting-dashboard"],
       "tailoredExperience": [
         {
           "name": "Enactus UCalgary - WealthPath",
@@ -240,8 +240,8 @@
       "topSkills": ["Java & JavaScript", "CI/CD & Testing (Jenkins)", "SQL & Databases", "Code Quality & Maintenance", "Microsoft Office"],
       "pitch": "I've built full-stack applications using JavaScript, React, Python, and SQL, and maintained code quality by testing for efficiency and functionality in CI pipelines with GitHub Actions and Jenkins across 30+ merges without regression. I've also written SQL queries to power dashboards and features, and developed secure backend functionality with authentication and RBAC. I'm excited to bring that hands-on coding, testing discipline, and SQL experience to the City of Calgary's software development team.",
       "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_SWE_0208.pdf",
-      "relevantHighlights": ["React, APIs & Full-Stack Development", "CI/CD Pipelines & Agile Delivery", "Secure Backend Development"],
-      "relevantProjects": ["ubc-thrifty-grocers", "production-analytics-forecasting-dashboard", "business-tracking-application"],
+      "relevantHighlights": ["OOP, Java & Full-Stack Architecture", "React, APIs & Full-Stack Development", "CI/CD Pipelines & Agile Delivery", "Secure Backend Development"],
+      "relevantProjects": ["incident-command", "ubc-thrifty-grocers", "production-analytics-forecasting-dashboard"],
       "tailoredExperience": [
         {
           "name": "Enactus UCalgary - WealthPath",
@@ -462,7 +462,7 @@
       "pitch": "I've supported production applications by troubleshooting incidents, strengthening authentication and RBAC flows with SQL, and creating SOP-style documentation for faster resolution handoffs. I've also built reporting dashboards in Power BI and automated distribution workflows with Power Automate. I'm excited to bring that service delivery, documentation, and reporting experience to ATCO's ERP/SCM support team and grow my skills in Oracle Fusion.",
       "resumePath": "/Zohair_Omar_Resume_ATCO_ERPSCM_0211.pdf",
       "relevantHighlights": ["Data Analysis & KPI Reporting", "Secure Backend Development", "Power Automate, Azure AD & SharePoint Integration"],
-      "relevantProjects": ["ticket-triage-rag-bot", "oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard"],
+      "relevantProjects": ["incident-command", "ticket-triage-rag-bot", "oil-gas-asset-integrity-dashboard"],
       "tailoredExperience": [
         {
           "name": "Agrius IT",
@@ -681,8 +681,8 @@
       "topSkills": ["Python, Java & SQL", "REST APIs & Web Services", "SDLC & Change Control", "Documentation (SOPs/Runbooks)", "CI/CD & Agile Delivery"],
       "pitch": "I've supported operational systems by writing and refining SQL queries, debugging integrations, and maintaining clean handoffs through clear technical notes and reproducible steps. I also gained basic exposure to SAP and integration software through internal walkthroughs at Agrius IT. With strong foundations in Python, Java, REST APIs, and CI/CD, I'm excited to contribute to Precision's SAP team by learning integration technologies, following the SDLC, and delivering reliable solutions under guidance.",
       "resumePath": "/Zohair_Omar_Resume_Precision_SAP_0213.pdf",
-      "relevantHighlights": ["React, APIs & Full-Stack Development", "CI/CD Pipelines & Agile Delivery", "Secure Backend Development"],
-      "relevantProjects": ["production-analytics-forecasting-dashboard", "oil-gas-asset-integrity-dashboard"],
+      "relevantHighlights": ["OOP, Java & Full-Stack Architecture", "React, APIs & Full-Stack Development", "CI/CD Pipelines & Agile Delivery", "Secure Backend Development"],
+      "relevantProjects": ["incident-command", "production-analytics-forecasting-dashboard", "oil-gas-asset-integrity-dashboard"],
       "tailoredExperience": [
         {
           "name": "Agrius IT",
@@ -753,6 +753,14 @@
       "tech": "React, JavaScript, Python, SQL, Git, REST APIs",
       "impact": "100+ active users served, clean deployment pipeline, documentation enabled faster onboarding for new contributors",
       "link": null
+    },
+    {
+      "label": "OOP, Java & Full-Stack Architecture",
+      "problem": "Needed to demonstrate end-to-end software engineering across backend, web, and mobile with proper OOP design, testing discipline, and CI/CD",
+      "built": "Full-stack incident management platform with a Spring Boot REST API (Strategy pattern escalation engine, JWT + RBAC), React + TypeScript dashboard, and Kotlin Android app with MVVM and offline-first caching. Configured Jenkins and GitHub Actions CI/CD pipelines",
+      "tech": "Java, Spring Boot, React, TypeScript, Kotlin, Jetpack Compose, PostgreSQL, Docker, Jenkins",
+      "impact": "99 automated tests (JUnit 5 + Mockito), caught real production bugs during testing, 3-platform architecture from a single API",
+      "link": "/scenes#incident-command"
     },
     {
       "label": "Data Analysis & KPI Reporting",

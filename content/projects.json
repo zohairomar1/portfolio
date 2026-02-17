@@ -117,6 +117,24 @@
     "keyChallenge": "Built a 3-level fallback chain and multi-provider architecture for 100% uptime. Cut API costs 5-10x with smart caching and request batching."
   },
   {
+    "name": "Incident Command",
+    "url": "https://github.com/zohairomar1/full-stack-incident-command-project",
+    "stack": "Java, Spring Boot, React, TypeScript, Kotlin, Jetpack Compose, PostgreSQL, Docker",
+    "bullets": [
+      "Built a full-stack incident management platform following SDLC principles: requirements analysis, system design, iterative implementation, testing, and CI/CD pipeline configuration",
+      "Developed a Spring Boot REST API with JWT authentication, role-based access control (3 roles), and an escalation engine using the Strategy design pattern",
+      "Wrote 99 unit and integration tests (JUnit 5, Mockito), catching and fixing production bugs during the testing phase including a lazy-loading issue and test isolation leak",
+      "Built a React + TypeScript dashboard with real-time metrics charts, incident CRUD with status state machine, and role-gated routing",
+      "Developed an Android client with Jetpack Compose, MVVM architecture, Hilt DI, and Room for offline-first caching with automatic network fallback",
+      "Configured GitHub Actions for automated test execution on every push and a Jenkins pipeline (via Docker Compose) for enterprise CI/CD with build, test, and containerization stages",
+      "Containerized for production with Docker Compose (PostgreSQL + API), Flyway schema migrations, and Spring profiles for seamless dev/prod environment switching"
+    ],
+    "slug": "incident-command",
+    "category": "fullstack",
+    "pitch": "Full-stack IT incident management platform with a Java Spring Boot API, React dashboard, and Android app, all backed by 99 tests, Jenkins CI/CD, and OOP design patterns.",
+    "keyChallenge": "Architected a 3-platform system (API + web + mobile) with Strategy pattern for escalation, JWT + RBAC for security, and caught real bugs through 99 automated tests."
+  },
+  {
     "name": "The Everyday Cleaning Company",
     "url": "https://everydaycleaning.ca",
     "stack": "Next.js, TypeScript, Tailwind CSS, Resend, Vercel",

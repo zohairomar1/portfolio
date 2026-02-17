@@ -463,7 +463,25 @@ function main() {
     category: "data",
   };
 
-  let projectsWithOverrides = [...resumeData!.projects, ticketTriageProject, cleaningProject, portfolioProject];
+  // Add Incident Command (not in resume.tex but used for SWE-focused roles)
+  const incidentCommandProject: ProjectItem = {
+    name: "Incident Command",
+    url: "https://github.com/zohairomar1/full-stack-incident-command-project",
+    stack: "Java, Spring Boot, React, TypeScript, Kotlin, Jetpack Compose, PostgreSQL, Docker",
+    bullets: [
+      "Built a full-stack incident management platform following SDLC principles: requirements analysis, system design, iterative implementation, testing, and CI/CD pipeline configuration",
+      "Developed a Spring Boot REST API with JWT authentication, role-based access control (3 roles), and an escalation engine using the Strategy design pattern",
+      "Wrote 99 unit and integration tests (JUnit 5, Mockito), catching and fixing production bugs during the testing phase including a lazy-loading issue and test isolation leak",
+      "Built a React + TypeScript dashboard with real-time metrics charts, incident CRUD with status state machine, and role-gated routing",
+      "Developed an Android client with Jetpack Compose, MVVM architecture, Hilt DI, and Room for offline-first caching with automatic network fallback",
+      "Configured GitHub Actions for automated test execution on every push and a Jenkins pipeline (via Docker Compose) for enterprise CI/CD with build, test, and containerization stages",
+      "Containerized for production with Docker Compose (PostgreSQL + API), Flyway schema migrations, and Spring profiles for seamless dev/prod environment switching"
+    ],
+    slug: "incident-command",
+    category: "fullstack",
+  };
+
+  let projectsWithOverrides = [...resumeData!.projects, ticketTriageProject, incidentCommandProject, cleaningProject, portfolioProject];
 
   // Check for manual overrides
   const projectsOverrideFile = path.join(

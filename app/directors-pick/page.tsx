@@ -86,6 +86,10 @@ export default function DirectorsPickPage() {
   const custom = useCustomMode();
   const isCustom = custom !== null;
 
+  const resumeProjectSlugs = new Set(
+    resumeData.projects.map((p: { slug?: string }) => p.slug).filter(Boolean)
+  );
+
   const projectSlugs = isCustom && custom.roles[0]?.relevantProjects
     ? custom.roles[0].relevantProjects
     : data.relevantProjects;
@@ -309,6 +313,7 @@ export default function DirectorsPickPage() {
                   {relevantProjects.map((project, index) => {
                     const hasExternalUrl = isCustom && project.url;
                     const href = hasExternalUrl ? project.url! : `/scenes#${project.slug}`;
+                    const isNotOnResume = project.slug && !resumeProjectSlugs.has(project.slug);
 
                     return (
                     <ScrollReveal
@@ -321,6 +326,14 @@ export default function DirectorsPickPage() {
                         {...(hasExternalUrl ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                         className="vhs-card p-4 block group hover:border-primary/40 transition-colors h-full"
                       >
+                        {isNotOnResume && (
+                          <div className="flex items-center gap-1.5 mb-2">
+                            <span className="inline-block w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
+                            <span className="font-mono text-[10px] tracking-[0.2em] text-red-400 uppercase">
+                              Now Showing
+                            </span>
+                          </div>
+                        )}
                         <div className="flex items-start justify-between gap-2 mb-2">
                           <h3 className="font-display text-base text-primary group-hover:text-accent transition-colors">
                             {project.name}
