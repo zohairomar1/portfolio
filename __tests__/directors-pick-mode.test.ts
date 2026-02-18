@@ -417,6 +417,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("SAP Development Intern");
   });
 
+  it("has Nutrien Automation and AI Co-op role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "nutrien/automation-ai");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("Nutrien");
+    expect(roles[0].title).toBe("Automation and AI Co-op");
+  });
+
+  it("visitor via /for/nutrien/automation-ai should match Nutrien Automation AI role", () => {
+    const companyConfig = {
+      slug: "nutrien/automation-ai",
+      displayName: "NUTRIEN",
+      subtitle: "Automation and AI Co-op",
+      brandColor: "#009A44",
+      brandAccent: "#97D700",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Automation and AI Co-op");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

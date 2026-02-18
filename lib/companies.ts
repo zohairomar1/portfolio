@@ -14,6 +14,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   bmo: { slug: "bmo", displayName: "BMO", brandColor: "#0079C1", brandAccent: "#ED1C24" },
   atco: { slug: "atco", displayName: "ATCO", brandColor: "#2E299D", brandAccent: "#E9BF48" },
   "precision-drilling": { slug: "precision-drilling", displayName: "PRECISION DRILLING", brandColor: "#4a9841", brandAccent: "#ffffff" },
+  nutrien: { slug: "nutrien", displayName: "NUTRIEN", brandColor: "#009A44", brandAccent: "#97D700" },
 };
 
 // Role-specific configurations for /for/[company]/[role] routes
@@ -135,6 +136,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       subtitle: "SAP Development Intern",
       brandColor: "#4a9841",
       brandAccent: "#ffffff",
+    },
+  },
+  nutrien: {
+    "automation-ai": {
+      slug: "nutrien/automation-ai",
+      displayName: "NUTRIEN",
+      subtitle: "Automation and AI Co-op",
+      brandColor: "#009A44",
+      brandAccent: "#97D700",
     },
   },
 };

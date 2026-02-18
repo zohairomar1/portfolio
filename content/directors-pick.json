@@ -718,6 +718,51 @@
           ]
         }
       ]
+    },
+    {
+      "company": "Nutrien",
+      "companySlug": "nutrien/automation-ai",
+      "title": "Automation and AI Co-op",
+      "topSkills": ["Python & PowerShell Automation", "CI/CD & DevOps (GitHub Actions, Jenkins)", "AI Workflow Automation", "Monitoring & KPI Dashboards", "Technical Documentation & Runbooks"],
+      "pitch": "I've automated operational tasks using Python and PowerShell, built monitoring dashboards and KPI reporting tools used by 100+ users, and maintained CI/CD pipelines that kept 30+ merges regression-free. I also built a production-grade AI ticket triage system using RAG patterns with multi-provider routing between OpenAI and Gemini, exactly the type of AI workflow automation this role is centered on. I'm excited to apply that automation and AI experience at Nutrien while growing in a data-rich, industrial environment.",
+      "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery", "Data Analysis & KPI Reporting"],
+      "relevantProjects": ["ticket-triage-rag-bot", "production-analytics-forecasting-dashboard", "incident-command"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, PowerShell, SQL, Git",
+          "bullets": [
+            "Built Python and PowerShell automation scripts to streamline repetitive operational tasks, improving consistency and reducing manual effort for 100+ users",
+            "Developed monitoring dashboards and SQL-based reporting views to surface KPIs and support faster issue detection across internal teams",
+            "Created self-serve documentation including how-to guides and onboarding materials, enabling independent use and reducing repeat support questions"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, KQL",
+          "bullets": [
+            "Wrote Python and SQL scripts to automate data retrieval and validation workflows, improving speed and accuracy during incident troubleshooting",
+            "Developed basic KQL queries to support reporting and anomaly investigation; documented findings in structured runbooks for recurring operational issues",
+            "Contributed to SOPs and workflow documentation for issue resolution and system operations, improving repeatability across the team"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, CI/CD",
+          "bullets": [
+            "Led a 4-person team and facilitated 2-3 Scrum meetings weekly; produced handoff documentation and runbooks to support knowledge transfer and consistent delivery",
+            "Implemented CI/CD pipeline with GitHub Actions for automated testing and quality checks; supported 30+ successful merges without regression",
+            "Coordinated with back-end teammates to define API contracts and resolve integration issues, accelerating feature delivery by 1-2 sprints"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
