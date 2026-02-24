@@ -18,7 +18,7 @@
       "pitch": "I've built Power Automate workflows, integrated Azure AD with Microsoft Graph API for SharePoint file I/O, and set up CI/CD pipelines with GitHub Actions across multiple projects. I also have experience hardening web apps for 1,000+ users and writing technical documentation (SOPs, onboarding guides) to support handoffs and long-term system upkeep. I'd love to bring that to the City of Calgary's IT team this summer.",
       "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_ITDev_0304.pdf",
       "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "React, APIs & Full-Stack Development", "CI/CD Pipelines & Agile Delivery", "Secure Backend Development"],
-      "relevantProjects": ["incident-command", "production-analytics-forecasting-dashboard", "ubc-thrifty-grocers"],
+      "relevantProjects": ["ticket-triage-rag-bot", "incident-command", "production-analytics-forecasting-dashboard"],
       "tailoredExperience": [
         {
           "name": "Enactus UCalgary - WealthPath",
@@ -150,7 +150,8 @@
       "pitch": "I've designed and tested automation workflows in Power Automate with scope-based error handling, integrated Azure AD and Microsoft Graph API for SharePoint file I/O, and maintained documentation repositories with SOPs, meeting notes, and status logs. I'm collaborative and feedback-driven, and I'm excited to learn and grow with the City of Calgary's automation team while contributing reliable, well-documented work from day one.",
       "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_AutomationDev_0207.pdf",
       "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "Data Analysis & KPI Reporting", "CI/CD Pipelines & Agile Delivery"],
-      "relevantProjects": ["production-analytics-forecasting-dashboard", "oil-gas-asset-integrity-dashboard", "business-tracking-application"],
+      "relevantProjects": ["ticket-triage-rag-bot", "production-analytics-forecasting-dashboard", "oil-gas-asset-integrity-dashboard"],
+      "projectsAboveExperience": true,
       "tailoredExperience": [
         {
           "name": "Enactus UCalgary - WealthPath",
@@ -332,7 +333,7 @@
       "pitch": "I've built CI/CD pipelines with GitHub Actions, developed PowerShell scripts for automated deployments, integrated Azure AD and Microsoft Graph API with SharePoint, and written KQL queries for reporting and troubleshooting. I also have hands-on experience hardening web apps with CORS, RBAC, and proxy configurations for 1,000+ users. I'm excited to bring that Azure automation, endpoint security, and documentation experience to the City of Calgary's IT Operations EUC team.",
       "resumePath": "/Zohair_Omar_Resume_CityOfCalgary_IT_OPS_EUC_0209.pdf",
       "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery", "Secure Backend Development"],
-      "relevantProjects": ["production-analytics-forecasting-dashboard", "ubc-thrifty-grocers", "oil-gas-asset-integrity-dashboard"],
+      "relevantProjects": ["ticket-triage-rag-bot", "production-analytics-forecasting-dashboard", "oil-gas-asset-integrity-dashboard"],
       "tailoredExperience": [
         {
           "name": "Enactus UCalgary - WealthPath",
