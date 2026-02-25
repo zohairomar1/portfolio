@@ -77,6 +77,7 @@ export function DVDMenu({ className, isCompanyMode = false }: DVDMenuProps) {
 
       {MENU_ITEMS.map((item, index) => {
         const isEnhancedPick = item.isDirectorsPick && isCompanyMode;
+        const isLocked = isCompanyMode && !item.isDirectorsPick;
 
         return (
           <button
@@ -85,12 +86,13 @@ export function DVDMenu({ className, isCompanyMode = false }: DVDMenuProps) {
             tabIndex={selectedIndex === index ? 0 : -1}
             className={cn(
               "dvd-menu-item group",
-              selectedIndex === index && "active",
-              isEnhancedPick && "border-l-2 border-l-accent bg-accent/[0.08] py-3.5 relative overflow-hidden animate-directors-glow"
+              !isLocked && selectedIndex === index && "active",
+              isEnhancedPick && "border-l-2 border-l-accent bg-accent/[0.08] py-3.5 relative overflow-hidden animate-directors-glow",
+              isLocked && "opacity-[0.28] pointer-events-none select-none"
             )}
-            onMouseEnter={() => handleMouseEnter(index)}
-            onClick={() => handleClick(item.href)}
-            onFocus={() => setSelectedIndex(index)}
+            onMouseEnter={() => !isLocked && handleMouseEnter(index)}
+            onClick={() => !isLocked && handleClick(item.href)}
+            onFocus={() => !isLocked && setSelectedIndex(index)}
           >
             {/* Shimmer sweep for Director's Pick */}
             {isEnhancedPick && (
@@ -103,10 +105,13 @@ export function DVDMenu({ className, isCompanyMode = false }: DVDMenuProps) {
             )}
 
             <span
-              className="cursor w-4 text-primary font-bold text-center"
+              className={cn(
+                "cursor w-4 font-bold text-center",
+                isLocked ? "text-muted-foreground/30 text-[10px]" : "text-primary"
+              )}
               aria-hidden="true"
             >
-              ▸
+              {isLocked ? "—" : "▸"}
             </span>
             <span className="flex-1 text-center">
               <span className={cn(
@@ -131,13 +136,15 @@ export function DVDMenu({ className, isCompanyMode = false }: DVDMenuProps) {
                   className="block font-mono text-[9px] mt-0.5 animate-subtitle-reveal"
                   style={{ color: "hsl(var(--accent) / 0.7)" }}
                 >
-                  ▶ CURATED JUST FOR YOU
+                  ▶ START HERE — CURATED FOR YOU
                 </span>
               )}
             </span>
-            <span className="w-4 text-xs font-mono text-muted-foreground/40 opacity-0 group-hover:opacity-100 transition-opacity text-center">
-              {index + 1}
-            </span>
+            {!isLocked && (
+              <span className="w-4 text-xs font-mono text-muted-foreground/40 opacity-0 group-hover:opacity-100 transition-opacity text-center">
+                {index + 1}
+              </span>
+            )}
           </button>
         );
       })}

@@ -25,9 +25,14 @@ const NAV_ITEMS = [
 export function QuickNav({ className }: QuickNavProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [isCompanyMode, setIsCompanyMode] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
   const { playSound } = useSound();
+
+  useEffect(() => {
+    if (sessionStorage.getItem("vhs-company")) setIsCompanyMode(true);
+  }, []);
 
   const close = useCallback(() => {
     setIsOpen(false);
@@ -128,36 +133,44 @@ export function QuickNav({ className }: QuickNavProps) {
         </h2>
 
         <nav className="flex flex-col gap-1" role="menu">
-          {NAV_ITEMS.map((item, index) => (
-            <button
-              key={item.href}
-              role="menuitem"
-              className={cn(
-                "flex items-center gap-3 px-3 py-2 text-left rounded transition-colors",
-                selectedIndex === index
-                  ? "bg-primary/20 text-primary"
-                  : "hover:bg-muted text-foreground",
-                pathname === item.href && "font-bold"
-              )}
-              onMouseEnter={() => setSelectedIndex(index)}
-              onClick={() => navigate(item.href)}
-            >
-              <span
+          {NAV_ITEMS.map((item, index) => {
+            const isDirectorsPick = item.href === "/directors-pick";
+            const isLocked = isCompanyMode && !isDirectorsPick;
+            return (
+              <button
+                key={item.href}
+                role="menuitem"
                 className={cn(
-                  "w-4 text-primary",
-                  selectedIndex === index ? "opacity-100" : "opacity-0"
+                  "flex items-center gap-3 px-3 py-2 text-left rounded transition-colors",
+                  isLocked
+                    ? "opacity-[0.28] pointer-events-none select-none text-foreground"
+                    : selectedIndex === index
+                    ? "bg-primary/20 text-primary"
+                    : "hover:bg-muted text-foreground",
+                  !isLocked && pathname === item.href && "font-bold"
                 )}
+                onMouseEnter={() => !isLocked && setSelectedIndex(index)}
+                onClick={() => !isLocked && navigate(item.href)}
               >
-                ▸
-              </span>
-              <span>{item.label}</span>
-              {pathname === item.href && (
-                <span className="ml-auto text-xs text-muted-foreground">
-                  (current)
+                <span
+                  className={cn(
+                    "w-4",
+                    isLocked
+                      ? "text-muted-foreground/30 text-[10px]"
+                      : cn("text-primary", selectedIndex === index ? "opacity-100" : "opacity-0")
+                  )}
+                >
+                  {isLocked ? "—" : "▸"}
                 </span>
-              )}
-            </button>
-          ))}
+                <span>{item.label}</span>
+                {!isLocked && pathname === item.href && (
+                  <span className="ml-auto text-xs text-muted-foreground">
+                    (current)
+                  </span>
+                )}
+              </button>
+            );
+          })}
         </nav>
 
         <div className="mt-4 pt-4 border-t border-border text-xs text-muted-foreground">
