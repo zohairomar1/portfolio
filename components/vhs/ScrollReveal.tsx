@@ -72,7 +72,7 @@ export function ScrollReveal({
   return (
     <div
       ref={ref}
-      className={`transition-all duration-700 ${getVariantClasses()} ${className}`}
+      className={`${getVariantClasses()} ${className}`}
     >
       {!isVisible && skeleton ? skeleton : children}
     </div>
