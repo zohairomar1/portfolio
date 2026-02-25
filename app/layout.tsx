@@ -12,6 +12,7 @@ const displayFont = VT323({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-display",
+  display: "block",
 });
 
 const bodyFont = Inter({

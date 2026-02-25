@@ -41,7 +41,6 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
   );
   const [soundEnabled, setSoundEnabled] = useState(settings.soundEnabled);
   const [glitchText, setGlitchText] = useState(false);
-  const [scanlinePos, setScanlinePos] = useState(0);
   const [showRewind, setShowRewind] = useState(false);
   const [currentMessage, setCurrentMessage] = useState(0);
   const [showPortfolio, setShowPortfolio] = useState(false);
@@ -131,20 +130,6 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
     return () => clearInterval(interval);
   }, [phase]);
 
-  // Scanline sweep effect — smooth and slow like a real TV
-  useEffect(() => {
-    let raf: number;
-    let pos = 0;
-    const speed = 0.08; // very slow drift
-    const step = () => {
-      pos = (pos + speed) % 120;
-      setScanlinePos(pos);
-      raf = requestAnimationFrame(step);
-    };
-    raf = requestAnimationFrame(step);
-    return () => cancelAnimationFrame(raf);
-  }, []);
-
   // Glitch effect
   useEffect(() => {
     const interval = setInterval(() => {
@@ -227,16 +212,17 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
         </div>
       )}
 
-      {/* Scanline sweep — smooth drift, pixelated look */}
+      {/* Scanline sweep — transform-only animation (compositor, no layout/paint) */}
       <div
         className="absolute left-0 right-0 pointer-events-none"
         style={{
-          top: `${scanlinePos - 10}%`,
+          top: 0,
           height: "6px",
           background: `var(--boot-primary)`,
           opacity: 0.12,
-          boxShadow: `0 0 30px 12px var(--boot-primary)`,
-          imageRendering: "pixelated",
+          boxShadow: `0 0 16px 6px var(--boot-primary)`,
+          animation: "scanline-boot 25s linear infinite",
+          willChange: "transform",
         }}
       />
 
@@ -825,6 +811,10 @@ export function BootScreen({ onComplete, company }: BootScreenProps) {
       />
 
       <style jsx>{`
+        @keyframes scanline-boot {
+          0% { transform: translateY(-10vh); }
+          100% { transform: translateY(110vh); }
+        }
         @keyframes static {
           0%, 100% { background-position: 0 0; }
           25% { background-position: 50% 50%; }
