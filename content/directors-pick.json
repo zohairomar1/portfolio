@@ -728,7 +728,7 @@
       "pitch": "This role covers broad IT placements - web, support, project, and analyst - and that's the range I've worked across at WealthPath, TechNova, and Agrius IT. I use Microsoft 365 tools daily (Teams, SharePoint, Excel, Visio, Project Server, Word), have built Power BI dashboards with SharePoint and Azure AD integration, and consistently deliver through documentation, troubleshooting, and clear stakeholder communication. I'm available May-August 2026, Alberta-based, and ready to contribute wherever the Health Shared Services IT team needs reliable, adaptable support.",
       "resumePath": "/Zohair_Omar_Resume_AHS_IT_0225.pdf",
       "relevantHighlights": ["Data Analysis & KPI Reporting", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
-      "relevantProjects": ["production-analytics-forecasting-dashboard", "oil-gas-asset-integrity-dashboard", "incident-command"],
+      "relevantProjects": ["ticket-triage-rag-bot", "production-analytics-forecasting-dashboard", "oil-gas-asset-integrity-dashboard"],
       "tailoredExperience": [
         {
           "name": "Enactus UCalgary - WealthPath",
