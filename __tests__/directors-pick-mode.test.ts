@@ -440,6 +440,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Automation and AI Co-op");
   });
 
+  it("has Health Shared Services IT Student role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "health-shared-services/it-student");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("Health Shared Services");
+    expect(roles[0].title).toBe("Co-op Work Experience Student - IT");
+  });
+
+  it("visitor via /for/health-shared-services/it-student should match AHS IT Student role", () => {
+    const companyConfig = {
+      slug: "health-shared-services/it-student",
+      displayName: "HEALTH SHARED SERVICES",
+      subtitle: "Co-op Work Experience Student - IT",
+      brandColor: "#0579c3",
+      brandAccent: "#17b374",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Co-op Work Experience Student - IT");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

@@ -15,6 +15,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   atco: { slug: "atco", displayName: "ATCO", brandColor: "#2E299D", brandAccent: "#E9BF48" },
   "precision-drilling": { slug: "precision-drilling", displayName: "PRECISION DRILLING", brandColor: "#4a9841", brandAccent: "#ffffff" },
   nutrien: { slug: "nutrien", displayName: "NUTRIEN", brandColor: "#009A44", brandAccent: "#97D700" },
+  "health-shared-services": { slug: "health-shared-services", displayName: "HEALTH SHARED SERVICES", brandColor: "#0579c3", brandAccent: "#17b374" },
 };
 
 // Role-specific configurations for /for/[company]/[role] routes
@@ -145,6 +146,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       subtitle: "Automation and AI Co-op",
       brandColor: "#009A44",
       brandAccent: "#97D700",
+    },
+  },
+  "health-shared-services": {
+    "it-student": {
+      slug: "health-shared-services/it-student",
+      displayName: "HEALTH SHARED SERVICES",
+      subtitle: "Co-op Work Experience Student - IT",
+      brandColor: "#0579c3",
+      brandAccent: "#17b374",
     },
   },
 };

@@ -721,6 +721,51 @@
       ]
     },
     {
+      "company": "Health Shared Services",
+      "companySlug": "health-shared-services/it-student",
+      "title": "Co-op Work Experience Student - IT",
+      "topSkills": ["Microsoft 365 & Collaboration Tools", "Python, SQL & Programming", "Power BI & Data Reporting", "Troubleshooting, Documentation & SOPs", "Stakeholder Communication & Customer Support"],
+      "pitch": "This role covers broad IT placements - web, support, project, and analyst - and that's the range I've worked across at WealthPath, TechNova, and Agrius IT. I use Microsoft 365 tools daily (Teams, SharePoint, Excel, Visio, Project Server, Word), have built Power BI dashboards with SharePoint and Azure AD integration, and consistently deliver through documentation, troubleshooting, and clear stakeholder communication. I'm available May-August 2026, Alberta-based, and ready to contribute wherever the Health Shared Services IT team needs reliable, adaptable support.",
+      "resumePath": "/Zohair_Omar_Resume_AHS_IT_0225.pdf",
+      "relevantHighlights": ["Data Analysis & KPI Reporting", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
+      "relevantProjects": ["production-analytics-forecasting-dashboard", "oil-gas-asset-integrity-dashboard", "incident-command"],
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, Teams, Excel, Word, Visio, PowerPoint",
+          "bullets": [
+            "Led a 4-person team and facilitated 2-3 weekly Scrum meetings; tracked priorities, risks, and action items using Teams/Excel/Word with strong follow-through",
+            "Created architecture-style artifacts in Visio/PowerPoint/Word (component diagrams, integration notes, decision logs) to reduce rework and improve stakeholder clarity",
+            "Coordinated with technical and non-technical stakeholders to gather requirements and communicate progress, supporting timely delivery of a pilot used by 100+ students"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Power BI, SharePoint, Git",
+          "bullets": [
+            "Built web solutions and dashboards for clubs; translated user needs into features, reports, and support documentation to improve information access for 100+ users",
+            "Developed data-backed functionality using Python/SQL and produced stakeholder-facing reporting views in Power BI, validating outputs for reliable decision support",
+            "Created onboarding guides and troubleshooting notes to improve customer support quality and reduce repeat questions during rollout and maintenance"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, Word, Excel, Project Server",
+          "bullets": [
+            "Supported troubleshooting and incident follow-up by writing/refining SQL queries to validate data and summarize findings for faster resolution",
+            "Documented workflows and contributed to SOPs/runbooks in Word/Excel; improved repeatability and support readiness for recurring operational issues",
+            "Collaborated cross-functionally and tracked updates/tasks using project-oriented workflows (Project Server/status notes), resolving 3 critical bottlenecks ahead of schedule"
+          ]
+        }
+      ]
+    },
+    {
       "company": "Nutrien",
       "companySlug": "nutrien/automation-ai",
       "title": "Automation and AI Co-op",
