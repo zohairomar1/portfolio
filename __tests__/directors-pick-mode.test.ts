@@ -486,6 +486,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Field Operations Summer Student");
   });
 
+  it("has BIS Safety Software QA Intern role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "bis-safety-software/software-tester-qa-qc-intern");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("BIS Safety Software");
+    expect(roles[0].title).toBe("Software Tester (QA/QC) Intern");
+  });
+
+  it("visitor via /for/bis-safety-software/software-tester-qa-qc-intern should match BIS role", () => {
+    const companyConfig = {
+      slug: "bis-safety-software/software-tester-qa-qc-intern",
+      displayName: "BIS SAFETY SOFTWARE",
+      subtitle: "Software Tester (QA/QC) Intern",
+      brandColor: "#1a5a94",
+      brandAccent: "#93c647",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Software Tester (QA/QC) Intern");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

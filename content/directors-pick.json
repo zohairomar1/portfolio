@@ -854,6 +854,49 @@
           ]
         }
       ]
+    },
+    {
+      "company": "BIS Safety Software",
+      "companySlug": "bis-safety-software/software-tester-qa-qc-intern",
+      "title": "Software Tester (QA/QC) Intern",
+      "topSkills": ["Manual & Exploratory Testing", "Automated Testing (JUnit5, Mockito, CI/CD)", "Defect Investigation & Root-Cause Analysis", "AI for QA (OpenAI, Gemini, RAG)", "Test Documentation & Developer Collaboration"],
+      "pitch": "I've written 133+ automated tests across full-stack and AI workflows (99 JUnit/Mockito + 34 AI test suite), fixed real defects found during testing including lazy-loading and test-isolation issues, and built CI/CD pipelines that run quality gates on every PR. I also built and tested an AI ticket triage bot specifically designing tests around provider failures and fallback edge cases - exactly the AI-meets-QA work BIS is exploring. I approach testing structurally, document clearly, and enjoy tracing bugs to root causes rather than just reporting symptoms.",
+      "resumePath": "/Zohair_Omar_Resume_BIS_QAQC_0302.pdf",
+      "relevantHighlights": ["OOP, Java & Full-Stack Architecture", "CI/CD Pipelines & Agile Delivery", "Secure Backend Development"],
+      "relevantProjects": ["incident-command", "ticket-triage-rag-bot", "ubc-thrifty-grocers"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, HTML/CSS, JavaScript",
+          "bullets": [
+            "Investigated and debugged production issues using SQL and backend troubleshooting, helping resolve 3 critical bottlenecks ahead of schedule",
+            "Improved reliability through error handling and security-focused fixes (CORS, proxy settings); documented workflows/SOPs for repeatable issue resolution"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Led a 4-person team and coordinated 2-3 weekly Scrum meetings; tracked defects, priorities, and delivery issues with clear communication across teammates",
+            "Implemented CI/CD checks with GitHub Actions, supporting 30+ merges with automated quality gates and fewer regressions"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, JavaScript, Git",
+          "bullets": [
+            "Built and tested web features and dashboards for 100+ users; documented edge cases, handoff notes, and fixes to improve usability and support follow-through",
+            "Collaborated with developers and stakeholders to reproduce bugs, clarify expected behavior, and ship practical fixes under changing priorities"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
