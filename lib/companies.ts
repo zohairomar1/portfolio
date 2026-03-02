@@ -159,8 +159,8 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
     },
   },
   "cardinal-energy": {
-    "field-operations-student": {
-      slug: "cardinal-energy/field-operations-student",
+    "field-operations-summer-student": {
+      slug: "cardinal-energy/field-operations-summer-student",
       displayName: "CARDINAL ENERGY",
       subtitle: "Field Operations Summer Student",
       brandColor: "#bc0f2d",

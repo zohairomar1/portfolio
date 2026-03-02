@@ -812,15 +812,26 @@
     },
     {
       "company": "Cardinal Energy",
-      "companySlug": "cardinal-energy/field-operations-student",
+      "companySlug": "cardinal-energy/field-operations-summer-student",
       "title": "Field Operations Summer Student",
-      "topSkills": ["Production Reporting & Data Collection", "Oil & Gas Analytics (Python, SQL, Power BI)", "Operational Documentation & SOPs", "Teamwork & Multi-disciplinary Collaboration", "Troubleshooting & Initiative"],
-      "pitch": "I built a Production Analytics and Forecasting Dashboard cleaning and standardizing multi-well North Sea production data (2008-2016) to support KPI tracking and optimization-style reviews, and an Oil and Gas Asset Integrity Dashboard tracking 24 months of compliance KPIs in Power BI. My experience has been operationally focused - documentation, troubleshooting, and reliable delivery in team environments. I'm excited to support Cardinal's field team with data collection, production reporting, and special projects while learning industry best practices from experienced operators.",
+      "topSkills": ["Production Reporting & Data Collection", "Oil & Gas Analytics (Python, SQL, Power BI)", "Hands-On Troubleshooting & Testing", "Multi-disciplinary Teamwork", "Operational Documentation & Initiative"],
+      "pitch": "I built a Production Analytics and Forecasting Dashboard cleaning and standardizing multi-well North Sea production data (2008-2016) to support KPI tracking and optimization-style reviews, and an Oil and Gas Asset Integrity Dashboard tracking 24 months of compliance KPIs in Power BI. I also have hands-on experience working in a multi-disciplinary team building an autonomous robot - programming sensors, troubleshooting systems under deadlines, and achieving a 95% test success rate. I'm excited to support Cardinal's field team with data collection, production reporting, and special projects while learning industry best practices from experienced operators.",
       "resumePath": "/Zohair_Omar_Resume_Cardinal_Ops_0301.pdf",
       "relevantHighlights": ["Data Analysis & KPI Reporting", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
-      "relevantProjects": ["production-analytics-forecasting-dashboard", "oil-gas-asset-integrity-dashboard", "incident-command"],
+      "relevantProjects": ["production-analytics-forecasting-dashboard", "oil-gas-asset-integrity-dashboard"],
       "projectsAboveExperience": true,
       "tailoredExperience": [
+        {
+          "name": "UBC Design League",
+          "title": "Software Developer",
+          "dates": "Dec 2022 - Sep 2024",
+          "stack": "Python, C, Arduino IDE, SolidWorks, Git",
+          "bullets": [
+            "Worked in a multi-disciplinary team on a competition-ready autonomous robot, supporting system integration, testing, and iterative improvements under deadlines",
+            "Programmed and integrated sensors and motors (servo motors, ultrasonic sensors) for obstacle detection and control, improving real-time perception efficiency by 25%",
+            "Performed hands-on troubleshooting and testing, helping deliver a reliable technical system with a 95% success rate in tests"
+          ]
+        },
         {
           "name": "Agrius IT",
           "title": "Software Developer Intern",
@@ -828,7 +839,8 @@
           "stack": "Python, SQL, Word, Excel",
           "bullets": [
             "Supported troubleshooting by writing/refining SQL queries to validate operational data and summarize findings, helping teams resolve issues faster",
-            "Documented workflows and SOPs with clear step-by-step notes, improving repeatability and support readiness for recurring operational tasks"
+            "Documented workflows and SOPs with clear step-by-step notes, improving repeatability and support readiness for recurring operational tasks",
+            "Collaborated across teams to deliver updates and resolve 3 critical system bottlenecks ahead of schedule"
           ]
         },
         {
@@ -839,16 +851,6 @@
           "bullets": [
             "Led a 4-person team and coordinated 2-3 weekly meetings to align priorities, track action items, and deliver work in a collaborative environment",
             "Communicated progress to technical and non-technical stakeholders and helped resolve integration issues, supporting timely delivery under changing priorities"
-          ]
-        },
-        {
-          "name": "TechNova",
-          "title": "Co-Founder & VP Technical",
-          "dates": "Feb 2025 - Present",
-          "stack": "Python, SQL, Power BI, Git",
-          "bullets": [
-            "Built data-backed dashboards and features for 100+ users; gathered requirements, validated outputs, and delivered practical reporting views",
-            "Took initiative on special projects and documentation (onboarding guides, troubleshooting notes) to improve reliability and reduce repeat support requests"
           ]
         }
       ]

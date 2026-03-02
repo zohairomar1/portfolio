@@ -464,15 +464,15 @@ describe("Director's Pick mode detection", () => {
   });
 
   it("has Cardinal Energy Field Operations role", () => {
-    const roles = directorsPickData.roles.filter((r) => r.companySlug === "cardinal-energy/field-operations-student");
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "cardinal-energy/field-operations-summer-student");
     expect(roles.length).toBeGreaterThan(0);
     expect(roles[0].company).toBe("Cardinal Energy");
     expect(roles[0].title).toBe("Field Operations Summer Student");
   });
 
-  it("visitor via /for/cardinal-energy/field-operations-student should match Cardinal role", () => {
+  it("visitor via /for/cardinal-energy/field-operations-summer-student should match Cardinal role", () => {
     const companyConfig = {
-      slug: "cardinal-energy/field-operations-student",
+      slug: "cardinal-energy/field-operations-summer-student",
       displayName: "CARDINAL ENERGY",
       subtitle: "Field Operations Summer Student",
       brandColor: "#bc0f2d",
