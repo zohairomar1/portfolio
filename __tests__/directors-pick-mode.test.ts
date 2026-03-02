@@ -463,6 +463,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Co-op Work Experience Student - IT");
   });
 
+  it("has Cardinal Energy Field Operations role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "cardinal-energy/field-operations-student");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("Cardinal Energy");
+    expect(roles[0].title).toBe("Field Operations Summer Student");
+  });
+
+  it("visitor via /for/cardinal-energy/field-operations-student should match Cardinal role", () => {
+    const companyConfig = {
+      slug: "cardinal-energy/field-operations-student",
+      displayName: "CARDINAL ENERGY",
+      subtitle: "Field Operations Summer Student",
+      brandColor: "#bc0f2d",
+      brandAccent: "#7e889c",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Field Operations Summer Student");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

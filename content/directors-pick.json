@@ -809,6 +809,49 @@
           ]
         }
       ]
+    },
+    {
+      "company": "Cardinal Energy",
+      "companySlug": "cardinal-energy/field-operations-student",
+      "title": "Field Operations Summer Student",
+      "topSkills": ["Production Reporting & Data Collection", "Oil & Gas Analytics (Python, SQL, Power BI)", "Operational Documentation & SOPs", "Teamwork & Multi-disciplinary Collaboration", "Troubleshooting & Initiative"],
+      "pitch": "I built a Production Analytics and Forecasting Dashboard cleaning and standardizing multi-well North Sea production data (2008-2016) to support KPI tracking and optimization-style reviews, and an Oil and Gas Asset Integrity Dashboard tracking 24 months of compliance KPIs in Power BI. My experience has been operationally focused - documentation, troubleshooting, and reliable delivery in team environments. I'm excited to support Cardinal's field team with data collection, production reporting, and special projects while learning industry best practices from experienced operators.",
+      "resumePath": "/Zohair_Omar_Resume_Cardinal_Ops_0301.pdf",
+      "relevantHighlights": ["Data Analysis & KPI Reporting", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
+      "relevantProjects": ["production-analytics-forecasting-dashboard", "oil-gas-asset-integrity-dashboard", "incident-command"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, Word, Excel",
+          "bullets": [
+            "Supported troubleshooting by writing/refining SQL queries to validate operational data and summarize findings, helping teams resolve issues faster",
+            "Documented workflows and SOPs with clear step-by-step notes, improving repeatability and support readiness for recurring operational tasks"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Led a 4-person team and coordinated 2-3 weekly meetings to align priorities, track action items, and deliver work in a collaborative environment",
+            "Communicated progress to technical and non-technical stakeholders and helped resolve integration issues, supporting timely delivery under changing priorities"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Power BI, Git",
+          "bullets": [
+            "Built data-backed dashboards and features for 100+ users; gathered requirements, validated outputs, and delivered practical reporting views",
+            "Took initiative on special projects and documentation (onboarding guides, troubleshooting notes) to improve reliability and reduce repeat support requests"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
