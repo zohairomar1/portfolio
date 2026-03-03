@@ -897,6 +897,51 @@
           ]
         }
       ]
+    },
+    {
+      "company": "FortisBC",
+      "companySlug": "fortisbc/information-systems-coop",
+      "title": "Information Systems Co-op",
+      "topSkills": ["Production Monitoring & Application Support", "Microsoft 365 (Word, Excel, SharePoint, Visio)", "Software Documentation & Architecture Drawings", "Requirements Gathering & Analysis", "Build/Test Support & Troubleshooting"],
+      "pitch": "At Agrius IT I supported production issue investigation by writing SQL and basic KQL queries to validate incidents and confirm fixes, resolving 3 critical bottlenecks ahead of schedule. In WealthPath I created and maintained Visio diagrams, Word/SharePoint documentation, and architectural artifacts to improve handoff quality across teams, and supported minor build/test cycles before release. I hold a valid Class 5 BC driver's license and I'm excited to bring that blend of production support, documentation discipline, and build/test experience to FortisBC's IS Applications team.",
+      "resumePath": "/Zohair_Omar_Resume_IS_FortisBC_0303.pdf",
+      "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery", "Secure Backend Development"],
+      "relevantProjects": ["incident-command", "production-analytics-forecasting-dashboard", "oil-gas-asset-integrity-dashboard"],
+      "tailoredExperience": [
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, KQL, Word, Excel",
+          "bullets": [
+            "Supported production issue investigation by writing/refining SQL queries (and basic KQL log queries) to validate incidents, confirm fixes, and reduce user impact",
+            "Reviewed and updated application/process documentation (SOPs, workflow notes, resolution steps) in Word/Excel to improve support consistency and repeatability",
+            "Collaborated across teams to troubleshoot and deliver fixes, resolving 3 critical bottlenecks ahead of schedule"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, Visio, SharePoint, Word",
+          "bullets": [
+            "Led a 4-person team and facilitated 2-3 weekly Scrum meetings; gathered requirements, tracked action items, and coordinated minor build/test activities before release",
+            "Created and updated technical documentation and architectural drawings in Visio/PowerPoint/Word (component diagrams, integration notes, decision logs) to support handoffs and clarity",
+            "Communicated progress and issues with technical/non-technical stakeholders, helping prevent delays and improve delivery reliability"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Power BI, Git, Excel, SharePoint",
+          "bullets": [
+            "Gathered user requirements and translated them into application updates, reporting views, and support documentation for 100+ users",
+            "Performed minor build/test iterations on web features and dashboards, validating outputs and documenting changes to improve usability and maintainability",
+            "Maintained organized project documentation (templates, checklists, folder conventions) to support consistent collaboration across teammates"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

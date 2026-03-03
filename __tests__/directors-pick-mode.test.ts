@@ -509,6 +509,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Software Tester (QA/QC) Intern");
   });
 
+  it("has FortisBC Information Systems Co-op role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "fortisbc/information-systems-coop");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("FortisBC");
+    expect(roles[0].title).toBe("Information Systems Co-op");
+  });
+
+  it("visitor via /for/fortisbc/information-systems-coop should match FortisBC role", () => {
+    const companyConfig = {
+      slug: "fortisbc/information-systems-coop",
+      displayName: "FORTISBC",
+      subtitle: "Information Systems Co-op",
+      brandColor: "#0e568f",
+      brandAccent: "#ffce38",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Information Systems Co-op");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

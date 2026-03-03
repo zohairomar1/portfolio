@@ -18,6 +18,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   "health-shared-services": { slug: "health-shared-services", displayName: "HEALTH SHARED SERVICES", brandColor: "#0579c3", brandAccent: "#17b374" },
   "cardinal-energy": { slug: "cardinal-energy", displayName: "CARDINAL ENERGY", brandColor: "#bc0f2d", brandAccent: "#7e889c" },
   "bis-safety-software": { slug: "bis-safety-software", displayName: "BIS SAFETY SOFTWARE", brandColor: "#1a5a94", brandAccent: "#93c647" },
+  fortisbc: { slug: "fortisbc", displayName: "FORTISBC", brandColor: "#0e568f", brandAccent: "#ffce38" },
 };
 
 // Role-specific configurations for /for/[company]/[role] routes
@@ -175,6 +176,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       subtitle: "Software Tester (QA/QC) Intern",
       brandColor: "#1a5a94",
       brandAccent: "#93c647",
+    },
+  },
+  fortisbc: {
+    "information-systems-coop": {
+      slug: "fortisbc/information-systems-coop",
+      displayName: "FORTISBC",
+      subtitle: "Information Systems Co-op",
+      brandColor: "#0e568f",
+      brandAccent: "#ffce38",
     },
   },
 };
