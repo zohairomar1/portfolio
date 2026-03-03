@@ -555,6 +555,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("DevOps Engineering Co-op");
   });
 
+  it("has Cenovus Student, AI & Data Science role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "cenovus/information-technology-student");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("Cenovus Energy");
+    expect(roles[0].title).toBe("Student, AI & Data Science");
+  });
+
+  it("visitor via /for/cenovus/information-technology-student should match Cenovus role", () => {
+    const companyConfig = {
+      slug: "cenovus/information-technology-student",
+      displayName: "CENOVUS",
+      subtitle: "Student, AI & Data Science",
+      brandColor: "#244c5b",
+      brandAccent: "#cf4420",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Student, AI & Data Science");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

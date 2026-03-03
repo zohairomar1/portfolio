@@ -20,6 +20,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   "bis-safety-software": { slug: "bis-safety-software", displayName: "BIS SAFETY SOFTWARE", brandColor: "#1a5a94", brandAccent: "#93c647" },
   fortisbc: { slug: "fortisbc", displayName: "FORTISBC", brandColor: "#0e568f", brandAccent: "#ffce38" },
   "rakuten-kobo": { slug: "rakuten-kobo", displayName: "RAKUTEN KOBO", brandColor: "#c2130d", brandAccent: "#ffffff" },
+  cenovus: { slug: "cenovus", displayName: "CENOVUS", brandColor: "#244c5b", brandAccent: "#cf4420" },
 };
 
 // Role-specific configurations for /for/[company]/[role] routes
@@ -195,6 +196,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       subtitle: "DevOps Engineering Co-op",
       brandColor: "#c2130d",
       brandAccent: "#ffffff",
+    },
+  },
+  cenovus: {
+    "information-technology-student": {
+      slug: "cenovus/information-technology-student",
+      displayName: "CENOVUS",
+      subtitle: "Student, AI & Data Science",
+      brandColor: "#244c5b",
+      brandAccent: "#cf4420",
     },
   },
 };

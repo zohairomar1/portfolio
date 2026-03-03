@@ -988,6 +988,49 @@
           ]
         }
       ]
+    },
+    {
+      "company": "Cenovus Energy",
+      "companySlug": "cenovus/information-technology-student",
+      "title": "Student, AI & Data Science",
+      "resumePath": "/Zohair_Omar_Resume_Cenovus_IT_0303.pdf",
+      "topSkills": ["Python, SQL & Data Analysis", "Power BI & KPI Reporting", "ML Forecasting & Model Refinement", "Stakeholder Ownership & Communication", "CI/CD & Software Delivery"],
+      "pitch": "I built an end-to-end production analytics and forecasting dashboard using Python, SQL, and Power Automate, including data wrangling, KPI tracking, anomaly detection, and forecasting workflows refined with backtesting metrics (MAE, RMSE, MAPE, WAPE). I also built an Oil and Gas Asset Integrity Dashboard in Power BI with 24 months of operational data, KPI drilldowns, and stakeholder-ready views. I enjoy owning full workstreams, communicating results clearly, and iterating on outputs based on evaluation. I am excited to contribute to Cenovus's data science and analytics teams while learning from experienced professionals in the energy sector.",
+      "relevantHighlights": ["Data Analysis & KPI Reporting", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
+      "relevantProjects": ["production-analytics-forecasting-dashboard", "oil-gas-asset-integrity-dashboard", "ticket-triage-rag-bot"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, Agile/Scrum, Microsoft Suite",
+          "bullets": [
+            "Led a 4-person team and managed 2-3 weekly Scrum meetings; owned workload planning, tracked deliverables, and communicated progress with technical and non-technical stakeholders",
+            "Coordinated feature requirements and integration issues across teams, accelerating delivery by 1-2 sprints; supported 30+ quality-checked merges via CI/CD"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Power BI, Git, Excel",
+          "bullets": [
+            "Gathered stakeholder requirements and delivered dashboards, reports, and data-backed features for 100+ users, improving accessibility of operational information",
+            "Built and validated reporting outputs using Python, SQL, and Power BI; documented assumptions and handoff notes to support maintainability and reliable decision support"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, JavaScript, Microsoft Suite",
+          "bullets": [
+            "Supported troubleshooting and analysis by writing and refining SQL queries to validate operational data, summarize findings, and help resolve 3 critical bottlenecks ahead of schedule",
+            "Documented workflows, SOPs, and resolution steps to improve repeatability, communication, and support readiness across teams"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
