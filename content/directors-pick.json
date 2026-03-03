@@ -947,6 +947,7 @@
       "company": "Rakuten Kobo",
       "companySlug": "rakuten-kobo/devops-engineering-coop",
       "title": "DevOps Engineering Co-op",
+      "resumePath": "/Zohair_Omar_Resume_Rakuten_DevOps3_0303.pdf",
       "topSkills": ["CI/CD Pipeline Development", "Docker & Containerization", "Python & PowerShell Scripting", "REST APIs & System Integration", "GitOps & IaC (Terraform/Chef)"],
       "pitch": "I have built and maintained CI/CD pipelines with GitHub Actions and Jenkins, containerized multi-service applications with Docker Compose (Spring Boot + PostgreSQL + Jenkins), and written Python and PowerShell scripts to automate deployment and operational tasks. I also have production experience hardening REST APIs and web applications for 1,000+ daily users through CORS, RBAC, and proxy configuration. I am excited to grow in GitOps and IaC at Kobo while contributing to pipeline reliability, automation tooling, and developer experience improvements.",
       "relevantHighlights": ["CI/CD Pipelines & Agile Delivery", "OOP, Java & Full-Stack Architecture", "Secure Backend Development"],
