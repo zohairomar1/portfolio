@@ -19,6 +19,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   "cardinal-energy": { slug: "cardinal-energy", displayName: "CARDINAL ENERGY", brandColor: "#bc0f2d", brandAccent: "#7e889c" },
   "bis-safety-software": { slug: "bis-safety-software", displayName: "BIS SAFETY SOFTWARE", brandColor: "#1a5a94", brandAccent: "#93c647" },
   fortisbc: { slug: "fortisbc", displayName: "FORTISBC", brandColor: "#0e568f", brandAccent: "#ffce38" },
+  "rakuten-kobo": { slug: "rakuten-kobo", displayName: "RAKUTEN KOBO", brandColor: "#c2130d", brandAccent: "#ffffff" },
 };
 
 // Role-specific configurations for /for/[company]/[role] routes
@@ -185,6 +186,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       subtitle: "Information Systems Co-op",
       brandColor: "#0e568f",
       brandAccent: "#ffce38",
+    },
+  },
+  "rakuten-kobo": {
+    "devops-engineering-coop": {
+      slug: "rakuten-kobo/devops-engineering-coop",
+      displayName: "RAKUTEN KOBO",
+      subtitle: "DevOps Engineering Co-op",
+      brandColor: "#c2130d",
+      brandAccent: "#ffffff",
     },
   },
 };

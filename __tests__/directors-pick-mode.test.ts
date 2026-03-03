@@ -532,6 +532,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Information Systems Co-op");
   });
 
+  it("has Rakuten Kobo DevOps Engineering Co-op role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "rakuten-kobo/devops-engineering-coop");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("Rakuten Kobo");
+    expect(roles[0].title).toBe("DevOps Engineering Co-op");
+  });
+
+  it("visitor via /for/rakuten-kobo/devops-engineering-coop should match Kobo role", () => {
+    const companyConfig = {
+      slug: "rakuten-kobo/devops-engineering-coop",
+      displayName: "RAKUTEN KOBO",
+      subtitle: "DevOps Engineering Co-op",
+      brandColor: "#c2130d",
+      brandAccent: "#ffffff",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("DevOps Engineering Co-op");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

@@ -942,6 +942,51 @@
           ]
         }
       ]
+    },
+    {
+      "company": "Rakuten Kobo",
+      "companySlug": "rakuten-kobo/devops-engineering-coop",
+      "title": "DevOps Engineering Co-op",
+      "topSkills": ["CI/CD Pipeline Development", "Docker & Containerization", "Python & PowerShell Scripting", "REST APIs & System Integration", "GitOps & IaC (Terraform/Chef)"],
+      "pitch": "I have built and maintained CI/CD pipelines with GitHub Actions and Jenkins, containerized multi-service applications with Docker Compose (Spring Boot + PostgreSQL + Jenkins), and written Python and PowerShell scripts to automate deployment and operational tasks. I also have production experience hardening REST APIs and web applications for 1,000+ daily users through CORS, RBAC, and proxy configuration. I am excited to grow in GitOps and IaC at Kobo while contributing to pipeline reliability, automation tooling, and developer experience improvements.",
+      "relevantHighlights": ["CI/CD Pipelines & Agile Delivery", "OOP, Java & Full-Stack Architecture", "Secure Backend Development"],
+      "relevantProjects": ["incident-command", "ticket-triage-rag-bot", "production-analytics-forecasting-dashboard"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, CI/CD, Agile/Scrum",
+          "bullets": [
+            "Implemented CI/CD pipeline with GitHub Actions for automated linting and quality checks, supporting 30+ successful merges without regression across a 4-person team",
+            "Coordinated API contracts and integration milestones between front-end and back-end teammates, accelerating feature delivery by 1-2 sprints",
+            "Led 2-3 weekly Scrum meetings tracking priorities, blockers, and deployment readiness across iterative delivery cycles"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, PowerShell, JavaScript, Git",
+          "bullets": [
+            "Wrote Python and PowerShell automation scripts to reduce manual setup and maintenance tasks, improving consistency across development and deployment workflows",
+            "Deployed web applications and dashboards for 100+ users, managing versioning and environment configuration with Git",
+            "Created onboarding guides and runbooks to standardize workflows and improve knowledge transfer across contributors"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, JavaScript, CORS, RBAC",
+          "bullets": [
+            "Strengthened application reliability using CORS policies, proxy settings, and error handling for 1,000+ daily users while maintaining uninterrupted access",
+            "Implemented RBAC and SQL-backed authentication improvements, resolving 3 critical bottlenecks ahead of schedule",
+            "Documented operational workflows and SOPs to improve repeatability for deployment and issue resolution tasks"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
