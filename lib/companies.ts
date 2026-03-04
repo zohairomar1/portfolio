@@ -22,6 +22,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   "rakuten-kobo": { slug: "rakuten-kobo", displayName: "RAKUTEN KOBO", brandColor: "#c2130d", brandAccent: "#ffffff" },
   cenovus: { slug: "cenovus", displayName: "CENOVUS", brandColor: "#244c5b", brandAccent: "#cf4420" },
   "critical-mass": { slug: "critical-mass", displayName: "CRITICAL MASS", brandColor: "#f24711", brandAccent: "#f7faf2" },
+  "university-of-calgary": { slug: "university-of-calgary", displayName: "UNIVERSITY OF CALGARY", brandColor: "#e6322e", brandAccent: "#ffd728" },
 };
 
 // Role-specific configurations for /for/[company]/[role] routes
@@ -215,6 +216,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       subtitle: "Development Intern",
       brandColor: "#f24711",
       brandAccent: "#f7faf2",
+    },
+  },
+  "university-of-calgary": {
+    "grc-student": {
+      slug: "university-of-calgary/grc-student",
+      displayName: "UNIVERSITY OF CALGARY",
+      subtitle: "Governance, Risk & Compliance Student",
+      brandColor: "#e6322e",
+      brandAccent: "#ffd728",
     },
   },
 };

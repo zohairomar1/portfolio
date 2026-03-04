@@ -601,6 +601,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Development Intern");
   });
 
+  it("has University of Calgary GRC Student role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "university-of-calgary/grc-student");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("University of Calgary");
+    expect(roles[0].title).toBe("Governance, Risk & Compliance Student");
+  });
+
+  it("visitor via /for/university-of-calgary/grc-student should match UofC GRC role", () => {
+    const companyConfig = {
+      slug: "university-of-calgary/grc-student",
+      displayName: "UNIVERSITY OF CALGARY",
+      subtitle: "Governance, Risk & Compliance Student",
+      brandColor: "#e6322e",
+      brandAccent: "#ffd728",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Governance, Risk & Compliance Student");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

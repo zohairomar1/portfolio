@@ -1066,6 +1066,50 @@
           ]
         }
       ]
+    },
+    {
+      "company": "University of Calgary",
+      "companySlug": "university-of-calgary/grc-student",
+      "title": "Governance, Risk & Compliance Student",
+      "topSkills": ["Vendor Risk Assessment & Risk Register", "Microsoft Office (Excel/Access/Word/PowerPoint)", "GRC Documentation & Audit Preparedness", "Data Analysis & SQL Reporting", "Security & Privacy Mindset (CPSC 329, NIST, ISO 27001)"],
+      "pitch": "I built a Vendor Cyber Risk Assessment and GRC Tracking Dashboard using Excel Power Query, Access, VBA, Word, and PowerPoint that standardized risk assessments for 30+ simulated vendors, supported residual risk tracking, remediation tracking, and risk acceptance documentation, and accelerated audit-prep reporting through reusable templates and evidence indexing. I also have hands-on experience with SQL data validation, structured documentation (SOPs, decision logs, Visio diagrams), and stakeholder communication across Agrius IT, WealthPath, and TechNova. I am completing CPSC 329 (Explorations in Information Security and Privacy) at UCalgary and I am highly motivated to apply that foundation to vendor risk reviews, risk register maintenance, and audit preparedness at my own university.",
+      "relevantHighlights": ["Data Analysis & KPI Reporting", "Power Automate, Azure AD & SharePoint Integration", "Secure Backend Development"],
+      "relevantProjects": ["oil-gas-asset-integrity-dashboard", "incident-command", "production-analytics-forecasting-dashboard"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, Word, Excel, Documentation",
+          "bullets": [
+            "Supported analysis and issue resolution by writing and refining SQL queries to validate operational data and summarize findings for technical stakeholders",
+            "Documented workflows, SOPs, and resolution steps in Word/Excel, improving repeatability and support readiness for recurring issues",
+            "Collaborated across teams to track fixes and deliver updates, helping resolve 3 critical bottlenecks ahead of schedule"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "Visio, Word, PowerPoint, Excel, React, TypeScript, Agile/Scrum",
+          "bullets": [
+            "Led a 4-person team and managed 2-3 weekly meetings, tracking action items, risks, and deliverables with strong ownership and follow-through",
+            "Created structured documentation and architecture-style artifacts in Visio/Word/PowerPoint (diagrams, decision logs, integration notes) to support cross-team alignment",
+            "Communicated clearly with technical and non-technical stakeholders, translating project status and issues into concise updates"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Power BI, Excel, Git",
+          "bullets": [
+            "Built dashboards and reporting workflows for 100+ users; gathered requirements, validated outputs, and delivered maintainable documentation for handoff and support",
+            "Produced structured summaries and tracking artifacts (notes, templates, action lists) to improve process consistency and reduce repeated clarification requests"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
