@@ -21,6 +21,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   fortisbc: { slug: "fortisbc", displayName: "FORTISBC", brandColor: "#0e568f", brandAccent: "#ffce38" },
   "rakuten-kobo": { slug: "rakuten-kobo", displayName: "RAKUTEN KOBO", brandColor: "#c2130d", brandAccent: "#ffffff" },
   cenovus: { slug: "cenovus", displayName: "CENOVUS", brandColor: "#244c5b", brandAccent: "#cf4420" },
+  "critical-mass": { slug: "critical-mass", displayName: "CRITICAL MASS", brandColor: "#f24711", brandAccent: "#f7faf2" },
 };
 
 // Role-specific configurations for /for/[company]/[role] routes
@@ -205,6 +206,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       subtitle: "Student, AI & Data Science",
       brandColor: "#244c5b",
       brandAccent: "#cf4420",
+    },
+  },
+  "critical-mass": {
+    "development-intern": {
+      slug: "critical-mass/development-intern",
+      displayName: "CRITICAL MASS",
+      subtitle: "Development Intern",
+      brandColor: "#f24711",
+      brandAccent: "#f7faf2",
     },
   },
 };

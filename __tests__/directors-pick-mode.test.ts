@@ -578,6 +578,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Student, AI & Data Science");
   });
 
+  it("has Critical Mass Development Intern role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "critical-mass/development-intern");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("Critical Mass");
+    expect(roles[0].title).toBe("Development Intern");
+  });
+
+  it("visitor via /for/critical-mass/development-intern should match Critical Mass role", () => {
+    const companyConfig = {
+      slug: "critical-mass/development-intern",
+      displayName: "CRITICAL MASS",
+      subtitle: "Development Intern",
+      brandColor: "#f24711",
+      brandAccent: "#f7faf2",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Development Intern");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

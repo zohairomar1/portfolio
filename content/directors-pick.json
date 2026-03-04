@@ -1031,6 +1031,41 @@
           ]
         }
       ]
+    },
+    {
+      "company": "Critical Mass",
+      "companySlug": "critical-mass/development-intern",
+      "title": "Development Intern",
+      "resumePath": "/Zohair_Omar_Resume_CriticalMass_Dev_0304.pdf",
+      "topSkills": ["HTML5, CSS3 & JavaScript", "React & Component Development", "Responsive Web Design & Semantic HTML", "Cross-functional Collaboration & CI/CD", "Python & AI API Integration"],
+      "pitch": "I have hands-on experience building responsive, user-facing web products with HTML5, CSS3, JavaScript/TypeScript, React, Next.js, and Tailwind CSS, including reusable component libraries, semantic markup, and mobile-first layouts. I led front-end delivery across 5+ pages in WealthPath with CI/CD quality checks, shipped a production booking platform for a real business with 1,000+ customers, and built a top-10 hackathon project integrating the OpenAI API in a user-facing product. I also have practical Python and AI API experience (OpenAI, Gemini) that aligns with the nice-to-have requirements. I was referred to this role by Husain Masoom and I am excited to grow my front-end craft alongside creative and UX teams on client projects at Critical Mass.",
+      "relevantHighlights": ["React, APIs & Full-Stack Development", "CI/CD Pipelines & Agile Delivery", "Secure Backend Development"],
+      "relevantProjects": ["everyday-cleaning-company", "nwhacks-2024-comfort-corner", "calgaryhacks-2025-wildbc"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, Tailwind CSS, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Led a 4-person front-end team and coordinated 2-3 weekly Scrum meetings to deliver a financial literacy platform with reusable UI components and consistent UX",
+            "Built React/TypeScript components across 5+ core pages (reducing duplicate code by 20%) and supported 30+ merges with CI quality checks",
+            "Coordinated with back-end teammates on API contracts and integration fixes, helping accelerate delivery by 1-2 sprints"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "React, JavaScript, HTML/CSS, Python, SQL, Git",
+          "bullets": [
+            "Built client-style websites and dashboards for clubs, focusing on responsive layouts, maintainable code, and user-friendly interfaces for 100+ users",
+            "Collaborated with non-technical stakeholders to gather requirements, iterate on designs, and deliver practical solutions balancing business and technical needs",
+            "Created onboarding and handoff documentation to improve maintainability and collaboration across developers"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
