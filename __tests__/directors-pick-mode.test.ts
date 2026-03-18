@@ -624,6 +624,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Governance, Risk & Compliance Student");
   });
 
+  it("has Clio Software Developer Co-op role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "clio/software-developer-coop");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("Clio");
+    expect(roles[0].title).toBe("Software Developer, Co-op");
+  });
+
+  it("visitor via /for/clio/software-developer-coop should match Clio role", () => {
+    const companyConfig = {
+      slug: "clio/software-developer-coop",
+      displayName: "CLIO",
+      subtitle: "Software Developer, Co-op",
+      brandColor: "#006fdf",
+      brandAccent: "#ffffff",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Software Developer, Co-op");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

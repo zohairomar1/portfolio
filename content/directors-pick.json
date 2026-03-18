@@ -1110,6 +1110,50 @@
           ]
         }
       ]
+    },
+    {
+      "company": "Clio",
+      "companySlug": "clio/software-developer-coop",
+      "title": "Software Developer, Co-op",
+      "topSkills": ["Full-Stack Development (React, TypeScript, Java Spring Boot)", "Testing & Quality (133+ automated tests, JUnit/Mockito)", "CI/CD & DevOps (GitHub Actions, Jenkins, Docker)", "REST APIs & Backend (PostgreSQL, RBAC, JWT)", "Agile/Scrum Collaboration"],
+      "pitch": "I've shipped production-level SaaS-style systems end-to-end: JWT auth, RBAC, escalation engines, and real-time React dashboards backed by 133+ automated tests (99 JUnit/Mockito + 34 workflow tests), containerized CI/CD with GitHub Actions, Jenkins, and Docker Compose, and a full-stack incident management platform with PostgreSQL and Flyway migrations. Across WealthPath, TechNova, and Agrius IT, I've worked in tight Agile teams, coordinated API contracts, supported 30+ merges with CI checks, and fixed critical bottlenecks in production systems serving 1,000+ users. I'm excited to learn Clio's stack (Ruby on Rails, AngularJS/React Native, MySQL, Redis, ElasticSearch) fast and contribute to customer-impacting feature delivery and code reviews from day one.",
+      "resumePath": "/Zohair_Omar_Resume_Clio_SD_0318.pdf",
+      "relevantHighlights": ["CI/CD Pipelines & Agile Delivery", "Secure Backend Development", "React, APIs & Full-Stack Development"],
+      "relevantProjects": ["incident-command", "everyday-cleaning-company", "ticket-triage-rag-bot"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, Tailwind CSS, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Led a 4-person team and facilitated 2-3 Scrum meetings/week; coordinated scope, blockers, and delivery for a financial literacy platform",
+            "Built reusable React/TypeScript components across 5+ pages (reducing duplicate code by approximately 20%) and supported 30+ merges with CI checks",
+            "Coordinated with back-end teammates on API contracts and integration issues, accelerating delivery by 1-2 sprints"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "React, JavaScript, HTML/CSS, Python, SQL, Git",
+          "bullets": [
+            "Built full-stack websites and dashboards and implemented authentication for 100+ users; collaborated with stakeholders to gather requirements and deliver solutions",
+            "Led a 4-person team through Agile sprints with Git and code reviews; produced onboarding and documentation to support maintainability"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, HTML/CSS, JavaScript",
+          "bullets": [
+            "Strengthened reliability and security with CORS, proxy settings, and robust error handling, supporting uninterrupted access for 1,000+ daily users",
+            "Developed secure backend functionality including authentication and RBAC using SQL; resolved 3 critical system bottlenecks ahead of schedule"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
