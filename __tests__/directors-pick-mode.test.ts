@@ -647,6 +647,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Software Developer, Co-op");
   });
 
+  it("has Nokia Innovation & Automation Co-op role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "nokia/innovation-automation");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("Nokia");
+    expect(roles[0].title).toBe("Innovation & Automation Co-op");
+  });
+
+  it("visitor via /for/nokia/innovation-automation should match Nokia role", () => {
+    const companyConfig = {
+      slug: "nokia/innovation-automation",
+      displayName: "NOKIA",
+      subtitle: "Innovation & Automation Co-op",
+      brandColor: "#0059fe",
+      brandAccent: "#ffffff",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Innovation & Automation Co-op");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

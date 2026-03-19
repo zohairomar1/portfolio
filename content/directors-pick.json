@@ -1154,6 +1154,48 @@
           ]
         }
       ]
+    },
+    {
+      "company": "Nokia",
+      "companySlug": "nokia/innovation-automation",
+      "title": "Innovation & Automation Co-op",
+      "topSkills": ["GenAI API Workflows (OpenAI, Gemini, RAG)", "Python & JavaScript/TypeScript Automation", "REST APIs, OAuth2 & Microsoft Graph Integration", "Process Documentation & Automation (Power Automate, runbooks)", "CI/CD, Testing & Agile Delivery"],
+      "pitch": "I've built GenAI-enabled automation tools: from a Ticket Triage RAG Bot with multi-provider fallback (OpenAI/Gemini), 34 automated tests, and operational documentation for user adoption, to a production analytics dashboard integrated with Azure AD OAuth2, Microsoft Graph API, SharePoint file I/O, and Power Automate for scheduled delivery. Across WealthPath, TechNova, and Agrius IT, I've analyzed processes to identify automation opportunities, documented SOPs and runbooks, and collaborated cross-functionally with technical and non-technical stakeholders to ship reliable, maintainable solutions. I'm highly motivated to explore Nokia's emerging GenAI stack, learn customer journey mapping and privacy/compliance best practices, and contribute practical proof-of-concepts that reduce manual effort across CNS Services & Care.",
+      "resumePath": "/Zohair_Omar_Resume_Nokia_AI_Innovation_0319.pdf",
+      "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery", "React, APIs & Full-Stack Development"],
+      "relevantProjects": ["ticket-triage-rag-bot", "production-analytics-forecasting-dashboard", "everyday-cleaning-company"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Led a 4-person team and facilitated 2-3 Scrum meetings/week; gathered requirements, planned work, communicated progress, and unblocked delivery with strong ownership",
+            "Implemented CI/CD checks with GitHub Actions supporting 30+ merges; produced clear handoff notes and integration documentation for maintainability"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, JavaScript, SQL, Git",
+          "bullets": [
+            "Collaborated with non-technical stakeholders to identify needs and deliver workable solutions; documented workflows and decisions to support consistent delivery",
+            "Built automation scripts and internal tooling to reduce repetitive manual steps and improve reliability of team workflows"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, Word, Excel",
+          "bullets": [
+            "Supported issue investigation and data validation using SQL; documented SOPs/runbooks and resolution steps to improve repeatability and reduce recurring friction"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

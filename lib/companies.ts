@@ -24,6 +24,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   "critical-mass": { slug: "critical-mass", displayName: "CRITICAL MASS", brandColor: "#f24711", brandAccent: "#f7faf2" },
   "university-of-calgary": { slug: "university-of-calgary", displayName: "UNIVERSITY OF CALGARY", brandColor: "#e6322e", brandAccent: "#ffd728" },
   clio: { slug: "clio", displayName: "CLIO", brandColor: "#006fdf", brandAccent: "#ffffff" },
+  nokia: { slug: "nokia", displayName: "NOKIA", brandColor: "#0059fe", brandAccent: "#ffffff" },
 };
 
 // Role-specific configurations for /for/[company]/[role] routes
@@ -234,6 +235,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       displayName: "CLIO",
       subtitle: "Software Developer, Co-op",
       brandColor: "#006fdf",
+      brandAccent: "#ffffff",
+    },
+  },
+  nokia: {
+    "innovation-automation": {
+      slug: "nokia/innovation-automation",
+      displayName: "NOKIA",
+      subtitle: "Innovation & Automation Co-op",
+      brandColor: "#0059fe",
       brandAccent: "#ffffff",
     },
   },
