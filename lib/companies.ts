@@ -255,6 +255,13 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       brandColor: "#80b625",
       brandAccent: "#ffffff",
     },
+    "it-audit-assurance": {
+      slug: "deloitte/it-audit-assurance",
+      displayName: "DELOITTE",
+      subtitle: "Analyst, IT Audit & Assurance",
+      brandColor: "#80b625",
+      brandAccent: "#ffffff",
+    },
   },
 };
 

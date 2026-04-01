@@ -1237,6 +1237,50 @@
           ]
         }
       ]
+    },
+    {
+      "company": "Deloitte",
+      "companySlug": "deloitte/it-audit-assurance",
+      "title": "Analyst, IT Audit & Assurance",
+      "resumePath": "/Zohair_Omar_Resume_Deloitte_IT_0401.pdf",
+      "topSkills": ["IT General Controls (ITGC) Assessment & Documentation", "Risk Analysis, Issue Tracking & Evidence Organization", "SQL, RBAC & Access Control", "Excel, Power BI & KPI Reporting", "Audit-Ready Documentation & Stakeholder Communication"],
+      "pitch": "I supported a proprietary v-ERP platform with 1,000+ daily users, improving access control and reliability through SQL, RBAC, and SOPs - work directly analogous to testing IT General Controls in a live production system. I then built an IT General Controls assessment and evidence tracker covering user access, change management, backup/recovery, and incident tracking, with automated evidence indexing and findings summaries with risk ratings, owners, and remediation tracking. I'm pursuing both the CPA and CISA, and I want to learn Deloitte's audit methodology and SOC reporting through real engagements.",
+      "relevantHighlights": ["Secure Backend Development", "Data Analysis & KPI Reporting", "Power Automate, Azure AD & SharePoint Integration"],
+      "relevantProjects": ["oil-gas-asset-integrity-dashboard", "incident-command", "production-analytics-forecasting-dashboard"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL",
+          "bullets": [
+            "Supported a proprietary v-ERP platform serving 1,000+ daily users across many firms; improved reliability and security via CORS, proxies, and robust error handling",
+            "Built secure backend functionality including authentication and RBAC using SQL; documented SOPs and resolved 3 critical bottlenecks ahead of schedule",
+            "Wrote/refined SQL queries to validate operational data and summarize findings, strengthening repeatability and support readiness for recurring issues"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Led a 4-person team and ran 2-3 weekly Scrum meetings, tracking action items, delivery risks, and stakeholder updates with strong ownership and follow-through",
+            "Coordinated cross-functional requirements and documented technical decisions, blockers, and next steps clearly for technical and non-technical stakeholders"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "React, Python, SQL, Power BI",
+          "bullets": [
+            "Built reporting workflows and dashboards for 100+ users; gathered requirements, validated outputs, and documented assumptions to support consistent interpretation",
+            "Produced structured summaries, trackers, and handoff notes to improve process consistency and reduce repeated clarification requests"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

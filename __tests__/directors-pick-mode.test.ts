@@ -693,6 +693,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Technology Transformation");
   });
 
+  it("includes deloitte/it-audit-assurance role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "deloitte/it-audit-assurance");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("Deloitte");
+    expect(roles[0].title).toBe("Analyst, IT Audit & Assurance");
+  });
+
+  it("visitor via /for/deloitte/it-audit-assurance should match Deloitte IT Audit role", () => {
+    const companyConfig = {
+      slug: "deloitte/it-audit-assurance",
+      displayName: "DELOITTE",
+      subtitle: "Analyst, IT Audit & Assurance",
+      brandColor: "#80b625",
+      brandAccent: "#ffffff",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Analyst, IT Audit & Assurance");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",
