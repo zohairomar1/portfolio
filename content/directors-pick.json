@@ -1196,6 +1196,47 @@
           ]
         }
       ]
+    },
+    {
+      "company": "Deloitte",
+      "companySlug": "deloitte/technology-transformation",
+      "title": "Technology Transformation",
+      "resumePath": "/Zohair_Omar_Resume_Deloitte_Bloom_0329.pdf",
+      "topSkills": ["Enterprise Systems & Production Reliability", "CI/CD, Testing & DevOps (GitHub Actions, Jenkins, Docker)", "Full-Stack Delivery (React, TypeScript, REST APIs)", "Data/BI & Analytics (Power BI, Python, SQL)", "Agile/Scrum & Cross-functional Collaboration"],
+      "pitch": "I've worked inside a proprietary v-ERP platform serving 1,000+ daily users across many firms, fixing reliability issues, building RBAC and authentication in SQL, and writing SOPs for handoffs - exactly the kind of enterprise system Deloitte's Engineering, AI & Data teams help clients build and modernize. Since then I've built a full-stack incident platform with JWT auth, RBAC, 99 automated tests, and CI/CD through GitHub Actions and Jenkins, and automated reporting workflows with Azure AD, Microsoft Graph API, and Power Automate. I want to work on transformations where a technical decision on Tuesday changes how an organization operates on Friday, and I'm working toward CISA as I go deeper into enterprise technology.",
+      "relevantHighlights": ["CI/CD Pipelines & Agile Delivery", "Secure Backend Development", "Power Automate, Azure AD & SharePoint Integration"],
+      "relevantProjects": ["incident-command", "production-analytics-forecasting-dashboard", "everyday-cleaning-company"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL",
+          "bullets": [
+            "Supported a proprietary v-ERP platform serving 1,000+ daily users across many firms; improved reliability and security via CORS, proxies, and error handling",
+            "Built secure backend functionality including authentication and RBAC using SQL; documented SOPs and resolved 3 critical bottlenecks ahead of schedule"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Led a 4-person team and implemented CI/CD checks supporting 100+ merges; coordinated API integration delivery to accelerate timelines by 1-2 sprints"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "React, Python, SQL, Power BI",
+          "bullets": [
+            "Delivered full-stack websites and dashboards for 100+ users; gathered requirements, validated outputs, and produced maintainable documentation for handoff"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

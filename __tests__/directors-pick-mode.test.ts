@@ -670,6 +670,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Innovation & Automation Co-op");
   });
 
+  it("has Deloitte Technology Transformation role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "deloitte/technology-transformation");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("Deloitte");
+    expect(roles[0].title).toBe("Technology Transformation");
+  });
+
+  it("visitor via /for/deloitte/technology-transformation should match Deloitte role", () => {
+    const companyConfig = {
+      slug: "deloitte/technology-transformation",
+      displayName: "DELOITTE",
+      subtitle: "Technology Transformation",
+      brandColor: "#80b625",
+      brandAccent: "#ffffff",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Technology Transformation");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",
