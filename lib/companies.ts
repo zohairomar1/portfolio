@@ -25,6 +25,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   "university-of-calgary": { slug: "university-of-calgary", displayName: "UNIVERSITY OF CALGARY", brandColor: "#e6322e", brandAccent: "#ffd728" },
   clio: { slug: "clio", displayName: "CLIO", brandColor: "#006fdf", brandAccent: "#ffffff" },
   nokia: { slug: "nokia", displayName: "NOKIA", brandColor: "#0059fe", brandAccent: "#ffffff" },
+  sap: { slug: "sap", displayName: "SAP", brandColor: "#0a9ce1", brandAccent: "#ffffff" },
 };
 
 // Role-specific configurations for /for/[company]/[role] routes
@@ -260,6 +261,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       displayName: "DELOITTE",
       subtitle: "Analyst, IT Audit & Assurance",
       brandColor: "#80b625",
+      brandAccent: "#ffffff",
+    },
+  },
+  sap: {
+    "data-platform-technical-support": {
+      slug: "sap/data-platform-technical-support",
+      displayName: "SAP",
+      subtitle: "iXp Intern, Data & Platform Technical Support",
+      brandColor: "#0a9ce1",
       brandAccent: "#ffffff",
     },
   },

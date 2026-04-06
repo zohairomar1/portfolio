@@ -716,6 +716,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Analyst, IT Audit & Assurance");
   });
 
+  it("includes sap/data-platform-technical-support role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "sap/data-platform-technical-support");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("SAP");
+    expect(roles[0].title).toBe("iXp Intern, Data & Platform Technical Support");
+  });
+
+  it("visitor via /for/sap/data-platform-technical-support should match SAP role", () => {
+    const companyConfig = {
+      slug: "sap/data-platform-technical-support",
+      displayName: "SAP",
+      subtitle: "iXp Intern, Data & Platform Technical Support",
+      brandColor: "#0a9ce1",
+      brandAccent: "#ffffff",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("iXp Intern, Data & Platform Technical Support");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

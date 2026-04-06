@@ -1281,6 +1281,49 @@
           ]
         }
       ]
+    },
+    {
+      "company": "SAP",
+      "companySlug": "sap/data-platform-technical-support",
+      "title": "iXp Intern, Data & Platform Technical Support",
+      "topSkills": ["Production System Investigation & Root-Cause Analysis", "SQL, Databases & Technical Validation", "REST APIs, JSON & Web Integration", "Security & Authentication (RBAC, OAuth2, JWT)", "Technical Documentation, SOPs & Customer Communication"],
+      "pitch": "I supported a proprietary v-ERP platform with 1,000+ daily users across many firms, investigating production issues and resolving 3 critical bottlenecks through SQL, RBAC, and SOPs - exactly the kind of enterprise support work SAP's Technical Support team does at scale. I've also built REST API integrations with OAuth2 and Microsoft Graph, documented failure modes and fallback behavior for production workflows, and tracked delivery blockers across a 4-person Agile team with clear handoffs to technical and non-technical stakeholders. I'm relocating to Vancouver and want to learn SAP software through real customer engagements.",
+      "relevantHighlights": ["Secure Backend Development", "Power Automate, Azure AD & SharePoint Integration", "Data Analysis & KPI Reporting"],
+      "relevantProjects": ["production-analytics-forecasting-dashboard", "incident-command", "oil-gas-asset-integrity-dashboard"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL",
+          "bullets": [
+            "Supported a proprietary v-ERP platform serving 1,000+ daily users across many firms; investigated production issues and improved reliability and security via CORS, proxies, and robust error handling",
+            "Built secure backend functionality including authentication and RBAC using SQL; documented SOPs and resolved 3 critical bottlenecks ahead of schedule",
+            "Gained basic exposure to SAP and integration software through internal walkthroughs and enterprise systems work, strengthening interest in technical support for large-scale business platforms"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Led a 4-person team and coordinated 2-3 weekly Scrum meetings, tracking issues, blockers, and delivery updates with clear communication across technical and non-technical stakeholders",
+            "Supported API integration troubleshooting and documented handoff notes and setup steps, helping accelerate delivery by 1-2 sprints"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Power BI, Git",
+          "bullets": [
+            "Built dashboards and internal tooling for 100+ users; gathered requirements, validated outputs, and documented workflows to improve support readiness and usability",
+            "Collaborated with stakeholders to translate business needs into maintainable solutions and clear troubleshooting/onboarding guides"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
