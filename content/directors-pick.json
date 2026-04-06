@@ -1286,6 +1286,7 @@
       "company": "SAP",
       "companySlug": "sap/data-platform-technical-support",
       "title": "iXp Intern, Data & Platform Technical Support",
+      "resumePath": "/Zohair_Omar_Resume_SAP_Data_0406.pdf",
       "topSkills": ["Production System Investigation & Root-Cause Analysis", "SQL, Databases & Technical Validation", "REST APIs, JSON & Web Integration", "Security & Authentication (RBAC, OAuth2, JWT)", "Technical Documentation, SOPs & Customer Communication"],
       "pitch": "I supported a proprietary v-ERP platform with 1,000+ daily users across many firms, investigating production issues and resolving 3 critical bottlenecks through SQL, RBAC, and SOPs - exactly the kind of enterprise support work SAP's Technical Support team does at scale. I've also built REST API integrations with OAuth2 and Microsoft Graph, documented failure modes and fallback behavior for production workflows, and tracked delivery blockers across a 4-person Agile team with clear handoffs to technical and non-technical stakeholders. I'm relocating to Vancouver and want to learn SAP software through real customer engagements.",
       "relevantHighlights": ["Secure Backend Development", "Power Automate, Azure AD & SharePoint Integration", "Data Analysis & KPI Reporting"],
