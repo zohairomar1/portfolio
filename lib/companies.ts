@@ -26,6 +26,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   clio: { slug: "clio", displayName: "CLIO", brandColor: "#006fdf", brandAccent: "#ffffff" },
   nokia: { slug: "nokia", displayName: "NOKIA", brandColor: "#0059fe", brandAccent: "#ffffff" },
   sap: { slug: "sap", displayName: "SAP", brandColor: "#0a9ce1", brandAccent: "#ffffff" },
+  kinaxis: { slug: "kinaxis", displayName: "KINAXIS", brandColor: "#E30613", brandAccent: "#ffffff" },
 };
 
 // Role-specific configurations for /for/[company]/[role] routes
@@ -261,6 +262,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       displayName: "DELOITTE",
       subtitle: "Analyst, IT Audit & Assurance",
       brandColor: "#80b625",
+      brandAccent: "#ffffff",
+    },
+  },
+  kinaxis: {
+    "software-developer-intern": {
+      slug: "kinaxis/software-developer-intern",
+      displayName: "KINAXIS",
+      subtitle: "Software Developer Intern",
+      brandColor: "#E30613",
       brandAccent: "#ffffff",
     },
   },

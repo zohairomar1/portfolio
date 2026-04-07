@@ -739,6 +739,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("iXp Intern, Data & Platform Technical Support");
   });
 
+  it("includes kinaxis/software-developer-intern role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "kinaxis/software-developer-intern");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("Kinaxis");
+    expect(roles[0].title).toBe("Software Developer Intern");
+  });
+
+  it("visitor via /for/kinaxis/software-developer-intern should match Kinaxis role", () => {
+    const companyConfig = {
+      slug: "kinaxis/software-developer-intern",
+      displayName: "KINAXIS",
+      subtitle: "Software Developer Intern",
+      brandColor: "#E30613",
+      brandAccent: "#ffffff",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Software Developer Intern");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

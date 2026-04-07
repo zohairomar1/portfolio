@@ -1325,6 +1325,49 @@
           ]
         }
       ]
+    },
+    {
+      "company": "Kinaxis",
+      "companySlug": "kinaxis/software-developer-intern",
+      "title": "Software Developer Intern",
+      "resumePath": "/Zohair_Omar_Resume_Kinaxis_0407.pdf",
+      "topSkills": ["TypeScript, React & Front-End Web Development", "Bug Fixing, Unit/Integration Testing & CI/CD", "Reusable Component Library & Design Systems", "REST APIs & Full-Stack Feature Delivery", "Agile Collaboration & Cross-Functional Delivery"],
+      "pitch": "I've built production React/TypeScript apps: a real booking platform serving 1,000+ customers, a full-stack incident management system with 99 automated tests, and a financial literacy platform where I led a 4-person team and supported 30+ merges with CI/CD quality checks. I built reusable component libraries, coordinated API contracts with backend teammates, and wrote documentation for long-term maintainability - the same kind of front-end engineering Kinaxis needs for the Maestro web client. I'm excited to contribute to a design system and learn C# alongside the development, QA, and UX teams.",
+      "relevantHighlights": ["React, APIs & Full-Stack Development", "CI/CD Pipelines & Agile Delivery", "OOP, Java & Full-Stack Architecture"],
+      "relevantProjects": ["everyday-cleaning-company", "incident-command", "calgaryhacks-2025-wildbc"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, Tailwind CSS, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Led a 4-person front-end team and built reusable React/TypeScript components across 5+ core pages, reducing duplicate code by ~20%",
+            "Coordinated API contracts and integration fixes with back-end teammates, accelerating delivery by 1-2 sprints while supporting 30+ merges with CI quality checks",
+            "Worked closely with teammates across product delivery to track requirements, review changes, and maintain a consistent user experience"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "React, JavaScript, HTML/CSS, Python, SQL, Git",
+          "bullets": [
+            "Built client-style websites and dashboards for 100+ users, balancing technical implementation with usability and maintainability",
+            "Gathered requirements from non-technical stakeholders, iterated on solutions, and documented handoff notes to support long-term upkeep"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, HTML/CSS, JavaScript",
+          "bullets": [
+            "Improved reliability and security for a proprietary platform serving 1,000+ daily users through debugging, error handling, and backend issue resolution"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
