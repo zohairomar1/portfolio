@@ -28,6 +28,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   sap: { slug: "sap", displayName: "SAP", brandColor: "#0a9ce1", brandAccent: "#ffffff" },
   kinaxis: { slug: "kinaxis", displayName: "KINAXIS", brandColor: "#E30613", brandAccent: "#ffffff" },
   mackenzie: { slug: "mackenzie", displayName: "MACKENZIE INVESTMENTS", brandColor: "#6AB2E2", brandAccent: "#333333" },
+  ey: { slug: "ey", displayName: "EY", brandColor: "#333333", brandAccent: "#ffe600" },
 };
 
 // Role-specific configurations for /for/[company]/[role] routes
@@ -264,6 +265,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       subtitle: "Analyst, IT Audit & Assurance",
       brandColor: "#80b625",
       brandAccent: "#ffffff",
+    },
+  },
+  ey: {
+    "technology-risk": {
+      slug: "ey/technology-risk",
+      displayName: "EY",
+      subtitle: "Assurance Technology Risk Intern",
+      brandColor: "#333333",
+      brandAccent: "#ffe600",
     },
   },
   mackenzie: {

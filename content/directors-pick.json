@@ -1410,6 +1410,50 @@
           ]
         }
       ]
+    },
+    {
+      "company": "EY",
+      "companySlug": "ey/technology-risk",
+      "title": "Assurance Technology Risk Intern",
+      "resumePath": "/Zohair_Omar_Resume_EY_Assurance_0408.pdf",
+      "topSkills": ["IT Controls Assessment & Risk Identification", "Access Control Review, RBAC & Authentication", "Compliance Monitoring & Audit-Ready Reporting", "Stakeholder Communication & Cross-Functional Collaboration", "Documentation, SOPs & Process Development"],
+      "pitch": "My internship at Agrius IT is what pulled me toward technology risk work: I evaluated access controls on a platform with 1,000+ daily users, identified gaps in RBAC and authentication logic, implemented fixes in SQL and at the application layer, and wrote SOPs for the operations team to maintain controls after I left. Since then I've built a Power BI compliance dashboard for oil and gas assets tracking certification status, overdue inspections, and anomaly indicators with role-based views, and set up CI/CD controls with automated quality checks across 30+ merges. I have CPSC 329 (Computer Security and Privacy) and an Economics minor, and I'm available September 2026.",
+      "relevantHighlights": ["Secure Backend Development", "Data Analysis & KPI Reporting", "CI/CD Pipelines & Agile Delivery"],
+      "relevantProjects": ["oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard", "incident-command"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL",
+          "bullets": [
+            "Evaluated existing access controls and identified gaps in role-based access, authentication logic, and error handling affecting 1,000+ daily users on a proprietary platform",
+            "Implemented remediation measures including CORS policies, proxy hardening, and SQL-based authorization rules, reducing risk exposure and ensuring users accessed only authorized resources",
+            "Documented workflows and contributed to internal SOPs for issue resolution and system operations; collaborated cross-functionally to resolve 3 critical bottlenecks, communicating findings to both technical and non-technical stakeholders"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Led a 4-person team, coordinating 2-3 weekly Scrum meetings and maintaining clear documentation of priorities, decisions, and deliverable status for stakeholder visibility",
+            "Established CI/CD controls with automated linting and test checks on every pull request, supporting 30+ merges with zero regressions and ensuring release quality"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, React, Git",
+          "bullets": [
+            "Implemented user authentication and access controls for student organization platforms serving 100+ users, validating that role permissions functioned as designed",
+            "Created documentation and onboarding guides to ensure knowledge transfer, process consistency, and long-term maintainability across team transitions"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

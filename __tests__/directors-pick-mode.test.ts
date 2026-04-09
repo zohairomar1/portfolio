@@ -785,6 +785,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("MAS Intern, Multi-Asset Strategies");
   });
 
+  it("includes ey/technology-risk role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "ey/technology-risk");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("EY");
+    expect(roles[0].title).toBe("Assurance Technology Risk Intern");
+  });
+
+  it("visitor via /for/ey/technology-risk should match EY role", () => {
+    const companyConfig = {
+      slug: "ey/technology-risk",
+      displayName: "EY",
+      subtitle: "Assurance Technology Risk Intern",
+      brandColor: "#333333",
+      brandAccent: "#ffe600",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Assurance Technology Risk Intern");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",
