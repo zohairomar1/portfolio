@@ -808,6 +808,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Assurance Technology Risk Intern");
   });
 
+  it("includes aecon/data-systems-analyst role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "aecon/data-systems-analyst");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("Aecon");
+    expect(roles[0].title).toBe("Data and Systems Analyst Co-op");
+  });
+
+  it("visitor via /for/aecon/data-systems-analyst should match Aecon role", () => {
+    const companyConfig = {
+      slug: "aecon/data-systems-analyst",
+      displayName: "AECON",
+      subtitle: "Data and Systems Analyst Co-op",
+      brandColor: "#EE2722",
+      brandAccent: "#ffffff",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Data and Systems Analyst Co-op");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

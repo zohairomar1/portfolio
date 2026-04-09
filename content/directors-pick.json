@@ -1454,6 +1454,48 @@
           ]
         }
       ]
+    },
+    {
+      "company": "Aecon",
+      "companySlug": "aecon/data-systems-analyst",
+      "title": "Data and Systems Analyst Co-op",
+      "topSkills": ["Power BI Dashboards, DAX & Power Query", "Statistical Analysis & Data Pipeline Development", "Power Automate & Workflow Automation", "SQL, Data Management & Trend Analysis", "Documentation, Training & Stakeholder Reporting"],
+      "pitch": "I built a Power BI dashboard monitoring asset integrity KPIs for oil and gas operations: corrosion rates, overdue inspections, and certification compliance across 24 months of data, with role-based views for engineers and managers built in DAX and Power Query - exactly the kind of reporting Aecon's Nuclear division needs. I also designed a Power Automate workflow for automated weekly report distribution with error handling and admin notifications, and built Python pipelines using Pandas and statsmodels for statistical analysis and KPI tracking across multi-year production datasets. I'm available for the full 12-month term and have experience writing SOPs, creating training materials, and supporting project teams directly.",
+      "relevantHighlights": ["Data Analysis & KPI Reporting", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
+      "relevantProjects": ["oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard", "heart-disease-prediction-model"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL",
+          "bullets": [
+            "Developed SQL-based backend solutions improving database query performance and role-based access control for a platform serving 1,000+ daily users; documented workflows and contributed to internal SOPs",
+            "Provided ongoing support to project teams, liaising with vendors on troubleshooting and feature updates; facilitated cross-functional collaboration to resolve 3 critical system bottlenecks ahead of schedule"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Power BI, React, Git",
+          "bullets": [
+            "Built data-backed dashboards and features for 100+ users; gathered requirements, validated outputs, and delivered maintainable documentation for handoff",
+            "Developed reports and processes to support ongoing operations, balancing readability, maintainability, and business needs"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Led a 4-person team and coordinated 2-3 weekly Scrum meetings, tracking priorities and communicating progress to stakeholders across technical and non-technical roles",
+            "Implemented CI/CD with GitHub Actions and maintained documentation and onboarding guides to support team ramp-up and long-term system upkeep"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

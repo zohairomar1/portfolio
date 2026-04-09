@@ -29,6 +29,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   kinaxis: { slug: "kinaxis", displayName: "KINAXIS", brandColor: "#E30613", brandAccent: "#ffffff" },
   mackenzie: { slug: "mackenzie", displayName: "MACKENZIE INVESTMENTS", brandColor: "#6AB2E2", brandAccent: "#333333" },
   ey: { slug: "ey", displayName: "EY", brandColor: "#333333", brandAccent: "#ffe600" },
+  aecon: { slug: "aecon", displayName: "AECON", brandColor: "#EE2722", brandAccent: "#ffffff" },
 };
 
 // Role-specific configurations for /for/[company]/[role] routes
@@ -264,6 +265,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       displayName: "DELOITTE",
       subtitle: "Analyst, IT Audit & Assurance",
       brandColor: "#80b625",
+      brandAccent: "#ffffff",
+    },
+  },
+  aecon: {
+    "data-systems-analyst": {
+      slug: "aecon/data-systems-analyst",
+      displayName: "AECON",
+      subtitle: "Data and Systems Analyst Co-op",
+      brandColor: "#EE2722",
       brandAccent: "#ffffff",
     },
   },
