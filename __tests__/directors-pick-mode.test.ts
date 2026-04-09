@@ -762,6 +762,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Software Developer Intern");
   });
 
+  it("includes mackenzie/mas-intern role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "mackenzie/mas-intern");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("Mackenzie Investments");
+    expect(roles[0].title).toBe("MAS Intern, Multi-Asset Strategies");
+  });
+
+  it("visitor via /for/mackenzie/mas-intern should match Mackenzie role", () => {
+    const companyConfig = {
+      slug: "mackenzie/mas-intern",
+      displayName: "MACKENZIE INVESTMENTS",
+      subtitle: "MAS Intern, Multi-Asset Strategies",
+      brandColor: "#6AB2E2",
+      brandAccent: "#333333",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("MAS Intern, Multi-Asset Strategies");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

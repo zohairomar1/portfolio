@@ -27,6 +27,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   nokia: { slug: "nokia", displayName: "NOKIA", brandColor: "#0059fe", brandAccent: "#ffffff" },
   sap: { slug: "sap", displayName: "SAP", brandColor: "#0a9ce1", brandAccent: "#ffffff" },
   kinaxis: { slug: "kinaxis", displayName: "KINAXIS", brandColor: "#E30613", brandAccent: "#ffffff" },
+  mackenzie: { slug: "mackenzie", displayName: "MACKENZIE INVESTMENTS", brandColor: "#6AB2E2", brandAccent: "#333333" },
 };
 
 // Role-specific configurations for /for/[company]/[role] routes
@@ -263,6 +264,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       subtitle: "Analyst, IT Audit & Assurance",
       brandColor: "#80b625",
       brandAccent: "#ffffff",
+    },
+  },
+  mackenzie: {
+    "mas-intern": {
+      slug: "mackenzie/mas-intern",
+      displayName: "MACKENZIE INVESTMENTS",
+      subtitle: "MAS Intern, Multi-Asset Strategies",
+      brandColor: "#6AB2E2",
+      brandAccent: "#333333",
     },
   },
   kinaxis: {

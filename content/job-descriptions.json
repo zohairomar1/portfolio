@@ -67,6 +67,12 @@
       "description": "Deloitte Bloom 2027 Scholarship - Technology Transformation work term targeting Engineering, AI & Data practice. The Bloom program is Deloitte's hiring stream for neurodivergent candidates. Work term available Winter 2027, Summer 2027, or Fall 2027, any Canadian office. The Engineering, AI & Data practice focuses on helping clients build, modernize, and transform enterprise technology systems - including digital solutions, analytics, technology enablement, and enterprise system transformations. Candidates should have hands-on experience with production systems, CI/CD, testing, backend development, and integrations. Strong interest in enterprise transformation, digital modernization, and professional certifications such as CISA is valued. Cross-functional collaboration, stakeholder communication, and technical documentation skills are essential.",
       "dateAdded": "2026-03-29"
     },
+    "mackenzie/mas-intern": {
+      "title": "Intern 2026 Investment Management - MAS",
+      "company": "Mackenzie Investments",
+      "description": "Mackenzie Investments MAS Intern - Multi-Asset Strategies Team. Fall term September to December 2026, Toronto office (hybrid, 3 days/week). Work with and be mentored by a Python and Pandas expert. Collaborate through pair programming and test-driven development. Use code generation (LibCST and Fixit) and other automation to improve codebase quality. Responsibilities: Replace nested loops with vectorized Pandas operations or convert Pandas to Polars. Introduce modular utility functions to reduce duplication. Add unit tests to functions where absent. Use characterization tests to ensure output consistency for unchanged inputs. Optimize data loading routines for large files. Clean up legacy code to follow PEP8 and readability standards. Requirements: Strong academic performance in CompSci, Engineering, Commerce, Economics, or Math. Familiarity with Python, motivated to deepen programming expertise. Basic understanding of Pandas or other data-centric libraries. Curious about solving large-scale data problems in code. Strong interest in financial markets with ability to interpret economic news and market conditions. Strong interpersonal and communication skills. Salary range: $49,000-$51,000 prorated.",
+      "dateAdded": "2026-04-07"
+    },
     "kinaxis/software-developer-intern": {
       "title": "Software Developer Intern",
       "company": "Kinaxis",

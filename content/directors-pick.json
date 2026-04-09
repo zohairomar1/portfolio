@@ -1368,6 +1368,47 @@
           ]
         }
       ]
+    },
+    {
+      "company": "Mackenzie Investments",
+      "companySlug": "mackenzie/mas-intern",
+      "title": "MAS Intern, Multi-Asset Strategies",
+      "topSkills": ["Python, Pandas & Vectorized Data Operations", "Automated Testing & Test-Driven Development", "Data Pipeline Optimization & Polars", "Code Quality, Refactoring & PEP8 Standards", "Financial Markets Interest & Data-Driven Analysis"],
+      "pitch": "I've done exactly the work this role describes: I refactored nested loops and .apply() calls into vectorized Pandas operations, cut pipeline runtime by 35%, and converted performance-critical workflows to Polars for grouped aggregations on multi-year production datasets. I then implemented rolling-origin backtesting with MAE, RMSE, MAPE, and WAPE to validate forecast quality - the same kind of quantitative rigor Mackenzie's Multi-Asset Strategies team applies to financial data. Across three projects I've written 133+ automated tests, and I'm eager to deepen that discipline through pair programming and TDD with a Pandas expert.",
+      "relevantHighlights": ["Data Analysis & KPI Reporting", "CI/CD Pipelines & Agile Delivery", "Power Automate, Azure AD & SharePoint Integration"],
+      "relevantProjects": ["production-analytics-forecasting-dashboard", "ticket-triage-rag-bot", "incident-command"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Power BI, Git",
+          "bullets": [
+            "Built data-backed dashboards and features for 100+ users; gathered requirements, validated outputs, and delivered maintainable documentation for handoff",
+            "Worked on practical automation/reporting problems in code, balancing readability, maintainability, and business needs"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Led a 4-person team and coordinated 2-3 weekly Scrum meetings, tracking priorities and communicating progress clearly across technical collaborators",
+            "Supported 30+ merges with CI checks and coordinated integration work that accelerated delivery by 1-2 sprints"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL",
+          "bullets": [
+            "Wrote and refined SQL queries to validate operational data and supported issue resolution on a proprietary platform used by 1,000+ daily users"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
