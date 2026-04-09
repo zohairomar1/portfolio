@@ -1497,6 +1497,49 @@
           ]
         }
       ]
+    },
+    {
+      "company": "KPMG",
+      "companySlug": "kpmg/advisory-consulting",
+      "title": "Advisory, Management Consulting Intern",
+      "topSkills": ["Technology Consulting & Client Engagement", "Agile Delivery & Project Management", "Enterprise Systems & Digital Transformation", "Data Analytics & Process Improvement", "Stakeholder Communication & Requirements Gathering"],
+      "pitch": "I co-founded a technology consulting club that has run client engagements end-to-end for 4+ student organizations: intake sessions, requirements gathering, technical scoping, and delivery of dashboards and web platforms for 100+ end users. I've led a 4-person Agile team, coordinated backend integration work that accelerated delivery by 1-2 sprints, and supported enterprise platform work at Agrius IT where I documented SOPs, liaised with vendors, and resolved bottlenecks for 1,000+ daily users. The Enterprise Solutions and Delivery Services streams at KPMG are exactly where my background in full-stack delivery, Microsoft ecosystem tooling, and structured project handoffs would have the most impact.",
+      "relevantHighlights": ["React, APIs & Full-Stack Development", "CI/CD Pipelines & Agile Delivery", "Power Automate, Azure AD & SharePoint Integration"],
+      "relevantProjects": ["everyday-cleaning-company", "oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Power BI, React, Git",
+          "bullets": [
+            "Co-founded a technology consulting club that partners with student organizations to assess needs, scope engagements, and deliver tailored technology solutions from discovery through deployment and handoff",
+            "Led client engagements end-to-end for 4+ organizations: conducted intake sessions, translated requirements into technical specs, and delivered dashboards and web platforms for 100+ end users",
+            "Managed a team of 4 developers through Agile sprints across multiple concurrent client projects, maintaining quality through code reviews, structured documentation, and iterative client feedback"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Led a 4-person team building a financial literacy platform for young adults, coordinating 2-3 weekly Scrum meetings to align priorities across technical and non-technical collaborators",
+            "Deployed the platform pilot through partnerships with 2-3 schools impacting 100+ students; coordinated backend integration work that accelerated delivery by 1-2 sprints"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL",
+          "bullets": [
+            "Facilitated cross-functional collaboration between development, operations, and business teams to troubleshoot and deliver feature updates, resolving 3 critical bottlenecks ahead of schedule",
+            "Documented workflows and contributed to internal SOPs; developed backend solutions supporting 1,000+ daily users, gaining exposure to enterprise operations, vendor management, and stakeholder communication"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

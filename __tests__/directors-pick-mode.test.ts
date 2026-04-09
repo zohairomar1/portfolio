@@ -831,6 +831,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Data and Systems Analyst Co-op");
   });
 
+  it("includes kpmg/advisory-consulting role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "kpmg/advisory-consulting");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("KPMG");
+    expect(roles[0].title).toBe("Advisory, Management Consulting Intern");
+  });
+
+  it("visitor via /for/kpmg/advisory-consulting should match KPMG role", () => {
+    const companyConfig = {
+      slug: "kpmg/advisory-consulting",
+      displayName: "KPMG",
+      subtitle: "Advisory, Management Consulting Intern",
+      brandColor: "#1E49E2",
+      brandAccent: "#ffffff",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Advisory, Management Consulting Intern");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",
