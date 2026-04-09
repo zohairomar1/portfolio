@@ -1505,7 +1505,7 @@
       "resumePath": "/Zohair_Omar_KPMG_Advisory_Consulting.pdf",
       "topSkills": ["Technology Consulting & Client Engagement", "Agile Delivery & Project Management", "Enterprise Systems & Digital Transformation", "Data Analytics & Process Improvement", "Stakeholder Communication & Requirements Gathering"],
       "pitch": "I co-founded a technology consulting club that has run client engagements end-to-end for 4+ student organizations: intake sessions, requirements gathering, technical scoping, and delivery of dashboards and web platforms for 100+ end users. I've led a 4-person Agile team, coordinated backend integration work that accelerated delivery by 1-2 sprints, and supported enterprise platform work at Agrius IT where I documented SOPs, liaised with vendors, and resolved bottlenecks for 1,000+ daily users. The Enterprise Solutions and Delivery Services streams at KPMG are exactly where my background in full-stack delivery, Microsoft ecosystem tooling, and structured project handoffs would have the most impact.",
-      "relevantHighlights": ["React, APIs & Full-Stack Development", "CI/CD Pipelines & Agile Delivery", "Power Automate, Azure AD & SharePoint Integration"],
+      "relevantHighlights": ["Client Delivery & Technology Consulting", "Data Analysis & KPI Reporting", "React, APIs & Full-Stack Development"],
       "relevantProjects": ["everyday-cleaning-company", "oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard"],
       "projectsAboveExperience": true,
       "tailoredExperience": [
@@ -1592,6 +1592,14 @@
       "tech": "Power BI, DAX, Power Query, SQL Server, SharePoint",
       "impact": "24 months of data modeled, backlog alerts enabled proactive planning, role-based access tailored insights per audience",
       "link": "/scenes#oil-gas-asset-integrity-dashboard"
+    },
+    {
+      "label": "Client Delivery & Technology Consulting",
+      "problem": "Student organizations needed tailored technology solutions but had no internal dev capacity and no structured way to scope what they actually needed",
+      "built": "Co-founded TechNova, a consulting club that runs end-to-end client engagements: intake sessions, requirements gathering, technical scoping, and delivery of dashboards and web platforms. Led 4+ concurrent engagements with a team of 4 developers, maintaining quality through structured documentation, code reviews, and iterative client feedback loops",
+      "tech": "React, Python, SQL, Power BI, Agile/Scrum, stakeholder communication",
+      "impact": "4+ organizations served, 100+ end users reached, all solutions delivered with onboarding guides and handoff documentation for long-term maintainability",
+      "link": null
     }
   ],
   "relevantProjects": [
