@@ -1373,6 +1373,7 @@
       "company": "Mackenzie Investments",
       "companySlug": "mackenzie/mas-intern",
       "title": "MAS Intern, Multi-Asset Strategies",
+      "resumePath": "/Zohair_Omar_Resume_Mackenzie_MAS_0408.pdf",
       "topSkills": ["Python, Pandas & Vectorized Data Operations", "Automated Testing & Test-Driven Development", "Data Pipeline Optimization & Polars", "Code Quality, Refactoring & PEP8 Standards", "Financial Markets Interest & Data-Driven Analysis"],
       "pitch": "I've done exactly the work this role describes: I refactored nested loops and .apply() calls into vectorized Pandas operations, cut pipeline runtime by 35%, and converted performance-critical workflows to Polars for grouped aggregations on multi-year production datasets. I then implemented rolling-origin backtesting with MAE, RMSE, MAPE, and WAPE to validate forecast quality - the same kind of quantitative rigor Mackenzie's Multi-Asset Strategies team applies to financial data. Across three projects I've written 133+ automated tests, and I'm eager to deepen that discipline through pair programming and TDD with a Pandas expert.",
       "relevantHighlights": ["Data Analysis & KPI Reporting", "CI/CD Pipelines & Agile Delivery", "Power Automate, Azure AD & SharePoint Integration"],
