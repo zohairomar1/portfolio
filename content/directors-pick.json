@@ -1583,6 +1583,49 @@
           ]
         }
       ]
+    },
+    {
+      "company": "IGM Financial",
+      "companySlug": "igm/cybersecurity-services",
+      "title": "Cybersecurity Services Intern",
+      "topSkills": ["Security Controls Assessment & Remediation", "IT Risk, Compliance Monitoring & Log Analysis", "Documentation, SOPs & Procedure Writing", "Excel, Power BI & Data Analysis", "Cross-Functional Collaboration & Communication"],
+      "pitch": "My internship at Agrius IT was where my interest in IT risk started: I evaluated access controls on a platform with 1,000+ daily users, identified gaps in RBAC and authentication logic, analyzed operational logs to diagnose bottlenecks, and wrote procedures for the operations team to maintain controls after I left. I've also built a Power BI compliance dashboard tracking certification status, overdue inspections, and risk indicators across 24 months of data, and integrated Azure AD with OAuth2 for identity-based access controls in a production analytics system. I have CPSC 329 (Computer Security and Privacy), actively follow cybersecurity news and vulnerability disclosures, and I'm comfortable researching and writing threat intelligence briefs.",
+      "relevantHighlights": ["Secure Backend Development", "Data Analysis & KPI Reporting", "Power Automate, Azure AD & SharePoint Integration"],
+      "relevantProjects": ["oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard", "incident-command"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL",
+          "bullets": [
+            "Evaluated existing access controls and identified gaps in role-based permissions, authentication logic, and error handling affecting 1,000+ daily users on a proprietary platform",
+            "Implemented remediation measures including CORS policies, proxy hardening, and SQL-based authorization rules; analyzed operational logs and datasets to diagnose 3 critical bottlenecks",
+            "Documented workflows and contributed to internal procedures and SOPs for issue resolution; communicated findings to both technical and non-technical stakeholders"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Led a 4-person team, coordinating 2-3 weekly meetings to align priorities and communicate progress across technical and non-technical collaborators",
+            "Produced how-to guides and documentation for onboarding and system operations; implemented CI/CD with automated quality checks across 30+ merges"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Power BI, Excel, Git",
+          "bullets": [
+            "Delivered data analysis and reporting solutions for 100+ users using Excel and Power BI; gathered requirements, validated outputs, and produced documentation for client handoff",
+            "Managed ad-hoc requests and concurrent projects across a team of 4, coordinating activities, meetings, and priorities through Agile sprints"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

@@ -305,6 +305,13 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       brandColor: "#6AB2E2",
       brandAccent: "#333333",
     },
+    "cybersecurity-services": {
+      slug: "igm/cybersecurity-services",
+      displayName: "IGM FINANCIAL",
+      subtitle: "Cybersecurity Services Intern",
+      brandColor: "#6AB2E2",
+      brandAccent: "#333333",
+    },
   },
   mackenzie: {
     "mas-intern": {
