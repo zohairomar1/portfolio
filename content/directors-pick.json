@@ -1541,6 +1541,48 @@
           ]
         }
       ]
+    },
+    {
+      "company": "IGM Financial",
+      "companySlug": "igm/technology-engineering",
+      "title": "Technology Engineering Intern",
+      "resumePath": "/Zohair_Omar_Resume_Mackenzie_TechEng_0411.pdf",
+      "topSkills": ["Data Analysis, Power BI & Semi-Structured Datasets", "AI Prompt Engineering & MS Automation Tooling", "Agile (Scrum/Kanban) Coordination & Task Management", "Testing Practices & Structured Code Quality", "Documentation, How-To Guides & Communication"],
+      "pitch": "I built a Power BI dashboard analyzing 24 months of semi-structured operational data with DAX, Power Query, role-based views, and written documentation covering the data model and onboarding steps - directly matching what this role asks for. I also built a Ticket Triage RAG Bot with structured prompts for OpenAI and Gemini with 34 automated tests, and integrated Power Automate with Azure AD and Microsoft Graph API for automated reporting workflows. At Enactus I lead a 4-person Scrum team with 2-3 weekly standups, use structured Claude prompts daily for code generation and how-to guide production, and maintain CI/CD with automated quality gates across 30+ merges.",
+      "relevantHighlights": ["Data Analysis & KPI Reporting", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
+      "relevantProjects": ["oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard", "ticket-triage-rag-bot"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Led a 4-person team in an Agile (Scrum) environment, coordinating 2-3 weekly meetings to align priorities, track tasks, and communicate progress across collaborators",
+            "Used structured AI prompts (Claude) to accelerate code generation and produce internal how-to guides; implemented CI/CD with automated testing on every pull request across 30+ merges"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Power BI, React, Git",
+          "bullets": [
+            "Built data-backed dashboards and analyzed datasets to support decision-making for 100+ users; gathered requirements, validated outputs, and produced documentation for handoff",
+            "Coordinated activities, meetings, and task priorities across a team of 4 through Agile sprints, managing concurrent projects and ad-hoc requests"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL",
+          "bullets": [
+            "Performed data analysis on operational datasets and developed SQL-based solutions for 1,000+ daily users; produced how-to guides and SOPs; coordinated cross-functionally to resolve 3 critical bottlenecks"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

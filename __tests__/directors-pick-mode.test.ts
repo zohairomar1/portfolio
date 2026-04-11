@@ -854,6 +854,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Advisory, Management Consulting Intern");
   });
 
+  it("includes igm/technology-engineering role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "igm/technology-engineering");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("IGM Financial");
+    expect(roles[0].title).toBe("Technology Engineering Intern");
+  });
+
+  it("visitor via /for/igm/technology-engineering should match IGM role", () => {
+    const companyConfig = {
+      slug: "igm/technology-engineering",
+      displayName: "IGM FINANCIAL",
+      subtitle: "Technology Engineering Intern",
+      brandColor: "#6AB2E2",
+      brandAccent: "#333333",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Technology Engineering Intern");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

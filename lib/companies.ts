@@ -28,6 +28,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   sap: { slug: "sap", displayName: "SAP", brandColor: "#0a9ce1", brandAccent: "#ffffff" },
   kinaxis: { slug: "kinaxis", displayName: "KINAXIS", brandColor: "#E30613", brandAccent: "#ffffff" },
   mackenzie: { slug: "mackenzie", displayName: "MACKENZIE INVESTMENTS", brandColor: "#6AB2E2", brandAccent: "#333333" },
+  igm: { slug: "igm", displayName: "IGM FINANCIAL", brandColor: "#6AB2E2", brandAccent: "#333333" },
   ey: { slug: "ey", displayName: "EY", brandColor: "#333333", brandAccent: "#ffe600" },
   aecon: { slug: "aecon", displayName: "AECON", brandColor: "#EE2722", brandAccent: "#ffffff" },
   kpmg: { slug: "kpmg", displayName: "KPMG", brandColor: "#1E49E2", brandAccent: "#ffffff" },
@@ -294,6 +295,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       subtitle: "Assurance Technology Risk Intern",
       brandColor: "#333333",
       brandAccent: "#ffe600",
+    },
+  },
+  igm: {
+    "technology-engineering": {
+      slug: "igm/technology-engineering",
+      displayName: "IGM FINANCIAL",
+      subtitle: "Technology Engineering Intern",
+      brandColor: "#6AB2E2",
+      brandAccent: "#333333",
     },
   },
   mackenzie: {
