@@ -900,6 +900,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Cybersecurity Services Intern");
   });
 
+  it("includes cut/data-analyst role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "cut/data-analyst");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("Carbon Upcycling Technologies");
+    expect(roles[0].title).toBe("Data Analyst Intern");
+  });
+
+  it("visitor via /for/cut/data-analyst should match CUT role", () => {
+    const companyConfig = {
+      slug: "cut/data-analyst",
+      displayName: "CARBON UPCYCLING",
+      subtitle: "Data Analyst Intern",
+      brandColor: "#21b27c",
+      brandAccent: "#182c40",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Data Analyst Intern");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

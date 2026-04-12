@@ -1626,6 +1626,46 @@
           ]
         }
       ]
+    },
+    {
+      "company": "Carbon Upcycling Technologies",
+      "companySlug": "cut/data-analyst",
+      "title": "Data Analyst Intern",
+      "topSkills": ["Power BI Dashboard Development & Data Visualization", "Data Structuring, Cleaning & Standardization", "Equipment & Asset Maintenance Tracking", "Data Dictionaries, SOPs & Technical Documentation", "Excel, Python (Pandas) & Statistical Analysis"],
+      "pitch": "I built a Power BI dashboard tracking asset integrity KPIs across 24 months of industrial operational data: corrosion rates, overdue inspections, certification compliance, and maintenance backlogs. I standardized messy datasets using Power Query, established consistent naming conventions and units, created a data dictionary, built backlog alerts identifying overdue and missing maintenance activities, and wrote documentation so someone else could pick it up without me. That project maps directly to the Material Profile Dashboard and equipment maintenance tracker in CUT's deliverables. I'm also comfortable with Pandas pipelines for data cleaning and structuring large files, and I thrive in small teams where output has immediate impact.",
+      "relevantHighlights": ["Data Analysis & KPI Reporting", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
+      "relevantProjects": ["oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard", "heart-disease-prediction-model"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Power BI, Excel, Git",
+          "bullets": [
+            "Delivered data analysis and dashboard solutions for 100+ users using Excel and Power BI; gathered requirements, validated outputs, and translated data into clear insights for non-technical stakeholders",
+            "Managed concurrent projects and ad-hoc requests across a team of 4 in a fast-paced, startup-like environment; produced documentation and handoff materials for every engagement"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Led a 4-person team, coordinating weekly meetings and producing documentation and how-to guides to support onboarding and long-term system maintainability"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL",
+          "bullets": [
+            "Developed SQL-based solutions for 1,000+ daily users; documented workflows and contributed to SOPs and procedures; facilitated cross-functional collaboration to resolve 3 critical bottlenecks"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

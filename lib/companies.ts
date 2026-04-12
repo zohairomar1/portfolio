@@ -32,6 +32,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   ey: { slug: "ey", displayName: "EY", brandColor: "#333333", brandAccent: "#ffe600" },
   aecon: { slug: "aecon", displayName: "AECON", brandColor: "#EE2722", brandAccent: "#ffffff" },
   kpmg: { slug: "kpmg", displayName: "KPMG", brandColor: "#1E49E2", brandAccent: "#ffffff" },
+  cut: { slug: "cut", displayName: "CARBON UPCYCLING", brandColor: "#21b27c", brandAccent: "#182c40" },
 };
 
 // Role-specific configurations for /for/[company]/[role] routes
@@ -268,6 +269,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       subtitle: "Analyst, IT Audit & Assurance",
       brandColor: "#80b625",
       brandAccent: "#ffffff",
+    },
+  },
+  cut: {
+    "data-analyst": {
+      slug: "cut/data-analyst",
+      displayName: "CARBON UPCYCLING",
+      subtitle: "Data Analyst Intern",
+      brandColor: "#21b27c",
+      brandAccent: "#182c40",
     },
   },
   kpmg: {
