@@ -946,6 +946,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Software Engineering Co-op, MML");
   });
 
+  it("includes td/finance-data role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "td/finance-data");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("TD Bank");
+    expect(roles[0].title).toBe("Finance Data Campus Intern");
+  });
+
+  it("visitor via /for/td/finance-data should match TD role", () => {
+    const companyConfig = {
+      slug: "td/finance-data",
+      displayName: "TD BANK",
+      subtitle: "Finance Data Campus Intern",
+      brandColor: "#54B848",
+      brandAccent: "#003F2D",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Finance Data Campus Intern");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

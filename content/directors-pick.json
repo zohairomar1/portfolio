@@ -1710,6 +1710,49 @@
           ]
         }
       ]
+    },
+    {
+      "company": "TD Bank",
+      "companySlug": "td/finance-data",
+      "title": "Finance Data Campus Intern",
+      "resumePath": "/Zohair_Omar_TD_FinanceData_0413.pdf",
+      "topSkills": ["Data Lineage Tracing & Process Documentation", "Excel, Power BI & Finance Reporting", "Data Quality, Reconciliation & Process Improvement", "Workflow Analysis & Manual Step Identification", "Cross-Functional Collaboration & Stakeholder Communication"],
+      "pitch": "I built a Power BI dashboard for oil and gas operations that traces data from source systems through to stakeholder reports: I documented full data lineage, created a data dictionary, standardized naming conventions across asset categories, and set up trackers with backlog alerts and trend summaries for management. On a separate analytics project I identified manual data loading steps that were slow and error-prone, replaced them with Pandas pipelines, and set up Power Automate for automated report distribution - directly reducing Excel-based risk. My Computer Science and Mathematics degree pairs with a Minor in Economics, and I've led two 4-person teams coordinating between technical and non-technical stakeholders to improve how data flows and gets reported.",
+      "relevantHighlights": ["Data Analysis & KPI Reporting", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
+      "relevantProjects": ["oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Power BI, Excel, Git",
+          "bullets": [
+            "Documented current-state workflows and delivered improved processes for finance-focused student organizations; produced data dictionaries, trackers, and handoff documentation",
+            "Built data-backed dashboards for 100+ users using Excel and Power BI; gathered requirements, validated outputs, and translated findings into actionable summaries for non-technical stakeholders"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Led a 4-person team, coordinating 2-3 weekly Scrum meetings and communicating progress clearly to technical and non-technical collaborators",
+            "Maintained documentation and onboarding guides; implemented CI/CD with automated quality checks supporting 30+ merges"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL",
+          "bullets": [
+            "Worked across development, operations, and business teams to identify where workflows were breaking down and facilitate resolution; documented SOPs and resolved 3 critical bottlenecks ahead of schedule",
+            "Developed SQL-based solutions for a platform serving 1,000+ daily users; wrote how-to guides and process documentation for ongoing system operations"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

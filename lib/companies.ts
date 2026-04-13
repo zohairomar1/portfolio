@@ -34,6 +34,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   kpmg: { slug: "kpmg", displayName: "KPMG", brandColor: "#1E49E2", brandAccent: "#ffffff" },
   cut: { slug: "cut", displayName: "CARBON UPCYCLING", brandColor: "#21b27c", brandAccent: "#182c40" },
   magna: { slug: "magna", displayName: "MAGNA INTERNATIONAL", brandColor: "#DA291C", brandAccent: "#A4032F" },
+  td: { slug: "td", displayName: "TD BANK", brandColor: "#54B848", brandAccent: "#003F2D" },
 };
 
 // Role-specific configurations for /for/[company]/[role] routes
@@ -270,6 +271,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       subtitle: "Analyst, IT Audit & Assurance",
       brandColor: "#80b625",
       brandAccent: "#ffffff",
+    },
+  },
+  td: {
+    "finance-data": {
+      slug: "td/finance-data",
+      displayName: "TD BANK",
+      subtitle: "Finance Data Campus Intern",
+      brandColor: "#54B848",
+      brandAccent: "#003F2D",
     },
   },
   magna: {
