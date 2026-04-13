@@ -1667,6 +1667,49 @@
           ]
         }
       ]
+    },
+    {
+      "company": "Magna International",
+      "companySlug": "magna/software-engineering",
+      "title": "Software Engineering Co-op, MML",
+      "resumePath": "/Zohair_Omar_Magna_SWE.pdf",
+      "topSkills": ["React, TypeScript & Frontend Development", "Python, Flask & Backend API Development", "CI/CD, Docker & DevOps", "OAuth 2.0, Security & Authentication", "AI Integration & Automated Testing"],
+      "pitch": "I lead frontend development at Enactus UCalgary with React, TypeScript, and Tailwind CSS, built a reusable component library adopted across 5+ pages, and maintain CI/CD with GitHub Actions across 30+ merges. I've also implemented OAuth 2.0 with Azure AD for a production analytics system, built a Python/Flask Ticket Triage RAG Bot with OpenAI and Gemini integration and 34 automated tests, and shipped a full-stack incident management platform with 99 tests through Docker and Jenkins. I spent two years on UBC's Design League building an autonomous robot, so I understand the engineering context Magna's internal tools are built to serve.",
+      "relevantHighlights": ["React, APIs & Full-Stack Development", "CI/CD Pipelines & Agile Delivery", "Secure Backend Development"],
+      "relevantProjects": ["everyday-cleaning-company", "incident-command", "ticket-triage-rag-bot"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, Tailwind CSS, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Led a 4-person front-end team and built reusable React/TypeScript components across 5+ pages; owned the full frontend from design through implementation with CI/CD via GitHub Actions across 30+ merges",
+            "Coordinated API contracts and integration fixes with backend teammates, accelerating delivery by 1-2 sprints while keeping a consistent user experience across the platform"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "React, Python, SQL, Git",
+          "bullets": [
+            "Built full-stack websites and internal tools for 100+ users; led 4 developers through code reviews, scoping, and Agile sprint delivery across concurrent client projects",
+            "Gathered requirements from non-technical stakeholders, iterated on solutions, and produced handoff documentation for long-term maintainability"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, HTML/CSS, JavaScript",
+          "bullets": [
+            "Improved reliability and security for a proprietary platform serving 1,000+ daily users through debugging, error handling, CORS configuration, and SQL-based RBAC",
+            "Documented SOPs and resolved 3 critical bottlenecks ahead of schedule through cross-functional collaboration"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

@@ -923,6 +923,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Data Analyst Intern");
   });
 
+  it("includes magna/software-engineering role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "magna/software-engineering");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("Magna International");
+    expect(roles[0].title).toBe("Software Engineering Co-op, MML");
+  });
+
+  it("visitor via /for/magna/software-engineering should match Magna role", () => {
+    const companyConfig = {
+      slug: "magna/software-engineering",
+      displayName: "MAGNA INTERNATIONAL",
+      subtitle: "Software Engineering Co-op, MML",
+      brandColor: "#DA291C",
+      brandAccent: "#A4032F",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Software Engineering Co-op, MML");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

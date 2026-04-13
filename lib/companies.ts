@@ -33,6 +33,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   aecon: { slug: "aecon", displayName: "AECON", brandColor: "#EE2722", brandAccent: "#ffffff" },
   kpmg: { slug: "kpmg", displayName: "KPMG", brandColor: "#1E49E2", brandAccent: "#ffffff" },
   cut: { slug: "cut", displayName: "CARBON UPCYCLING", brandColor: "#21b27c", brandAccent: "#182c40" },
+  magna: { slug: "magna", displayName: "MAGNA INTERNATIONAL", brandColor: "#DA291C", brandAccent: "#A4032F" },
 };
 
 // Role-specific configurations for /for/[company]/[role] routes
@@ -269,6 +270,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       subtitle: "Analyst, IT Audit & Assurance",
       brandColor: "#80b625",
       brandAccent: "#ffffff",
+    },
+  },
+  magna: {
+    "software-engineering": {
+      slug: "magna/software-engineering",
+      displayName: "MAGNA INTERNATIONAL",
+      subtitle: "Software Engineering Co-op, MML",
+      brandColor: "#DA291C",
+      brandAccent: "#A4032F",
     },
   },
   cut: {
