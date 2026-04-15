@@ -1753,6 +1753,49 @@
           ]
         }
       ]
+    },
+    {
+      "company": "TD Bank",
+      "companySlug": "td/portfolio-analytics",
+      "title": "Portfolio Analytics Developer Intern",
+      "resumePath": "/Zohair_Omar_TD_PortfolioAnalytics.pdf",
+      "topSkills": ["React & TypeScript Component Libraries", "Python, Flask & REST API Integrations", "SQL Database Design (PostgreSQL, SQL Server, MySQL)", "Git, GitHub Actions & Jenkins CI/CD", "Economics Minor & Financial Literacy Platform"],
+      "pitch": "I lead front-end development on a financial literacy platform using React and TypeScript: I built the reusable component library from scratch, defined REST API contracts with the back-end team on a Google Cloud MySQL backend, and own a CI/CD pipeline with GitHub Actions that has shipped 30+ merges with automated testing. On the Python side I've built a Flask backend integrating OpenAI and Gemini APIs with fallback logic and 34 automated tests, plus Microsoft Graph API with OAuth 2.0 for SharePoint file I/O. My Economics minor (Micro, Macro, Computer Applications in Economics) gives me more business context than most CS students, and I'm returning to school after this term.",
+      "relevantHighlights": ["React, APIs & Full-Stack Development", "CI/CD Pipelines & Agile Delivery", "Data Analysis & KPI Reporting"],
+      "relevantProjects": ["production-analytics-forecasting-dashboard", "ticket-triage-rag-bot", "incident-command", "vhs-portfolio"],
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, Tailwind CSS, GitHub Actions, Google Cloud MySQL",
+          "bullets": [
+            "Built a reusable React/TypeScript component library for a financial literacy single-page application, adopted across 5+ core pages and reducing duplicate code by 20%",
+            "Set up REST API documentation and connected the React frontend to a Google Cloud MySQL backend; coordinated with back-end teams to define API contracts and ensure integration alignment",
+            "Implemented CI/CD with Git and GitHub Actions supporting 30+ merges with automated testing and code review, accelerating delivery by 1-2 sprints"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "React, Python, SQL, Git",
+          "bullets": [
+            "Built full-stack web applications and dashboards for 100+ users shipping code that runs in production for real users",
+            "Led 4 developers through Agile sprints with Git, structured code reviews, and documentation; operate independently and own delivery end-to-end"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, HTML/CSS, JavaScript",
+          "bullets": [
+            "Developed Python/SQL backend solutions for a platform serving 1,000+ daily users; implemented role-based access control",
+            "Maintained technical documentation and SOPs, collaborating across development and operations teams to resolve production issues"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

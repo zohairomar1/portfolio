@@ -281,6 +281,13 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       brandColor: "#54B848",
       brandAccent: "#003F2D",
     },
+    "portfolio-analytics": {
+      slug: "td/portfolio-analytics",
+      displayName: "TD BANK",
+      subtitle: "Portfolio Analytics Developer Intern",
+      brandColor: "#54B848",
+      brandAccent: "#003F2D",
+    },
   },
   magna: {
     "software-engineering": {
