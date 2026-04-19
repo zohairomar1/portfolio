@@ -36,6 +36,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   magna: { slug: "magna", displayName: "MAGNA INTERNATIONAL", brandColor: "#DA291C", brandAccent: "#A4032F" },
   td: { slug: "td", displayName: "TD BANK", brandColor: "#54B848", brandAccent: "#003F2D" },
   fidelity: { slug: "fidelity", displayName: "FIDELITY", brandColor: "#002C6D", brandAccent: "#368727" },
+  suncor: { slug: "suncor", displayName: "SUNCOR", brandColor: "#F58220", brandAccent: "#EF4135" },
 };
 
 // Role-specific configurations for /for/[company]/[role] routes
@@ -385,6 +386,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       subtitle: "Student, Advanced Analytics",
       brandColor: "#002C6D",
       brandAccent: "#368727",
+    },
+  },
+  suncor: {
+    "engineering-student": {
+      slug: "suncor/engineering-student",
+      displayName: "SUNCOR",
+      subtitle: "Automation, Software or Computer Engineering Student",
+      brandColor: "#F58220",
+      brandAccent: "#EF4135",
     },
   },
 };

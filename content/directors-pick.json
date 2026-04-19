@@ -1839,6 +1839,49 @@
           ]
         }
       ]
+    },
+    {
+      "company": "Suncor",
+      "companySlug": "suncor/engineering-student",
+      "title": "Automation, Software or Computer Engineering Student",
+      "resumePath": "/Zohair_Omar_Suncor_Engineering.pdf",
+      "topSkills": ["Python, C & Arduino (Path Planning, Sensor Integration)", "SolidWorks, Mechatronics & Rigid Body Force Analysis", "Power BI Industrial Dashboards (DAX, Power Query)", "Power Automate, Azure AD & REST API Automation", "CI/CD (GitHub Actions, Jenkins, Docker) & Automated Testing"],
+      "pitch": "Most relevant for this role is my UBC Design League work: I developed software and system integration for a competition-ready autonomous robot, programmed path planning and object detection in C on Arduino, integrated servo motors and ultrasonic sensors, and used SolidWorks with rigid body force analysis to validate mechanical designs. On the industrial side I built a Power BI asset integrity dashboard monitoring corrosion, overdue inspections, and compliance across 24 months of operational data, plus a Python forecasting dashboard for multi-year energy production data with Power Automate and Azure AD integration for automated reporting. I'm available for a 16-month term starting September 2026 and open to Calgary, St. John's, Fort Hills, or Fort McMurray.",
+      "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "Data Analysis & KPI Reporting", "OOP, Java & Full-Stack Architecture"],
+      "relevantProjects": ["oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard", "incident-command"],
+      "tailoredExperience": [
+        {
+          "name": "UBC Design League",
+          "title": "Software Developer",
+          "dates": "Dec 2022 - Sep 2024",
+          "stack": "Python, C, SolidWorks, Arduino IDE, Git",
+          "bullets": [
+            "Developed software and system integration for a competition-ready autonomous robot with object detection; applied rigid body force analysis and travel calculations to validate mechanical designs",
+            "Programmed in C using Arduino IDE to build algorithms for object detection, path planning, and robot control; achieved a 95% success rate in navigation tests",
+            "Integrated servo motors and ultrasonic sensors for obstacle detection and avoidance, improving real-time perception efficiency by 25%; used SolidWorks for 3D modeling and prototyping"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, HTML/CSS, JavaScript",
+          "bullets": [
+            "Developed Python/SQL backend solutions for an enterprise platform serving 1,000+ daily users; implemented CORS policies and role-based access control",
+            "Facilitated cross-functional collaboration across development, operations, and business teams; resolved three critical system bottlenecks ahead of schedule"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, CI/CD",
+          "bullets": [
+            "Led a 4-person team; set up REST API documentation and connected the React frontend to a Google Cloud MySQL backend",
+            "Implemented CI/CD with GitHub Actions across 30+ merges with automated testing and code review"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
