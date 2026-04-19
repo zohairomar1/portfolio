@@ -992,6 +992,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Portfolio Analytics Developer Intern");
   });
 
+  it("includes fidelity/advanced-analytics role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "fidelity/advanced-analytics");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("Fidelity");
+    expect(roles[0].title).toBe("Student, Advanced Analytics");
+  });
+
+  it("visitor via /for/fidelity/advanced-analytics should match Fidelity Advanced Analytics role", () => {
+    const companyConfig = {
+      slug: "fidelity/advanced-analytics",
+      displayName: "FIDELITY",
+      subtitle: "Student, Advanced Analytics",
+      brandColor: "#002C6D",
+      brandAccent: "#368727",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Student, Advanced Analytics");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

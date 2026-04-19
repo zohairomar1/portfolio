@@ -1796,6 +1796,49 @@
           ]
         }
       ]
+    },
+    {
+      "company": "Fidelity",
+      "companySlug": "fidelity/advanced-analytics",
+      "title": "Student, Advanced Analytics",
+      "resumePath": "/Zohair_Omar_Fidelity_AdvancedAnalytics.pdf",
+      "topSkills": ["SQL (SQL Server, PostgreSQL, MySQL)", "Python (Pandas, NumPy, statsmodels)", "Power BI Dashboards, DAX & Power Query", "Statistical Modelling, Forecasting & Backtesting", "Economics Minor & Capital Markets Interest"],
+      "pitch": "Most of my work over the past year has been analytics: I built a Power BI dashboard on 24 months of oil and gas data with DAX measures, role-based views, and compliance trend summaries, plus a Python forecasting dashboard with ETS models, rolling-origin backtesting, and MAE, RMSE, MAPE, WAPE metrics benchmarked against a seasonal naive baseline. On the programming side I've written SQL against SQL Server, PostgreSQL, and MySQL, and built a RAG bot with OpenAI and Gemini APIs using structured prompt engineering and 34 automated tests. My Economics minor covers Micro, Macro, and Computer Applications in Economics, and leading the frontend on a financial literacy platform at Enactus has given me a window into how people think about financial concepts when they're new to them.",
+      "relevantHighlights": ["Data Analysis & KPI Reporting", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
+      "relevantProjects": ["oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard", "ticket-triage-rag-bot", "heart-disease-prediction-model"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, Google Cloud MySQL, REST APIs",
+          "bullets": [
+            "Lead front-end development on a financial literacy single-page application; connected the React frontend to a Google Cloud MySQL backend and defined REST API contracts with the back-end team",
+            "Ran 2-3 weekly Scrum meetings gathering requirements and translating priorities for a 4-person team; adapted scope across shifting stakeholder input across technical and non-technical collaborators"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Power BI, Excel",
+          "bullets": [
+            "Gathered business requirements from student organization clients and delivered Power BI dashboards and SQL-backed data analysis for 100+ users; translated findings into clear stories for non-technical stakeholders",
+            "Handled ad-hoc analysis requests across 4+ concurrent engagements with a team of 4 in a fast-paced environment; produced documentation and data dictionaries for every engagement"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, HTML/CSS, JavaScript",
+          "bullets": [
+            "Performed SQL-based data analysis on operational datasets for a platform serving 1,000+ daily users; documented workflows and contributed to internal SOPs",
+            "Collaborated cross-functionally across development and operations teams to resolve three critical bottlenecks ahead of schedule"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

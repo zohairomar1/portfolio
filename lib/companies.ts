@@ -35,6 +35,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   cut: { slug: "cut", displayName: "CARBON UPCYCLING", brandColor: "#21b27c", brandAccent: "#182c40" },
   magna: { slug: "magna", displayName: "MAGNA INTERNATIONAL", brandColor: "#DA291C", brandAccent: "#A4032F" },
   td: { slug: "td", displayName: "TD BANK", brandColor: "#54B848", brandAccent: "#003F2D" },
+  fidelity: { slug: "fidelity", displayName: "FIDELITY", brandColor: "#002C6D", brandAccent: "#368727" },
 };
 
 // Role-specific configurations for /for/[company]/[role] routes
@@ -375,6 +376,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       subtitle: "iXp Intern, Data & Platform Technical Support",
       brandColor: "#0a9ce1",
       brandAccent: "#ffffff",
+    },
+  },
+  fidelity: {
+    "advanced-analytics": {
+      slug: "fidelity/advanced-analytics",
+      displayName: "FIDELITY",
+      subtitle: "Student, Advanced Analytics",
+      brandColor: "#002C6D",
+      brandAccent: "#368727",
     },
   },
 };
