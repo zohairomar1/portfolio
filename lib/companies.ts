@@ -396,6 +396,13 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       brandColor: "#F58220",
       brandAccent: "#EF4135",
     },
+    "data-science": {
+      slug: "suncor/data-science",
+      displayName: "SUNCOR",
+      subtitle: "Data Science Student",
+      brandColor: "#F58220",
+      brandAccent: "#EF4135",
+    },
   },
 };
 

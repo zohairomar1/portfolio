@@ -1882,6 +1882,49 @@
           ]
         }
       ]
+    },
+    {
+      "company": "Suncor",
+      "companySlug": "suncor/data-science",
+      "title": "Data Science Student",
+      "resumePath": "/Zohair_Omar_Suncor_DataScience.pdf",
+      "topSkills": ["Python (Pandas, NumPy, statsmodels) & Statistical Modelling", "SQL (SQL Server, PostgreSQL, MySQL) & Database Design", "Power BI Industrial Dashboards (DAX, Power Query)", "ETS Forecasting, Backtesting & Anomaly Detection", "Machine Learning (KNN, Classification) & R"],
+      "pitch": "Both of my strongest projects are in energy-industry data: a production forecasting dashboard on real oil well data (7 wells, 2008 to 2016) with ETS models, rolling z-score anomaly detection, and rolling-origin backtesting benchmarked against a seasonal naive baseline using MAE, RMSE, MAPE, and WAPE metrics, plus a Power BI asset integrity dashboard tracking corrosion rates, overdue inspections, and certification compliance across 24 months of operational data. On the ML side I built a KNN classifier on 300+ patient records with 83% accuracy and a RAG bot integrating OpenAI and Gemini APIs with structured prompt engineering and 34 automated tests. I refactored nested loops into vectorized Pandas operations to cut pipeline runtime by 35%, and I'm available for the full 16-month term starting September 2026, open to Calgary, Fort McMurray, Fort Hills, or St. John's.",
+      "relevantHighlights": ["Data Analysis & KPI Reporting", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
+      "relevantProjects": ["production-analytics-forecasting-dashboard", "oil-gas-asset-integrity-dashboard", "heart-disease-prediction-model", "ticket-triage-rag-bot"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, Google Cloud MySQL, REST APIs",
+          "bullets": [
+            "Led a 4-person team; set up REST API documentation and connected the frontend to a Google Cloud MySQL backend",
+            "Coordinated 2-3 weekly meetings across technical and non-technical collaborators, tracking priorities and adapting to shifting requirements"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Power BI, Excel",
+          "bullets": [
+            "Delivered data analysis and Power BI dashboards for 100+ users; gathered requirements, validated outputs, and translated findings for non-technical stakeholders",
+            "Managed ad-hoc requests and concurrent projects across a team of 4 in a fast-paced environment"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, HTML/CSS, JavaScript",
+          "bullets": [
+            "Performed SQL-based data analysis on operational datasets for an enterprise platform serving 1,000+ daily users; documented workflows and contributed to SOPs",
+            "Resolved three critical bottlenecks through cross-functional collaboration across development, operations, and business teams"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

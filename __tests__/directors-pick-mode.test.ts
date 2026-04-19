@@ -1015,6 +1015,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Student, Advanced Analytics");
   });
 
+  it("includes suncor/data-science role", () => {
+    const roles = directorsPickData.roles.filter((r) => r.companySlug === "suncor/data-science");
+    expect(roles.length).toBeGreaterThan(0);
+    expect(roles[0].company).toBe("Suncor");
+    expect(roles[0].title).toBe("Data Science Student");
+  });
+
+  it("visitor via /for/suncor/data-science should match Suncor Data Science role", () => {
+    const companyConfig = {
+      slug: "suncor/data-science",
+      displayName: "SUNCOR",
+      subtitle: "Data Science Student",
+      brandColor: "#F58220",
+      brandAccent: "#EF4135",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Data Science Student");
+  });
+
   it("includes suncor/engineering-student role", () => {
     const roles = directorsPickData.roles.filter((r) => r.companySlug === "suncor/engineering-student");
     expect(roles.length).toBeGreaterThan(0);
