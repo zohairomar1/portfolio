@@ -1061,6 +1061,29 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Automation, Software or Computer Engineering Student");
   });
 
+  it("includes equitable/ai-experimentation role", () => {
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === "equitable/ai-experimentation");
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].company).toBe("Equitable Bank");
+    expect(matched[0].title).toBe("Applied AI Experimentation Intern");
+  });
+
+  it("visitor via /for/equitable/ai-experimentation should match Equitable Bank role", () => {
+    const companyConfig = {
+      slug: "equitable/ai-experimentation",
+      displayName: "EQUITABLE BANK",
+      subtitle: "Applied AI Experimentation Intern",
+      brandColor: "#ffcd37",
+      brandAccent: "#ffffff",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Applied AI Experimentation Intern");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

@@ -37,6 +37,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   td: { slug: "td", displayName: "TD BANK", brandColor: "#54B848", brandAccent: "#003F2D" },
   fidelity: { slug: "fidelity", displayName: "FIDELITY", brandColor: "#002C6D", brandAccent: "#368727" },
   suncor: { slug: "suncor", displayName: "SUNCOR", brandColor: "#F58220", brandAccent: "#EF4135" },
+  equitable: { slug: "equitable", displayName: "EQUITABLE BANK", brandColor: "#ffcd37", brandAccent: "#ffffff" },
 };
 
 // Role-specific configurations for /for/[company]/[role] routes
@@ -402,6 +403,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       subtitle: "Data Science Student",
       brandColor: "#F58220",
       brandAccent: "#EF4135",
+    },
+  },
+  equitable: {
+    "ai-experimentation": {
+      slug: "equitable/ai-experimentation",
+      displayName: "EQUITABLE BANK",
+      subtitle: "Applied AI Experimentation Intern",
+      brandColor: "#ffcd37",
+      brandAccent: "#ffffff",
     },
   },
 };

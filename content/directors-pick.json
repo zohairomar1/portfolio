@@ -1925,6 +1925,48 @@
           ]
         }
       ]
+    },
+    {
+      "company": "Equitable Bank",
+      "companySlug": "equitable/ai-experimentation",
+      "title": "Applied AI Experimentation Intern",
+      "resumePath": "/Zohair_Omar_EQ_Resume_AI_0420.pdf",
+      "topSkills": ["AI Tools: Claude, OpenAI, Gemini, Copilot (daily use, multi-provider)", "Structured Prompt Engineering & AI Experimentation", "Python Analytics: Pandas, NumPy, vectorized pipelines", "Power BI & Excel Automation (DAX, Power Query)", "Finance Context: Economics Minor, financial literacy platform"],
+      "pitch": "Built a RAG bot integrating OpenAI and Gemini APIs with multi-provider fallback and 34 automated tests, iterating on prompt templates across dozens of test cases and documenting tool choices, trade-offs, and limitations at each step: exactly the structured AI experimentation approach this role describes. Power BI dashboards on 24 months of real operational data and a 35% pipeline speedup via vectorized Pandas show that the analytics output maps directly to finance reporting contexts. Co-founding TechNova built the habit of working from ambiguous problem statements to documented deliverables, without predefined templates.",
+      "relevantHighlights": ["Data Analysis & KPI Reporting", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
+      "relevantProjects": ["ticket-triage-rag-bot", "production-analytics-forecasting-dashboard", "oil-gas-asset-integrity-dashboard"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Power BI, Claude",
+          "bullets": [
+            "Run rapid AI-first experiments on client projects using Claude daily for scoping, code generation, and documentation; ship working outputs under ambiguous requirements with 4 developers across concurrent engagements",
+            "Translate technical outputs into clear business insights for non-technical stakeholders; produce documentation on tools, trade-offs, and learnings for every engagement"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Lead a 4-person team building a financial literacy web application; defined API contracts and connected the React frontend to a Google Cloud MySQL backend",
+            "Implemented CI/CD with GitHub Actions across 30+ merges with automated testing, code review, and sprint coordination"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL",
+          "bullets": [
+            "Built Python/SQL backend solutions for an enterprise platform serving 1,000+ daily users; documented workflows and SOPs and collaborated cross-functionally to resolve three critical bottlenecks"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
