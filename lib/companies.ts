@@ -133,6 +133,13 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
     },
   },
   pcl: {
+    bsa: {
+      slug: "pcl/business-systems-analyst-student",
+      displayName: "PCL",
+      subtitle: "Business Systems Analyst Student",
+      brandColor: "#00492b",
+      brandAccent: "#FFDF1B",
+    },
     "business-systems-analyst-student": {
       slug: "pcl/business-systems-analyst-student",
       displayName: "PCL",

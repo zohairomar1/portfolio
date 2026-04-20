@@ -1082,6 +1082,13 @@ describe("Director's Pick mode detection", () => {
     expect(config?.brandAccent).toBe("#FFDF1B");
   });
 
+  it("maps pcl/bsa alias to the canonical PCL role config", () => {
+    const config = getCompanyRoleConfig("pcl", "bsa");
+    expect(config).not.toBeNull();
+    expect(config?.slug).toBe("pcl/business-systems-analyst-student");
+    expect(config?.subtitle).toBe("Business Systems Analyst Student");
+  });
+
   it("visitor via /for/equitable/ai-experimentation should match Equitable Bank role", () => {
     const companyConfig = {
       slug: "equitable/ai-experimentation",
@@ -1099,6 +1106,22 @@ describe("Director's Pick mode detection", () => {
   });
 
   it("visitor via /for/pcl/business-systems-analyst-student should match PCL role", () => {
+    const companyConfig = {
+      slug: "pcl/business-systems-analyst-student",
+      displayName: "PCL",
+      subtitle: "Business Systems Analyst Student",
+      brandColor: "#00492b",
+      brandAccent: "#FFDF1B",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Business Systems Analyst Student");
+  });
+
+  it("visitor via /for/pcl/bsa should match the canonical PCL role", () => {
     const companyConfig = {
       slug: "pcl/business-systems-analyst-student",
       displayName: "PCL",
