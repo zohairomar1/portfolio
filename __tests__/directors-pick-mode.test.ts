@@ -1,5 +1,6 @@
 import { describe, it, expect, beforeEach } from "vitest";
 import directorsPickData from "@/content/directors-pick.json";
+import { getCompanyRoleConfig } from "@/lib/companies";
 
 /**
  * Tests that the Director's Pick page correctly determines custom vs generic mode.
@@ -1068,6 +1069,19 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Applied AI Experimentation Intern");
   });
 
+  it("includes pcl/business-systems-analyst-student role", () => {
+    const role = directorsPickData.roles.find((r) => r.companySlug === "pcl/business-systems-analyst-student");
+    expect(role).toBeDefined();
+    expect(role?.company).toBe("PCL Construction");
+  });
+
+  it("sets correct sessionStorage for pcl/business-systems-analyst-student", () => {
+    const config = getCompanyRoleConfig("pcl", "business-systems-analyst-student");
+    expect(config).not.toBeNull();
+    expect(config?.brandColor).toBe("#00492b");
+    expect(config?.brandAccent).toBe("#FFDF1B");
+  });
+
   it("visitor via /for/equitable/ai-experimentation should match Equitable Bank role", () => {
     const companyConfig = {
       slug: "equitable/ai-experimentation",
@@ -1082,6 +1096,22 @@ describe("Director's Pick mode detection", () => {
     const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
     expect(matched.length).toBeGreaterThan(0);
     expect(matched[0].title).toBe("Applied AI Experimentation Intern");
+  });
+
+  it("visitor via /for/pcl/business-systems-analyst-student should match PCL role", () => {
+    const companyConfig = {
+      slug: "pcl/business-systems-analyst-student",
+      displayName: "PCL",
+      subtitle: "Business Systems Analyst Student",
+      brandColor: "#00492b",
+      brandAccent: "#FFDF1B",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Business Systems Analyst Student");
   });
 
   it("visitor for unknown company should NOT match any roles", () => {

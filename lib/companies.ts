@@ -13,6 +13,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   deloitte: { slug: "deloitte", displayName: "DELOITTE", brandColor: "#80b625", brandAccent: "#ffffff" },
   bmo: { slug: "bmo", displayName: "BMO", brandColor: "#0079C1", brandAccent: "#ED1C24" },
   atco: { slug: "atco", displayName: "ATCO", brandColor: "#2E299D", brandAccent: "#E9BF48" },
+  pcl: { slug: "pcl", displayName: "PCL", brandColor: "#00492b", brandAccent: "#FFDF1B" },
   "precision-drilling": { slug: "precision-drilling", displayName: "PRECISION DRILLING", brandColor: "#4a9841", brandAccent: "#ffffff" },
   nutrien: { slug: "nutrien", displayName: "NUTRIEN", brandColor: "#009A44", brandAccent: "#97D700" },
   "health-shared-services": { slug: "health-shared-services", displayName: "HEALTH SHARED SERVICES", brandColor: "#0579c3", brandAccent: "#17b374" },
@@ -129,6 +130,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       subtitle: "IT Solution Architecture Co-op Student",
       brandColor: "#0057bb",
       brandAccent: "#E9BF48",
+    },
+  },
+  pcl: {
+    "business-systems-analyst-student": {
+      slug: "pcl/business-systems-analyst-student",
+      displayName: "PCL",
+      subtitle: "Business Systems Analyst Student",
+      brandColor: "#00492b",
+      brandAccent: "#FFDF1B",
     },
   },
   "precision-drilling": {

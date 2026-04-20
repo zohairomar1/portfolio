@@ -1967,6 +1967,50 @@
           ]
         }
       ]
+    },
+    {
+      "company": "PCL Construction",
+      "companySlug": "pcl/business-systems-analyst-student",
+      "title": "Business Systems Analyst Student",
+      "resumePath": "/Zohair_Omar_PCL_Resume_BSA_0420.pdf",
+      "topSkills": ["Meeting Facilitation & Project Coordination", "Requirements Gathering & Business Documentation", "Stakeholder Communication & Status Reporting", "Power BI, Excel & Performance Reporting", "Agile Team Coordination & Task Prioritization"],
+      "pitch": "I co-founded TechNova, a student consulting club where I run client intake, translate rough requests into scoped plans, and manage 4 developers across concurrent engagements. I also lead 2-3 weekly meetings at Enactus, maintain API and handoff documentation, and build stakeholder-ready reporting in Power BI and Excel, which maps closely to PCL's mix of meeting coordination, requirements gathering, and bi-weekly project reporting. Most of my recent work has been on the coordination side of software projects, and that is the part I have found most interesting.",
+      "relevantHighlights": ["Project Coordination & Meeting Facilitation", "Requirements Gathering & Stakeholder Communication", "Documentation, SOPs & Knowledge Handoffs", "Data Analysis & KPI Reporting"],
+      "relevantProjects": ["oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard", "business-tracking-application"],
+      "tailoredExperience": [
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Power BI, Excel, React, Python, SQL, Agile/Scrum",
+          "bullets": [
+            "Co-founded a student consulting club serving UCalgary student organizations and managed 4 developers across concurrent client engagements while balancing academic coursework",
+            "Ran client intake sessions to gather business requirements, translate rough ideas into scoped project plans, and document current-state workflows and target outcomes for each engagement",
+            "Delivered bi-weekly status updates and handoff documentation to client stakeholders, keeping scope, trade-offs, and next steps clear throughout delivery"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, REST APIs, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Led a 4-person Agile team on a financial literacy web application and facilitated 2-3 weekly meetings, setting agendas, tracking action items, and maintaining shared project documentation",
+            "Created and maintained REST API documentation and coordinated with the back-end team to define API contracts, serving as the communication bridge between front-end and back-end teams",
+            "Improved delivery process across 30+ merges through structured code review, automated testing, and clear handoffs, accelerating delivery by 1-2 sprints"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, JavaScript, Word, Excel",
+          "bullets": [
+            "Collaborated cross-functionally with development, operations, and business teams on a platform serving 1,000+ daily users, helping resolve three critical bottlenecks ahead of schedule",
+            "Produced workflow documentation and SOPs for onboarding and operational handoff, then presented progress and trade-offs to team leads during structured check-ins"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
@@ -2017,6 +2061,30 @@
       "built": "Power BI dashboard with DAX measures, role-based views for engineers vs. managers, slicers by department/month/year, and compliance trend summaries for stakeholder reporting",
       "tech": "Power BI, DAX, Power Query, SQL Server, SharePoint",
       "impact": "24 months of data modeled, backlog alerts enabled proactive planning, role-based access tailored insights per audience",
+      "link": "/scenes#oil-gas-asset-integrity-dashboard"
+    },
+    {
+      "label": "Project Coordination & Meeting Facilitation",
+      "problem": "Student-led technical projects needed someone to keep meetings structured, decisions documented, and delivery moving across multiple contributors",
+      "built": "Facilitated 2-3 weekly Scrum meetings for a 4-person team, set agendas, tracked action items, coordinated follow-ups, and maintained shared project documentation so teammates always had clear owners and next steps",
+      "tech": "Agile/Scrum, stakeholder communication, project documentation, React, TypeScript, GitHub",
+      "impact": "Kept a 4-person team aligned across weekly sprints, supported 30+ merges with fewer coordination gaps, and accelerated delivery by 1-2 sprints",
+      "link": null
+    },
+    {
+      "label": "Requirements Gathering & Stakeholder Communication",
+      "problem": "Clients often had rough ideas but no clear system requirements, which created ambiguity around scope, deliverables, and success criteria",
+      "built": "Ran intake sessions for student organizations, translated conversations into scoped plans and documented workflows, and coordinated API contracts between front-end and back-end teams so technical delivery stayed aligned with actual business needs",
+      "tech": "Requirements gathering, stakeholder communication, Agile/Scrum, REST APIs, React, Power BI",
+      "impact": "Supported 4+ client engagements and 100+ end users, reduced rework by clarifying scope early, and made updates easier to communicate to non-technical stakeholders",
+      "link": null
+    },
+    {
+      "label": "Documentation, SOPs & Knowledge Handoffs",
+      "problem": "Teams needed clearer documentation so new contributors and operational owners could understand systems after delivery without relying on verbal context",
+      "built": "Produced REST API documentation, onboarding guides, workflow SOPs, a data dictionary, and data lineage documentation across student and internship projects, with handoff notes covering tools, trade-offs, and maintenance context",
+      "tech": "Word, Excel, SharePoint, Power BI, SQL Server, REST APIs, SOPs",
+      "impact": "Improved onboarding and operational continuity across 3 organizations, made reporting assets easier to audit, and reduced dependency on single-person knowledge",
       "link": "/scenes#oil-gas-asset-integrity-dashboard"
     },
     {
