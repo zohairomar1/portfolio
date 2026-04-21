@@ -1167,6 +1167,36 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Cloud Engineering Intern");
   });
 
+  it("includes ensign/sysadmin role", () => {
+    const role = directorsPickData.roles.find((r) => r.companySlug === "ensign/sysadmin");
+    expect(role).toBeDefined();
+    expect(role?.company).toBe("Ensign Energy Services");
+    expect(role?.title).toBe("System Administrator IT Summer Intern");
+  });
+
+  it("sets correct sessionStorage for ensign/sysadmin", () => {
+    const config = getCompanyRoleConfig("ensign", "sysadmin");
+    expect(config).not.toBeNull();
+    expect(config?.brandColor).toBe("#ee2235");
+    expect(config?.brandAccent).toBe("#ffffff");
+  });
+
+  it("visitor via /for/ensign/sysadmin should match Ensign role", () => {
+    const companyConfig = {
+      slug: "ensign/sysadmin",
+      displayName: "ENSIGN ENERGY SERVICES",
+      subtitle: "System Administrator Summer Intern",
+      brandColor: "#ee2235",
+      brandAccent: "#ffffff",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("System Administrator IT Summer Intern");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

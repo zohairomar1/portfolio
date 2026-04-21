@@ -2055,6 +2055,51 @@
           ]
         }
       ]
+    },
+    {
+      "company": "Ensign Energy Services",
+      "companySlug": "ensign/sysadmin",
+      "title": "System Administrator IT Summer Intern",
+      "resumePath": "/Zohair_Omar_Ensign_Resume_SysAdmin_0420.pdf",
+      "topSkills": ["Active Directory & Azure Identity", "Microsoft 365, SharePoint & Teams", "Remote Support, Troubleshooting & Documentation", "Networking Concepts (DNS, DHCP, VPN)", "Windows Server, VMware & Citrix Exposure"],
+      "pitch": "This role is centered on enterprise IT infrastructure, and a lot of my recent work already touches that surface area. At Agrius IT I administered role-based access controls on an enterprise platform serving 1,000+ daily users, provided remote support, monitored logs, and wrote SOPs and runbooks. At Enactus I use Teams, SharePoint, and OneDrive daily and have worked with Azure AD identity concepts through authentication and Microsoft Graph integrations. My Windows Server, VMware, and Citrix experience is exposure through coursework and lab environments rather than production administration, but the support, documentation, identity, and troubleshooting work already maps well to this role. I am based in Calgary and available for the summer term.",
+      "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "Documentation, SOPs & Knowledge Handoffs", "Secure Backend Development", "Data Analysis & KPI Reporting"],
+      "relevantProjects": ["production-analytics-forecasting-dashboard", "oil-gas-asset-integrity-dashboard", "incident-command"],
+      "tailoredExperience": [
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer & IT Support Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Windows, Linux, SQL, Python",
+          "bullets": [
+            "Administered role-based access control and user-account-style permissions on an enterprise platform serving 1,000+ daily users; maintained security-related configurations and coordinated with infrastructure and business teams",
+            "Provided remote technical support across multiple locations and helped resolve three critical system bottlenecks ahead of schedule through structured troubleshooting and cross-functional follow-up",
+            "Monitored logs and produced SOPs, runbooks, and operational handoff documentation that incoming team members used for onboarding and recurring issue resolution"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "Azure AD, SharePoint, Teams, OneDrive, Microsoft 365",
+          "bullets": [
+            "Led a 4-person team using Microsoft Teams, SharePoint, and OneDrive for coordination, file management, and weekly runbooks, keeping shared documentation current as workstreams changed",
+            "Set up Azure AD authentication on a cloud-hosted application and coordinated identity and access requirements between teams",
+            "Managed 30+ Git-based deployments with automated testing and served as the first line of support for reported frontend issues from stakeholders"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "IT consulting, documentation, multi-site support",
+          "bullets": [
+            "Provided remote and in-person technical support to student organizations across concurrent engagements, troubleshooting Microsoft 365, Google Workspace, and connectivity issues for non-technical users",
+            "Produced system documentation, handoff runbooks, and setup inventories for every engagement so support could continue cleanly when priorities or ownership shifted",
+            "Managed 4 team members across multiple client environments, balancing support requests, scoped work, and follow-up in a fast-paced setting"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

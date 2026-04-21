@@ -40,6 +40,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   fidelity: { slug: "fidelity", displayName: "FIDELITY", brandColor: "#002C6D", brandAccent: "#368727" },
   suncor: { slug: "suncor", displayName: "SUNCOR", brandColor: "#F58220", brandAccent: "#EF4135" },
   equitable: { slug: "equitable", displayName: "EQUITABLE BANK", brandColor: "#ffcd37", brandAccent: "#ffffff" },
+  ensign: { slug: "ensign", displayName: "ENSIGN ENERGY SERVICES", brandColor: "#ee2235", brandAccent: "#ffffff" },
 };
 
 // Role-specific configurations for /for/[company]/[role] routes
@@ -429,6 +430,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       displayName: "EQUITABLE BANK",
       subtitle: "Applied AI Experimentation Intern",
       brandColor: "#ffcd37",
+      brandAccent: "#ffffff",
+    },
+  },
+  ensign: {
+    sysadmin: {
+      slug: "ensign/sysadmin",
+      displayName: "ENSIGN ENERGY SERVICES",
+      subtitle: "System Administrator Summer Intern",
+      brandColor: "#ee2235",
       brandAccent: "#ffffff",
     },
   },
