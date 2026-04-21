@@ -1147,8 +1147,8 @@ describe("Director's Pick mode detection", () => {
   it("sets correct sessionStorage for 407etr/cloud-engineering", () => {
     const config = getCompanyRoleConfig("407etr", "cloud-engineering");
     expect(config).not.toBeNull();
-    expect(config?.brandColor).toBe("#001140");
-    expect(config?.brandAccent).toBe("#F7B500");
+    expect(config?.brandColor).toBe("#F7B500");
+    expect(config?.brandAccent).toBe("#001140");
   });
 
   it("visitor via /for/407etr/cloud-engineering should match 407 ETR role", () => {
@@ -1156,8 +1156,8 @@ describe("Director's Pick mode detection", () => {
       slug: "407etr/cloud-engineering",
       displayName: "407 ETR",
       subtitle: "Cloud Engineering Intern",
-      brandColor: "#001140",
-      brandAccent: "#F7B500",
+      brandColor: "#F7B500",
+      brandAccent: "#001140",
     };
     sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
 
