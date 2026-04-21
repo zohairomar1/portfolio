@@ -7,6 +7,7 @@ export interface CompanyConfig {
 }
 
 const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
+  "407etr": { slug: "407etr", displayName: "407 ETR", brandColor: "#001140", brandAccent: "#F7B500" },
   "city-of-calgary": { slug: "city-of-calgary", displayName: "CITY OF CALGARY", brandColor: "#D0202E", brandAccent: "#E8636B" },
   imperial: { slug: "imperial", displayName: "IMPERIAL OIL", brandColor: "#0072CE", brandAccent: "#5AB0F2" },
   wealthsimple: { slug: "wealthsimple", displayName: "WEALTHSIMPLE", brandColor: "#333333", brandAccent: "#888888" },
@@ -429,6 +430,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       subtitle: "Applied AI Experimentation Intern",
       brandColor: "#ffcd37",
       brandAccent: "#ffffff",
+    },
+  },
+  "407etr": {
+    "cloud-engineering": {
+      slug: "407etr/cloud-engineering",
+      displayName: "407 ETR",
+      subtitle: "Cloud Engineering Intern",
+      brandColor: "#001140",
+      brandAccent: "#F7B500",
     },
   },
 };

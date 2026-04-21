@@ -1137,6 +1137,36 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("Business Systems Analyst Student");
   });
 
+  it("includes 407etr/cloud-engineering role", () => {
+    const role = directorsPickData.roles.find((r) => r.companySlug === "407etr/cloud-engineering");
+    expect(role).toBeDefined();
+    expect(role?.company).toBe("407 ETR");
+    expect(role?.title).toBe("Cloud Engineering Intern");
+  });
+
+  it("sets correct sessionStorage for 407etr/cloud-engineering", () => {
+    const config = getCompanyRoleConfig("407etr", "cloud-engineering");
+    expect(config).not.toBeNull();
+    expect(config?.brandColor).toBe("#001140");
+    expect(config?.brandAccent).toBe("#F7B500");
+  });
+
+  it("visitor via /for/407etr/cloud-engineering should match 407 ETR role", () => {
+    const companyConfig = {
+      slug: "407etr/cloud-engineering",
+      displayName: "407 ETR",
+      subtitle: "Cloud Engineering Intern",
+      brandColor: "#001140",
+      brandAccent: "#F7B500",
+    };
+    sessionStorage.setItem("vhs-company", JSON.stringify(companyConfig));
+
+    const parsed = JSON.parse(sessionStorage.getItem("vhs-company")!);
+    const matched = directorsPickData.roles.filter((r) => r.companySlug === parsed.slug);
+    expect(matched.length).toBeGreaterThan(0);
+    expect(matched[0].title).toBe("Cloud Engineering Intern");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

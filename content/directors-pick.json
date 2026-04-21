@@ -2011,6 +2011,50 @@
           ]
         }
       ]
+    },
+    {
+      "company": "407 ETR",
+      "companySlug": "407etr/cloud-engineering",
+      "title": "Cloud Engineering Intern",
+      "resumePath": "/Zohair_Omar_407ETR_Resume_Cloud_0420.pdf",
+      "topSkills": ["Jenkins, Docker & CI/CD Automation", "Azure AD, Graph API & Cloud Integrations", "Python, Java & JavaScript", "YAML, JSON & Git Workflows", "Cross-Team Infrastructure Collaboration"],
+      "pitch": "This role lines up closely with the work I have been doing lately: CI/CD pipelines, containerized deployments, automation, and cloud integrations. I shipped a full-stack incident management platform with Jenkins, Docker, and GitHub Actions plus 99 automated tests, integrated Azure AD and Microsoft Graph API for cloud workflows with token refresh and error handling, and connected a React frontend to a Google Cloud MySQL backend while coordinating CI/CD across 30+ merges. I have not deployed production workloads directly to AWS yet, but the Jenkins, Docker, Git, YAML, and cloud-integration work in your posting already matches how I build. I am also open to relocating to Woodbridge for the May to August term.",
+      "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "OOP, Java & Full-Stack Architecture", "CI/CD Pipelines & Agile Delivery", "Secure Backend Development"],
+      "relevantProjects": ["incident-command", "production-analytics-forecasting-dashboard", "ticket-triage-rag-bot"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, Google Cloud MySQL",
+          "bullets": [
+            "Connected the React frontend to a Google Cloud MySQL backend and coordinated API contracts with the back-end team, giving me hands-on exposure to shared cloud infrastructure and cross-team communication",
+            "Implemented CI/CD with GitHub Actions across 30+ merges with automated linting, testing, and code review, improving deployment confidence and accelerating delivery by 1-2 sprints",
+            "Maintained REST API documentation and handoff notes so teammates could review changes, understand dependencies, and ship safely"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Git, Agile/Scrum",
+          "bullets": [
+            "Built full-stack web applications for 100+ users and led 4 developers through Git-based workflows, code reviews, and structured documentation",
+            "Standardized delivery workflows and automated repetitive team tasks so contributors could ship changes more reliably across concurrent projects"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, JavaScript, HTML/CSS",
+          "bullets": [
+            "Built Python/SQL backend solutions for a platform serving 1,000+ daily users and collaborated with development and operations teams to resolve three critical bottlenecks",
+            "Implemented CORS, role-based access control, and operational SOPs, which gave me experience reviewing technical changes with a security-minded approach"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
