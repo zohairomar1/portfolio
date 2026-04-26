@@ -460,6 +460,13 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       brandColor: "#005DAA",
       brandAccent: "#FFD200",
     },
+    "data-engineering": {
+      slug: "rbc/data-engineering",
+      displayName: "RBC",
+      subtitle: "Data Engineer Co-op, GRM Wholesale Credit Management",
+      brandColor: "#005DAA",
+      brandAccent: "#FFD200",
+    },
   },
 };
 

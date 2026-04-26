@@ -2143,6 +2143,46 @@
           ]
         }
       ]
+    },
+    {
+      "company": "RBC",
+      "companySlug": "rbc/data-engineering",
+      "title": "Data Engineer Co-op",
+      "topSkills": ["Python & SQL Data Pipelines (ETL, vectorized Pandas, 35% runtime reduction)", "Data Validation & QA (schema checks, anomaly detection, 133+ automated tests)", "Data Lineage, Dictionary & Governance Documentation", "Power BI Reporting Infrastructure (DAX, Power Query, stakeholder dashboards)", "CI/CD, Docker & Linux (GitHub Actions, Jenkins, automated testing)"],
+      "pitch": "Built a Python data pipeline on multi-year operational data: refactored nested loops into vectorized Pandas for 35% runtime reduction, added rolling z-score anomaly detection and schema validation, and benchmarked ETS forecasts with MAE, RMSE, MAPE, and WAPE metrics. Built a Power BI dashboard with full data lineage traced from source systems to stakeholder reports, a data dictionary, and standardized naming conventions across SQL Server, Power Query, and SharePoint. The foundation underneath RBC's stack (Python, SQL, Docker, GitHub Actions, Linux, automated testing) is my daily work: 133+ automated tests shipped and schemas designed across PostgreSQL, SQL Server, and MySQL.",
+      "relevantHighlights": ["Data Analysis & KPI Reporting", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
+      "relevantProjects": ["production-analytics-forecasting-dashboard", "oil-gas-asset-integrity-dashboard", "incident-command"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, GitHub Actions, Google Cloud MySQL",
+          "bullets": [
+            "Connected the React frontend to a Google Cloud MySQL backend; set up REST API documentation and coordinated with the back-end team to define API contracts and data validation rules",
+            "Implemented CI/CD with GitHub Actions across 30+ merges with automated testing and code review; ran release management and accelerated delivery by 1-2 sprints"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Power BI",
+          "bullets": [
+            "Built data analysis tools and reporting dashboards for 100+ users; gathered business requirements and validated outputs with stakeholders; led 4 developers through Agile sprints"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL",
+          "bullets": [
+            "Developed Python/SQL backend solutions for an enterprise platform serving 1,000+ daily users; documented workflows and resolved three critical data and system bottlenecks"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

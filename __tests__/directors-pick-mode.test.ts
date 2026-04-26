@@ -1210,6 +1210,19 @@ describe("Director's Pick mode detection", () => {
     expect(config?.brandAccent).toBe("#FFD200");
   });
 
+  it("includes rbc/data-engineering role", () => {
+    const role = directorsPickData.roles.find((r) => r.companySlug === "rbc/data-engineering");
+    expect(role).toBeDefined();
+    expect(role?.company).toBe("RBC");
+  });
+
+  it("sets correct sessionStorage for rbc/data-engineering", () => {
+    const config = getCompanyRoleConfig("rbc", "data-engineering");
+    expect(config).not.toBeNull();
+    expect(config?.brandColor).toBe("#005DAA");
+    expect(config?.brandAccent).toBe("#FFD200");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",
