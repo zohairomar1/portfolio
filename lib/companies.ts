@@ -467,6 +467,13 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       brandColor: "#005DAA",
       brandAccent: "#FFD200",
     },
+    "wealth-management": {
+      slug: "rbc/wealth-management",
+      displayName: "RBC",
+      subtitle: "Wealth Management Fall Technology/Developer Co-op",
+      brandColor: "#005DAA",
+      brandAccent: "#FFD200",
+    },
   },
 };
 

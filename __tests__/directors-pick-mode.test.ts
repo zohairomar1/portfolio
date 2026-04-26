@@ -1223,6 +1223,19 @@ describe("Director's Pick mode detection", () => {
     expect(config?.brandAccent).toBe("#FFD200");
   });
 
+  it("includes rbc/wealth-management role", () => {
+    const role = directorsPickData.roles.find((r) => r.companySlug === "rbc/wealth-management");
+    expect(role).toBeDefined();
+    expect(role?.company).toBe("RBC");
+  });
+
+  it("sets correct sessionStorage for rbc/wealth-management", () => {
+    const config = getCompanyRoleConfig("rbc", "wealth-management");
+    expect(config).not.toBeNull();
+    expect(config?.brandColor).toBe("#005DAA");
+    expect(config?.brandAccent).toBe("#FFD200");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",
