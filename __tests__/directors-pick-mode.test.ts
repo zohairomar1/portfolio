@@ -1197,6 +1197,19 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("System Administrator IT Summer Intern");
   });
 
+  it("includes rbc/qts role", () => {
+    const role = directorsPickData.roles.find((r) => r.companySlug === "rbc/qts");
+    expect(role).toBeDefined();
+    expect(role?.company).toBe("RBC");
+  });
+
+  it("sets correct sessionStorage for rbc/qts", () => {
+    const config = getCompanyRoleConfig("rbc", "qts");
+    expect(config).not.toBeNull();
+    expect(config?.brandColor).toBe("#005DAA");
+    expect(config?.brandAccent).toBe("#FFD200");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

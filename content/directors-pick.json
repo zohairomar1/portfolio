@@ -2100,6 +2100,49 @@
           ]
         }
       ]
+    },
+    {
+      "company": "RBC",
+      "companySlug": "rbc/qts",
+      "title": "Quantitative Technology Services Co-op",
+      "resumePath": "/Zohair_Omar_RBC_Resume_QTS_0425.pdf",
+      "topSkills": ["Full-Stack SDLC: Java, Python, TypeScript (requirements through release)", "CI/CD, Release & Incident Management (Jenkins, Docker, GitHub Actions)", "Requirements Analysis & Technical Specification Writing", "Integration Testing & Automated QA (133+ tests across projects)", "Linux/Windows Environments & Microsoft Office stakeholder reporting"],
+      "pitch": "Shipped a full-stack incident and release management platform across the complete SDLC: requirements gathering, Java backend with PostgreSQL, code review, 99 integration tests, and CI/CD with Jenkins, Docker, and GitHub Actions. At Enactus I lead React and TypeScript frontend development for a financial literacy web application, translating business requirements from non-technical stakeholders into technical specifications and running release management across 30+ merges with automated testing. At TechNova I gather client requirements, scope technical plans, and deliver bi-weekly status presentations using Microsoft Office across concurrent engagements.",
+      "relevantHighlights": ["OOP, Java & Full-Stack Architecture", "CI/CD Pipelines & Agile Delivery", "React, APIs & Full-Stack Development", "Requirements Gathering & Stakeholder Communication"],
+      "relevantProjects": ["incident-command", "ticket-triage-rag-bot", "production-analytics-forecasting-dashboard"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Led a 4-person Agile team building a financial literacy web application; translated business requirements from non-technical stakeholders into technical specifications and scoped sprint deliverables",
+            "Connected the React frontend to a Google Cloud MySQL backend; coordinated API contracts with the back-end team to ensure integration alignment and set up REST API documentation",
+            "Implemented CI/CD with GitHub Actions across 30+ merges with automated testing and code review; ran release management and accelerated delivery by 1-2 sprints"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Git, Agile/Scrum",
+          "bullets": [
+            "Built full-stack web applications and dashboards for 100+ users; led 4 developers through Agile sprints with code review, structured documentation, and stakeholder presentations using Microsoft Office",
+            "Ran client intake sessions to gather business requirements and translate them into scoped technical plans; delivered bi-weekly status updates to client stakeholders on progress, scope, and trade-offs"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL",
+          "bullets": [
+            "Developed and debugged Python/SQL backend solutions for a platform serving 1,000+ daily users in a Linux environment; collaborated cross-functionally to resolve three critical system bottlenecks"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

@@ -41,6 +41,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   suncor: { slug: "suncor", displayName: "SUNCOR", brandColor: "#F58220", brandAccent: "#EF4135" },
   equitable: { slug: "equitable", displayName: "EQUITABLE BANK", brandColor: "#ffcd37", brandAccent: "#ffffff" },
   ensign: { slug: "ensign", displayName: "ENSIGN ENERGY SERVICES", brandColor: "#ee2235", brandAccent: "#ffffff" },
+  rbc: { slug: "rbc", displayName: "RBC", brandColor: "#005DAA", brandAccent: "#FFD200" },
 };
 
 // Role-specific configurations for /for/[company]/[role] routes
@@ -449,6 +450,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       subtitle: "Cloud Engineering Intern",
       brandColor: "#F7B500",
       brandAccent: "#001140",
+    },
+  },
+  rbc: {
+    qts: {
+      slug: "rbc/qts",
+      displayName: "RBC",
+      subtitle: "Quantitative Technology Services Co-op",
+      brandColor: "#005DAA",
+      brandAccent: "#FFD200",
     },
   },
 };
