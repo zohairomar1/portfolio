@@ -2188,6 +2188,7 @@
       "company": "RBC",
       "companySlug": "rbc/wealth-management",
       "title": "Wealth Management Fall Technology/Developer Co-op",
+      "resumePath": "/Zohair_Omar_RBC_Resume_WM_0425.pdf",
       "topSkills": ["React, TypeScript & Full-Stack Web Development (financial literacy platform, 30+ CI/CD merges)", "Full SDLC: Java, Python, CI/CD, Release & Integration Testing (133+ automated tests)", "Agile Delivery: Sprint Facilitation, Code Review & Stakeholder Presentations", "Azure AD, Active Directory & Microsoft Identity (OAuth 2.0, Microsoft Graph API)", "SQL, Databases & Backend Development (PostgreSQL, MySQL, SQL Server)"],
       "pitch": "Led frontend development on a financial literacy and wealth education web platform in React and TypeScript: built a reusable component library across 5+ pages, set up REST API documentation, connected the React frontend to a Google Cloud MySQL backend, and ran CI/CD with GitHub Actions across 30+ merges with a 4-person Agile team. Also shipped a full-stack incident management platform in Java with PostgreSQL covering the full SDLC: design, implementation, code review, 99 integration tests, and release management with Jenkins, Docker, and GitHub Actions. The wealth management domain alignment is direct, building tooling for young adults learning about wealth and investing for the past year.",
       "relevantHighlights": ["React, APIs & Full-Stack Development", "CI/CD Pipelines & Agile Delivery", "OOP, Java & Full-Stack Architecture", "Power Automate, Azure AD & SharePoint Integration"],
