@@ -2148,6 +2148,7 @@
       "company": "RBC",
       "companySlug": "rbc/data-engineering",
       "title": "Data Engineer Co-op",
+      "resumePath": "/Zohair_Omar_RBC_Resume_DataEng_0425.pdf",
       "topSkills": ["Python & SQL Data Pipelines (ETL, vectorized Pandas, 35% runtime reduction)", "Data Validation & QA (schema checks, anomaly detection, 133+ automated tests)", "Data Lineage, Dictionary & Governance Documentation", "Power BI Reporting Infrastructure (DAX, Power Query, stakeholder dashboards)", "CI/CD, Docker & Linux (GitHub Actions, Jenkins, automated testing)"],
       "pitch": "Built a Python data pipeline on multi-year operational data: refactored nested loops into vectorized Pandas for 35% runtime reduction, added rolling z-score anomaly detection and schema validation, and benchmarked ETS forecasts with MAE, RMSE, MAPE, and WAPE metrics. Built a Power BI dashboard with full data lineage traced from source systems to stakeholder reports, a data dictionary, and standardized naming conventions across SQL Server, Power Query, and SharePoint. The foundation underneath RBC's stack (Python, SQL, Docker, GitHub Actions, Linux, automated testing) is my daily work: 133+ automated tests shipped and schemas designed across PostgreSQL, SQL Server, and MySQL.",
       "relevantHighlights": ["Data Analysis & KPI Reporting", "Power Automate, Azure AD & SharePoint Integration", "CI/CD Pipelines & Agile Delivery"],
