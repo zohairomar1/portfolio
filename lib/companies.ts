@@ -474,6 +474,13 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       brandColor: "#005DAA",
       brandAccent: "#FFD200",
     },
+    "borealis-developer": {
+      slug: "rbc/borealis-developer",
+      displayName: "RBC",
+      subtitle: "RBC Borealis Software Developer Co-op",
+      brandColor: "#005DAA",
+      brandAccent: "#FFD200",
+    },
   },
 };
 

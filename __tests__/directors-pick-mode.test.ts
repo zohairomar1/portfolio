@@ -1236,6 +1236,19 @@ describe("Director's Pick mode detection", () => {
     expect(config?.brandAccent).toBe("#FFD200");
   });
 
+  it("includes rbc/borealis-developer role", () => {
+    const role = directorsPickData.roles.find((r) => r.companySlug === "rbc/borealis-developer");
+    expect(role).toBeDefined();
+    expect(role?.company).toBe("RBC");
+  });
+
+  it("sets correct sessionStorage for rbc/borealis-developer", () => {
+    const config = getCompanyRoleConfig("rbc", "borealis-developer");
+    expect(config).not.toBeNull();
+    expect(config?.brandColor).toBe("#005DAA");
+    expect(config?.brandAccent).toBe("#FFD200");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

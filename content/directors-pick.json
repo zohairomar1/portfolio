@@ -2225,6 +2225,49 @@
           ]
         }
       ]
+    },
+    {
+      "company": "RBC",
+      "companySlug": "rbc/borealis-developer",
+      "title": "RBC Borealis Software Developer Co-op",
+      "resumePath": "/Zohair_Omar_RBC_Resume_Borealis_0425.pdf",
+      "topSkills": ["Full SDLC: Agile/Waterfall/Iterative, UML, design docs, code review", "Full-Stack Development: Java, Python, TypeScript, React, REST APIs", "CI/CD, Unit Testing & Release Management (GitHub Actions, Jenkins, Docker, 133+ tests)", "Requirements Translation & Technical Specification Writing", "MS Office: Word, Excel, PowerPoint, Outlook for documentation and stakeholder presentations"],
+      "pitch": "Shipped a full-stack Java incident management platform across the complete SDLC: UML class diagrams, design documents, implementation, code review, 99 integration tests, and release management with Jenkins, Docker, and GitHub Actions. At Enactus I lead frontend development in React, TypeScript, and Tailwind CSS with cross-browser responsive UI, translating business requirements from non-technical stakeholders into technical specifications and running release management across 30+ merges. At TechNova I co-founded a consulting club where I estimate effort, scope technical plans, and produce Word documentation, Excel trackers, and PowerPoint presentations for client stakeholders.",
+      "relevantHighlights": ["OOP, Java & Full-Stack Architecture", "CI/CD Pipelines & Agile Delivery", "React, APIs & Full-Stack Development", "Requirements Gathering & Stakeholder Communication"],
+      "relevantProjects": ["incident-command", "ticket-triage-rag-bot"],
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, Tailwind CSS, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Led a 4-person Agile team through weekly sprints; translated business requirements from non-technical stakeholders into technical specifications and scoped sprint deliverables",
+            "Built a reusable React/TypeScript component library with cross-browser responsive UI; set up REST API documentation and connected the React frontend to a Google Cloud MySQL backend",
+            "Implemented CI/CD with GitHub Actions across 30+ merges with automated unit testing and code review; used Microsoft Teams, SharePoint, Word, and PowerPoint for sprint documentation and stakeholder presentations"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Git, Agile/Scrum",
+          "bullets": [
+            "Co-founded a technology consulting club; led 4 developers through Agile sprints with code review and estimating effort across design, coding, and testing tasks",
+            "Ran client intake sessions to translate business requirements into scoped technical plans; produced Word documentation, Excel trackers, and PowerPoint presentations for client stakeholders"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, HTML/CSS, JavaScript",
+          "bullets": [
+            "Developed and debugged Python/SQL backend solutions for a platform serving 1,000+ daily users; investigated production issues and resolved three critical defects ahead of schedule",
+            "Maintained Word-based SOPs and Excel inventory trackers; coordinated cross-functionally with development, operations, and business teams via Outlook and Teams"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
