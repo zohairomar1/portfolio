@@ -141,6 +141,13 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       brandColor: "#0057bb",
       brandAccent: "#E9BF48",
     },
+    "it-analyst-rubix": {
+      slug: "atco/it-analyst-rubix",
+      displayName: "ATCO",
+      subtitle: "IT Analyst Co-op, RUBIX Billing Operations",
+      brandColor: "#0057bb",
+      brandAccent: "#E9BF48",
+    },
   },
   pcl: {
     bsa: {

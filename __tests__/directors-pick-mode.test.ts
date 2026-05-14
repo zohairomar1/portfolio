@@ -1262,6 +1262,19 @@ describe("Director's Pick mode detection", () => {
     expect(config?.brandAccent).toBe("#E9BF48");
   });
 
+  it("includes atco/it-analyst-rubix role", () => {
+    const role = directorsPickData.roles.find((r) => r.companySlug === "atco/it-analyst-rubix");
+    expect(role).toBeDefined();
+    expect(role?.company).toBe("ATCO");
+  });
+
+  it("sets correct sessionStorage for atco/it-analyst-rubix", () => {
+    const config = getCompanyRoleConfig("atco", "it-analyst-rubix");
+    expect(config).not.toBeNull();
+    expect(config?.brandColor).toBe("#0057bb");
+    expect(config?.brandAccent).toBe("#E9BF48");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

@@ -2309,6 +2309,49 @@
           ]
         }
       ]
+    },
+    {
+      "company": "ATCO",
+      "companySlug": "atco/it-analyst-rubix",
+      "title": "IT Analyst Co-op, RUBIX Billing Operations",
+      "resumePath": "/Zohair_Omar_ATCO_Resume_ITAnalyst_0514.pdf",
+      "topSkills": ["Billing System Operations & SQL (event logs, ad-hoc queries, database ops)", "Incident Response & Issue Triage (vendor portals, documented changes, recurring prevention)", "QA & Functional Testing (133+ automated tests, test scenario design, integration coverage)", "Release Management (CI/CD, Jenkins, Docker, 30+ merges, deployment plans, Go/No-Go reviews)", "Python, Power BI & ERD Development (DAX, Power Query, database design, automation)"],
+      "pitch": "Built a full-stack Incident Management Platform covering all five RUBIX responsibility areas: ERD-based PostgreSQL database design, 99 automated unit and integration tests, CI/CD release pipelines with Jenkins and Docker, and incident response with documented changes. At Agrius IT I monitored system event logs and triaged incidents on an enterprise platform serving 1,000+ daily users, performing ad-hoc SQL queries across PostgreSQL, SQL Server, and MySQL, with business process documentation. At TechNova I run client intake sessions to translate business requirements into scoped plans across conflicting priorities, supporting Call Centre, Finance, and Marketing stakeholders.",
+      "relevantHighlights": ["OOP, Java & Full-Stack Architecture", "CI/CD Pipelines & Agile Delivery", "Documentation, SOPs & Knowledge Handoffs", "Requirements Gathering & Stakeholder Communication"],
+      "relevantProjects": ["incident-command", "oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL",
+          "bullets": [
+            "Monitored system event logs and triaged incidents on an enterprise platform serving 1,000+ daily users; performed ad-hoc SQL queries across PostgreSQL, SQL Server, and MySQL to investigate and resolve issues",
+            "Documented workflows and SOPs; resolved three critical bottlenecks ahead of schedule through cross-functional collaboration with development, operations, and business teams"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Ran release management across 30+ merges with automated testing and code review; participated in readiness reviews and deployment planning with Go/No-Go decision checkpoints",
+            "Led a 4-person Agile team through weekly sprints; documented API contracts, sprint outcomes, and handoff materials for non-technical Enactus leadership"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Power BI",
+          "bullets": [
+            "Co-founded a technology consulting club; ran client intake sessions to translate business requirements from stakeholders into scoped technical plans under shifting priorities across concurrent engagements",
+            "Built Python data analysis tools and Power BI dashboards with DAX and Power Query; designed ERD diagrams for database modeling across client engagements"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
