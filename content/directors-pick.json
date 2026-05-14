@@ -2268,6 +2268,47 @@
           ]
         }
       ]
+    },
+    {
+      "company": "ATCO",
+      "companySlug": "atco/data-analyst",
+      "title": "Co-op Data Analyst",
+      "topSkills": ["SQL & Python for Data Analysis (ETL pipelines, Pandas, statsmodels)", "Data Validation, Profiling & Quality (schema checks, anomaly detection, completeness, logged triage)", "Power BI & Data Lineage Documentation (DAX, Power Query, data dictionary, business logic)", "ETL/ELT Pipelines on Operational Data (35% runtime reduction, multi-year energy datasets)", "Stakeholder Enablement: how-to guides, starter queries, business-friendly findings"],
+      "pitch": "Built a Power BI dashboard for asset integrity monitoring across 24 months of operational data: traced full data lineage from source systems to stakeholder reports, created a data dictionary with standardized naming conventions, and documented business logic and assumptions so non-technical users could trust and reproduce the outputs. Also built a Python ETL pipeline on multi-year well production data (7 wells, 2008 to 2016) with schema checks, completeness validation, and rolling z-score anomaly detection, with validation results logged for triage. At TechNova I translate rough business questions from non-technical stakeholders into scoped analysis plans and create starter queries and how-to guides for client teams to adopt reporting tools.",
+      "relevantHighlights": ["Data Analysis & KPI Reporting", "Documentation, SOPs & Knowledge Handoffs", "Requirements Gathering & Stakeholder Communication", "Power Automate, Azure AD & SharePoint Integration"],
+      "relevantProjects": ["oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard", "heart-disease-prediction-model"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Power BI",
+          "bullets": [
+            "Translated business questions from non-technical stakeholders into clear analysis requirements and deliverables; built data analysis tools and Power BI dashboards for 100+ users",
+            "Created starter queries and how-to guides for client teams to adopt reporting tools; explained technical findings in business-friendly language across concurrent client engagements"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, Google Cloud MySQL",
+          "bullets": [
+            "Connected the React frontend to a Google Cloud MySQL backend; set up REST API documentation and coordinated with the back-end team to define API contracts and data validation rules",
+            "Led a 4-person Agile team through weekly sprints; used Microsoft Teams, Word, and PowerPoint for sprint documentation and stakeholder presentations to non-technical leadership"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL",
+          "bullets": [
+            "Investigated and triaged data quality issues on an enterprise platform serving 1,000+ daily users; documented workflows and SOPs and resolved three critical bottlenecks ahead of schedule"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

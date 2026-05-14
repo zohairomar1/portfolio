@@ -134,6 +134,13 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       brandColor: "#0057bb",
       brandAccent: "#E9BF48",
     },
+    "data-analyst": {
+      slug: "atco/data-analyst",
+      displayName: "ATCO",
+      subtitle: "Co-op Data Analyst",
+      brandColor: "#0057bb",
+      brandAccent: "#E9BF48",
+    },
   },
   pcl: {
     bsa: {
