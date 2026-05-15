@@ -2353,6 +2353,49 @@
           ]
         }
       ]
+    },
+    {
+      "company": "ATCO Gas & Pipelines",
+      "companySlug": "atco-gas/engineering-coop",
+      "title": "Engineering Co-op",
+      "resumePath": "/Zohair_Omar_ATCO_Resume_GasEng_0514.pdf",
+      "topSkills": ["Power BI & Data Analysis (DAX, Power Query, 10+ KPIs, pipeline risk reporting, Excel modeling)", "Power Automate & Process Improvements (Azure AD, Microsoft Graph API, SharePoint automation, PowerApps)", "Project Management: stakeholder coordination, scope tracking, bi-weekly reporting, concurrent engagements", "Documentation, Data Lineage & SOPs (business logic, assumptions, data dictionary, handoff docs)", "Microsoft Office Suite: Excel, Word, PowerPoint, Outlook, Teams (used daily across all engagements)"],
+      "pitch": "Built a Power BI dashboard simulating natural gas asset integrity monitoring across 24 months of operational data, visualizing 10+ KPIs including corrosion rate, oil content, overdue inspections, and certification compliance, with role-based views for engineers and managers. Also built a Python analytics pipeline on multi-year well production data (7 wells, 2008 to 2016) with Power Automate workflows for scheduled SharePoint reporting, integrated with Azure AD and Microsoft Graph API, reducing pipeline runtime by 35%. At TechNova I co-founded a consulting club and manage 4 developers across concurrent client engagements with intake sessions, scoped plans, schedule tracking, and bi-weekly status updates to stakeholders.",
+      "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "Data Analysis & KPI Reporting", "Project Coordination & Meeting Facilitation", "Documentation, SOPs & Knowledge Handoffs"],
+      "relevantProjects": ["oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard", "business-tracking-application"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Power BI, Power Automate",
+          "bullets": [
+            "Co-founded a technology consulting club; managed 4 developers across concurrent client engagements with intake, scoping, schedule tracking, and bi-weekly status reporting to stakeholders",
+            "Ran client intake sessions to translate business requirements into scoped technical plans with budgets, schedules, and milestone tracking; led process improvement initiatives for client reporting workflows, refactoring manual handoffs into documented and repeatable steps"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Led a 4-person Agile team through weekly sprints; tracked scope, schedule, and deliverables; ran weekly meetings with action items and status reporting to Enactus leadership",
+            "Coordinated cross-functionally with the back-end team to define requirements and ensure integration alignment; used Microsoft Teams, SharePoint, and Word for sprint documentation"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL",
+          "bullets": [
+            "Investigated and analyzed operational data on an enterprise platform serving 1,000+ daily users; identified and resolved three critical bottlenecks ahead of schedule",
+            "Produced SOPs and process documentation; coordinated cross-functionally with operations, business, and engineering teams via Outlook and Teams"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

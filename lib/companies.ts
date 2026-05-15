@@ -14,6 +14,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   deloitte: { slug: "deloitte", displayName: "DELOITTE", brandColor: "#80b625", brandAccent: "#ffffff" },
   bmo: { slug: "bmo", displayName: "BMO", brandColor: "#0079C1", brandAccent: "#ED1C24" },
   atco: { slug: "atco", displayName: "ATCO", brandColor: "#2E299D", brandAccent: "#E9BF48" },
+  "atco-gas": { slug: "atco-gas", displayName: "ATCO GAS & PIPELINES", brandColor: "#0057bb", brandAccent: "#E9BF48" },
   pcl: { slug: "pcl", displayName: "PCL", brandColor: "#00492b", brandAccent: "#FFDF1B" },
   "precision-drilling": { slug: "precision-drilling", displayName: "PRECISION DRILLING", brandColor: "#4a9841", brandAccent: "#ffffff" },
   nutrien: { slug: "nutrien", displayName: "NUTRIEN", brandColor: "#009A44", brandAccent: "#97D700" },
@@ -110,6 +111,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       subtitle: "IT Operations Asset Management Summer Student",
       brandColor: "#D0202E",
       brandAccent: "#E8636B",
+    },
+  },
+  "atco-gas": {
+    "engineering-coop": {
+      slug: "atco-gas/engineering-coop",
+      displayName: "ATCO GAS & PIPELINES",
+      subtitle: "Engineering Co-op",
+      brandColor: "#0057bb",
+      brandAccent: "#E9BF48",
     },
   },
   atco: {

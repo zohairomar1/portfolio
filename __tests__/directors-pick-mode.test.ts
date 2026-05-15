@@ -1262,6 +1262,19 @@ describe("Director's Pick mode detection", () => {
     expect(config?.brandAccent).toBe("#E9BF48");
   });
 
+  it("includes atco-gas/engineering-coop role", () => {
+    const role = directorsPickData.roles.find((r) => r.companySlug === "atco-gas/engineering-coop");
+    expect(role).toBeDefined();
+    expect(role?.company).toBe("ATCO Gas & Pipelines");
+  });
+
+  it("sets correct sessionStorage for atco-gas/engineering-coop", () => {
+    const config = getCompanyRoleConfig("atco-gas", "engineering-coop");
+    expect(config).not.toBeNull();
+    expect(config?.brandColor).toBe("#0057bb");
+    expect(config?.brandAccent).toBe("#E9BF48");
+  });
+
   it("includes atco/it-analyst-rubix role", () => {
     const role = directorsPickData.roles.find((r) => r.companySlug === "atco/it-analyst-rubix");
     expect(role).toBeDefined();
