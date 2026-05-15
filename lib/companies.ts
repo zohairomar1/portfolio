@@ -414,6 +414,13 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       brandColor: "#E30613",
       brandAccent: "#ffffff",
     },
+    "data-ingestion": {
+      slug: "kinaxis/data-ingestion",
+      displayName: "KINAXIS",
+      subtitle: "Data Ingestion Co-op",
+      brandColor: "#E30613",
+      brandAccent: "#ffffff",
+    },
   },
   sap: {
     "data-platform-technical-support": {

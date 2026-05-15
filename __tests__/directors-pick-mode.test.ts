@@ -740,6 +740,19 @@ describe("Director's Pick mode detection", () => {
     expect(matched[0].title).toBe("iXp Intern, Data & Platform Technical Support");
   });
 
+  it("includes kinaxis/data-ingestion role", () => {
+    const role = directorsPickData.roles.find((r) => r.companySlug === "kinaxis/data-ingestion");
+    expect(role).toBeDefined();
+    expect(role?.company).toBe("Kinaxis");
+  });
+
+  it("sets correct sessionStorage for kinaxis/data-ingestion", () => {
+    const config = getCompanyRoleConfig("kinaxis", "data-ingestion");
+    expect(config).not.toBeNull();
+    expect(config?.brandColor).toBe("#E30613");
+    expect(config?.brandAccent).toBe("#ffffff");
+  });
+
   it("includes kinaxis/software-developer-intern role", () => {
     const roles = directorsPickData.roles.filter((r) => r.companySlug === "kinaxis/software-developer-intern");
     expect(roles.length).toBeGreaterThan(0);
