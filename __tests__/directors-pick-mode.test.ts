@@ -1301,6 +1301,19 @@ describe("Director's Pick mode detection", () => {
     expect(config?.brandAccent).toBe("#E9BF48");
   });
 
+  it("includes cibc/business-systems-analyst role", () => {
+    const role = directorsPickData.roles.find((r) => r.companySlug === "cibc/business-systems-analyst");
+    expect(role).toBeDefined();
+    expect(role?.company).toBe("CIBC");
+  });
+
+  it("sets correct sessionStorage for cibc/business-systems-analyst", () => {
+    const config = getCompanyRoleConfig("cibc", "business-systems-analyst");
+    expect(config).not.toBeNull();
+    expect(config?.brandColor).toBe("#9D2235");
+    expect(config?.brandAccent).toBe("#FFD500");
+  });
+
   it("visitor for unknown company should NOT match any roles", () => {
     const companyConfig = {
       slug: "unknown-company",

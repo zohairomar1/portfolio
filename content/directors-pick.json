@@ -2437,6 +2437,48 @@
           ]
         }
       ]
+    },
+    {
+      "company": "CIBC",
+      "companySlug": "cibc/business-systems-analyst",
+      "title": "Business Systems Analyst Co-op",
+      "resumePath": "/Zohair_Omar_CIBC_Resume_BSA_0515.pdf",
+      "topSkills": ["Requirements Gathering & Solution Design (client intake, UML, ERD, REST API contracts)", "Business Partner Communication & Stakeholder Reporting (bi-weekly updates, Word docs, PowerPoint)", "Project Delivery & Agile Execution (concurrent engagements, 30+ merges, CI/CD, sprint demos)", "Documentation, SOPs & Data Lineage (data dictionary, process docs, Excel trackers, handoff notes)", "Technical Depth: Java/Spring Boot, SQL, Power BI for architecture and feasibility assessment"],
+      "pitch": "At TechNova I co-founded a consulting club where I run client intake sessions, translate business requirements into scoped technical plans with budgets and milestones, and deliver bi-weekly status updates across concurrent client engagements, covering the translation work between business partners and technical teams that the BSA role is built around. At Enactus WealthPath I coordinate REST API contracts between front-end and back-end teams, documenting endpoint schemas and data flows so integration alignment is settled upfront, then lead a 4-person Agile team through 30+ merges with stakeholder updates to non-technical leadership. The Incident Management Platform and Oil & Gas Dashboard demonstrate the technical depth: UML class diagrams, ERD-based schema, data lineage, and a data dictionary aligned to role-based reporting needs.",
+      "relevantHighlights": ["Requirements Gathering & Stakeholder Communication", "Client Delivery & Technology Consulting", "Documentation, SOPs & Knowledge Handoffs", "Project Coordination & Meeting Facilitation"],
+      "relevantProjects": ["oil-gas-asset-integrity-dashboard", "incident-command", "business-tracking-application"],
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, GitHub Actions, Agile/Scrum",
+          "bullets": [
+            "Coordinated REST API contracts between front-end and back-end teams; documented endpoint schemas and data flows so integration alignment was settled upfront rather than during PR reviews",
+            "Led a 4-person Agile team through weekly sprints, sprint demos, and bi-weekly stakeholder updates to non-technical Enactus leadership; ran 30+ merges through CI/CD with code review and release management"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Microsoft Office, Teams, SharePoint, Word, PowerPoint",
+          "bullets": [
+            "Co-founded a technology consulting club; ran client intake sessions to gather business requirements and translated rough ideas into scoped technical plans with budgets, schedules, and milestones for concurrent client engagements",
+            "Delivered bi-weekly status updates and stakeholder presentations to client teams; produced Word-based handoff documentation for every project; managed 4 developers through Agile sprints with code review and structured documentation"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, Outlook, Microsoft Teams, Excel",
+          "bullets": [
+            "Produced SOPs, process documentation, and Excel inventory trackers for a v-ERP platform serving 1,000+ daily users; coordinated with operations, business, and engineering teams via Outlook and Microsoft Teams",
+            "Investigated and resolved three critical bottlenecks ahead of schedule in the Python/SQL backend; monitored event logs and triaged incidents"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

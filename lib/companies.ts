@@ -43,6 +43,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   equitable: { slug: "equitable", displayName: "EQUITABLE BANK", brandColor: "#ffcd37", brandAccent: "#ffffff" },
   ensign: { slug: "ensign", displayName: "ENSIGN ENERGY SERVICES", brandColor: "#ee2235", brandAccent: "#ffffff" },
   rbc: { slug: "rbc", displayName: "RBC", brandColor: "#005DAA", brandAccent: "#FFD200" },
+  cibc: { slug: "cibc", displayName: "CIBC", brandColor: "#9D2235", brandAccent: "#FFD500" },
 };
 
 // Role-specific configurations for /for/[company]/[role] routes
@@ -481,6 +482,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       subtitle: "Cloud Engineering Intern",
       brandColor: "#F7B500",
       brandAccent: "#001140",
+    },
+  },
+  cibc: {
+    "business-systems-analyst": {
+      slug: "cibc/business-systems-analyst",
+      displayName: "CIBC",
+      subtitle: "Business Systems Analyst Co-op",
+      brandColor: "#9D2235",
+      brandAccent: "#FFD500",
     },
   },
   rbc: {
