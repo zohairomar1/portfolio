@@ -492,6 +492,13 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       brandColor: "#9D2235",
       brandAccent: "#FFD500",
     },
+    "tech-operations-developer": {
+      slug: "cibc/tech-operations-developer",
+      displayName: "CIBC",
+      subtitle: "Application/Software Developer Co-op, Technology Operations",
+      brandColor: "#9D2235",
+      brandAccent: "#FFD500",
+    },
   },
   rbc: {
     qts: {

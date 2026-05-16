@@ -2479,6 +2479,47 @@
           ]
         }
       ]
+    },
+    {
+      "company": "CIBC",
+      "companySlug": "cibc/tech-operations-developer",
+      "title": "Application/Software Developer Co-op, Technology Operations",
+      "resumePath": "/Zohair_Omar_CIBC_Resume_Tech_Ops_Dev_0516.pdf",
+      "topSkills": ["Python Scripting & ETL (vectorized Pandas, schema validation, anomaly detection, 35% runtime reduction)", "Power BI Reporting & Data Analytics (DAX, Power Query, 10+ KPIs, data lineage, data dictionary)", "Multi-platform System Integration (Azure AD OAuth 2.0, Microsoft Graph API, SharePoint, REST APIs)", "Full-stack Development & Testing (React/TypeScript, Java/Spring Boot, 99 unit/integration tests, CI/CD)", "Microsoft Office 365 & Coordination (Excel, PowerPoint, Teams, SharePoint, stakeholder communication)"],
+      "pitch": "Built a Power BI dashboard simulating natural gas asset integrity with 10+ KPIs, full data lineage from source systems to stakeholder reports, and a data dictionary with standardized naming conventions across role-based views for engineers and managers. Also built a Python ETL pipeline on multi-year operational data with schema validation, rolling z-score anomaly detection, and vectorized Pandas reducing runtime by 35%, integrated with Azure AD (OAuth 2.0) and Microsoft Graph API for automated SharePoint file movement. At Agrius IT I developed Python/SQL backend solutions for a SaaS platform serving 1,000+ daily users, implementing CORS and RBAC, and at Enactus I lead full-stack development with documented REST API contracts across 30+ CI/CD merges.",
+      "relevantHighlights": ["Power Automate, Azure AD & SharePoint Integration", "Data Analysis & KPI Reporting", "Secure Backend Development", "React, APIs & Full-Stack Development"],
+      "relevantProjects": ["oil-gas-asset-integrity-dashboard", "production-analytics-forecasting-dashboard", "ticket-triage-rag-bot"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, Google Cloud MySQL, GitHub Actions",
+          "bullets": [
+            "Led a 4-person Agile team through weekly sprints; built a reusable React/TypeScript component library and connected the frontend to a Google Cloud MySQL backend",
+            "Set up REST API documentation and coordinated with the back-end team to define API contracts; ran 30+ merges through CI/CD with code review and release management"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Microsoft Office 365",
+          "bullets": [
+            "Co-founded a technology consulting club; built full-stack applications and dashboards for 100+ users; ran client intake sessions and bi-weekly status updates across concurrent engagements with 4 developers"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, HTML/CSS, JavaScript",
+          "bullets": [
+            "Developed and debugged Python/SQL backend solutions for an enterprise SaaS platform serving 1,000+ daily users; implemented CORS and RBAC; monitored event logs and resolved three critical bottlenecks ahead of schedule"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
