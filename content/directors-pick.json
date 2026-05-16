@@ -2401,6 +2401,7 @@
       "company": "Kinaxis",
       "companySlug": "kinaxis/data-ingestion",
       "title": "Data Ingestion Co-op",
+      "resumePath": "/Zohair_Omar_Kinaxis_Resume_DataIngestion_0514.pdf",
       "topSkills": ["Java, Python & JavaScript/React across full-stack SaaS applications", "ETL Pipelines & Data Integration (schema validation, vectorized Pandas, 35% runtime reduction)", "OOP, Relational Databases & Schema Design (PostgreSQL, MySQL, SQL Server, RBAC)", "CI/CD & Containerization (GitHub Actions, Jenkins, Docker, 99 automated tests)", "Agile Collaboration & Code Review (4-person team, 30+ merges, sprint delivery)"],
       "pitch": "Shipped a full-stack Java/PostgreSQL incident management platform with OOP design, UML class diagrams, relational schema with RBAC, and 99 automated tests, with CI/CD using GitHub Actions, Jenkins, and Docker. Also built a Python ETL pipeline ingesting multi-year operational data with schema validation, anomaly detection, and completeness checks, cutting runtime 35% by refactoring to vectorized Pandas, and integrating Azure AD (OAuth 2.0) with Microsoft Graph API for automated data flow. At Enactus I lead a React/TypeScript frontend connected to a Google Cloud MySQL backend with REST API documentation, running release management across 30+ merges.",
       "relevantHighlights": ["OOP, Java & Full-Stack Architecture", "CI/CD Pipelines & Agile Delivery", "Secure Backend Development", "React, APIs & Full-Stack Development"],
