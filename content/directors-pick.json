@@ -2562,6 +2562,46 @@
           ]
         }
       ]
+    },
+    {
+      "company": "CIBC",
+      "companySlug": "cibc/capital-markets-developer",
+      "title": "Application Developer Co-op, Capital Markets Technology",
+      "topSkills": ["Java, Spring Boot & REST API development (OOP, UML, PostgreSQL schema, RBAC, 99 automated tests)", "Statistical Forecasting & ETL (ETS, rolling-origin backtesting, MAE/RMSE/MAPE/WAPE, vectorized Pandas, 35% runtime reduction)", "Full-stack development: React/TypeScript SaaS platform, Google Cloud MySQL, documented REST API contracts", "CI/CD & Multi-platform Integration (GitHub Actions, Jenkins, Docker, Azure AD, Microsoft Graph API)", "Quantitative background: CS & Mathematics with Economics minor, error metric discipline, personal investing"],
+      "pitch": "Shipped a Java/Spring Boot REST API backed by PostgreSQL with OOP design, UML class diagrams, RBAC, and 99 unit and integration tests, with CI/CD on GitHub Actions, Jenkins, and Docker treating test coverage and clean schemas with the same discipline capital markets systems require. Also built a Python ETL pipeline with schema validation, rolling z-score anomaly detection, and ETS forecasting with rolling-origin backtesting benchmarked against a seasonal naive baseline using MAE, RMSE, MAPE, and WAPE. At Enactus WealthPath I lead a financial literacy SaaS platform in React/TypeScript connected to a Google Cloud MySQL backend, coordinating REST API contracts and running 30+ merges through CI/CD.",
+      "relevantHighlights": ["OOP, Java & Full-Stack Architecture", "CI/CD Pipelines & Agile Delivery", "Data Analysis & KPI Reporting", "React, APIs & Full-Stack Development"],
+      "relevantProjects": ["incident-command", "production-analytics-forecasting-dashboard", "ticket-triage-rag-bot"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, Google Cloud MySQL, GitHub Actions",
+          "bullets": [
+            "Led a 4-person Agile team building a financial literacy SaaS platform aimed at young adults; built a reusable React/TypeScript component library on a Google Cloud MySQL-backed frontend",
+            "Set up REST API documentation and coordinated with the back-end team to define API contracts; ran 30+ merges through CI/CD with code review and release management"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Git",
+          "bullets": [
+            "Co-founded a technology consulting club; built full-stack applications and dashboards for 100+ users; ran client intake and bi-weekly status updates across concurrent engagements with 4 developers"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, HTML/CSS, JavaScript",
+          "bullets": [
+            "Developed and debugged Python/SQL backend solutions for an enterprise SaaS platform serving 1,000+ daily users; implemented CORS and RBAC; resolved three critical bottlenecks ahead of schedule"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

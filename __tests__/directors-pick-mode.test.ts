@@ -1301,6 +1301,19 @@ describe("Director's Pick mode detection", () => {
     expect(config?.brandAccent).toBe("#E9BF48");
   });
 
+  it("includes cibc/capital-markets-developer role", () => {
+    const role = directorsPickData.roles.find((r) => r.companySlug === "cibc/capital-markets-developer");
+    expect(role).toBeDefined();
+    expect(role?.company).toBe("CIBC");
+  });
+
+  it("sets correct sessionStorage for cibc/capital-markets-developer", () => {
+    const config = getCompanyRoleConfig("cibc", "capital-markets-developer");
+    expect(config).not.toBeNull();
+    expect(config?.brandColor).toBe("#9D2235");
+    expect(config?.brandAccent).toBe("#FFD500");
+  });
+
   it("includes cibc/software-developer role", () => {
     const role = directorsPickData.roles.find((r) => r.companySlug === "cibc/software-developer");
     expect(role).toBeDefined();
