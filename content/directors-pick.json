@@ -2520,6 +2520,48 @@
           ]
         }
       ]
+    },
+    {
+      "company": "CIBC",
+      "companySlug": "cibc/software-developer",
+      "title": "Software/Application Developer Co-op",
+      "resumePath": "/Zohair_Omar_CIBC_Resume_Software_App_Dev_0515.pdf",
+      "topSkills": ["Java, Spring Boot & REST API development (OOP, UML, PostgreSQL schema, RBAC, 99 automated tests)", "Python & Flask (cloud API integration, multi-provider fallback, 34 automated tests)", "Full-stack development: React/TypeScript frontend to Google Cloud MySQL backend with API contracts", "CI/CD & Testing (GitHub Actions, Jenkins, Docker, integration testing, code review, 30+ merges)", "Cross-functional coordination (stakeholder communication, sprint demos, API contract alignment)"],
+      "pitch": "Shipped a Java/Spring Boot REST API backed by PostgreSQL with OOP design, UML class diagrams, RBAC, and 99 unit and integration tests, with CI/CD on GitHub Actions, Jenkins, and Docker covering containerized build, test, and deployment across cross-functional ticket and release workflows. At Enactus WealthPath I built a React/TypeScript component library connected to a Google Cloud MySQL backend, coordinating REST API contracts between front-end and back-end teams and running 30+ merges through CI/CD with automated testing. Also built a Python/Flask REST service with 34 automated tests, multi-provider cloud API fallback, and structured prompt engineering.",
+      "relevantHighlights": ["OOP, Java & Full-Stack Architecture", "CI/CD Pipelines & Agile Delivery", "React, APIs & Full-Stack Development", "Secure Backend Development"],
+      "relevantProjects": ["incident-command", "ticket-triage-rag-bot", "production-analytics-forecasting-dashboard"],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, Google Cloud MySQL, GitHub Actions",
+          "bullets": [
+            "Led a 4-person Agile team through weekly sprints; built a reusable React/TypeScript component library and connected the frontend to a Google Cloud MySQL backend",
+            "Set up REST API documentation and coordinated with the back-end team to define API contracts and ensure integration alignment across cross-functional, multi-platform development",
+            "Implemented CI/CD with GitHub Actions across 30+ merges with automated testing, code review, and release management"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Git",
+          "bullets": [
+            "Built full-stack web applications and dashboards for 100+ users; led 4 developers through Agile sprints with code review, structured documentation, and stakeholder communication"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, HTML/CSS, JavaScript",
+          "bullets": [
+            "Developed and debugged Python/SQL backend solutions for an enterprise SaaS platform serving 1,000+ daily users; implemented CORS and RBAC; resolved three critical bottlenecks ahead of schedule"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
