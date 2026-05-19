@@ -6,7 +6,7 @@ import { PageNav, getPageNav } from "@/components/menu/PageNav";
 import { ScrollReveal } from "@/components/vhs/ScrollReveal";
 import { DirectorsPickBadge } from "@/components/vhs/DirectorsPickBadge";
 import { useSettings } from "@/hooks/useSettings";
-import { Star, Briefcase, Code, ChevronRight, ExternalLink, Download, FileText } from "lucide-react";
+import { Star, Briefcase, Code, ChevronRight, ExternalLink, Download, FileText, UserCheck } from "lucide-react";
 import Link from "next/link";
 import directorsPickData from "@/content/directors-pick.json";
 import projectsData from "@/content/projects.json";
@@ -29,6 +29,12 @@ interface TailoredExperience {
   bullets: string[];
 }
 
+interface Referral {
+  name: string;
+  title: string;
+  company: string;
+}
+
 interface Role {
   company: string;
   companySlug: string;
@@ -37,6 +43,7 @@ interface Role {
   summary?: string;
   pitch: string;
   resumePath?: string;
+  referral?: Referral;
   relevantHighlights?: string[];
   relevantProjects?: string[];
   projectsAboveExperience?: boolean;
@@ -196,6 +203,22 @@ export default function DirectorsPickPage() {
                     <p className="text-foreground/80 leading-relaxed mt-4">
                       {pitch}
                     </p>
+                  )}
+                  {custom.roles[0]?.referral && (
+                    <div className="mt-4 pt-4 border-t border-primary/20 flex items-center gap-3">
+                      <UserCheck className="w-4 h-4 text-primary shrink-0" />
+                      <div>
+                        <p className="font-mono text-[10px] text-muted-foreground/50 uppercase tracking-wider">
+                          Referred by
+                        </p>
+                        <p className="font-mono text-sm text-primary font-semibold">
+                          {custom.roles[0].referral.name}
+                        </p>
+                        <p className="font-mono text-xs text-muted-foreground">
+                          {custom.roles[0].referral.title} &middot; {custom.roles[0].referral.company}
+                        </p>
+                      </div>
+                    </div>
                   )}
                 </div>
               )}

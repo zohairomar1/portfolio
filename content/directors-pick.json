@@ -2666,6 +2666,11 @@
       "companySlug": "bmo/software-developer",
       "title": "Software Developer Co-op",
       "resumePath": "/Zohair_Omar_BMO_Resume_Software_Dev_0519.pdf",
+      "referral": {
+        "name": "Milton Li",
+        "title": "Senior Software Developer",
+        "company": "BMO"
+      },
       "topSkills": [
         "Java, Spring Boot & REST API development with TDD: 99 unit and integration tests, CI/CD on GitHub Actions, Jenkins, and Docker",
         "Test-Driven Development and QA: TDD workflow, JUnit5, pytest, integration testing, regression testing, automated CI test gates",
