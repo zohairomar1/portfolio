@@ -2660,6 +2660,64 @@
           ]
         }
       ]
+    },
+    {
+      "company": "BMO Financial Group",
+      "companySlug": "bmo/software-developer",
+      "title": "Software Developer Co-op",
+      "resumePath": "/Zohair_Omar_BMO_Resume_Software_Dev_0519.pdf",
+      "topSkills": [
+        "Java, Spring Boot & REST API development with TDD: 99 unit and integration tests, CI/CD on GitHub Actions, Jenkins, and Docker",
+        "Test-Driven Development and QA: TDD workflow, JUnit5, pytest, integration testing, regression testing, automated CI test gates",
+        "Applications integration: REST API contracts, OAuth 2.0 (Azure AD), Microsoft Graph API, CORS, RBAC",
+        "Full SDLC: requirements translation, design, coding, testing, release management, version control",
+        "Microservices and cloud: Spring Boot REST APIs, containerized Docker deployment, Google Cloud MySQL, Flask REST services"
+      ],
+      "pitch": "Shipped a Java/Spring Boot REST API backed by PostgreSQL with RBAC, UML design, and 99 unit and integration tests built alongside the code, not after: the only way to ship across ticket, incident, and release workflows at speed was to trust the regression coverage. At Enactus WealthPath I coordinate REST API contracts between front-end and back-end, document endpoint schemas, and run 30+ merges through CI/CD with code review and release management. The Volve pipeline adds another integration layer: Python ETL plugged into Azure AD (OAuth 2.0) and Microsoft Graph API for SharePoint file movement with schema validation and anomaly detection.",
+      "relevantHighlights": [
+        "OOP, Java & Full-Stack Architecture",
+        "CI/CD Pipelines & Agile Delivery",
+        "Secure Backend Development",
+        "React, APIs & Full-Stack Development"
+      ],
+      "relevantProjects": [
+        "incident-command",
+        "production-analytics-forecasting-dashboard",
+        "ticket-triage-rag-bot"
+      ],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, HTML/CSS, JavaScript",
+          "bullets": [
+            "Developed and debugged Python/SQL backend solutions for an enterprise SaaS platform serving 1,000+ daily users; implemented CORS and RBAC following security and access control standards",
+            "Resolved three critical bottlenecks ahead of schedule; performed troubleshooting and fault rectification across business systems and service applications"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, Google Cloud MySQL, GitHub Actions",
+          "bullets": [
+            "Led a 4-person Agile team building a financial literacy SaaS platform; built a reusable React/TypeScript component library connected to a Google Cloud MySQL backend",
+            "Coordinated REST API contracts with the back-end team, documented endpoint schemas for cross-team integration, and ran 30+ merges through CI/CD with code review and release management"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Git",
+          "bullets": [
+            "Co-founded a technology consulting club; built full-stack web applications and dashboards for 100+ users; managed 4 developers through Agile sprints across concurrent client engagements",
+            "Translated rough client concepts into scoped technical specifications with budgets, schedules, and milestones; delivered bi-weekly status updates and handoff documentation"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

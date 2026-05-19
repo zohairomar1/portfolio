@@ -305,6 +305,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       brandAccent: "#ffffff",
     },
   },
+  bmo: {
+    "software-developer": {
+      slug: "bmo/software-developer",
+      displayName: "BMO",
+      subtitle: "Software Developer Co-op",
+      brandColor: "#0079C1",
+      brandAccent: "#ED1C24",
+    },
+  },
   deloitte: {
     "technology-transformation": {
       slug: "deloitte/technology-transformation",

@@ -1301,6 +1301,19 @@ describe("Director's Pick mode detection", () => {
     expect(config?.brandAccent).toBe("#E9BF48");
   });
 
+  it("includes bmo/software-developer role", () => {
+    const role = directorsPickData.roles.find((r) => r.companySlug === "bmo/software-developer");
+    expect(role).toBeDefined();
+    expect(role?.company).toBe("BMO Financial Group");
+  });
+
+  it("sets correct sessionStorage for bmo/software-developer", () => {
+    const config = getCompanyRoleConfig("bmo", "software-developer");
+    expect(config).not.toBeNull();
+    expect(config?.brandColor).toBe("#0079C1");
+    expect(config?.brandAccent).toBe("#ED1C24");
+  });
+
   it("includes deloitte/wonder-analyst role", () => {
     const role = directorsPickData.roles.find((r) => r.companySlug === "deloitte/wonder-analyst");
     expect(role).toBeDefined();
