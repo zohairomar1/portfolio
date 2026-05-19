@@ -2603,6 +2603,63 @@
           ]
         }
       ]
+    },
+    {
+      "company": "Deloitte",
+      "companySlug": "deloitte/wonder-analyst",
+      "title": "Analyst, Wonder by Deloitte",
+      "resumePath": "/Zohair_Omar_Deloitte_Wonder_Analyst_0518.pdf",
+      "topSkills": [
+        "Co-founding and idea-to-execution: built TechNova from zero to a 4-developer operation running concurrent client engagements",
+        "Emerging technologies: RAG/LLM integration, OpenAI and Gemini APIs, multi-provider fallback, 34 automated tests",
+        "Business case development, intake, and stakeholder reporting across concurrent technology consulting engagements",
+        "Financial and quantitative foundation: Economics minor, Excel modeling, personal investing, financial literacy product design",
+        "Self-starter in fast-paced environments: 4-person Agile team at Enactus WealthPath, 4 developers at TechNova, concurrent engagements"
+      ],
+      "pitch": "Co-founded TechNova from scratch in February 2025 and scaled it from zero clients to 4 developers running concurrent engagements: ran intake sessions to source and validate ideas, translated rough concepts into scoped plans with budgets and milestones, and delivered bi-weekly client updates. Built a Ticket Triage RAG Bot integrating OpenAI and Gemini APIs with multi-provider fallback and 34 automated tests, the kind of emerging-tech prototyping that validates whether a concept is worth building. At Enactus WealthPath I lead a 4-person team building a financial literacy SaaS platform for young adults, working through the same product-market fit questions a Wonder Founding team faces.",
+      "relevantHighlights": [
+        "Client Delivery & Technology Consulting",
+        "Requirements Gathering & Stakeholder Communication",
+        "Project Coordination & Meeting Facilitation",
+        "Documentation, SOPs & Knowledge Handoffs"
+      ],
+      "relevantProjects": [
+        "ticket-triage-rag-bot",
+        "oil-gas-asset-integrity-dashboard",
+        "business-tracking-application"
+      ],
+      "tailoredExperience": [
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Microsoft Office, Teams, SharePoint, Word, PowerPoint, Excel",
+          "bullets": [
+            "Co-founded TechNova from scratch in February 2025; built the operating model, ran the first intake sessions to source and validate ideas student organizations were trying to solve with technology, and determined which problems were worth a real engagement",
+            "Translated rough concepts into scoped technical plans with budgets, schedules, and milestones; delivered bi-weekly status updates to client teams; scaled to 4 developers across concurrent engagements building full-stack applications for 100+ users"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, Google Cloud MySQL, GitHub Actions",
+          "bullets": [
+            "Led a 4-person Agile team building a financial literacy SaaS platform aimed at young adults; consumer-side fintech product covering personal budgeting, savings, and investing concepts",
+            "Coordinated REST API contracts with the back-end team and ran 30+ merges through CI/CD with code review and release management"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, HTML/CSS, JavaScript",
+          "bullets": [
+            "Developed and debugged Python/SQL backend solutions for an enterprise SaaS platform serving 1,000+ daily users; coordinated with operations, business, and engineering teams across an international environment",
+            "Resolved three critical bottlenecks ahead of schedule; demonstrated self-direction and adaptability in an unfamiliar enterprise codebase"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",

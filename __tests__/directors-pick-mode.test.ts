@@ -1301,6 +1301,19 @@ describe("Director's Pick mode detection", () => {
     expect(config?.brandAccent).toBe("#E9BF48");
   });
 
+  it("includes deloitte/wonder-analyst role", () => {
+    const role = directorsPickData.roles.find((r) => r.companySlug === "deloitte/wonder-analyst");
+    expect(role).toBeDefined();
+    expect(role?.company).toBe("Deloitte");
+  });
+
+  it("sets correct sessionStorage for deloitte/wonder-analyst", () => {
+    const config = getCompanyRoleConfig("deloitte", "wonder-analyst");
+    expect(config).not.toBeNull();
+    expect(config?.brandColor).toBe("#80b625");
+    expect(config?.brandAccent).toBe("#ffffff");
+  });
+
   it("includes cibc/capital-markets-developer role", () => {
     const role = directorsPickData.roles.find((r) => r.companySlug === "cibc/capital-markets-developer");
     expect(role).toBeDefined();

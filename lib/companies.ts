@@ -320,6 +320,13 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       brandColor: "#80b625",
       brandAccent: "#ffffff",
     },
+    "wonder-analyst": {
+      slug: "deloitte/wonder-analyst",
+      displayName: "DELOITTE",
+      subtitle: "Analyst, Wonder by Deloitte",
+      brandColor: "#80b625",
+      brandAccent: "#ffffff",
+    },
   },
   td: {
     "finance-data": {
