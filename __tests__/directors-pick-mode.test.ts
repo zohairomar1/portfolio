@@ -1301,6 +1301,19 @@ describe("Director's Pick mode detection", () => {
     expect(config?.brandAccent).toBe("#E9BF48");
   });
 
+  it("includes gdms/software-development-test role", () => {
+    const role = directorsPickData.roles.find((r) => r.companySlug === "gdms/software-development-test");
+    expect(role).toBeDefined();
+    expect(role?.company).toBe("General Dynamics Mission Systems - Canada");
+  });
+
+  it("sets correct sessionStorage for gdms/software-development-test", () => {
+    const config = getCompanyRoleConfig("gdms", "software-development-test");
+    expect(config).not.toBeNull();
+    expect(config?.brandColor).toBe("#003087");
+    expect(config?.brandAccent).toBe("#ffffff");
+  });
+
   it("includes bmo/software-developer role", () => {
     const role = directorsPickData.roles.find((r) => r.companySlug === "bmo/software-developer");
     expect(role).toBeDefined();

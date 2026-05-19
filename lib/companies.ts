@@ -44,6 +44,7 @@ const ALLOWED_COMPANIES: Record<string, CompanyConfig> = {
   ensign: { slug: "ensign", displayName: "ENSIGN ENERGY SERVICES", brandColor: "#ee2235", brandAccent: "#ffffff" },
   rbc: { slug: "rbc", displayName: "RBC", brandColor: "#005DAA", brandAccent: "#FFD200" },
   cibc: { slug: "cibc", displayName: "CIBC", brandColor: "#9D2235", brandAccent: "#FFD500" },
+  gdms: { slug: "gdms", displayName: "GENERAL DYNAMICS", brandColor: "#003087", brandAccent: "#ffffff" },
 };
 
 // Role-specific configurations for /for/[company]/[role] routes
@@ -302,6 +303,15 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       displayName: "NOKIA",
       subtitle: "Innovation & Automation Co-op",
       brandColor: "#0059fe",
+      brandAccent: "#ffffff",
+    },
+  },
+  gdms: {
+    "software-development-test": {
+      slug: "gdms/software-development-test",
+      displayName: "GENERAL DYNAMICS",
+      subtitle: "Software Development and Test Co-op",
+      brandColor: "#003087",
       brandAccent: "#ffffff",
     },
   },

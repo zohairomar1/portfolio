@@ -2723,6 +2723,64 @@
           ]
         }
       ]
+    },
+    {
+      "company": "General Dynamics Mission Systems - Canada",
+      "companySlug": "gdms/software-development-test",
+      "title": "Software Development and Test Co-op",
+      "resumePath": "/Zohair_Omar_GDMS_Resume_Software_Dev_Test_0519.pdf",
+      "topSkills": [
+        "C, C++, Python, Java: embedded C path planning on UBC Design League robot, Java/Spring Boot REST API with 99 tests, Python/Flask RAG service",
+        "Software testing and QA: 133+ automated tests across projects using JUnit5, pytest, and GitHub Actions CI gates",
+        "Embedded and real-time systems: Arduino C robot control with servo and ultrasonic sensor integration, 95% navigation success rate, 25% perception efficiency improvement",
+        "Integration, verification, and debugging: CI/CD pipeline debugging, code review, integration testing on every merge",
+        "AI/ML: OpenAI and Gemini API integration, RAG systems, multi-provider fallback, prompt engineering"
+      ],
+      "pitch": "Shipped a Java/Spring Boot REST API with 99 unit and integration tests built alongside the code through a CI/CD pipeline on GitHub Actions, Jenkins, and Docker: the same test-first discipline a mission-critical system demands, where every change survives integration and verification before it ships. The UBC Design League project is the embedded side: 2.5 years building an autonomous robot with Arduino C-based path planning, servo motor and ultrasonic sensor integration, and SolidWorks modeling, hitting a 95% navigation success rate with a 25% improvement in real-time perception efficiency. For AI/ML the Ticket Triage RAG Bot is a Python/Flask service integrating OpenAI and Gemini with multi-provider fallback and 34 automated tests.",
+      "relevantHighlights": [
+        "Embedded Systems & Real-Time Control",
+        "OOP, Java & Full-Stack Architecture",
+        "CI/CD Pipelines & Agile Delivery",
+        "Secure Backend Development"
+      ],
+      "relevantProjects": [
+        "incident-command",
+        "ticket-triage-rag-bot",
+        "production-analytics-forecasting-dashboard"
+      ],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, HTML/CSS, JavaScript",
+          "bullets": [
+            "Developed and debugged Python/SQL backend solutions for an enterprise SaaS platform serving 1,000+ daily users; implemented CORS and RBAC; resolved three critical bottlenecks ahead of schedule using systematic debugging and root cause analysis",
+            "Maintained technical records and process documentation; collaborated with operations, business, and engineering teams across an international environment"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, Google Cloud MySQL, GitHub Actions",
+          "bullets": [
+            "Led a 4-person Agile team through weekly sprints; built a reusable React/TypeScript component library connected to a Google Cloud MySQL backend",
+            "Ran 30+ merges through CI/CD with integration testing and code review; documented REST API endpoint schemas for cross-team integration"
+          ]
+        },
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Python, SQL, Git",
+          "bullets": [
+            "Co-founded a technology consulting club; built full-stack web applications and dashboards for 100+ users; managed 4 developers through Agile sprints across concurrent client engagements",
+            "Documented code, processes, and technical handoff materials for each delivered engagement; participated in iterative planning and code review cycles"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
@@ -2805,6 +2863,14 @@
       "built": "Co-founded TechNova, a consulting club that runs end-to-end client engagements: intake sessions, requirements gathering, technical scoping, and delivery of dashboards and web platforms. Led 4+ concurrent engagements with a team of 4 developers, maintaining quality through structured documentation, code reviews, and iterative client feedback loops",
       "tech": "React, Python, SQL, Power BI, Agile/Scrum, stakeholder communication",
       "impact": "4+ organizations served, 100+ end users reached, all solutions delivered with onboarding guides and handoff documentation for long-term maintainability",
+      "link": null
+    },
+    {
+      "label": "Embedded Systems & Real-Time Control",
+      "problem": "UBC Design League needed an autonomous robot capable of object detection and reliable navigation under competition conditions, with tight real-time constraints on perception and control loops",
+      "built": "Arduino C-based path planning and robot control system with servo motor and ultrasonic sensor integration; implemented real-time sensor fusion tuning for improved perception efficiency; performed rigid body force analysis, travel calculations, and SolidWorks 3D modeling for structural components",
+      "tech": "C, Arduino IDE, Python, SolidWorks, Git",
+      "impact": "95% navigation success rate on object detection tasks; 25% improvement in real-time perception efficiency through sensor fusion tuning over 2.5 years on the team",
       "link": null
     }
   ],
