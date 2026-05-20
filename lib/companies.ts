@@ -160,6 +160,13 @@ const ALLOWED_COMPANY_ROLES: Record<string, Record<string, CompanyConfig>> = {
       brandColor: "#0057bb",
       brandAccent: "#E9BF48",
     },
+    "customer-connections": {
+      slug: "atco/customer-connections",
+      displayName: "ATCO ELECTRIC",
+      subtitle: "Customer Connections Co-op Student",
+      brandColor: "#0057bb",
+      brandAccent: "#E9BF48",
+    },
   },
   pcl: {
     bsa: {

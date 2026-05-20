@@ -1301,6 +1301,19 @@ describe("Director's Pick mode detection", () => {
     expect(config?.brandAccent).toBe("#E9BF48");
   });
 
+  it("includes atco/customer-connections role", () => {
+    const role = directorsPickData.roles.find((r) => r.companySlug === "atco/customer-connections");
+    expect(role).toBeDefined();
+    expect(role?.company).toBe("ATCO Electric");
+  });
+
+  it("sets correct sessionStorage for atco/customer-connections", () => {
+    const config = getCompanyRoleConfig("atco", "customer-connections");
+    expect(config).not.toBeNull();
+    expect(config?.brandColor).toBe("#0057bb");
+    expect(config?.brandAccent).toBe("#E9BF48");
+  });
+
   it("includes gdms/software-development-test role", () => {
     const role = directorsPickData.roles.find((r) => r.companySlug === "gdms/software-development-test");
     expect(role).toBeDefined();

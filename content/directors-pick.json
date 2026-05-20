@@ -2781,6 +2781,63 @@
           ]
         }
       ]
+    },
+    {
+      "company": "ATCO Electric",
+      "companySlug": "atco/customer-connections",
+      "title": "Customer Connections Co-op Student",
+      "topSkills": [
+        "Reporting and analytics: Power BI dashboard with role-based views, 10+ KPIs, and full data lineage on the Oil & Gas Asset Integrity project",
+        "Process improvements and PM tool support: TechNova client intake, scoped plans with budgets and milestones, Excel and SharePoint project tracking",
+        "Documentation development: SOPs and process docs at Agrius IT (1,000+ daily users), REST API documentation at WealthPath, Word-based handoff docs at TechNova",
+        "Microsoft Office and collaboration tools: Excel, PowerPoint, Word, SharePoint, Teams, Outlook across active roles",
+        "Cross-functional stakeholder communication: bi-weekly stakeholder updates at TechNova and WealthPath, coordination with operations, business, and engineering teams"
+      ],
+      "pitch": "Built a Power BI dashboard simulating natural gas asset integrity monitoring with role-based views for engineers and managers, 10+ KPIs including corrosion rate and certification compliance, and full data lineage from source systems to stakeholder reports: the same shape of work a Customer Connections reporting model needs. At TechNova I run client intake to identify process pain points, translate them into scoped plans with budgets and milestones, and close every engagement with Word-based handoff documentation across 4 developers on concurrent projects. At Agrius IT I produced SOPs, process documentation, and Excel inventory trackers for a platform serving 1,000+ daily users, coordinating with operations, business, and engineering teams.",
+      "relevantHighlights": [
+        "Data Analysis & KPI Reporting",
+        "Documentation, SOPs & Knowledge Handoffs",
+        "Client Delivery & Technology Consulting",
+        "Requirements Gathering & Stakeholder Communication"
+      ],
+      "relevantProjects": [
+        "oil-gas-asset-integrity-dashboard",
+        "production-analytics-forecasting-dashboard",
+        "business-tracking-application"
+      ],
+      "projectsAboveExperience": true,
+      "tailoredExperience": [
+        {
+          "name": "TechNova",
+          "title": "Co-Founder & VP Technical",
+          "dates": "Feb 2025 - Present",
+          "stack": "Microsoft Office, Teams, SharePoint, Word, PowerPoint, Excel",
+          "bullets": [
+            "Co-founded a technology consulting club from scratch; ran client intake sessions to source process improvement opportunities and translated rough ideas into scoped plans with budgets, schedules, and milestones for 4 developers across concurrent engagements",
+            "Led documentation development for every engagement: Word-based handoff documents, bi-weekly stakeholder presentations, and project-tracking spreadsheets; built reporting dashboards for 100+ users"
+          ]
+        },
+        {
+          "name": "Enactus UCalgary - WealthPath",
+          "title": "Front-End Development Lead",
+          "dates": "Jul 2025 - Present",
+          "stack": "React, TypeScript, Google Cloud MySQL, GitHub Actions",
+          "bullets": [
+            "Led a 4-person Agile team through weekly sprints and bi-weekly stakeholder updates; set up REST API documentation and coordinated with the back-end team to define API contracts across cross-functional development",
+            "Ran 30+ merges through CI/CD with code review and release management; documented endpoint schemas for cross-team integration"
+          ]
+        },
+        {
+          "name": "Agrius IT",
+          "title": "Software Developer Intern",
+          "dates": "May 2024 - Jul 2024",
+          "stack": "Python, SQL, Outlook, Microsoft Teams, Excel",
+          "bullets": [
+            "Produced SOPs, process documentation, and Excel inventory trackers for a v-ERP platform serving 1,000+ daily users; coordinated with operations, business, and engineering teams",
+            "Monitored event logs and triaged incidents; implemented RBAC and CORS security controls; resolved three critical bottlenecks ahead of schedule"
+          ]
+        }
+      ]
     }
   ],
   "genericPitch": "I build full-stack applications and data-driven solutions backed by real metrics. Whether it's Go backends, Power BI dashboards, leading dev teams, or shipping under 24-hour hackathon deadlines, I focus on technical depth, fast learning, and getting things out the door.",
